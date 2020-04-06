@@ -13,7 +13,7 @@
 		<section>
 			<div class="panel">
 
-				<div class="panel-bd" v-if="false">
+				<div class="panel-bd padding" v-if="false">
 					<h2 class="vip__title">UPI APPs</h2>
 					<div class="upi-app flex flex-wrap">
 						<div class="upi-app-item active">
@@ -33,7 +33,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="panel-bd">
+				<div class="panel-bd padding">
 					<h2 class="vip__title">UPI ID</h2>
 					<div class="text-area">
 						<van-cell-group>
@@ -128,13 +128,8 @@
 		}
 	}
 </script>
-<style lang="scss">
-	.panel{
-		.panel-hd,
-		.panel-bd{
-			padding: 10PX 16PX;
-		}
-	}
+<style lang="scss" scoped>
+
 	.upi-app-item{
 		margin-right: 4px;
 		margin-bottom: 10px;

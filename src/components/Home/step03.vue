@@ -159,7 +159,7 @@
 		}
 	}
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 	.van-circle{
 		margin: 0 auto;
 	}

@@ -11,7 +11,7 @@
 			></van-nav-bar>
 		</header>
 		<section>
-			<div class="panel">
+			<div class="panel padding">
 				<div class="panel-hd">
 					<div class="card">
 						<div class="card-hd">
@@ -25,7 +25,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="panel-bd">
+				<div class="panel-bd ">
 					<h2 class="vip__title">Select Payment Option</h2>
 					<van-radio-group v-model="paymentOptionId">
 						<van-cell-group v-for="item in list" :key="list.id">
@@ -127,9 +127,9 @@
 <style lang="scss" scoped>
 	.panel{
 		.panel-hd{
-			padding: 10PX 16PX;
 			.card{
 				width: 100%;
+				margin-bottom: 30px;
 			}
 			.product-info {
 				 margin-bottom: 0;
