@@ -28,7 +28,7 @@
 				<div class="panel-bd ">
 					<h2 class="vip__title">Select Payment Option</h2>
 					<van-radio-group v-model="paymentOptionId">
-						<van-cell-group v-for="item in list" :key="list.id">
+						<van-cell-group v-for="item in list" :key="item.id">
 							<van-cell v-if="!item.disabled"
 									  :title="item.title"
 									  :label="item.description"

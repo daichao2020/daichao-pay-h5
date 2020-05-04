@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 const _import = require('./_import_' + process.env.VUE_APP_ENV);
+
+const Login = _import('Login/index');//登陆
 const Layout = _import('Layout/index');//框架
 const Home = _import('Home/index');//
-const My = _import('My/index');//
+const LoanAll = _import('LoanAll/index');//
+const Detail = _import('Detail/index');//
+const Me = _import('Me/index');//
 
 const Step01 = _import('Home/step01');//
 const Step02 = _import('Home/step02');//
@@ -15,75 +19,67 @@ Vue.use(VueRouter)
 const routes = [
 	{
 		path: '/',
-		redirect: '/app'
-	},
-	{
-		path: '/app',//(框架层)
-		meta: {
-			requireAuth: false,
-			pageTitle: '首页',
-			keepAlive: false
-		},
 		component: Layout,
+		redirect: '/home',
 		children: [
-			{
-				path: '/',
-				redirect: 'home'
-			},
 			//首页
 			{
-				path: 'home',
+				path: '/home',
 				name: 'home',
 				meta: {
 					requireAuth: false,  // 添加该字段，表示进入这个路由是需要登录的
-					pageTitle: '首页',
+					pageTitle: 'Home',
 					keepAlive: false
 				},
 				component: Home,
 			},
+			//列表
 			{
-				path: 'step01',
-				name: 'step01',
+				path: '/loanall',
+				name: 'loanall',
 				meta: {
 					requireAuth: false,  // 添加该字段，表示进入这个路由是需要登录的
-					pageTitle: '',
+					pageTitle: 'Loan All',
 					keepAlive: false
 				},
-				component: Step01,
+				component: LoanAll,
 			},
+			//我
 			{
-				path: 'step02',
-				name: 'step02',
-				meta: {
-					requireAuth: false,  // 添加该字段，表示进入这个路由是需要登录的
-					pageTitle: '',
-					keepAlive: false
-				},
-				component: Step02,
-			},
-			{
-				path: 'step03',
-				name: 'step03',
-				meta: {
-					requireAuth: false,  // 添加该字段，表示进入这个路由是需要登录的
-					pageTitle: '',
-					keepAlive: false
-				},
-				component: Step03,
-			},
-			//我的
-			{
-				path: 'my',
-				name: 'my',
+				path: '/me',
+				name: 'me',
 				meta: {
 					requireAuth: false,
-					pageTitle: '我的',
+					pageTitle: 'Me',
 					keepAlive: true
 				},
-				component: My,
+				component: Me,
 			},
 		]
 	},
+	//详情
+	{
+		path: '/detail',
+		name: 'detail',
+		meta: {
+			requireAuth: false,
+			pageTitle: 'Detail',
+			keepAlive: true
+		},
+		component: Detail,
+	},
+	//登陆
+	{
+		path: '/login',
+		name: 'login',
+		meta: {
+			requireAuth: false,  // 添加该字段，表示进入这个路由是需要登录的
+			pageTitle: '登录',
+			keepAlive: false
+		},
+		component: Login,
+	},
+
 
 
 	// {

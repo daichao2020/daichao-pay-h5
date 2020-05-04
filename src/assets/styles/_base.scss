@@ -24,6 +24,7 @@ html, body {
   height: 100%;
   line-height: 1.6;
   background-color: $background-color;
+  -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -106,7 +107,5 @@ a{
 .background-primary {
   @include background-primary;
 }
-.disabled {
-  background-color: #e4e4e4 !important;
-}
+
 

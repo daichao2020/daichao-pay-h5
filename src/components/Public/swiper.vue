@@ -96,8 +96,8 @@
 			}
 		},
 		mounted() {
-			this.getMemberCardList();
-			this.tweenUpdate();
+			//this.getMemberCardList();
+			//this.tweenUpdate();
 		},
 		methods: {
 			getMemberCardList(){

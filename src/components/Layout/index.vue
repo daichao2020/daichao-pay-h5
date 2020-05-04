@@ -1,6 +1,17 @@
 <template>
   <div class="app-frame">
-	  <router-view/>
+      <router-view />
+      <van-tabbar route>
+          <van-tabbar-item replace to="/home" icon="home-o">
+              Cash Money
+          </van-tabbar-item>
+          <van-tabbar-item replace to="/loanall" icon="apps-o">
+              Loan All
+          </van-tabbar-item>
+          <van-tabbar-item replace to="/me" icon="user-circle-o">
+              Me
+          </van-tabbar-item>
+      </van-tabbar>
   </div>
 </template>
 <script>
@@ -12,8 +23,8 @@
 		},
         mounted() {
 			//处理URL中的token参数
-			this.handleTokenFromURLParam();
-			this.getUserInfo();
+			//this.handleTokenFromURLParam();
+			//this.getUserInfo();
 		},
 		methods: {
 			handleTokenFromURLParam(){
