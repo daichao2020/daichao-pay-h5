@@ -15,14 +15,14 @@
 				<p class="user-name">{{ '未登录' }}</p>
 			</div>
 
-			<div class="custom-cell-area">
+			<!--<div class="custom-cell-area">
 				<van-cell title="URL 跳转" is-link url="/vant/mobile.html" />
 				<van-cell title="路由跳转" is-link to="index" />
 			</div>
 			<div class="custom-cell-area">
 				<van-cell title="URL 跳转" is-link url="/vant/mobile.html" />
 				<van-cell title="路由跳转" is-link to="index" />
-			</div>
+			</div>-->
 
 		</section>
 	</div>

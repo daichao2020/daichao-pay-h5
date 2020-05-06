@@ -13,35 +13,35 @@
 			<div class="detail-card-box">
 				<div class="product-preview-item flex">
 					<div class="item-hd">
-						<img src="@/assets/imgs/icons/googlepay.png">
+						<img :src="'../imgs/product/'+detail.img">
 					</div>
 					<div class="item-bd flex-1">
-						<p class="title">Loanflix</p>
-						<p class="desc">100% Online High Approval Rate</p>
+						<p class="title">{{ detail.name }}</p>
+						<p class="desc">{{ detail.desc }}</p>
 					</div>
 				</div>
 				<div class="product-detail-card">
 					<div class="flex bottom-line">
 						<div class="card-item flex-1">
 							<van-icon name="balance-o" />
-							<p class="title">1000-20000</p>
+							<p class="title">{{ detail.minAmount + ' - ' + detail.maxAmount }}</p>
 							<p class="desc">Amount</p>
 						</div>
 						<div class="card-item flex-1">
 							<van-icon name="underway-o" />
-							<p class="title">3-12</p>
+							<p class="title">{{ detail.tenure }}</p>
 							<p class="desc">Tenure(Months)</p>
 						</div>
 					</div>
 					<div class="flex">
 						<div class="card-item flex-1">
 							<van-icon name="discount" />
-							<p class="title">0.010%</p>
+							<p class="title">{{ detail.interest }}</p>
 							<p class="desc">Interest Rate(Per Daily)</p>
 						</div>
 						<div class="card-item flex-1">
 							<van-icon name="bill-o" />
-							<p class="title">0</p>
+							<p class="title">{{ detail.fee }}</p>
 							<p class="desc">Processing Fee</p>
 						</div>
 					</div>
@@ -55,20 +55,14 @@
 					</div>
 				</div>
 				<div class="panel-bd term-card">
-					<div class="term-item flex bottom-line">
+					<div class="term-item flex"
+						 :class="(index+1) === detail.eligibility.length?'':'bottom-line'"
+						 v-for="(item,index) in detail.eligibility" :key="item">
 						<div>
-							<label class="term-label">Eligibility Criteria</label>
+							<label class="term-label"><span v-show="index===0">Eligibility:</span></label>
 						</div>
 						<div class="flex-1">
-							<p>18-45 years old</p>
-						</div>
-					</div>
-					<div class="term-item flex">
-						<div>
-							<label class="term-label">Apply Requirements</label>
-						</div>
-						<div class="flex-1">
-							<p>Subject to app application</p>
+							<p>{{ (index+1) +'. '+ item }}</p>
 						</div>
 					</div>
 				</div>
@@ -89,22 +83,33 @@
 			</div>
         </section>
 		<footer class="page-footer">
-			<van-button type="primary" class="vip-btn"
+			<van-button type="primary" class="vip-btn" @click="toGooglePay"
 						block >Apply Nor</van-button>
 		</footer>
     </div>
 </template>
 <script>
+	import data from '@/data/index.js'
     export default {
         data(){
             return {
-
+				detail: null,
+            	id: this.$route.params.id || 0,
             }
         },
+		created(){
+        	let id = this.id;
+        	this.detail = data.list.filter((item)=>{
+        		return item.id == id;
+			})[0];
+		},
         methods: {
             onClickLeft() {
                 this.$router.go(-1);
-            }
+            },
+			toGooglePay(){
+            	location.href = this.detail.downloadUrl
+			}
         }
     }
 </script>

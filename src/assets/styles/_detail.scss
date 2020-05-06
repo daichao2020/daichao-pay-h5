@@ -58,10 +58,15 @@
   padding: 8PX;
   .term-label {
     display: block;
-    width: 300px;
+    width: 150px;
     word-wrap: break-word;
     word-break: break-all;
     color: #999;
+  }
+  &.bottom-line{
+    &::before{
+      left: 150px;
+    }
   }
 
 }

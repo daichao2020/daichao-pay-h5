@@ -1,23 +1,23 @@
 <template>
     <section>
         <div class="product-list">
-            <div class="product-item flex" @click="apply" v-for="item in 3" :key="item">
+            <div class="product-item flex" @click="apply(item.id)" v-for="item in list" :key="item.id">
                 <div class="item-hd">
-                    <img src="@/assets/imgs/icons/googlepay.png">
+                    <img :src="'../imgs/product/'+item.img">
                 </div>
                 <div class="item-bd flex-1">
-                    <p class="title">CashMama</p>
-                    <p class="desc">Max Amount:8000</p>
-                    <p class="desc">Tenure:3-4 Months</p>
-                    <p class="desc">Interest:0.010 / Daily</p>
-                    <p class="desc">Pro.Fee:0</p>
+                    <p class="title">{{ item.name }}</p>
+                    <p class="desc">Max Amount: {{ item.maxAmount }}</p>
+                    <p class="desc">Tenure: {{ item.tenure }} Months</p>
+                    <p class="desc">Interest: {{ item.interest }} / Daily</p>
+                    <p class="desc">Pro.Fee: {{ item.fee }}</p>
                 </div>
                 <div class="item-ft">
                     <van-button size="small" type="primary" class="vip-btn">Apply</van-button>
                 </div>
             </div>
         </div>
-        <van-empty class="product-list-empty"
+        <van-empty class="product-list-empty" v-if="false"
                    image="imgs/custom-empty-image.png"
                    description="No list">
             <van-button round block type="danger" class="bottom-button">
@@ -27,18 +27,19 @@
     </section>
 </template>
 <script>
+	import data from '@/data/index.js'
     export default {
         data(){
             return {
-
+            	list: data.list
             }
         },
         methods: {
-            apply(){
-                this.toDetailPage();
+            apply(id){
+                this.toDetailPage(id);
             },
-            toDetailPage(){
-                this.$router.push({name:'detail'});
+            toDetailPage(id){
+                this.$router.push({name:'detail', params: { id: id }});
             }
         }
     }
