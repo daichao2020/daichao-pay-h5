@@ -12,7 +12,7 @@
 				<div class="avatar">
 					<img class="head-img" src="@/assets/imgs/me/head.png">
 				</div>
-				<p class="user-name">{{ '未登录' }}</p>
+				<p class="user-name"></p>
 			</div>
 
 			<!--<div class="custom-cell-area">
