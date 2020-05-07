@@ -2,7 +2,7 @@
 	<div class="home-page">
 		<header>
 			<van-nav-bar
-					title="Cash wallet"
+					title="Cash Wallet"
 					fixed
 					placeholder
 			></van-nav-bar>

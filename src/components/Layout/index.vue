@@ -3,7 +3,7 @@
       <router-view />
       <van-tabbar route>
           <van-tabbar-item replace to="/home" icon="home-o">
-              Cash Money
+              Cash Wallet
           </van-tabbar-item>
           <van-tabbar-item replace to="/loanall" icon="apps-o">
               Loan All
