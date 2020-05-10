@@ -9,8 +9,7 @@
                     placeholder
             ></van-nav-bar>
         </header>
-		<van-skeleton title avatar :loading="skeletonLoading" :row="3" />
-        <section class="page-body" v-show="!skeletonLoading">
+        <section class="page-body">
 			<div class="detail-card-box">
 				<div class="product-preview-item flex">
 					<div class="item-hd">
@@ -96,19 +95,18 @@
     </div>
 </template>
 <script>
-	import { getProductDetailById } from '@/api/product'
+	import defaultData from '@/data/index'
 	import { getProductId,setProductId } from '@/utils/order'
 
     export default {
 		name: 'detail',
         data(){
             return {
-				skeletonLoading: true,
 				detail: {},
             	id: this.$route.params.id,
             }
         },
-		mounted(){
+		created(){
 
         	if(this.id){
 				setProductId(this.id);
@@ -120,10 +118,11 @@
 		},
         methods: {
 			getProductDetailById(){
-				getProductDetailById(this.id).then(res=>{
-					this.detail = res.data;
-					this.skeletonLoading = false;
-				})
+				let id = this.id;
+				let arr = defaultData.data.filter(item => {
+					return id === item.id;
+				});
+				this.detail = arr[0];
 			},
             onClickLeft() {
                 this.$router.go(-1);

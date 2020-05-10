@@ -11,9 +11,6 @@
           <van-tabbar-item replace to="/loanall" icon="apps-o">
               Loan All
           </van-tabbar-item>
-          <van-tabbar-item replace to="/me" icon="user-circle-o">
-              Me
-          </van-tabbar-item>
       </van-tabbar>
   </div>
 </template>

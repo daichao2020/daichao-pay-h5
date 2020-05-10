@@ -6,15 +6,16 @@ import { getToken } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
 
 
-const whiteList = ['/login'] // no redirect whitelist
+const whiteList = ['/login','/home','/loanall','refresh'] // no redirect whitelist
 
 router.beforeEach((to, from, next) => {
 
 	// set page title
 	document.title = getPageTitle(to.meta.title)
 
+	next()
 	// determine whether the user has logged in
-	const hasToken = getToken()
+	/*const hasToken = getToken()
 
 	if (hasToken) {
 		if (to.path === '/login') {
@@ -40,7 +41,7 @@ router.beforeEach((to, from, next) => {
 			}
 		}
 	} else {
-		/* has no token*/
+		/!* has no token*!/
 
 		if (whiteList.indexOf(to.path) !== -1) {
 			// in the free login whitelist, go directly
@@ -49,7 +50,7 @@ router.beforeEach((to, from, next) => {
 			// other pages that do not have permission to access are redirected to the login page.
 			next(`/login?redirect=${to.path}`)
 		}
-	}
+	}*/
 })
 
 router.afterEach(() => {
