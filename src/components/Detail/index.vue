@@ -1,5 +1,5 @@
 <template>
-    <div class="detail-page page">
+    <div class="default-page detail-page page">
         <header>
             <van-nav-bar
                     title="Person loan offers"
@@ -9,39 +9,40 @@
                     placeholder
             ></van-nav-bar>
         </header>
-        <section class="page-body">
+		<van-skeleton title avatar :loading="skeletonLoading" :row="3" />
+        <section class="page-body" v-show="!skeletonLoading">
 			<div class="detail-card-box">
 				<div class="product-preview-item flex">
 					<div class="item-hd">
-						<img :src="'../imgs/product/'+detail.img">
+						<img :src="detail.product_picture_url_qiniu">
 					</div>
 					<div class="item-bd flex-1">
-						<p class="title">{{ detail.name }}</p>
-						<p class="desc">{{ detail.desc }}</p>
+						<p class="title">{{ detail.product_name }}</p>
+						<p class="desc">{{ detail.product_title }}</p>
 					</div>
 				</div>
 				<div class="product-detail-card">
 					<div class="flex bottom-line">
 						<div class="card-item flex-1">
 							<van-icon name="balance-o" />
-							<p class="title">{{ detail.minAmount + ' - ' + detail.maxAmount }}</p>
+							<p class="title">{{ detail.amount_low + ' - ' + detail.amount_high }}</p>
 							<p class="desc">Amount</p>
 						</div>
 						<div class="card-item flex-1">
 							<van-icon name="underway-o" />
-							<p class="title">{{ detail.tenure }}</p>
+							<p class="title">{{ detail.divide_period_min + '-' + detail.divide_period_max }}</p>
 							<p class="desc">Tenure(Months)</p>
 						</div>
 					</div>
 					<div class="flex">
 						<div class="card-item flex-1">
 							<van-icon name="discount" />
-							<p class="title">{{ detail.interest }}</p>
+							<p class="title">{{ detail.daily_rate }}</p>
 							<p class="desc">Interest Rate(Per Daily)</p>
 						</div>
 						<div class="card-item flex-1">
 							<van-icon name="bill-o" />
-							<p class="title">{{ detail.fee }}</p>
+							<p class="title">{{ detail.pro_fee || 0 }}</p>
 							<p class="desc">Processing Fee</p>
 						</div>
 					</div>
@@ -55,14 +56,20 @@
 					</div>
 				</div>
 				<div class="panel-bd term-card">
-					<div class="term-item flex"
-						 :class="(index+1) === detail.eligibility.length?'':'bottom-line'"
-						 v-for="(item,index) in detail.eligibility" :key="item">
+					<div class="term-item flex">
 						<div>
-							<label class="term-label"><span v-show="index===0">Eligibility:</span></label>
+							<label class="term-label"><span>Eligibility Criteria:</span></label>
 						</div>
 						<div class="flex-1">
-							<p>{{ (index+1) +'. '+ item }}</p>
+							<p>{{ detail.apply_condition }}</p>
+						</div>
+					</div>
+					<div class="term-item flex">
+						<div>
+							<label class="term-label"><span>Apply Requirements:</span></label>
+						</div>
+						<div class="flex-1">
+							<p>{{ detail.apply_doc }}</p>
 						</div>
 					</div>
 				</div>
@@ -89,26 +96,40 @@
     </div>
 </template>
 <script>
-	import data from '@/data/index.js'
+	import { getProductDetailById } from '@/api/product'
+	import { getProductId,setProductId } from '@/utils/order'
+
     export default {
+		name: 'detail',
         data(){
             return {
-				detail: null,
-            	id: this.$route.params.id || 0,
+				skeletonLoading: true,
+				detail: {},
+            	id: this.$route.params.id,
             }
         },
-		created(){
-        	let id = this.id;
-        	this.detail = data.list.filter((item)=>{
-        		return item.id == id;
-			})[0];
+		mounted(){
+
+        	if(this.id){
+				setProductId(this.id);
+			}else {
+        		this.id = getProductId();
+			}
+
+			this.getProductDetailById();
 		},
         methods: {
+			getProductDetailById(){
+				getProductDetailById(this.id).then(res=>{
+					this.detail = res.data;
+					this.skeletonLoading = false;
+				})
+			},
             onClickLeft() {
                 this.$router.go(-1);
             },
 			toGooglePay(){
-            	location.href = this.detail.downloadUrl
+            	location.href = this.detail.jump_url
 			}
         }
     }

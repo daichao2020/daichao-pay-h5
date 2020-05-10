@@ -1,5 +1,5 @@
 <template>
-	<div class="me-page">
+	<div class="default-page me-page">
 		<header>
 			<van-nav-bar
 					title="Me"
@@ -10,19 +10,19 @@
 		<section class="page-body">
 			<div class="user-info">
 				<div class="avatar">
-					<img class="head-img" src="@/assets/imgs/me/head.png">
+					<img class="head-img" :src="userInfo.avatar || 'imgs/me/head.png'">
 				</div>
-				<p class="user-name"></p>
+				<p class="user-name" v-if="userInfo.phone_number">{{ userInfo.nickname || userInfo.phone_number }}</p>
 			</div>
 
-			<!--<div class="custom-cell-area">
-				<van-cell title="URL 跳转" is-link url="/vant/mobile.html" />
-				<van-cell title="路由跳转" is-link to="index" />
+			<div class="custom-cell-area">
+				<van-cell title="Feedback" is-link to="/feedback" />
+				<van-cell title="Set NickName" is-link to="/setnickname" />
+				<van-cell title="Modify Head Portrait" is-link to="/setavatar" />
 			</div>
 			<div class="custom-cell-area">
-				<van-cell title="URL 跳转" is-link url="/vant/mobile.html" />
-				<van-cell title="路由跳转" is-link to="index" />
-			</div>-->
+				<van-cell title="Logout" is-link @click="logout" />
+			</div>
 
 		</section>
 	</div>
@@ -35,6 +35,18 @@
 			}
 		},
 		mounted() {
+
+		},
+		computed: {
+			userInfo(){
+				return this.$store.getters.info
+			},
+		},
+		methods: {
+			async logout() {
+				await this.$store.dispatch('user/logout')
+				this.$router.push(`/login?redirect=${this.$route.fullPath}`)
+			},
 		}
 	}
 </script>

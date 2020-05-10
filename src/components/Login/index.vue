@@ -1,5 +1,5 @@
 <template>
-    <div class="login-page">
+    <div class="login-page default-page">
         <header>
             <van-nav-bar
                     title="Sign in"
@@ -8,12 +8,12 @@
             ></van-nav-bar>
         </header>
         <section class="login-page-body">
-            <van-form ref="login_form">
+            <div ref="login_form">
                 <van-field
                         readonly
                         clickable
                         name="picker"
-                        :value="countryCode"
+                        :value="countryCodeText"
                         label="Country"
                         placeholder="Please select country code"
                         right-icon="arrow"
@@ -30,18 +30,20 @@
                 <van-field
                         v-model="telephone"
                         name="telephone"
-                        label="telephone"
+						type="tel"
+                        label="Telephone"
                         placeholder="Please enter telephone"
                 />
                 <van-field
                         v-model="code"
                         center
                         clearable
+						type="digit"
                         label="Code"
                         placeholder="Please enter code"
                 >
                     <template #button>
-                        <van-button size="small" type="primary" class="vip-btn"
+                        <van-button size="small" type="default" class="vip-btn"
                                     :disabled="isGetting"
                                     @click="getCode">{{isGetting?$t('btn.smsCountDown',[count]):'Get Code'}}</van-button>
                     </template>
@@ -51,33 +53,60 @@
                                 :disabled="isSubmitting"
                                 :loading="isSubmitting"
                                 loading-text="Submitting..."
-                                @click="submit"
+								@click="onSubmit"
                                 block>Sign in</van-button>
                 </div>
-            </van-form>
+            </div>
         </section>
 
     </div>
 </template>
 <script>
+	import { getCountryCodes,getVerificationCodes } from '@/api/user'
+	import defaultSettings from '@/settings'
     export default {
         data(){
             return {
-                countryCode: 'India 0091',
-                columns: ['India 0091', 'India 0091', 'India 0091', 'India 0091', 'India 0091'],
+				countryCodeText: 'India 0091',
+                countryCode: '0091',
+
+                columns: [],
                 showPicker: false,
 
-                telephone: '',
+                telephone: '',//9829666666
                 code: '',
+                codekey: '',
                 isGetting: false,
                 gettingText: '',
                 count: 10,
+                COUNT_DEFAULT: 10,
                 isSubmitting: false,
             }
         },
+		created(){
+			getCountryCodes().then((res)=>{
+				const list = res.data || [];
+				list.sort((item1,item2)=>{
+					if(item1.is_hot < item2.is_hot){
+						return 1;
+					}else if(item1.is_hot > item2.is_hot){
+						return -1;
+					}else{
+						return 0;
+					}
+				});
+				list.forEach((item)=>{
+					item.text = item.name +' '+ item.intl_code;
+				});
+				this.columns = list;
+			});
+		},
         methods: {
             onConfirm(value) {
-                this.value = value;
+
+                this.countryCode = value.intl_code;
+                this.countryCodeText = value.text;
+
                 this.showPicker = false;
             },
             getCode(){
@@ -85,6 +114,9 @@
                     this.$toast('Please enter telephone');
                     return false;
                 }
+                if(this.isGetting){
+                	return false;
+				}
                 this.isGetting = true;
 
                 const countDownFn = ()=>{
@@ -97,9 +129,46 @@
                 }
                 countDownFn();
 
+				getVerificationCodes({
+					intl_code: this.countryCode,
+					phone_number: this.telephone
+				}).then((res)=>{
+					this.codekey = res.data.key;
+					this.isGetting = false;
+					this.count = this.COUNT_DEFAULT;
+				}).catch((e)=>{
+					this.isGetting = false;
+					this.count = this.COUNT_DEFAULT;
+				})
+
             },
-            submit(){
-                this.toHomePage();
+            onSubmit(){
+				if(!this.telephone){
+					this.$toast('Please enter telephone');
+					return false;
+				}
+				if(!this.code){
+					this.$toast('Please enter code');
+					return false;
+				}
+
+
+				this.isSubmitting = true;
+				this.$store.dispatch('user/login', {
+					verification_key: this.codekey,
+					verification_code: this.code,
+					device_number: defaultSettings.device_number,
+					platform: defaultSettings.platform,
+					app_version_id: defaultSettings.app_version_id,
+				})
+					.then(() => {
+						this.isSubmitting = false;
+						this.toHomePage();
+					})
+					.catch(() => {
+						this.isSubmitting = false
+					})
+
             },
             toHomePage(){
                 this.$router.push({name:'home'});

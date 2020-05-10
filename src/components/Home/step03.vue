@@ -1,5 +1,5 @@
 <template>
-	<div class="status-page page">
+	<div class="default-page status-page page">
 		<section class="msg-waiting" v-if="pageShow==1">
 			<div class="pay-msg">
 				<div class="pay-msg__icon-area">

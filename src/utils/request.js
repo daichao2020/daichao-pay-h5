@@ -1,7 +1,9 @@
 import axios from 'axios'
 import store from '@/store'
+import router from '@/router';
 import { Dialog,Toast } from 'vant'
-import { getToken } from '@/utils/auth'
+import { getToken,getTokenType } from '@/utils/auth'
+import { getLanguage } from '@/i18n/index'
 
 // create an axios instance
 const service = axios.create({
@@ -22,7 +24,10 @@ service.interceptors.request.use(
 				config.params = {}
 			}
 			config.params['token'] = getToken()
+			config.headers['Authorization'] = getTokenType() +' '+ getToken()//Authorization: Bearer + access_token
 		}
+		config.headers['Accept-Language'] = getLanguage();//Accept-Language:en
+
 		return config
 	},
 	error => {
@@ -47,12 +52,15 @@ service.interceptors.response.use(
 	response => {
 		const res = response.data
 
+		store.dispatch('network/changeNetworkSuccess',true)
+
 		// if the custom code is not 20000, it is judged as an error.
 		const { data, meta } = res;
 
-		if (meta.code !== 0) {
+
+		if (meta && meta.message !== 'success' ) {
 			Toast({
-				message: meta.message || '服务器响应错误',
+				message: meta.message || 'Server ist falsch',
 				type: 'fail',
 				position: 'bottom',
 				duration: 3 * 1000
@@ -63,21 +71,41 @@ service.interceptors.response.use(
 			return res
 		}
 	},
-	function (error){
+	error => {
+		const { response } = error;
 		//(error.response && error.response.status !== 200
-		if(error.response && error.response.status !== 200){
-			Toast({
-				message: error.response.data.message,
-				type: 'fail',
-				position: 'bottom',
-				duration: 3 * 1000
-			})
+		if(response && response.status !== 200){
+
+			if(error.response.status === 401){//token过期，重新登录
+				// to re-login
+				Dialog.confirm({
+					title: 'Confirm logout',
+					message: 'You have been logged out, you can cancel to stay on this page, or log in again',
+					confirmButtonText: 'Re-Login',
+					cancelButtonText: 'Cancel',
+					type: 'warning'
+				}).then(() => {
+					store.dispatch('user/resetToken').then(() => {
+						location.reload()
+					})
+				})
+
+			}else{
+				Toast({
+					message: response.data.message,
+					type: 'fail',
+					position: 'bottom',
+					duration: 3 * 1000
+				})
+			}
+
 		}else{
-			Toast({
-				message: error.message,
-				type: 'fail',
-				position: 'bottom',
-				duration: 3 * 1000
+			// 处理断网的情况
+			// eg:请求超时或断网时，更新state的network状态
+			// network状态在app.vue中控制着一个全局的断网提示组件的显示隐藏
+			// 关于断网组件中的刷新重新获取数据，会在断网组件中说明
+			store.dispatch('network/changeNetworkSuccess',false).then(() => {
+				router.push({path:'refresh'})
 			})
 		}
 

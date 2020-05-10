@@ -1,5 +1,5 @@
 <template>
-	<div class="step-page">
+	<div class="default-page step-page">
 		<header>
 			<van-nav-bar
 					title="UPI"

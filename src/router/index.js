@@ -1,22 +1,13 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-const _import = require('./_import_' + process.env.VUE_APP_ENV);
+import Router from 'vue-router'
 
-const Login = _import('Login/index');//登陆
-const Layout = _import('Layout/index');//框架
-const Home = _import('Home/index');//
-const LoanAll = _import('LoanAll/index');//
-const Detail = _import('Detail/index');//
-const Me = _import('Me/index');//
+Vue.use(Router)
 
-const Step01 = _import('Home/step01');//
-const Step02 = _import('Home/step02');//
-const Step03 = _import('Home/step03');//
+/* Layout */
+import Layout from '@/components/Layout/index'
+import refresh from '@/components/Error/refresh'
 
-
-Vue.use(VueRouter)
-
-const routes = [
+export const constantRoutes = [
 	{
 		path: '/',
 		component: Layout,
@@ -27,33 +18,30 @@ const routes = [
 				path: '/home',
 				name: 'home',
 				meta: {
-					requireAuth: false,  // 添加该字段，表示进入这个路由是需要登录的
-					pageTitle: 'Home',
-					keepAlive: false
+					title: 'Home',
+					keepAlive: true
 				},
-				component: Home,
+				component: () => import('@/components/Home/index'),
 			},
 			//列表
 			{
 				path: '/loanall',
 				name: 'loanall',
 				meta: {
-					requireAuth: false,  // 添加该字段，表示进入这个路由是需要登录的
-					pageTitle: 'Loan All',
-					keepAlive: false
+					title: 'Loan All',
+					keepAlive: true
 				},
-				component: LoanAll,
+				component: () => import('@/components/LoanAll/index'),
 			},
 			//我
 			{
 				path: '/me',
 				name: 'me',
 				meta: {
-					requireAuth: false,
-					pageTitle: 'Me',
+					title: 'Me',
 					keepAlive: true
 				},
-				component: Me,
+				component: () => import('@/components/Me/index'),
 			},
 		]
 	},
@@ -62,22 +50,60 @@ const routes = [
 		path: '/detail',
 		name: 'detail',
 		meta: {
-			requireAuth: false,
-			pageTitle: 'Detail',
-			keepAlive: true
+			title: 'Detail',
+			keepAlive: false
 		},
-		component: Detail,
+		component: () => import('@/components/Detail/index'),
 	},
 	//登陆
 	{
 		path: '/login',
 		name: 'login',
 		meta: {
-			requireAuth: false,  // 添加该字段，表示进入这个路由是需要登录的
-			pageTitle: '登录',
-			keepAlive: false
+			title: 'Sign in',
+			keepAlive: true
 		},
-		component: Login,
+		component: () => import('@/components/Login/index'),
+	},
+	//feedback
+	{
+		path: '/feedback',
+		name: 'feedback',
+		meta: {
+			title: 'Feedback',
+			keepAlive: true
+		},
+		component: () => import('@/components/Me/feedback'),
+	},
+	//setnickname
+	{
+		path: '/setnickname',
+		name: 'setnickname',
+		meta: {
+			title: 'Set Nickname',
+			keepAlive: true
+		},
+		component: () => import('@/components/Me/setNickname'),
+	},
+	//setnickname
+	{
+		path: '/setavatar',
+		name: 'setavatar',
+		meta: {
+			title: 'Modify Head Portrait',
+			keepAlive: true
+		},
+		component: () => import('@/components/Me/setAvatar'),
+	},
+	//refresh
+	{
+		path: '/refresh',
+		name: 'refresh',
+		meta: {
+			title: 'Refresh',
+			keepAlive: true
+		},
+		component: refresh,
 	},
 
 
@@ -91,9 +117,19 @@ const routes = [
 	// 	component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
 	// }
 ]
-
-const router = new VueRouter({
-	routes
+const createRouter = () => new Router({
+	// mode: 'history', // require service support
+	scrollBehavior: () => ({ y: 0 }),
+	routes: constantRoutes
 })
 
+const router = createRouter()
+
+// Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
+export function resetRouter() {
+	const newRouter = createRouter()
+	router.matcher = newRouter.matcher // reset router
+}
+
 export default router
+

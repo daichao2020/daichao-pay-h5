@@ -1,6 +1,9 @@
 <template>
   <div class="app-frame">
-      <router-view />
+	  <keep-alive>
+		  <router-view v-if="$route.meta.keepAlive"/>
+	  </keep-alive>
+	  <router-view v-if="!$route.meta.keepAlive"/>
       <van-tabbar route>
           <van-tabbar-item replace to="/home" icon="home-o">
               Cash Wallet

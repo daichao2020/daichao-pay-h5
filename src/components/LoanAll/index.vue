@@ -1,5 +1,5 @@
 <template>
-    <div class="loan-all-page">
+    <div class="default-page loan-all-page">
         <header>
             <van-nav-bar
                     title="Loan All"

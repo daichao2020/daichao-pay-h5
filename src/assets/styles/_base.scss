@@ -108,4 +108,11 @@ a{
   @include background-primary;
 }
 
-
+.van-skeleton{
+  margin: 24px 0;
+}
+.van-skeleton__avatar,
+.van-skeleton__row,
+.van-skeleton__title{
+  background-color: #fff;
+}

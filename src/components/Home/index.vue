@@ -1,5 +1,5 @@
 <template>
-	<div class="home-page">
+	<div class="default-page home-page">
 		<header>
 			<van-nav-bar
 					title="Cash Wallet"
@@ -40,6 +40,7 @@
 		},
 		data(){
 			return {
+
 			}
 		},
 		mounted(){

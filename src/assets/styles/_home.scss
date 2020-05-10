@@ -1,9 +1,4 @@
-.login-page,
-.home-page,
-.loan-all-page,
-.detail-page,
-.me-page,
-.step-page{
+.default-page{
   .van-nav-bar{
     @include background-primary;
     z-index: 2;
@@ -21,6 +16,7 @@
   }
   .vip-btn{
     @include btn-background-primary;
+    color: #fff;
     border: none;
     border-radius: 8PX;
   }
@@ -37,6 +33,7 @@
     -webkit-overflow-scrolling: touch;
   }
 }
+
 .home-swiper{
   img{
     display: block;

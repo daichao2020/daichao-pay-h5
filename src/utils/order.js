@@ -1,4 +1,5 @@
 const ProductInfoKey = 'Product-Info';
+const ProductIdKey = 'Product-Id';
 const PaymentOptionInfoKey = 'Payment-Option-Info';
 const OrderInfoKey = 'Order-Info';
 
@@ -12,6 +13,18 @@ export function setProductInfo(info) {
 
 export function removeProductInfo() {
 	sessionStorage.removeItem(ProductInfoKey);
+}
+
+export function getProductId() {
+	return JSON.parse(sessionStorage.getItem(ProductIdKey) || 'null');
+}
+
+export function setProductId(id) {
+	sessionStorage.setItem(ProductIdKey, JSON.stringify(id));
+}
+
+export function removeProductId() {
+	sessionStorage.removeItem(ProductIdKey);
 }
 
 
