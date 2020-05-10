@@ -13,7 +13,7 @@
 			<div class="detail-card-box">
 				<div class="product-preview-item flex">
 					<div class="item-hd">
-						<img :src="detail.product_picture_url_qiniu">
+						<img :src="'/imgs/product/'+detail.id+'.png'">
 					</div>
 					<div class="item-bd flex-1">
 						<p class="title">{{ detail.product_name }}</p>
