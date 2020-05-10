@@ -2,7 +2,7 @@
 	<div class="default-page page">
 		<header>
 			<van-nav-bar
-					title="Cash Wallet"
+					title="Network Error"
 					fixed
 					left-arrow
 					@click-left="onClickLeft"

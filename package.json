@@ -10,6 +10,7 @@
     "@tweenjs/tween.js": "^18.5.0",
     "amfe-flexible": "^2.2.1",
     "core-js": "^3.6.5",
+    "http-server": "^0.12.3",
     "js-cookie": "^2.2.1",
     "nprogress": "^0.2.0",
     "swiper": "^5.3.8",
