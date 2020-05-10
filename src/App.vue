@@ -1,12 +1,25 @@
 <template>
   <div id="app">
 	  <keep-alive>
-		  <router-view v-if="$route.meta.keepAlive"/>
+		  <router-view v-if="$route.meta.keepAlive && networkSuccess"/>
 	  </keep-alive>
-	  <router-view v-if="!$route.meta.keepAlive"/>
+	  <router-view v-if="!$route.meta.keepAlive || !networkSuccess"/>
   </div>
 </template>
+<script>
+	export default {
+		data(){
+			return{
 
+			}
+		},
+		computed: {
+			networkSuccess(){
+				return this.$store.getters.networkSuccess
+			}
+		}
+	}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
