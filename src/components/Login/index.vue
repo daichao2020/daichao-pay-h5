@@ -78,8 +78,8 @@
                 codekey: '',
                 isGetting: false,
                 gettingText: '',
-                count: 10,
-                COUNT_DEFAULT: 10,
+                count: 60,
+                COUNT_DEFAULT: 60,
                 isSubmitting: false,
             }
         },
