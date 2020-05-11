@@ -128,7 +128,19 @@
                 this.$router.go(-1);
             },
 			toGooglePay(){
-            	location.href = this.detail.jump_url
+				let jump_url = this.detail.jump_url;
+
+				try {
+					let t = new Date().getTime();
+					jsApi.requireAsync('openbrowser', t, JSON.stringify({
+						"reqId": t,
+						"openUrl": jump_url
+					}));
+
+				}catch (e) {
+					location.href = jump_url
+				}
+
 			}
         }
     }
