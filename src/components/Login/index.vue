@@ -164,7 +164,7 @@
 				this.$store.dispatch('user/login', {
 					verification_key: this.codekey,
 					verification_code: this.code,
-					device_number: defaultSettings.device_number,
+					device_number: this.$store.getters.deviceNumber,
 					platform: defaultSettings.platform,
 					app_version_id: defaultSettings.app_version_id,
 				})
