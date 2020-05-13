@@ -1,6 +1,6 @@
 <template>
 	<div class="default-page set-nickname-page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
 					title="Set Nickname"
 					fixed
@@ -50,6 +50,11 @@
 			this.newNickname = this.userInfo.nickname || '';
 		},
 		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 			userInfo(){
 				return this.$store.getters.info
 			}

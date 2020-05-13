@@ -1,6 +1,6 @@
 <template>
 	<div class="default-page set-avatar-page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
 					title="Modify Head Portrait"
 					fixed
@@ -53,6 +53,11 @@
 			this.avatar = this.userInfo.avatar || '';
 		},
 		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 			userInfo(){
 				return this.$store.getters.info
 			}

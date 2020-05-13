@@ -1,6 +1,6 @@
 <template>
     <div class="default-page loan-all-page">
-        <header>
+        <header v-if="isShowHeader">
             <van-nav-bar
                     title="Loan All"
                     fixed
@@ -22,7 +22,14 @@
             return {
 
             }
-        }
+        },
+		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
+		},
     }
 </script>
 

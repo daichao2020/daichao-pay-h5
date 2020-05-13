@@ -1,6 +1,6 @@
 <template>
 	<div class="default-page me-page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
 					title="Me"
 					fixed
@@ -38,6 +38,11 @@
 
 		},
 		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 			userInfo(){
 				return this.$store.getters.info
 			},

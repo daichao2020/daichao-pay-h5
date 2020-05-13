@@ -1,6 +1,6 @@
 <template>
 	<div class="default-page feedback-page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
 					title="Feedback"
 					fixed
@@ -46,6 +46,13 @@
 				message: '',
 				isSubmitting: false,
 			}
+		},
+		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 		},
 		methods: {
 			onClickLeft() {

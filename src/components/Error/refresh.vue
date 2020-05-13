@@ -1,6 +1,6 @@
 <template>
 	<div class="default-page page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
 					title="Network Error"
 					fixed
@@ -31,9 +31,14 @@
 			return {}
 		},
 		computed:{
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 			networkSuccess(){
 				return this.$store.getters.networkSuccess
-			}
+			},
 		},
 		methods: {
 			onClickLeft() {

@@ -19,9 +19,10 @@ export const constantRoutes = [
 				name: 'home',
 				meta: {
 					title: 'Home',
+					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import('@/components/Home/index'),
+				component: () => import(/* webpackChunkName: "first-group" */'@/components/Home/index'),
 			},
 			//列表
 			{
@@ -29,9 +30,10 @@ export const constantRoutes = [
 				name: 'loanall',
 				meta: {
 					title: 'Loan All',
+					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import('@/components/LoanAll/index'),
+				component: () => import(/* webpackChunkName: "first-group" */'@/components/LoanAll/index'),
 			},
 			//我
 			{
@@ -39,9 +41,10 @@ export const constantRoutes = [
 				name: 'me',
 				meta: {
 					title: 'Me',
+					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import('@/components/Me/index'),
+				component: () => import(/* webpackChunkName: "first-group" */'@/components/Me/index'),
 			},
 		]
 	},
@@ -51,6 +54,7 @@ export const constantRoutes = [
 		name: 'detail',
 		meta: {
 			title: 'Detail',
+			showHeader: false,
 			keepAlive: false
 		},
 		component: () => import('@/components/Detail/index'),
@@ -61,6 +65,7 @@ export const constantRoutes = [
 		name: 'login',
 		meta: {
 			title: 'Sign in',
+			showHeader: false,
 			keepAlive: true
 		},
 		component: () => import('@/components/Login/index'),
@@ -71,6 +76,7 @@ export const constantRoutes = [
 		name: 'feedback',
 		meta: {
 			title: 'Feedback',
+			showHeader: false,
 			keepAlive: true
 		},
 		component: () => import('@/components/Me/feedback'),
@@ -81,6 +87,7 @@ export const constantRoutes = [
 		name: 'setnickname',
 		meta: {
 			title: 'Set Nickname',
+			showHeader: false,
 			keepAlive: true
 		},
 		component: () => import('@/components/Me/setNickname'),
@@ -91,6 +98,7 @@ export const constantRoutes = [
 		name: 'setavatar',
 		meta: {
 			title: 'Modify Head Portrait',
+			showHeader: false,
 			keepAlive: true
 		},
 		component: () => import('@/components/Me/setAvatar'),
@@ -101,6 +109,7 @@ export const constantRoutes = [
 		name: 'refresh',
 		meta: {
 			title: 'Refresh',
+			showHeader: false,
 			keepAlive: true
 		},
 		component: refresh,

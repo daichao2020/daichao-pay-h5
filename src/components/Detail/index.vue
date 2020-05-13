@@ -1,6 +1,6 @@
 <template>
     <div class="default-page detail-page page">
-        <header>
+        <header v-if="isShowHeader">
             <van-nav-bar
                     title="Person loan offers"
                     fixed
@@ -117,6 +117,13 @@
 			}
 
 			this.getProductDetailById();
+		},
+		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 		},
         methods: {
 			getProductDetailById(){
