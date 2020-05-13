@@ -13,6 +13,11 @@ router.beforeEach((to, from, next) => {
 	// set page title
 	document.title = getPageTitle(to.meta.title)
 
+	if(to.query && to.query.device_number){
+		store.dispatch('user/setDeviceNumber',to.query.device_number)
+	}
+
+
 	next()
 	// determine whether the user has logged in
 	/*const hasToken = getToken()

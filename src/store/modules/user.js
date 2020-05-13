@@ -1,5 +1,6 @@
 import { login, logout, getInfo, reLogin } from '@/api/user'
-import { getToken, setToken, removeToken, getTokenType, setTokenType, removeTokenType } from '@/utils/auth'
+import { getToken, setToken, removeToken, getTokenType, setTokenType, removeTokenType
+	,getDeviceNumber,setDeviceNumber,removeDeviceNumber } from '@/utils/auth'
 
 const getDefaultState = () => {
 	return {
@@ -7,6 +8,7 @@ const getDefaultState = () => {
 		phoneNumber: '',
 		tokenType: getTokenType(),
 		info: {},
+		deviceNumber: getDeviceNumber(),
 	}
 }
 
@@ -27,6 +29,9 @@ const mutations = {
 	},
 	SET_INFO: (state, info) => {
 		state.info = info
+	},
+	SET_DEVICE_NUMBER: (state, deviceNumber) => {
+		state.deviceNumber = deviceNumber
 	}
 }
 
@@ -94,6 +99,11 @@ const actions = {
 
 	setInfo({ commit, state },data) {
 		commit('SET_INFO', data)
+	},
+
+	setDeviceNumber({ commit, state },deviceNumber) {
+		commit('SET_DEVICE_NUMBER', deviceNumber)
+		setDeviceNumber(deviceNumber);
 	},
 
 	// user logout
