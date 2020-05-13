@@ -1,6 +1,6 @@
 <template>
     <div class="login-page default-page">
-        <header>
+        <header v-if="isShowHeader">
             <van-nav-bar
                     title="Sign in"
                     fixed
@@ -78,8 +78,8 @@
                 codekey: '',
                 isGetting: false,
                 gettingText: '',
-                count: 10,
-                COUNT_DEFAULT: 10,
+                count: 60,
+                COUNT_DEFAULT: 60,
                 isSubmitting: false,
             }
         },
@@ -100,6 +100,13 @@
 				});
 				this.columns = list;
 			});
+		},
+		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 		},
         methods: {
             onConfirm(value) {

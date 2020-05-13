@@ -1,6 +1,6 @@
 <template>
 	<div class="default-page home-page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
 					title="Cash Wallet"
 					fixed
@@ -45,6 +45,13 @@
 		},
 		mounted(){
 
+		},
+		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 		},
 		methods: {
 			onClickLeft() {

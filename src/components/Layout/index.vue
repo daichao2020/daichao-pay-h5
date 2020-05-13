@@ -4,7 +4,7 @@
 		  <router-view v-if="$route.meta.keepAlive"/>
 	  </keep-alive>
 	  <router-view v-if="!$route.meta.keepAlive"/>
-      <van-tabbar route>
+      <van-tabbar route v-if="isShowFooter">
           <van-tabbar-item replace to="/home" icon="home-o">
               Cash Wallet
           </van-tabbar-item>
@@ -18,7 +18,7 @@
 	export default {
 		data() {
 			return {
-
+				isShowFooter: false,
 			}
 		},
         mounted() {

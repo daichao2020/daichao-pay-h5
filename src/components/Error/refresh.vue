@@ -1,8 +1,8 @@
 <template>
 	<div class="default-page page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
-					title="Cash Wallet"
+					title="Network Error"
 					fixed
 					left-arrow
 					@click-left="onClickLeft"
@@ -31,9 +31,14 @@
 			return {}
 		},
 		computed:{
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 			networkSuccess(){
 				return this.$store.getters.networkSuccess
-			}
+			},
 		},
 		methods: {
 			onClickLeft() {

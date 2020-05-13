@@ -4,7 +4,8 @@ const title = defaultSettings.title || 'Cash Wallet'
 
 export default function getPageTitle(pageTitle) {
   if (pageTitle) {
-    return `${pageTitle} - ${title}`
+    //return `${pageTitle} - ${title}`
+    return `${pageTitle}`
   }
   return `${title}`
 }
