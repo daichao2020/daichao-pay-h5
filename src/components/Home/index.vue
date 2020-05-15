@@ -65,6 +65,8 @@
 					this.skeletonLoading = false;
 					const { data } = res;
 					this.list = data.special || []
+				}).catch(e=>{
+
 				})
 			},
 		}
