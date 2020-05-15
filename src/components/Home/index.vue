@@ -7,28 +7,30 @@
 					placeholder
 			></van-nav-bar>
 		</header>
-		<section class="home-page-body page-body">
-			<productSwiper></productSwiper>
+		<van-pull-refresh v-model="isPullRefresh" @refresh="onRefresh">
+			<section class="home-page-body page-body">
+				<productSwiper></productSwiper>
 
-			<div class="panel">
-				<div class="panel-hd">
-					<div class="heading-item flex">
-						<van-icon class="icon" name="fire" />
-						<div class="heading-item-bd flex-1">
-							<p class="title">Personnal Loan</p>
-							<p class="desc">Unsecred Loan for persional purpose</p>
+				<div class="panel">
+					<div class="panel-hd">
+						<div class="heading-item flex">
+							<van-icon class="icon" name="fire" />
+							<div class="heading-item-bd flex-1">
+								<p class="title">Personnal Loan</p>
+								<p class="desc">Unsecred Loan for persional purpose</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel-bd">
+						<van-skeleton title :loading="skeletonLoading" :row="3" />
+						<div class="product-list">
+							<productItem v-for="item in list" :key="item.id" :item="item"></productItem>
 						</div>
 					</div>
 				</div>
-				<div class="panel-bd">
-					<van-skeleton title :loading="skeletonLoading" :row="3" />
-					<div class="product-list">
-						<productItem v-for="item in list" :key="item.id" :item="item"></productItem>
-					</div>
-				</div>
-			</div>
 
-		</section>
+			</section>
+		</van-pull-refresh>
 	</div>
 </template>
 <script>
@@ -46,6 +48,7 @@
 		data(){
 			return {
 				list: [],
+				isPullRefresh: false,
 				skeletonLoading: true,
 			}
 		},
@@ -60,13 +63,17 @@
 			},
 		},
 		methods: {
+			onRefresh(){
+				this.getHomeProducts().then(()=>{
+					this.isPullRefresh = false
+				})
+
+			},
 			getHomeProducts(){
-				getHomeProducts().then(res=>{
+				return getHomeProducts().then(res=>{
 					this.skeletonLoading = false;
 					const { data } = res;
 					this.list = data.special || []
-				}).catch(e=>{
-
 				})
 			},
 		}
