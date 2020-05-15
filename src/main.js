@@ -17,13 +17,14 @@ Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 import '@/permission' // permission control
 
 import {
-    Button, Cell, CellGroup,Dialog,Toast,NavBar,Swipe, SwipeItem,
+    Button, Cell, CellGroup,Dialog,Toast,NavBar,
     Divider,RadioGroup,Radio,Field,Icon,Loading,CountDown,Circle,Skeleton,Form,Picker,Popup,
-    Tabbar,TabbarItem,Empty,List,Uploader,PullRefresh
+    Tabbar,TabbarItem,Empty,List,Uploader,PullRefresh,Image as VanImage,Lazyload
 } from 'vant'
-Vue.use(Button).use(Cell).use(CellGroup).use(Dialog).use(Toast).use(NavBar).use(Swipe).use(SwipeItem)
+Vue.use(Button).use(Cell).use(CellGroup).use(Dialog).use(Toast).use(NavBar)
     .use(Divider).use(RadioGroup).use(Radio).use(Field).use(Icon).use(Loading).use(CountDown).use(Circle)
-    .use(Skeleton).use(Form).use(Picker).use(Popup).use(Tabbar).use(TabbarItem).use(Empty).use(List).use(Uploader).use(PullRefresh)
+    .use(Skeleton).use(Form).use(Picker).use(Popup).use(Tabbar).use(TabbarItem).use(Empty).use(List).use(Uploader)
+	.use(PullRefresh).use(VanImage).use(Lazyload)
 
 Vue.config.productionTip = false
 

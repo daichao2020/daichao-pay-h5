@@ -8,10 +8,7 @@
     background: #fff;
     border-radius: 8PX;
     @include box-shadow;
-    img{
-      display: block;
-      width: 100%;
-      max-width: 160px;
+    .van-image{
       margin-right: 16PX;
     }
     .title{

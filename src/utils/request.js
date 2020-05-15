@@ -26,6 +26,18 @@ service.interceptors.request.use(
 			config.params['token'] = getToken()
 			config.headers['Authorization'] = getTokenType() +' '+ getToken()//Authorization: Bearer + access_token
 		}
+
+		if (store.getters.deviceNumber) {
+			// let each request carry token
+			// please modify it according to the actual situation
+			if(!config.params){
+				config.params = {}
+			}
+			config.params['device_number'] = store.getters.deviceNumber
+			config.params['platform'] = store.getters.platform
+			config.params['app_version_id'] = store.getters.appVersionId
+		}
+
 		config.headers['Accept-Language'] = getLanguage();//Accept-Language:en
 
 		return config

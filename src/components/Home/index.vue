@@ -21,7 +21,10 @@
 					</div>
 				</div>
 				<div class="panel-bd">
-					<productList></productList>
+					<van-skeleton title :loading="skeletonLoading" :row="3" />
+					<div class="product-list">
+						<productItem v-for="item in list" :key="item.id" :item="item"></productItem>
+					</div>
 				</div>
 			</div>
 
@@ -31,20 +34,23 @@
 <script>
 
 	import productSwiper from '@/components/Public/swiper1'
-	import productList from '@/components/Public/productList'
+	import { getHomeProducts } from '@/api/product'
+	import { recordOP } from '@/api/user'
+	import productItem from '@/components/Public/productItem.vue'
 
 	export default {
 		components:{
 			productSwiper,
-			productList
+			productItem
 		},
 		data(){
 			return {
-
+				list: [],
+				skeletonLoading: true,
 			}
 		},
-		mounted(){
-
+		created(){
+			this.getHomeProducts();
 		},
 		computed: {
 			isShowHeader() {
@@ -54,9 +60,13 @@
 			},
 		},
 		methods: {
-			onClickLeft() {
-				this.$router.go(-1);
-			}
+			getHomeProducts(){
+				getHomeProducts().then(res=>{
+					this.skeletonLoading = false;
+					const { data } = res;
+					this.list = data.special || []
+				})
+			},
 		}
 	}
 </script>

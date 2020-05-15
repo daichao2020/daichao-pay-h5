@@ -78,3 +78,14 @@ export function logout() {
 		method: 'delete'
 	})
 }
+
+/**
+ * 用户操作记录
+ * */
+export function recordOP(data) {
+	return request({
+		url: '/user/operations',
+		method: 'post',
+		data
+	})
+}

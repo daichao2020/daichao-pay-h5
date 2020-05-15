@@ -1,6 +1,12 @@
+import defaultSettings from '@/settings'
 import { login, logout, getInfo, reLogin } from '@/api/user'
-import { getToken, setToken, removeToken, getTokenType, setTokenType, removeTokenType
-	,getDeviceNumber,setDeviceNumber,removeDeviceNumber } from '@/utils/auth'
+import {
+	 getToken, 			setToken, 			removeToken
+	,getTokenType, 		setTokenType, 		removeTokenType
+	,getDeviceNumber,	setDeviceNumber,	removeDeviceNumber
+	,getPlatform,		setPlatform,		removePlatform
+	,getAppVersionId,	setAppVersionId,	removeAppVersionId
+} from '@/utils/auth'
 
 const getDefaultState = () => {
 	return {
@@ -8,7 +14,9 @@ const getDefaultState = () => {
 		phoneNumber: '',
 		tokenType: getTokenType(),
 		info: {},
-		deviceNumber: getDeviceNumber(),
+		deviceNumber: getDeviceNumber() || defaultSettings.deviceNumber,
+		platform: getPlatform() || defaultSettings.platform,
+		appVersionId: getAppVersionId() || defaultSettings.appVersionId,
 	}
 }
 
@@ -32,7 +40,13 @@ const mutations = {
 	},
 	SET_DEVICE_NUMBER: (state, deviceNumber) => {
 		state.deviceNumber = deviceNumber
-	}
+	},
+	SET_PLATFORM: (state, platform) => {
+		state.platform = platform
+	},
+	SET_APP_VERSION_Id: (state, appVersionId) => {
+		state.appVersionId = appVersionId
+	},
 }
 
 const actions = {
@@ -104,6 +118,16 @@ const actions = {
 	setDeviceNumber({ commit, state },deviceNumber) {
 		commit('SET_DEVICE_NUMBER', deviceNumber)
 		setDeviceNumber(deviceNumber);
+	},
+
+	setPlatform({ commit, state },platform) {
+		commit('SET_PLATFORM', platform)
+		setPlatform(platform);
+	},
+
+	setAppVersionId({ commit, state },appVersionId) {
+		commit('SET_APP_VERSION_Id', appVersionId)
+		setAppVersionId(appVersionId);
 	},
 
 	// user logout

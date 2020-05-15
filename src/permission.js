@@ -6,7 +6,7 @@ import { getToken } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
 
 
-const whiteList = ['/login'] // no redirect whitelist
+const whiteList = ['/login','/home','/loanall'] // no redirect whitelist
 
 router.beforeEach((to, from, next) => {
 
@@ -16,6 +16,13 @@ router.beforeEach((to, from, next) => {
 	if(to.query && to.query.device_number){
 		store.dispatch('user/setDeviceNumber',to.query.device_number)
 	}
+	if(to.query && to.query.platform){
+		store.dispatch('user/setPlatform',to.query.platform)
+	}
+	if(to.query && to.query.app_version_id){
+		store.dispatch('user/setAppVersionId',to.query.app_version_id)
+	}
+
 	// determine whether the user has logged in
 	const hasToken = getToken()
 

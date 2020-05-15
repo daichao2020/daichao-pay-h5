@@ -14,7 +14,12 @@
 			<div class="detail-card-box">
 				<div class="product-preview-item flex">
 					<div class="item-hd">
-						<img :src="detail.product_picture_url_qiniu">
+						<van-image :src="detail.product_picture_url_qiniu" width="2.2rem" height="2.2rem" lazy-load>
+							<template v-slot:loading>
+								<van-loading type="spinner" size="20" />
+							</template>
+							<template v-slot:error><van-icon name="photo-o" /></template>
+						</van-image>
 					</div>
 					<div class="item-bd flex-1">
 						<p class="title">{{ detail.product_name }}</p>
@@ -98,6 +103,7 @@
 <script>
 	import { getProductDetailById } from '@/api/product'
 	import { getProductId,setProductId } from '@/utils/order'
+	import { recordOP } from '@/api/user'
 
     export default {
 		name: 'detail',
@@ -136,6 +142,12 @@
                 this.$router.go(-1);
             },
 			toGooglePay(){
+				recordOP({
+					operation_type: '1',//1-产品申请, 2-产品点击, 4-banner广告点击（轮播图）
+					product_id: this.detail.id,//产品ID
+					extra_id: this.detail.id,//操作类型对应的对象id(如操作是点击产品，此处对应的是产品id，操作的是点击信用卡，此处对应的是信用卡id)
+				});
+
 				let jump_url = this.detail.jump_url;
 
 				try {

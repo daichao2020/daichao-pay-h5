@@ -132,6 +132,7 @@
                         setTimeout(countDownFn,1000);
                     }else{
                         this.isGetting = false;
+						this.count = this.COUNT_DEFAULT;
                     }
                 }
                 countDownFn();
@@ -141,8 +142,8 @@
 					phone_number: this.telephone
 				}).then((res)=>{
 					this.codekey = res.data.key;
-					this.isGetting = false;
-					this.count = this.COUNT_DEFAULT;
+					//this.isGetting = false;
+					//this.count = this.COUNT_DEFAULT;
 				}).catch((e)=>{
 					this.isGetting = false;
 					this.count = this.COUNT_DEFAULT;
@@ -164,9 +165,10 @@
 				this.$store.dispatch('user/login', {
 					verification_key: this.codekey,
 					verification_code: this.code,
+
 					device_number: this.$store.getters.deviceNumber,
-					platform: defaultSettings.platform,
-					app_version_id: defaultSettings.app_version_id,
+					platform: this.$store.getters.platform,
+					app_version_id: this.$store.getters.appVersionId,
 				})
 					.then(() => {
 						this.isSubmitting = false;

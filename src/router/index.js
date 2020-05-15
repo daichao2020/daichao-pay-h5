@@ -22,7 +22,7 @@ export const constantRoutes = [
 					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import(/* webpackChunkName: "first-group" */'@/components/Home/index'),
+				component: () => import('@/components/Home/index'),
 			},
 			//列表
 			{
@@ -33,7 +33,7 @@ export const constantRoutes = [
 					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import(/* webpackChunkName: "first-group" */'@/components/LoanAll/index'),
+				component: () => import('@/components/LoanAll/index'),
 			},
 			//我
 			{
@@ -44,7 +44,7 @@ export const constantRoutes = [
 					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import(/* webpackChunkName: "first-group" */'@/components/Me/index'),
+				component: () => import('@/components/Me/index'),
 			},
 		]
 	},
