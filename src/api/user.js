@@ -84,7 +84,7 @@ export function logout() {
  * */
 export function recordOP(data) {
 	return request({
-		url: '/user/operations',
+		url: '/user/operations/current',
 		method: 'post',
 		data
 	})

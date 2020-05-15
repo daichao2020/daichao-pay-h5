@@ -85,40 +85,43 @@ service.interceptors.response.use(
 	},
 	error => {
 		const { response } = error;
-		//(error.response && error.response.status !== 200
-		if(response && response.status !== 200){
 
-			if(error.response.status === 401){//token过期，重新登录
-				// to re-login
-				Dialog.confirm({
-					title: 'Confirm logout',
-					message: 'You have been logged out, you can cancel to stay on this page, or log in again',
-					confirmButtonText: 'Re-Login',
-					cancelButtonText: 'Cancel',
-					type: 'warning'
-				}).then(() => {
-					store.dispatch('user/resetToken').then(() => {
-						location.reload()
+		if(response.config && response.config.url!=="/user/operations"){
+			//(error.response && error.response.status !== 200
+			if(response && response.status !== 200){
+
+				if(error.response.status === 401){//token过期，重新登录
+					// to re-login
+					Dialog.confirm({
+						title: 'Confirm logout',
+						message: 'You have been logged out, you can cancel to stay on this page, or log in again',
+						confirmButtonText: 'Re-Login',
+						cancelButtonText: 'Cancel',
+						type: 'warning'
+					}).then(() => {
+						store.dispatch('user/resetToken').then(() => {
+							location.reload()
+						})
 					})
-				})
+
+				}else{
+					Toast({
+						message: response.data.message,
+						type: 'fail',
+						position: 'bottom',
+						duration: 3 * 1000
+					})
+				}
 
 			}else{
-				Toast({
-					message: response.data.message,
-					type: 'fail',
-					position: 'bottom',
-					duration: 3 * 1000
+				// 处理断网的情况
+				// eg:请求超时或断网时，更新state的network状态
+				// network状态在app.vue中控制着一个全局的断网提示组件的显示隐藏
+				// 关于断网组件中的刷新重新获取数据，会在断网组件中说明
+				store.dispatch('network/changeNetworkSuccess',false).then(() => {
+					router.push({path:'refresh'})
 				})
 			}
-
-		}else{
-			// 处理断网的情况
-			// eg:请求超时或断网时，更新state的network状态
-			// network状态在app.vue中控制着一个全局的断网提示组件的显示隐藏
-			// 关于断网组件中的刷新重新获取数据，会在断网组件中说明
-			store.dispatch('network/changeNetworkSuccess',false).then(() => {
-				router.push({path:'refresh'})
-			})
 		}
 
 		return Promise.reject(error)
