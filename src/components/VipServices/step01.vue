@@ -1,13 +1,10 @@
 <template>
 	<div class="default-page step-page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
-					title="Select Payment Option"
-					left-arrow
-					left-text="Back"
+					title=""
 					fixed
 					placeholder
-					@click-left="onClickLeft"
 			></van-nav-bar>
 		</header>
 		<section>
@@ -36,7 +33,7 @@
 									  clickable
 									  @click="paymentOptionId = item.id">
 								<template #right-icon>
-									<van-radio :name="item.id" checked-color="#ff6501"/>
+									<van-radio :name="item.id" checked-color="#ff9933"/>
 								</template>
 							</van-cell>
 						</van-cell-group>
@@ -70,6 +67,11 @@
 			this.getPaymentChannelList();
 		},
 		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 			product () {
 				return this.$store.getters.product
 			}

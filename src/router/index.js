@@ -70,6 +70,72 @@ export const constantRoutes = [
 		},
 		component: () => import('@/components/Login/index'),
 	},
+	//获取验证码
+	{
+		path: '/code',
+		name: 'code',
+		meta: {
+			title: 'Get verification code',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/Login/code'),
+	},
+	//填写个人信息
+	{
+		path: '/info',
+		name: 'info',
+		meta: {
+			title: 'Contact information',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/Info/index'),
+	},
+	//Vip Services home
+	{
+		path: '/vip',
+		name: 'vip',
+		meta: {
+			title: 'VIP services',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/VipServices/index'),
+	},
+	//Vip Services step01
+	{
+		path: '/step01',
+		name: 'step01',
+		meta: {
+			title: 'Select Payment Option',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/VipServices/step01'),
+	},
+	//Vip Services step02
+	{
+		path: '/step02',
+		name: 'step02',
+		meta: {
+			title: 'UPI',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/VipServices/step02'),
+	},
+	//Vip Services step03
+	{
+		path: '/step03',
+		name: 'step03',
+		meta: {
+			title: 'Pay Status',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/VipServices/step03'),
+	},
 	//feedback
 	{
 		path: '/feedback',

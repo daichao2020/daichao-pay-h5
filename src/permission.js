@@ -6,7 +6,7 @@ import { getToken } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
 
 
-const whiteList = ['/login','/home','/loanall'] // no redirect whitelist
+const whiteList = ['/login','/code','/home','/loanall'] // no redirect whitelist
 
 router.beforeEach((to, from, next) => {
 

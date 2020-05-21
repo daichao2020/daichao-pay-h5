@@ -8,7 +8,7 @@ export default {
         "logout": "Logout",
     },
     btn: {
-       smsCountDown: '{0} obtain',
+       smsCountDown: '{0}s Resent',
     },
     errorCode: {
         

@@ -8,6 +8,7 @@
             ></van-nav-bar>
         </header>
         <section class="login-page-body">
+			<h2 class="vip-doc-block__title">Welcome to Cash Wallet</h2>
             <div ref="login_form">
                 <van-field
                         readonly
@@ -34,27 +35,11 @@
                         label="Telephone"
                         placeholder="Please enter telephone"
                 />
-                <van-field
-                        v-model="code"
-                        center
-                        clearable
-						type="digit"
-                        label="Code"
-                        placeholder="Please enter code"
-                >
-                    <template #button>
-                        <van-button size="small" type="default" class="vip-btn"
-                                    :disabled="isGetting"
-                                    @click="getCode">{{isGetting?$t('btn.smsCountDown',[count]):'Get Code'}}</van-button>
-                    </template>
-                </van-field>
+
                 <div class="vip-btn-wrap">
                     <van-button type="primary" class="vip-btn"
-                                :disabled="isSubmitting"
-                                :loading="isSubmitting"
-                                loading-text="Submitting..."
 								@click="onSubmit"
-                                block>Sign in</van-button>
+                                block>Get verification code</van-button>
                 </div>
             </div>
         </section>
@@ -116,72 +101,24 @@
 
                 this.showPicker = false;
             },
-            getCode(){
-                if(!this.telephone){
-                    this.$toast('Please enter telephone');
-                    return false;
-                }
-                if(this.isGetting){
-                	return false;
-				}
-                this.isGetting = true;
-
-                const countDownFn = ()=>{
-                    this.count--;
-                    if(this.count>0){
-                        setTimeout(countDownFn,1000);
-                    }else{
-                        this.isGetting = false;
-						this.count = this.COUNT_DEFAULT;
-                    }
-                }
-                countDownFn();
-
-				getVerificationCodes({
-					intl_code: this.countryCode,
-					phone_number: this.telephone
-				}).then((res)=>{
-					this.codekey = res.data.key;
-					//this.isGetting = false;
-					//this.count = this.COUNT_DEFAULT;
-				}).catch((e)=>{
-					this.isGetting = false;
-					this.count = this.COUNT_DEFAULT;
-				})
-
-            },
             onSubmit(){
 				if(!this.telephone){
 					this.$toast('Please enter telephone');
 					return false;
 				}
-				if(!this.code){
-					this.$toast('Please enter code');
-					return false;
-				}
 
-
-				this.isSubmitting = true;
-				this.$store.dispatch('user/login', {
-					verification_key: this.codekey,
-					verification_code: this.code,
-
-					device_number: this.$store.getters.deviceNumber,
-					platform: this.$store.getters.platform,
-					app_version_id: this.$store.getters.appVersionId,
-				})
-					.then(() => {
-						this.isSubmitting = false;
-						this.toHomePage();
-					})
-					.catch(() => {
-						this.isSubmitting = false
-					})
+				this.toCodePage();
 
             },
-            toHomePage(){
-                this.$router.push({name:'home'});
-            },
+			toCodePage(){
+				this.$router.push({
+					name:'code',
+					params:{
+						telephone:this.telephone,
+						countryCode:this.countryCode
+					}
+				});
+			},
         }
     }
 </script>

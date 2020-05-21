@@ -19,12 +19,12 @@ import '@/permission' // permission control
 import {
     Button, Cell, CellGroup,Dialog,Toast,NavBar,
     Divider,RadioGroup,Radio,Field,Icon,Loading,CountDown,Circle,Skeleton,Form,Picker,Popup,
-    Tabbar,TabbarItem,Empty,List,Uploader,PullRefresh,Image as VanImage,Lazyload
+    Tabbar,TabbarItem,Empty,List,Uploader,PullRefresh,Image as VanImage,Lazyload,PasswordInput, NumberKeyboard
 } from 'vant'
 Vue.use(Button).use(Cell).use(CellGroup).use(Dialog).use(Toast).use(NavBar)
     .use(Divider).use(RadioGroup).use(Radio).use(Field).use(Icon).use(Loading).use(CountDown).use(Circle)
     .use(Skeleton).use(Form).use(Picker).use(Popup).use(Tabbar).use(TabbarItem).use(Empty).use(List).use(Uploader)
-	.use(PullRefresh).use(VanImage).use(Lazyload)
+	.use(PullRefresh).use(VanImage).use(Lazyload).use(PasswordInput).use(NumberKeyboard)
 
 Vue.config.productionTip = false
 

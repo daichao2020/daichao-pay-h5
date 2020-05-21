@@ -1,13 +1,10 @@
 <template>
 	<div class="default-page step-page">
-		<header>
+		<header v-if="isShowHeader">
 			<van-nav-bar
-					title="UPI"
-					left-arrow
-					left-text="Back"
+					title=""
 					fixed
 					placeholder
-					@click-left="onClickLeft"
 			></van-nav-bar>
 		</header>
 		<section>
@@ -90,12 +87,17 @@
 
 		},
 		computed: {
+			isShowHeader() {
+				const route = this.$route
+				const { meta } = route
+				return meta.showHeader
+			},
 			order () {
 				return this.$store.getters.order
 			},
 			paymentOption () {
 				return this.$store.getters.paymentOption
-			}
+			},
 		},
 		methods: {
 			onClickLeft() {
