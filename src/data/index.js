@@ -9,8 +9,8 @@ export default {
 		"divide_period_max": 20,
 		"divide_period_min": 3,
 		"divide_period": [""],
-		"amount_high": 800000,
-		"amount_low": 5000,
+		"amount_high": '800000rs',
+		"amount_low": '5000rs',
 		"loan_release_time": "3600",
 		"product_picture_url_qiniu": "http://files.qhwrong.com/images/d244df736fe8f55022b37d1226276759.png",
 		"product_name": "iEasyLoan",
@@ -34,8 +34,8 @@ export default {
 		"divide_period": [
 			""
 		],
-		"amount_high": 80000,
-		"amount_low": 0,
+		"amount_high": '80000rs',
+		"amount_low": '80000rs',
 		"loan_release_time": "3600",
 		"product_picture_url_qiniu": "http://files.qhwrong.com/images/1a1ccc11487d0191fb1af4930236d58d.jpg",
 		"product_name": "CashMama",
