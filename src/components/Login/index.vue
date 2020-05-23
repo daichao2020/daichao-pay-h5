@@ -8,7 +8,7 @@
             ></van-nav-bar>
         </header>
         <section class="login-page-body">
-			<h2 class="vip-doc-block__title">Welcome to Cash Wallet</h2>
+			<h2 class="vip-doc-block__title">Welcome</h2>
             <div ref="login_form">
                 <van-field
                         readonly
