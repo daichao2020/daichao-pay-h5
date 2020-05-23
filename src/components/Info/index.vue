@@ -11,14 +11,28 @@
 			<h2 class="vip-doc-block__title">Contact information</h2>
 			<van-form @submit="onSubmit">
 
-				<p class="vip-form_title">Your name</p>
+				<p class="vip-form_title">Your Name</p>
 				<van-field
 						v-model="yourName"
 						name="yname"
 						placeholder="Please enter your name"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
-				<p class="vip-form_title">Your email</p>
+				<p class="vip-form_title">ID Number</p>
+				<van-field
+						v-model="idNumber"
+						name="idNumber"
+						placeholder="Please enter ID Number"
+						:rules="[{ required: true, message: ' ' }]"
+				/>
+				<p class="vip-form_title">PAN</p>
+				<van-field
+						v-model="pan"
+						name="rname"
+						placeholder="Please enter PAN"
+						:rules="[{ required: true, message: ' ' }]"
+				/>
+				<p class="vip-form_title">Your Email</p>
 				<van-field
 						v-model="yourEmail"
 						name="yemail"
@@ -27,77 +41,68 @@
 				/>
 
 
-				<p class="vip-form_title">Relatives name</p>
-				<van-field
-						v-model="rname"
-						name="rname"
-						placeholder="Please enter relatives name"
-						:rules="[{ required: true, message: ' ' }]"
-				/>
-
-				<!--<p class="vip-form_title">Relationship with myself</p>
+				<p class="vip-form_title">Gender</p>
 				<van-field
 						readonly
 						clickable
-						name="rpicker"
-						v-model="rnameRelationship"
+						name="gender"
+						v-model="gender"
 						placeholder="Please choose"
 						right-icon="arrow"
-						@click="showRnameRelPicker()"
+						@click="showGenderPicker = true"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
-				<van-popup v-model="showRnameRelationshipPicker" position="bottom">
+				<van-popup v-model="showGenderPicker" position="bottom">
 					<van-picker
 							show-toolbar
-							:columns="columns"
-							@confirm="onConfirmRnameRelationship"
-							@cancel="hideRnameRelPicker()"
+							:columns="genderColumns"
+							@confirm="onConfirmGender"
+							@cancel="showGenderPicker = false"
 					/>
-				</van-popup>-->
+				</van-popup>
 
-				<p class="vip-form_title">Relatives Tel</p>
-				<van-field
-						placeholder="Please enter relatives tel"
-						type="tel"
-						v-model="rtel"
-						:rules="[{ required: true, message: ' ' }]"
-				/>
-
-				<!-------------------->
-				<p class="vip-form_title">Friend name</p>
-				<van-field
-						v-model="fname"
-						placeholder="Please enter friend name"
-						:rules="[{ required: true, message: ' ' }]"
-				/>
-
-				<!--<p class="vip-form_title">Relationship with myself</p>
+				<p class="vip-form_title">Education</p>
 				<van-field
 						readonly
 						clickable
-						name="fpicker"
-						v-model="fnameRelationship"
+						name="education"
+						v-model="education"
 						placeholder="Please choose"
 						right-icon="arrow"
-						@click="showFnameRelPicker()"
+						@click="showEducationPicker = true"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
-				<van-popup v-model="showFnameRelationshipPicker" position="bottom">
+				<van-popup v-model="showEducationPicker" position="bottom">
 					<van-picker
 							show-toolbar
-							:columns="columns"
-							@confirm="onConfirmFnameRelationship"
-							@cancel="hideFnameRelPicker()"
+							:columns="educationColumns"
+							@confirm="onConfirmEducation"
+							@cancel="showEducationPicker = false"
 					/>
-				</van-popup>-->
+				</van-popup>
 
-				<p class="vip-form_title">Friend Tel</p>
+				<p class="vip-form_title">Marital Status</p>
 				<van-field
-						placeholder="Please enter relatives tel"
-						type="tel"
-						v-model="ftel"
+						readonly
+						clickable
+						name="maritalStatus"
+						v-model="maritalStatus"
+						placeholder="Please choose"
+						right-icon="arrow"
+						@click="showMaritalStatusPicker = true"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
+				<van-popup v-model="showMaritalStatusPicker" position="bottom">
+					<van-picker
+							show-toolbar
+							:columns="maritalStatusColumns"
+							@confirm="onConfirmMaritalStatus"
+							@cancel="showMaritalStatusPicker = false"
+					/>
+				</van-popup>
+
+
+
 
 				<div class="vip-btn-wrap">
 					<van-button type="primary" class="vip-btn"
@@ -118,19 +123,25 @@
 		data(){
 			return {
 
-				columns: ['myself'],
+
 
 				yourName: '',//
+				idNumber: '',//
+				pan: '',//
 				yourEmail: '',//
-				rname: '',//
-				rtel: '',//
-				rnameRelationship: '',//
-				showRnameRelationshipPicker: false,
 
-				fname: '',//
-				ftel: '',//
-				fnameRelationship: '',//
-				showFnameRelationshipPicker: false,
+				gender: '',//
+				showGenderPicker: false,
+				genderColumns: ['Male','Female','Third Gender'],
+
+				education: '',//
+				showEducationPicker: false,
+				educationColumns: ['Undergraduate And Above','High School','Secondary School','Junior High School And Below'],
+
+				maritalStatus: '',//
+				showMaritalStatusPicker: false,
+				maritalStatusColumns: ['Married','Unmarried'],
+
 
 				isSubmitting: false,
 
@@ -147,27 +158,21 @@
 			},
 		},
 		methods: {
-			onConfirmRnameRelationship(value) {
-				this.rnameRelationship = value;
-				this.hideRnameRelPicker();
+			onConfirmGender(value) {
+				this.gender = value;
+				this.showGenderPicker = false;
 			},
 
-			showRnameRelPicker(){
-				this.showRnameRelationshipPicker = true;
+			onConfirmEducation(value) {
+				this.education = value;
+				this.showEducationPicker = false;
 			},
-			hideRnameRelPicker(){
-				this.showRnameRelationshipPicker = false;
+
+			onConfirmMaritalStatus(value) {
+				this.maritalStatus = value;
+				this.showMaritalStatusPicker = false;
 			},
-			onConfirmFnameRelationship(value) {
-				this.fnameRelationship = value;
-				this.hideFnameRelPicker();
-			},
-			showFnameRelPicker(){
-				this.showFnameRelationshipPicker = true;
-			},
-			hideFnameRelPicker(){
-				this.showFnameRelationshipPicker = false;
-			},
+
 
 			onSubmit(){
 

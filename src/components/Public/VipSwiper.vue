@@ -8,9 +8,8 @@
 					</div>
 					<div class="card-bd">
 						<div class="product-info">
-							<h1 class="title">₹{{ parseInt(item.price) }}</h1>
-							<p class="desc">Up to ₹{{ item.description }}</p>
-							<p class="desc small">Pay ₹{{ parseInt(item.price) }} and get cash right away.</p>
+							<h1 class="title">₹{{ item.description }}</h1>
+							<p class="desc small">Pay ₹{{ parseInt(item.price) }} audit fee and get cash right away.</p>
 						</div>
 						<div class="sales-volume text-center">
 							<p class="txt">Number of successful borrowers</p>
@@ -22,7 +21,7 @@
 										:loading="isSubmitting"
 										loading-text="Submitting..."
 										block
-										@click="selectCurrentItem(item)">BUY NOW</van-button>
+										@click="selectCurrentItem(item)">BUY NOW (₹{{parseInt(item.price)}})</van-button>
 						</div>
 						<div class="vip-btn-wrap" style="margin-top: 15px;">
 							<van-button type="default"
