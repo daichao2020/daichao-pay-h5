@@ -139,6 +139,8 @@
 							break;
 					}
 
+				}).catch(()=>{
+					this.pageShow = 3;
 				});
 			},
 
