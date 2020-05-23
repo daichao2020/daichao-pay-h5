@@ -167,14 +167,13 @@
 						this.$store.dispatch('product/setOrderInfo',data);
 						location.href = data.payment_link;
 					}
-
-					//this.toStep02Page();
+					this.toStep03Page();
 				}).catch(()=>{
 					this.isSubmitting = false;
 				});
 			},
-			toStep01Page(){
-				this.$router.push({name:'step01'});
+			toStep03Page(){
+				this.$router.push({name:'step03'});
 			},
 			toHomePage(){
 				this.$router.push({name:'home'});

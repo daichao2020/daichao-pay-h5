@@ -39,7 +39,7 @@ export function payOrders(data) {//会员订单支付
 
 export function queryOrderPayStatus(order_id) {//会员订单查询
 	return request({
-		url: '/payment/mpurse/return',
+		url: '/payment/cashfree/return',
 		method: 'get',
 		params: { order_id }
 	})
