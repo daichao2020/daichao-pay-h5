@@ -223,14 +223,14 @@
 }
 .msg-success{
   .vip-btn{
-    background: #ff6633;
+    background: $warn-l;
     border: none;
     border-radius: 8PX;
   }
 }
 .msg-warn{
   .vip-btn{
-    color: #ff6633;
+    color: $primary;
     background-color: #f2f2f2;
     font-weight: 700;
     border-radius: 8PX;

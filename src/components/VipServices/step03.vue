@@ -70,7 +70,7 @@
 	export default {
 		data(){
 			return {
-				pageShow: 1,//[1,2,3]
+				pageShow: 2,//[1,2,3]
 
 				time: 30 * 1000,
 				rate: 100,
