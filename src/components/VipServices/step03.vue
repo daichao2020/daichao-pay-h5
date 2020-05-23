@@ -40,7 +40,7 @@
 				</div>
 				<div class="pay-msg__opr-area">
 					<div class="vip-btn-wrap">
-						<van-button type="primary" class="vip-btn" block @click="toEndPage">Close</van-button>
+						<van-button type="primary" class="vip-btn" block @click="toEndPage">next</van-button>
 					</div>
 				</div>
 
@@ -110,6 +110,9 @@
 							this.payStatusTxt = res.data.message;
 							this.payStatus = data.status;
 							this.pageShow = 2;
+							setTimeout(()=>{
+								this.toEndPage();
+							},1000);
 							break;
 						case 40002://支付失败
 							this.$refs.countDown.pause();
@@ -142,16 +145,19 @@
 			toEndPage(){
 				this.$router.push({name:'end'});
 			},
+			toVipPage(){
+				this.$router.push({name:'vip'});
+			},
 			toLastPage(){
 				switch (this.payStatus) {
 					case 40002://支付失败
-						this.$router.go(-3);
+						this.toVipPage();
 						break;
 					case 40004://待付款
-						this.$router.go(-1);
+						this.toVipPage();
 						break;
 					default://其他失败场景
-						this.$router.go(-3);
+						this.toVipPage();
 						break;
 
 				}

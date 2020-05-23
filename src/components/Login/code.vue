@@ -141,11 +141,14 @@
 					platform: this.$store.getters.platform,
 					app_version_id: this.$store.getters.appVersionId,
 				})
-					.then(() => {
+					.then((res) => {
+						const { data } = res;
 						toast.clear();
 						this.isSubmitting = false;
-						this.toInfoPage();
-						//this.toHomePage();
+						if(data){
+							this.toNextPage(data.is_member);
+						}
+
 					})
 					.catch(() => {
 						toast.clear();
@@ -153,8 +156,15 @@
 					})
 
             },
-            toHomePage(){
-                this.$router.push({name:'home'});
+			toNextPage(is_member){
+            	if(is_member){
+					this.toEndPage()
+				}else {
+					this.toInfoPage()
+				}
+			},
+			toEndPage(){
+                this.$router.push({name:'end'});
             },
             toInfoPage(){
                 this.$router.push({name:'info'});

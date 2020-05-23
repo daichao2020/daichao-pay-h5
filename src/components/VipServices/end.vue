@@ -17,7 +17,7 @@
 						<div class="card-bd">
 							<div class="product-info">
 								<h1 class="title">₹{{ parseInt(product.price) }}</h1>
-								<p class="desc">{{ product.description }}</p>
+								<p class="desc">audit expense</p>
 							</div>
 						</div>
 					</div>
@@ -39,15 +39,17 @@
 	</div>
 </template>
 <script>
-	import { getPaymentChannelList, submitOrders } from '@/api/order'
-	import { Toast } from 'vant';
+	import { getMemberCardList } from '@/api/order';
 	export default {
 		data(){
 			return {
+				product: {
+					price : 0,
+				},
 			}
 		},
 		mounted(){
-
+			this.getMemberCardList();
 		},
 		computed: {
 			isShowHeader() {
@@ -55,17 +57,23 @@
 				const { meta } = route
 				return meta.showHeader
 			},
-			product () {
-				return this.$store.getters.product || {}
-			}
 		},
 		methods: {
 			onClickLeft() {
 				this.$router.go(-1);
 			},
 
+			getMemberCardList(){
+				getMemberCardList().then((res)=>{
+					const list = res.data || [];
+					if(list.length>0){
+						this.product = list[0];
+					}
+				});
+			},
+
 			toHomePage(){
-				this.$router.push({name:'loanall'});
+				this.$router.push({name:'home'});
 			},
 
 		}

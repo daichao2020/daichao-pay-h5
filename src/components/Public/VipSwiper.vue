@@ -34,7 +34,7 @@
 			</swiper-slide>
 
 		</swiper>
-		<div class="swiper-pagination flex" slot="pagination" id="pagination"></div>
+		<!--<div class="swiper-pagination flex" slot="pagination" id="pagination"></div>-->
 	</div>
 
 </template>
@@ -150,7 +150,7 @@
 			submitOrder(productInfo){
 
 
-				let return_url = location.href.slice(0,location.href.search('#'))+'#/end';
+				let return_url = location.href.slice(0,location.href.search('#'))+'#/step03';
 				const params = {
 					return_url: return_url, //成功后跳转的url
 					member_card_id: productInfo.id,//支付产品ID
