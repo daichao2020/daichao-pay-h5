@@ -21,6 +21,13 @@ export function submitOrders(data) {//会员生成订单
 		data
 	})
 }
+export function submitOrdersCashfree(data) {//会员生成订单
+	return request({
+		url: '/member/orders/cashfree',
+		method: 'post',
+		data
+	})
+}
 
 export function payOrders(data) {//会员订单支付
 	return request({

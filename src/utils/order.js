@@ -4,51 +4,51 @@ const PaymentOptionInfoKey = 'Payment-Option-Info';
 const OrderInfoKey = 'Order-Info';
 
 export function getProductInfo() {
-	return JSON.parse(sessionStorage.getItem(ProductInfoKey) || 'null');
+	return JSON.parse(localStorage.getItem(ProductInfoKey) || 'null');
 }
 
 export function setProductInfo(info) {
-	sessionStorage.setItem(ProductInfoKey, JSON.stringify(info));
+	localStorage.setItem(ProductInfoKey, JSON.stringify(info));
 }
 
 export function removeProductInfo() {
-	sessionStorage.removeItem(ProductInfoKey);
+	localStorage.removeItem(ProductInfoKey);
 }
 
 export function getProductId() {
-	return JSON.parse(sessionStorage.getItem(ProductIdKey) || 'null');
+	return JSON.parse(localStorage.getItem(ProductIdKey) || 'null');
 }
 
 export function setProductId(id) {
-	sessionStorage.setItem(ProductIdKey, JSON.stringify(id));
+	localStorage.setItem(ProductIdKey, JSON.stringify(id));
 }
 
 export function removeProductId() {
-	sessionStorage.removeItem(ProductIdKey);
+	localStorage.removeItem(ProductIdKey);
 }
 
 
 export function getPaymentOptionInfo() {
-	return JSON.parse(sessionStorage.getItem(PaymentOptionInfoKey) || 'null');
+	return JSON.parse(localStorage.getItem(PaymentOptionInfoKey) || 'null');
 }
 
 export function setPaymentOptionInfo(info) {
-	sessionStorage.setItem(PaymentOptionInfoKey, JSON.stringify(info));
+	localStorage.setItem(PaymentOptionInfoKey, JSON.stringify(info));
 }
 
 export function removePaymentOptionInfo() {
-	sessionStorage.removeItem(PaymentOptionInfoKey);
+	localStorage.removeItem(PaymentOptionInfoKey);
 }
 
 
 export function getOrderInfo() {
-	return JSON.parse(sessionStorage.getItem(OrderInfoKey) || 'null');
+	return JSON.parse(localStorage.getItem(OrderInfoKey) || 'null');
 }
 
 export function setOrderInfo(info) {
-	sessionStorage.setItem(OrderInfoKey, JSON.stringify(info));
+	localStorage.setItem(OrderInfoKey, JSON.stringify(info));
 }
 
 export function removeOrderInfo() {
-	sessionStorage.removeItem(OrderInfoKey);
+	localStorage.removeItem(OrderInfoKey);
 }

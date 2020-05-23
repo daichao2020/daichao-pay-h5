@@ -136,6 +136,17 @@ export const constantRoutes = [
 		},
 		component: () => import('@/components/VipServices/step03'),
 	},
+	//Vip Services end
+	{
+		path: '/end',
+		name: 'end',
+		meta: {
+			title: 'Submit audit',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/VipServices/end'),
+	},
 	//feedback
 	{
 		path: '/feedback',

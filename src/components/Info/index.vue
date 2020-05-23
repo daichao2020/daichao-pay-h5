@@ -10,6 +10,23 @@
 		<section class="login-page-body">
 			<h2 class="vip-doc-block__title">Contact information</h2>
 			<van-form @submit="onSubmit">
+
+				<p class="vip-form_title">Your name</p>
+				<van-field
+						v-model="yourName"
+						name="yname"
+						placeholder="Please enter your name"
+						:rules="[{ required: true, message: ' ' }]"
+				/>
+				<p class="vip-form_title">Your email</p>
+				<van-field
+						v-model="yourEmail"
+						name="yemail"
+						placeholder="Please enter your email"
+						:rules="[{ required: true, message: ' ' }]"
+				/>
+
+
 				<p class="vip-form_title">Relatives name</p>
 				<van-field
 						v-model="rname"
@@ -18,7 +35,7 @@
 						:rules="[{ required: true, message: ' ' }]"
 				/>
 
-				<p class="vip-form_title">Relationship with myself</p>
+				<!--<p class="vip-form_title">Relationship with myself</p>
 				<van-field
 						readonly
 						clickable
@@ -36,7 +53,7 @@
 							@confirm="onConfirmRnameRelationship"
 							@cancel="hideRnameRelPicker()"
 					/>
-				</van-popup>
+				</van-popup>-->
 
 				<p class="vip-form_title">Relatives Tel</p>
 				<van-field
@@ -54,7 +71,7 @@
 						:rules="[{ required: true, message: ' ' }]"
 				/>
 
-				<p class="vip-form_title">Relationship with myself</p>
+				<!--<p class="vip-form_title">Relationship with myself</p>
 				<van-field
 						readonly
 						clickable
@@ -72,7 +89,7 @@
 							@confirm="onConfirmFnameRelationship"
 							@cancel="hideFnameRelPicker()"
 					/>
-				</van-popup>
+				</van-popup>-->
 
 				<p class="vip-form_title">Friend Tel</p>
 				<van-field
@@ -84,6 +101,9 @@
 
 				<div class="vip-btn-wrap">
 					<van-button type="primary" class="vip-btn"
+								:disabled="isSubmitting"
+								:loading="isSubmitting"
+								loading-text="Submitting..."
 								native-type="submit"
 								block>Continue</van-button>
 				</div>
@@ -93,14 +113,15 @@
 	</div>
 </template>
 <script>
-	import { getCountryCodes,getVerificationCodes } from '@/api/user'
-	import defaultSettings from '@/settings'
+	import { setUserInfo } from '@/api/user'
 	export default {
 		data(){
 			return {
 
 				columns: ['myself'],
 
+				yourName: '',//
+				yourEmail: '',//
 				rname: '',//
 				rtel: '',//
 				rnameRelationship: '',//
@@ -110,6 +131,8 @@
 				ftel: '',//
 				fnameRelationship: '',//
 				showFnameRelationshipPicker: false,
+
+				isSubmitting: false,
 
 			}
 		},
@@ -167,7 +190,21 @@
 					this.$toast('Please choose relationship with myself');return false;
 				}*/
 
-				this.toVipPage();
+				this.isSubmitting = true;
+
+				setUserInfo({
+					email: this.yourEmail,
+					name: this.yourName,
+				}).then(res=>{
+					const { data } = res;
+					this.$store.dispatch('user/setInfo',data);
+
+					this.isSubmitting = false;
+					this.toVipPage();
+
+				}).catch((e) => {
+					this.isSubmitting = false
+				});
 
 			},
 			toVipPage(){

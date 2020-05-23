@@ -40,7 +40,7 @@
 				</div>
 				<div class="pay-msg__opr-area">
 					<div class="vip-btn-wrap">
-						<van-button type="primary" class="vip-btn" block @click="toHomePage">Close</van-button>
+						<van-button type="primary" class="vip-btn" block @click="toEndPage">Close</van-button>
 					</div>
 				</div>
 
@@ -139,8 +139,8 @@
 				});
 			},
 
-			toHomePage(){
-				this.$router.go(-3);
+			toEndPage(){
+				this.$router.push({name:'end'});
 			},
 			toLastPage(){
 				switch (this.payStatus) {

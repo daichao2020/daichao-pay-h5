@@ -9,7 +9,8 @@
 					<div class="card-bd">
 						<div class="product-info">
 							<h1 class="title">₹{{ parseInt(item.price) }}</h1>
-							<p class="desc">{{ item.description }}</p>
+							<p class="desc">Up to ₹{{ item.description }}</p>
+							<p class="desc small">Pay ₹{{ parseInt(item.price) }} and get cash right away.</p>
 						</div>
 						<div class="sales-volume text-center">
 							<p class="txt">Number of successful borrowers</p>
@@ -17,9 +18,16 @@
 						</div>
 						<div class="vip-btn-wrap">
 							<van-button type="primary" class="vip-btn"
-										:disabled="item.on_sale!==1"
+										:disabled="isSubmitting"
+										:loading="isSubmitting"
+										loading-text="Submitting..."
 										block
-										@click="selectCurrentItem(item)">Get a membership</van-button>
+										@click="selectCurrentItem(item)">BUY NOW</van-button>
+						</div>
+						<div class="vip-btn-wrap" style="margin-top: 15px;">
+							<van-button type="default"
+										block
+										@click="toHomePage()">Choose other loan product</van-button>
 						</div>
 					</div>
 				</div>
@@ -31,7 +39,9 @@
 
 </template>
 <script>
-	import { getMemberCardList } from '@/api/order'
+	import { getMemberCardList,submitOrdersCashfree,payOrders } from '@/api/order';
+	import { Toast } from 'vant';
+
 	export default {
 		name: 'carrousel',
 		data() {
@@ -40,6 +50,7 @@
 				cardList: [],
 				sold_count: 0,
 				activeItemIndex: 1,
+				isSubmitting: false,
 				swiperOptions: {
 					// 设置slider容器能够同时显示的slides数量，默认为1， 'auto'则自动根据slides的宽度来设定数量
 					slidesPerView: 'auto',
@@ -93,7 +104,10 @@
 		computed: {
 			swiper() {
 				return this.$refs.productSwiper.$swiper
-			}
+			},
+			appVersionId () {
+				return this.$store.getters.appVersionId
+			},
 		},
 		mounted() {
 			this.getMemberCardList();
@@ -131,10 +145,39 @@
 			},
 			selectCurrentItem(productInfo){
 				this.$store.dispatch('product/setProductInfo',productInfo);
-				this.toStep01Page();
+				this.submitOrder(productInfo);
+			},
+			submitOrder(productInfo){
+
+
+				let return_url = location.href.slice(0,location.href.search('#'))+'#/end';
+				const params = {
+					return_url: return_url, //成功后跳转的url
+					member_card_id: productInfo.id,//支付产品ID
+				};
+
+				if(this.isSubmitting){
+					return false;
+				}
+				this.isSubmitting = true;
+				submitOrdersCashfree(params).then((res)=>{
+					const { data } = res;
+					this.isSubmitting = false;
+					if(data){
+						this.$store.dispatch('product/setOrderInfo',data);
+						location.href = data.payment_link;
+					}
+
+					//this.toStep02Page();
+				}).catch(()=>{
+					this.isSubmitting = false;
+				});
 			},
 			toStep01Page(){
 				this.$router.push({name:'step01'});
+			},
+			toHomePage(){
+				this.$router.push({name:'home'});
 			}
 		}
 	}
