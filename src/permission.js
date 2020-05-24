@@ -8,7 +8,7 @@ import getPageTitle from '@/utils/get-page-title'
 
 const whiteList = ['/login','/code'] // no redirect whitelist
 
-router.beforeEach((to, from, next) => {
+router.beforeEach(async(to, from, next) => {
 
 	// set page title
 	document.title = getPageTitle(to.meta.title)
@@ -34,19 +34,18 @@ router.beforeEach((to, from, next) => {
 			next()
 			const hasGetUserInfo = store.getters.phoneNumber
 			if (hasGetUserInfo) {
-			  next()
-			} else {
-			  try {
-				// get user info
-				store.dispatch('user/getInfo')
-
 				next()
-			  } catch (error) {
-				// remove token and go to login page to re-login
-				store.dispatch('user/resetToken')
-				Toast.fail(error || 'Has Error')
-				next(`/login?redirect=${to.path}`)
-			  }
+			} else {
+				try {
+					// get user info
+					await store.dispatch('user/getInfo')
+					next()
+				} catch (error) {
+					// remove token and go to login page to re-login
+					store.dispatch('user/resetToken')
+					Toast.fail(error || 'Has Error')
+					next(`/login?redirect=${to.path}`)
+				}
 			}
 		}
 	} else {

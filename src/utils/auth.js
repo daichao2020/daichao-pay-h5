@@ -1,5 +1,3 @@
-import Cookies from 'js-cookie'
-
 const TokenKey = 'User-Token'
 const TokenTypeKey = 'User-Token-Type'
 
@@ -10,77 +8,77 @@ const PlatformKey = 'Platform-Token'
 const AppVersionIdKey = 'App-Version-Id'
 
 export function getToken() {
-	return Cookies.get(TokenKey)
+	return localStorage.getItem(TokenKey)
 }
 
 export function setToken(token) {
-	Cookies.set(TokenKey, token)
+	localStorage.setItem(TokenKey, token)
 }
 
 export function removeToken() {
-	Cookies.remove(TokenKey)
+	localStorage.removeItem(TokenKey)
 }
 
 export function getTokenType() {
-	return Cookies.get(TokenTypeKey)
+	return localStorage.getItem(TokenTypeKey)
 }
 
 export function setTokenType(type) {
-	Cookies.set(TokenTypeKey, type)
+	localStorage.setItem(TokenTypeKey, type)
 }
 
 export function removeTokenType() {
-	Cookies.remove(TokenTypeKey)
+	localStorage.removeItem(TokenTypeKey)
 }
 
 
 export function getDeviceNumber() {
-	return Cookies.get(DeviceNumberKey)
+	return localStorage.getItem(DeviceNumberKey)
 }
 
 export function setDeviceNumber(deviceNumber) {
-	Cookies.set(DeviceNumberKey, deviceNumber)
+	localStorage.setItem(DeviceNumberKey, deviceNumber)
 }
 
 export function removeDeviceNumber() {
-	Cookies.remove(DeviceNumberKey)
+	localStorage.removeItem(DeviceNumberKey)
 }
 
 
 export function getPlatform() {
-	return Cookies.get(PlatformKey)
+	return localStorage.getItem(PlatformKey)
 }
 
 export function setPlatform(platform) {
-	Cookies.set(PlatformKey, platform)
+	localStorage.setItem(PlatformKey, platform)
 }
 
 export function removePlatform() {
-	Cookies.remove(PlatformKey)
+	localStorage.removeItem(PlatformKey)
 }
 
 
 export function getAppVersionId() {
-	return Cookies.get(AppVersionIdKey)
+	return localStorage.getItem(AppVersionIdKey)
 }
 
 export function setAppVersionId(appVersionId) {
-	Cookies.set(AppVersionIdKey, appVersionId)
+	localStorage.setItem(AppVersionIdKey, appVersionId)
 }
 
 export function removeAppVersionId() {
-	Cookies.remove(AppVersionIdKey)
+	localStorage.removeItem(AppVersionIdKey)
 }
 
 
 export function getUserInfo() {
-	return JSON.parse(Cookies.get(UserInfoKey) || 'null');
+	return JSON.parse(localStorage.getItem(UserInfoKey) || 'null');
 }
 
 export function setUserInfo(info) {
-	Cookies.set(UserInfoKey, JSON.stringify(info));
+	localStorage.setItem(UserInfoKey, JSON.stringify(info));
 }
 
 export function removeUserInfo () {
-	Cookies.remove(UserInfoKey);
+	localStorage.removeItem(UserInfoKey);
 }

@@ -4,16 +4,15 @@
 			<swiper-slide v-for="(item,index) in cardList" :key="item.id">
 				<div class="card">
 					<div class="card-hd">
-						<p>{{ item.title }}</p>
+						<p>Up to</p>
 					</div>
 					<div class="card-bd">
 						<div class="product-info">
 							<h1 class="title">₹{{ item.description }}</h1>
-							<p class="desc small">Pay ₹{{ parseInt(item.price) }} audit fee and get cash right away.</p>
+							<p class="desc small">Increase the quota to {{item.description}} rs and get the money immediately.</p>
 						</div>
 						<div class="sales-volume text-center">
-							<p class="txt">Number of successful borrowers</p>
-							<p class="num">{{ sold_count }}</p>
+							<p class="num">Pay ₹{{parseInt(item.price)}} audit fee.</p>
 						</div>
 						<div class="vip-btn-wrap">
 							<van-button type="primary" class="vip-btn"
@@ -23,7 +22,7 @@
 										block
 										@click="selectCurrentItem(item)">BUY NOW (₹{{parseInt(item.price)}})</van-button>
 						</div>
-						<div class="vip-btn-wrap" style="margin-top: 15px;">
+						<div class="vip-btn-wrap" style="margin-top: 15px;" v-if="userInfo.is_member">
 							<van-button type="default"
 										block
 										@click="toHomePage()">Choose other loan product</van-button>
@@ -107,10 +106,13 @@
 			appVersionId () {
 				return this.$store.getters.appVersionId
 			},
+			userInfo(){
+				return this.$store.getters.info
+			},
 		},
 		mounted() {
 			this.getMemberCardList();
-			this.tweenUpdate();
+			//this.tweenUpdate();
 		},
 		methods: {
 			getMemberCardList(){

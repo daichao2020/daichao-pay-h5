@@ -146,7 +146,7 @@
 						toast.clear();
 						this.isSubmitting = false;
 						if(data){
-							this.toNextPage(data.is_member);
+							this.toNextPage();
 						}
 
 					})
@@ -156,12 +156,22 @@
 					})
 
             },
-			toNextPage(is_member){
-            	if(is_member){
-					this.toEndPage()
-				}else {
-					this.toInfoPage()
-				}
+			toNextPage(){
+				this.$store.dispatch('user/getInfo').then(data=>{
+					const { name,is_member } = data;
+					if(name){
+						if(is_member){
+							this.toEndPage()
+						}else{
+							this.toVipPage()
+						}
+
+					}else {
+						this.toInfoPage()
+					}
+				});
+
+
 			},
 			toEndPage(){
                 this.$router.push({name:'end'});
@@ -169,6 +179,11 @@
             toInfoPage(){
                 this.$router.push({name:'info'});
             },
+			toVipPage(){
+				this.$router.replace({
+					name:'vip',
+				});
+			},
         }
     }
 </script>

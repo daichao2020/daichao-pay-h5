@@ -22,14 +22,14 @@
 				<van-field
 						v-model="idNumber"
 						name="idNumber"
-						placeholder="Please enter ID Number"
+						placeholder="Please enter ID number"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
 				<p class="vip-form_title">PAN</p>
 				<van-field
 						v-model="pan"
 						name="rname"
-						placeholder="Please enter PAN"
+						placeholder="Please enter pan"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
 				<p class="vip-form_title">Your Email</p>
@@ -40,6 +40,21 @@
 						:rules="[{ required: true, message: ' ' }]"
 				/>
 
+				<p class="vip-form_title">Bank Name</p>
+				<van-field
+						v-model="bankName"
+						name="bankNo"
+						placeholder="Please enter bank name"
+						:rules="[{ required: true, message: ' ' }]"
+				/>
+				<p class="vip-form_title">Bank Account No.</p>
+				<van-field
+						v-model="bankNo"
+						name="bankNo"
+						placeholder="Please enter bank account No."
+						:rules="[{ required: true, message: ' ' }]"
+				/>
+				<p class="vip-form_tips">Please make sure that you have entered the correct information.  The money will be disbursed to this bank account.</p>
 
 				<p class="vip-form_title">Gender</p>
 				<van-field
@@ -81,7 +96,7 @@
 					/>
 				</van-popup>
 
-				<p class="vip-form_title">Marital Status</p>
+				<!--<p class="vip-form_title">Marital Status</p>
 				<van-field
 						readonly
 						clickable
@@ -99,7 +114,7 @@
 							@confirm="onConfirmMaritalStatus"
 							@cancel="showMaritalStatusPicker = false"
 					/>
-				</van-popup>
+				</van-popup>-->
 
 
 
@@ -130,13 +145,23 @@
 				pan: '',//
 				yourEmail: '',//
 
+				bankName: '',//
+				bankNo: '',//
+
 				gender: '',//
 				showGenderPicker: false,
 				genderColumns: ['Male','Female','Third Gender'],
 
 				education: '',//
 				showEducationPicker: false,
-				educationColumns: ['Undergraduate And Above','High School','Secondary School','Junior High School And Below'],
+				educationColumns: [
+					'Doctor Degree',
+					'Master Degree',
+					'Bachelor Degree',
+					'Undergraduate And Above',
+					'High School',
+					'Secondary School',
+					'Junior High School And Below'],
 
 				maritalStatus: '',//
 				showMaritalStatusPicker: false,
@@ -213,7 +238,7 @@
 
 			},
 			toVipPage(){
-				this.$router.push({
+				this.$router.replace({
 					name:'vip',
 				});
 			},
