@@ -67,6 +67,7 @@ const actions = {
 							"info": data,
 						}
 					};
+					debugger
 					window.WebViewJavascriptBridge.callHandler(
 						'execAppFunction',
 						{
