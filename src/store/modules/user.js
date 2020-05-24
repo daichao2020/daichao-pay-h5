@@ -64,14 +64,11 @@ const actions = {
 						"actType": "getUserInfo",
 						"data": {
 							"token": data.access_token,
-							"info": data,
 						}
 					};
 					window.WebViewJavascriptBridge.callHandler(
 						'execAppFunction',
-						{
-							'params': JSON.stringify(param)
-						},
+						JSON.stringify(param),
 						function(responseData) {
 
 						}
@@ -128,6 +125,25 @@ const actions = {
 				}
 				commit('SET_INFO', data)
 				commit('SET_PHONE_NUMBER', data.phone_number)
+
+				try {
+					const param = {
+						"actType": "getUserInfo",
+						"data": {
+							"name": data.name,
+						}
+					};
+					window.WebViewJavascriptBridge.callHandler(
+						'execAppFunction',
+						JSON.stringify(param),
+						function(responseData) {
+
+						}
+					);
+				}catch (e) {
+
+				}
+
 				resolve(data)
 			}).catch(error => {
 				reject(error)
