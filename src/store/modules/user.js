@@ -58,6 +58,30 @@ const actions = {
 				const { data } = response
 				commit('SET_TOKEN', data.access_token)
 				setToken(data.access_token)
+
+				try {
+					const param = {
+						"actType": "getUserInfo",
+						"data": {
+							"token": data.access_token,
+							"info": data,
+						}
+					};
+					window.WebViewJavascriptBridge.callHandler(
+						'execAppFunction',
+						{
+							'params': JSON.stringify(param)
+						},
+						function(responseData) {
+
+						}
+					);
+				}catch (e) {
+
+				}
+
+
+
 				commit('SET_TOKEN_TYPE', data.token_type)
 				setTokenType(data.token_type)
 				resolve(response)
