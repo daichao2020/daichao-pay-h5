@@ -13,6 +13,10 @@ router.beforeEach(async(to, from, next) => {
 	// set page title
 	document.title = getPageTitle(to.meta.title)
 
+	if(to.query && to.query.token){
+		store.dispatch('user/setTokenFromURLParam',to.query.token)
+	}
+
 	if(to.query && to.query.device_number){
 		store.dispatch('user/setDeviceNumber',to.query.device_number)
 	}
