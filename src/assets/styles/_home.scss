@@ -365,6 +365,12 @@
     @include bottom-line;
   }
 }
+.top-line{
+  position: relative;
+  &::before{
+    @include top-line;
+  }
+}
 
 .vip-doc-block__title {
   margin: 0;

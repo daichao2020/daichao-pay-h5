@@ -4,7 +4,8 @@
 			<swiper-slide v-for="(item,index) in cardList" :key="item.id">
 				<div class="card">
 					<div class="card-hd">
-						<p>Congratulations! You passed the audit!</p>
+						<p class="tips-title">Congratulations! </p>
+						<p class="tips-desc">You passed the audit! </p>
 						<div class="heading">
 							<p>Loan Amount</p>
 							<h1 class="title">₹{{ item.description }}</h1>
@@ -14,32 +15,46 @@
 						<div class="product-info">
 							<!--<p>Loan Amount</p>
 							<h1 class="title">₹{{ item.description }}</h1>-->
-							<div class="desc small bottom-line flex">
+							<div class="desc small flex">
 								<div class="flex-1 text-left">Interest</div>
-								<div>₹45</div>
+								<div class="bold">₹45</div>
 							</div>
-							<div class="desc small bottom-line flex" style="align-items: flex-start;">
+							<div class="desc small  flex">
 								<div class="flex-1 text-left">
-									Repayment Amount(<span class="red">-₹{{parseInt(item.price)}}</span>)
-									<p class="small gray">₹299 adult fee</p>
+									Repayment Amount(<span class="small red">-{{parseInt(item.price)}}</span>)
 								</div>
-								<div>₹{{parseInt(parseInt(item.description)-parseInt(item.price))}}</div>
+								<div class="bold">₹{{parseInt(parseInt(item.description)-parseInt(item.price))}}</div>
 							</div>
-							<div class="desc small bottom-line flex">
+							<div class="desc small top-line flex">
 								<div class="flex-1 text-left">Loan Term</div>
-								<div>15 days</div>
+								<div class="bold">15days</div>
 							</div>
 						</div>
-						<div class="sales-volume">
-							<p class="txt text-left"><span>Warn reminder: </span>The limit is only reserved for 10 minutes.Please with draw it as soon as possible.</p>
+					</div>
+					<div class="card-ft">
+						<div class="warn-tips">
+							<div class="tips-hd">
+								<span class="title">Warning:  </span><van-icon name="warning-o" />
+							</div>
+							<div class="tips-bd">
+								<div class="tip-item bottom-line">
+									<p>① The audit fee ₹299</p>
+								</div>
+								<div class="tip-item">
+									<p>② The limit is only reserved for 10 minutes.
+										Please with draw it as soon as possible.</p>
+								</div>
+							</div>
+
 						</div>
 						<div class="vip-btn-wrap">
 							<van-button type="primary" class="vip-btn"
+										color="#ff9933"
 										:disabled="isSubmitting"
 										:loading="isSubmitting"
 										loading-text="Submitting..."
 										block
-										@click="selectCurrentItem(item)">Immediate withdraw it</van-button>
+										@click="selectCurrentItem(item)">Immediate withdrawal</van-button>
 						</div>
 						<div class="vip-btn-wrap" style="margin-top: 15px;" v-if="userInfo.is_member">
 							<van-button type="default"
@@ -48,6 +63,7 @@
 						</div>
 					</div>
 				</div>
+
 			</swiper-slide>
 
 		</swiper>
@@ -202,30 +218,87 @@
 	}
 </script>
 <style lang="scss" scoped>
+	.product-swiper{
+		margin-top: 0;
+	}
 	.card{
-		padding-left: 16px;
-		padding-right: 16px;
-		background: linear-gradient(180deg, $primary 0%, $primary 50%, rgba(255, 255, 255, 1) 50% );
+		border-radius: 0;
+		width: 100%;
+		padding: 20px 40px;
+		background: linear-gradient(180deg, $primary 0%, $primary 32%, rgba(255, 255, 255, 1) 32% );
 		.card-bd{
-			padding-left: 20px;
-			padding-right: 20px;
+			padding: 0 30px;
+			color: #333;
+			box-shadow: 0 8px 16px rgba(255, 153, 51, .5);
 		}
 	}
-	.heading{
-		color: #fff;
-		font-size: 24PX;
-		line-height: 1;
-		margin-top: 30px;
-		.title{
-			font-size: 64PX;
+	.card-hd{
+		.tips-title{
 			line-height: 1;
-			margin-top: 0;
-			margin-bottom: 10px;
+			font-size: 29PX;
+			font-weight: 500;
+			margin-bottom: 20px;
+		}
+		.tips-desc{
+			line-height: 1;
+			font-size: 16PX;
+		}
+		.heading{
+			color: #fff;
+			font-size: 20PX;
+			line-height: 1;
+			margin-top: 38px;
+			.title{
+				font-size: 32PX;
+				line-height: 1;
+				margin-top: 30px;
+				margin-bottom: 10px;
+			}
 		}
 	}
+
 	.product-info{
+		margin-bottom: 0;
 		.desc{
-			padding: 10px 0;
+			padding: 30px 0 10px 0;
+			&:last-child{
+				margin-top: 50px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.warn-tips{
+		color: #333;
+		font-size: 15PX;
+		margin: 40px 0 160px 0;
+
+		span{
+			vertical-align: middle;
+		}
+		i{
+			vertical-align: middle;
+			color: $primary;
+			font-size: 23PX;
+		}
+		.tips-hd{
+			position: relative;
+			padding: 0 0 0 30px;
+			&::before{
+				content: ' ';
+				display: block;
+				position: absolute;
+				left: 0;
+				height: 100%;
+				width: 12px;
+				background: $primary;
+				border-radius: 8px;
+			}
+		}
+		.title{
+			font-weight: 700;
+		}
+		.tip-item{
+			padding: 16px 0 16px 40px;
 		}
 	}
 

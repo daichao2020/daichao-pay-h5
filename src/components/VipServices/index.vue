@@ -41,5 +41,7 @@
 	}
 </script>
 <style lang="scss">
-
+	.vip-page{
+		background: #fff;
+	}
 </style>
