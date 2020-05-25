@@ -185,6 +185,10 @@
 			},
 			submitOrder(productInfo){
 
+				if(!this.userInfo.name || !this.userInfo.email){
+					this.toInfoPage();
+					return false;
+				}
 
 				let return_url = location.href.slice(0,location.href.search('#'))+'#/step03';
 				const params = {
@@ -213,6 +217,9 @@
 			},
 			toHomePage(){
 				this.$router.push({name:'home'});
+			},
+			toInfoPage(){
+				this.$router.push({name:'info'});
 			}
 		}
 	}

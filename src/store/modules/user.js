@@ -77,8 +77,6 @@ const actions = {
 
 				}
 
-
-
 				commit('SET_TOKEN_TYPE', data.token_type)
 				setTokenType(data.token_type)
 				resolve(response)
