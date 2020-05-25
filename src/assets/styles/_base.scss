@@ -92,7 +92,10 @@ a{
   display: none !important;
 }
 .red{
-  color: $primary;
+  color: $warn-h;
+}
+.gray{
+  color: #999;
 }
 .green{
   color: $warn-l;

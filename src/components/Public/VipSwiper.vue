@@ -4,15 +4,34 @@
 			<swiper-slide v-for="(item,index) in cardList" :key="item.id">
 				<div class="card">
 					<div class="card-hd">
-						<p>Up to</p>
+						<p>Congratulations! You passed the audit!</p>
+						<div class="heading">
+							<p>Loan Amount</p>
+							<h1 class="title">₹{{ item.description }}</h1>
+						</div>
 					</div>
 					<div class="card-bd">
 						<div class="product-info">
-							<h1 class="title">₹{{ item.description }}</h1>
-							<p class="desc small">Increase the quota to {{item.description}} rs and get the money immediately.</p>
+							<!--<p>Loan Amount</p>
+							<h1 class="title">₹{{ item.description }}</h1>-->
+							<div class="desc small bottom-line flex">
+								<div class="flex-1 text-left">Interest</div>
+								<div>₹45</div>
+							</div>
+							<div class="desc small bottom-line flex" style="align-items: flex-start;">
+								<div class="flex-1 text-left">
+									Repayment Amount(<span class="red">-₹{{parseInt(item.price)}}</span>)
+									<p class="small gray">₹299 adult fee</p>
+								</div>
+								<div>₹{{parseInt(parseInt(item.description)-parseInt(item.price))}}</div>
+							</div>
+							<div class="desc small bottom-line flex">
+								<div class="flex-1 text-left">Loan Term</div>
+								<div>15 days</div>
+							</div>
 						</div>
-						<div class="sales-volume text-center">
-							<p class="num">Pay ₹{{parseInt(item.price)}} audit fee.</p>
+						<div class="sales-volume">
+							<p class="txt text-left"><span>Warn reminder: </span>The limit is only reserved for 10 minutes.Please with draw it as soon as possible.</p>
 						</div>
 						<div class="vip-btn-wrap">
 							<van-button type="primary" class="vip-btn"
@@ -20,7 +39,7 @@
 										:loading="isSubmitting"
 										loading-text="Submitting..."
 										block
-										@click="selectCurrentItem(item)">BUY NOW (₹{{parseInt(item.price)}})</van-button>
+										@click="selectCurrentItem(item)">Immediate withdraw it</van-button>
 						</div>
 						<div class="vip-btn-wrap" style="margin-top: 15px;" v-if="userInfo.is_member">
 							<van-button type="default"
@@ -183,7 +202,31 @@
 	}
 </script>
 <style lang="scss" scoped>
-
-
+	.card{
+		padding-left: 16px;
+		padding-right: 16px;
+		background: linear-gradient(180deg, $primary 0%, $primary 50%, rgba(255, 255, 255, 1) 50% );
+		.card-bd{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	.heading{
+		color: #fff;
+		font-size: 24PX;
+		line-height: 1;
+		margin-top: 30px;
+		.title{
+			font-size: 64PX;
+			line-height: 1;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+	}
+	.product-info{
+		.desc{
+			padding: 10px 0;
+		}
+	}
 
 </style>

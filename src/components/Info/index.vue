@@ -30,7 +30,6 @@
 						v-model="pan"
 						name="rname"
 						placeholder="Please enter pan"
-						:rules="[{ required: true, message: ' ' }]"
 				/>
 				<p class="vip-form_title">Your Email</p>
 				<van-field
