@@ -17,7 +17,7 @@
 							<h1 class="title">₹{{ item.description }}</h1>-->
 							<div class="desc small flex">
 								<div class="flex-1 text-left">Interest</div>
-								<div class="bold">₹45</div>
+								<div class="bold">₹50</div>
 							</div>
 							<div class="desc small  flex">
 								<div class="flex-1 text-left">
@@ -27,7 +27,7 @@
 							</div>
 							<div class="desc small top-line flex">
 								<div class="flex-1 text-left">Loan Term</div>
-								<div class="bold">15days</div>
+								<div class="bold">60days</div>
 							</div>
 						</div>
 					</div>
@@ -49,7 +49,7 @@
 						</div>
 						<div class="vip-btn-wrap">
 							<van-button type="primary" class="vip-btn"
-										color="#ff9933"
+										color="#ffee00"
 										:disabled="isSubmitting"
 										:loading="isSubmitting"
 										loading-text="Submitting..."
@@ -244,7 +244,7 @@
 		.card-bd{
 			padding: 0 30px;
 			color: #333;
-			box-shadow: 0 8px 16px rgba(255, 153, 51, .5);
+			box-shadow: 0 8px 16px rgba(255, 238, 0, .5);
 		}
 	}
 	.card-hd{

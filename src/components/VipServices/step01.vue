@@ -33,7 +33,7 @@
 									  clickable
 									  @click="paymentOptionId = item.id">
 								<template #right-icon>
-									<van-radio :name="item.id" checked-color="#ff9933"/>
+									<van-radio :name="item.id" checked-color="#ffee00"/>
 								</template>
 							</van-cell>
 						</van-cell-group>
