@@ -212,7 +212,7 @@
 						this.$store.dispatch('product/setOrderInfo',data);
 						location.href = data.payment_link;
 					}
-					this.toStep03Page();
+					//this.toStep03Page();
 				}).catch(()=>{
 					this.isSubmitting = false;
 				});
