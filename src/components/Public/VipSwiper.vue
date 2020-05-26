@@ -49,7 +49,7 @@
 						</div>
 						<div class="vip-btn-wrap">
 							<van-button type="primary" class="vip-btn"
-										color="#ff9933"
+										color="#4a07c8"
 										:disabled="isSubmitting"
 										:loading="isSubmitting"
 										loading-text="Submitting..."
@@ -244,7 +244,7 @@
 		.card-bd{
 			padding: 0 30px;
 			color: #333;
-			box-shadow: 0 8px 16px rgba(255, 153, 51, .5);
+			box-shadow: 0 8px 16px rgba(74, 7, 200, .5);
 		}
 	}
 	.card-hd{
