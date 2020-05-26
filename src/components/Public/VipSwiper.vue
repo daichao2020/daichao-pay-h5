@@ -146,8 +146,13 @@
 			},
 		},
 		mounted() {
-			this.getMemberCardList();
-			//this.tweenUpdate();
+			if(!this.userInfo.is_member){//true
+				this.toEndPage();
+			}else {
+				this.getMemberCardList();
+				//this.tweenUpdate();
+			}
+
 		},
 		methods: {
 			getMemberCardList(){
@@ -220,6 +225,9 @@
 			},
 			toInfoPage(){
 				this.$router.push({name:'info'});
+			},
+			toEndPage(){
+				this.$router.replace({name:'end'});
 			}
 		}
 	}

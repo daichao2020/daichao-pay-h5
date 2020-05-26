@@ -11,7 +11,7 @@ export const constantRoutes = [
 	{
 		path: '/',
 		component: Layout,
-		redirect: '/end',
+		redirect: '/vip',
 		children: [
 			//首页
 			{
