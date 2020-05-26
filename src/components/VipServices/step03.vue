@@ -11,7 +11,7 @@
 							:rate="rate"
 							:speed="100"
 							:stroke-width="60"
-							color="#ff9933"
+							color="#FFCC33"
 							layer-color="#eee"
 							size="240px"
 					>
