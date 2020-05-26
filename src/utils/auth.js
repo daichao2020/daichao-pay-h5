@@ -8,27 +8,27 @@ const PlatformKey = 'Platform-Token'
 const AppVersionIdKey = 'App-Version-Id'
 
 export function getToken() {
-	return localStorage.getItem(TokenKey)
+	return sessionStorage.getItem(TokenKey)
 }
 
 export function setToken(token) {
-	localStorage.setItem(TokenKey, token)
+	sessionStorage.setItem(TokenKey, token)
 }
 
 export function removeToken() {
-	localStorage.removeItem(TokenKey)
+	sessionStorage.removeItem(TokenKey)
 }
 
 export function getTokenType() {
-	return localStorage.getItem(TokenTypeKey)
+	return sessionStorage.getItem(TokenTypeKey)
 }
 
 export function setTokenType(type) {
-	localStorage.setItem(TokenTypeKey, type)
+	sessionStorage.setItem(TokenTypeKey, type)
 }
 
 export function removeTokenType() {
-	localStorage.removeItem(TokenTypeKey)
+	sessionStorage.removeItem(TokenTypeKey)
 }
 
 
@@ -72,13 +72,13 @@ export function removeAppVersionId() {
 
 
 export function getUserInfo() {
-	return JSON.parse(localStorage.getItem(UserInfoKey) || 'null');
+	return JSON.parse(sessionStorage.getItem(UserInfoKey) || 'null');
 }
 
 export function setUserInfo(info) {
-	localStorage.setItem(UserInfoKey, JSON.stringify(info));
+	sessionStorage.setItem(UserInfoKey, JSON.stringify(info));
 }
 
 export function removeUserInfo () {
-	localStorage.removeItem(UserInfoKey);
+	sessionStorage.removeItem(UserInfoKey);
 }
