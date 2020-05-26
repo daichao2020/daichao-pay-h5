@@ -99,7 +99,7 @@ export const constantRoutes = [
 		meta: {
 			title: 'VIP services',
 			showHeader: false,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/VipServices/index'),
 	},
@@ -132,7 +132,7 @@ export const constantRoutes = [
 		meta: {
 			title: 'Pay Status',
 			showHeader: false,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/VipServices/step03'),
 	},
@@ -143,7 +143,7 @@ export const constantRoutes = [
 		meta: {
 			title: 'Submit audit',
 			showHeader: false,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/VipServices/end'),
 	},
