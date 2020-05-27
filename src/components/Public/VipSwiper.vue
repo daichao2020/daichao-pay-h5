@@ -27,7 +27,7 @@
 							</div>
 							<div class="desc small top-line flex">
 								<div class="flex-1 text-left">Loan Term</div>
-								<div class="bold">15days</div>
+								<div class="bold">60days</div>
 							</div>
 						</div>
 					</div>
