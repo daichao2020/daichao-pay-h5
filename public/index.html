@@ -22,15 +22,25 @@
 <script type="text/javascript" src="js/adjust_event.js"></script>
 <script type="text/javascript" src="js/adjust_config.js"></script>
 <script>
-	Adjust.initSdk({
-		appToken: 'ryb7fgenrkzk',
-		environment: 'production'
-	});
-	var adjustToken = {
+	let myAppToken = 'ryb7fgenrkzk';
+	let environment = AdjustConfig.EnvironmentSandbox;
+	let adjustConfig = new AdjustConfig(myAppToken, environment);
+
+	Adjust.onCreate(adjustConfig);
+
+	const adjustToken = {
 		clickPayBtn: 'ienfw8',
 		paySuccess: 'hplssi',
 		payFail: '8aza3s',
 	}
+	const clickPayEvent = new AdjustEvent(adjustToken.clickPayBtn);
+	//Adjust.trackEvent(clickPayEvent);
+
+	const paySuccessEvent = new AdjustEvent(adjustToken.paySuccess);
+	//Adjust.trackEvent(paySuccessEvent);
+
+	const payFailEvent = new AdjustEvent(adjustToken.payFail);
+	//Adjust.trackEvent(payFailEvent);
 
 </script>
 </body>

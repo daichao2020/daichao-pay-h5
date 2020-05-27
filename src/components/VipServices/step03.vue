@@ -111,9 +111,12 @@
 							this.payStatusTxt = res.data.message;
 							this.payStatus = data.status;
 							this.pageShow = 2;
-							Adjust.trackEvent({
-								eventToken: adjustToken.paySuccess
-							});
+							try {
+								Adjust.trackEvent(paySuccessEvent);
+							}catch (e) {
+								
+							}
+
 
 							setTimeout(()=>{
 								this.toEndPage();
@@ -124,9 +127,13 @@
 							this.payStatusTxt = res.data.message;
 							this.payStatus = data.status;
 							this.pageShow = 3;
-							Adjust.trackEvent({
-								eventToken: adjustToken.payFail
-							});
+							try {
+								Adjust.trackEvent(payFailEvent);
+							}catch (e) {
+								
+							}
+							
+
 							break;
 						case 40003://处理中
 							if(this.seconds==0){
