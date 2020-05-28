@@ -27,6 +27,17 @@ export const constantRoutes = [
 		]
 	},
 
+	//denglu
+	{
+		path: '/login',
+		name: 'login',
+		meta: {
+			title: 'Contact information',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/Info/index'),
+	},
 	//填写个人信息
 	{
 		path: '/info',
