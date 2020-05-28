@@ -228,6 +228,13 @@
 					const { data } = res;
 					this.$store.dispatch('user/setInfo',data);
 
+
+					try {
+						Adjust.trackEvent(submitInfoEvent);
+					}catch (e) {
+
+					}
+
 					this.isSubmitting = false;
 					this.toVipPage();
 

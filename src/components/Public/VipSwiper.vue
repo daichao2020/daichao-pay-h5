@@ -190,7 +190,7 @@
 			},
 			submitOrder(productInfo){
 
-				if(!this.userInfo.name || !this.userInfo.email){
+				if(!this.userInfo.name){
 					this.toInfoPage();
 					return false;
 				}

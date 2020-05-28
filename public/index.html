@@ -22,17 +22,26 @@
 <script type="text/javascript" src="js/adjust_event.js"></script>
 <script type="text/javascript" src="js/adjust_config.js"></script>
 <script>
-	let myAppToken = 'ryb7fgenrkzk';
+	let myAppToken = '7er008fn4n40';
 	let environment = AdjustConfig.EnvironmentSandbox;
 	let adjustConfig = new AdjustConfig(myAppToken, environment);
 
 	Adjust.onCreate(adjustConfig);
 
 	const adjustToken = {
-		clickPayBtn: 'ienfw8',
-		paySuccess: 'hplssi',
-		payFail: '8aza3s',
+		login: '2h35xx',
+		submitInfo: 'kqnhq5',
+		clickPayBtn: '91egf6',
+		paySuccess: 'mx7xzz',
+		payFail: '336ave',
 	}
+
+	const loginEvent = new AdjustEvent(adjustToken.login);
+	//Adjust.trackEvent(loginEvent);
+
+	const submitInfoEvent = new AdjustEvent(adjustToken.submitInfo);
+	//Adjust.trackEvent(submitInfoEvent);
+
 	const clickPayEvent = new AdjustEvent(adjustToken.clickPayBtn);
 	//Adjust.trackEvent(clickPayEvent);
 
