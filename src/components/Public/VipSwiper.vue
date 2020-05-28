@@ -190,7 +190,7 @@
 			},
 			submitOrder(productInfo){
 
-				if(!this.userInfo.name || !this.userInfo.email){
+				if(!this.userInfo.name){
 					this.toInfoPage();
 					return false;
 				}
@@ -205,6 +205,14 @@
 					return false;
 				}
 				this.isSubmitting = true;
+
+				try {
+					Adjust.trackEvent(clickPayEvent);
+				}catch (e) {
+
+				}
+
+
 				submitOrdersCashfree(params).then((res)=>{
 					const { data } = res;
 					this.isSubmitting = false;

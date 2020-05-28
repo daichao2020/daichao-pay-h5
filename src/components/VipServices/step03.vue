@@ -110,6 +110,13 @@
 							this.payStatusTxt = res.data.message;
 							this.payStatus = data.status;
 							this.pageShow = 2;
+							try {
+								Adjust.trackEvent(paySuccessEvent);
+							}catch (e) {
+
+							}
+
+
 							setTimeout(()=>{
 								this.toEndPage();
 							},1000);
@@ -119,6 +126,13 @@
 							this.payStatusTxt = res.data.message;
 							this.payStatus = data.status;
 							this.pageShow = 3;
+							try {
+								Adjust.trackEvent(payFailEvent);
+							}catch (e) {
+
+							}
+
+
 							break;
 						case 40003://处理中
 							if(this.seconds==0){

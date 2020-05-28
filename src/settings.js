@@ -1,8 +1,8 @@
 module.exports = {
 
 	title				: '',
-	deviceNumber		: '5566777',//设备号
+	deviceNumber		: 'ffffffff-961a-2092-0000-000062bd7427 ',//设备号
 	platform			: '3',//平台：1-安卓 2-苹果 3-H5
-	appVersionId		: '15',//App 版本 id
+	appVersionId		: '16',//App 版本 id
 
 }

@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-	  <keep-alive>
-		  <router-view v-if="$route.meta.keepAlive && networkSuccess"/>
-	  </keep-alive>
-	  <router-view v-if="!$route.meta.keepAlive || !networkSuccess"/>
+	  <router-view/>
   </div>
 </template>
 <script>
