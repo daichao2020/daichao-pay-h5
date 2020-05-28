@@ -132,7 +132,7 @@
 	</div>
 </template>
 <script>
-	import { setUserInfo } from '@/api/user'
+	import { setUserInfo,recordOP } from '@/api/user'
 	export default {
 		data(){
 			return {
@@ -228,13 +228,20 @@
 					const { data } = res;
 					this.$store.dispatch('user/setInfo',data);
 
-					
+
 					try {
 						Adjust.trackEvent(submitInfoEvent);
 					}catch (e) {
-						
+
 					}
-					
+
+					//记录
+					recordOP({
+						operation_type: 20,
+						product_id : 0,
+						extra_id :0,
+					}).catch(e=>{});
+
 					this.isSubmitting = false;
 					this.toVipPage();
 
