@@ -17,40 +17,5 @@
 </noscript>
 <div id="app"></div>
 <!-- built files will be auto injected -->
-<script type="text/javascript" src="js/WebViewJavascriptBridge.js"></script>
-<script type="text/javascript" src="js/adjust.js"></script>
-<script type="text/javascript" src="js/adjust_event.js"></script>
-<script type="text/javascript" src="js/adjust_config.js"></script>
-<script>
-	let myAppToken = '7er008fn4n40';
-	let environment = AdjustConfig.EnvironmentSandbox;
-	let adjustConfig = new AdjustConfig(myAppToken, environment);
-
-	Adjust.onCreate(adjustConfig);
-
-	const adjustToken = {
-		login: '2h35xx',
-		submitInfo: 'kqnhq5',
-		clickPayBtn: '91egf6',
-		paySuccess: 'mx7xzz',
-		payFail: '336ave',
-	}
-
-	const loginEvent = new AdjustEvent(adjustToken.login);
-	//Adjust.trackEvent(loginEvent);
-
-	const submitInfoEvent = new AdjustEvent(adjustToken.submitInfo);
-	//Adjust.trackEvent(submitInfoEvent);
-
-	const clickPayEvent = new AdjustEvent(adjustToken.clickPayBtn);
-	//Adjust.trackEvent(clickPayEvent);
-
-	const paySuccessEvent = new AdjustEvent(adjustToken.paySuccess);
-	//Adjust.trackEvent(paySuccessEvent);
-
-	const payFailEvent = new AdjustEvent(adjustToken.payFail);
-	//Adjust.trackEvent(payFailEvent);
-
-</script>
 </body>
 </html>

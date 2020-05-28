@@ -132,7 +132,6 @@
 	</div>
 </template>
 <script>
-	import { setUserInfo } from '@/api/user'
 	export default {
 		data(){
 			return {
@@ -199,53 +198,11 @@
 
 
 			onSubmit(){
-
-				/*if(!this.rname){
-					this.$toast('Please enter relatives name');return false;
-				}
-				if(!this.rtel){
-					this.$toast('Please enter relatives tel');return false;
-				}
-				if(!this.rnameRelationship){
-					this.$toast('Please choose relationship with myself');return false;
-				}
-				if(!this.fname){
-					this.$toast('Please enter friend name');return false;
-				}
-				if(!this.ftel){
-					this.$toast('Please enter friend tel');return false;
-				}
-				if(!this.fnameRelationship){
-					this.$toast('Please choose relationship with myself');return false;
-				}*/
-
-				this.isSubmitting = true;
-
-				setUserInfo({
-					email: this.yourEmail,
-					name: this.yourName,
-				}).then(res=>{
-					const { data } = res;
-					this.$store.dispatch('user/setInfo',data);
-
-
-					try {
-						Adjust.trackEvent(submitInfoEvent);
-					}catch (e) {
-
-					}
-
-					this.isSubmitting = false;
-					this.toVipPage();
-
-				}).catch((e) => {
-					this.isSubmitting = false
-				});
-
+				this.toEndPage();
 			},
-			toVipPage(){
+			toEndPage(){
 				this.$router.replace({
-					name:'vip',
+					name:'end',
 				});
 			},
 		}

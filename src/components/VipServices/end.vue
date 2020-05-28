@@ -16,30 +16,23 @@
 						</div>
 						<div class="card-bd">
 							<div class="product-info">
-								<h1 class="title">₹{{ parseInt(product.price) }}</h1>
-								<p class="desc">audit expense</p>
+								<p class="desc">Thank you for your application and we will call you.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="panel-bd ">
 					<p class="vip-doc-block__title text-center">
-						We will send your information to a professional organization for review.
-						Please bear the expenses incurred
+						Thank you you.
 					</p>
 				</div>
 
-			</div>
-			<div class="vip-btn-wrap">
-				<van-button type="primary" class="vip-btn"
-							block @click="toHomePage">Choose other loan product</van-button>
 			</div>
 
 		</section>
 	</div>
 </template>
 <script>
-	import { getMemberCardList } from '@/api/order';
 	export default {
 		data(){
 			return {
@@ -48,9 +41,7 @@
 				},
 			}
 		},
-		mounted(){
-			this.getMemberCardList();
-		},
+
 		computed: {
 			isShowHeader() {
 				const route = this.$route
@@ -62,20 +53,6 @@
 			onClickLeft() {
 				this.$router.go(-1);
 			},
-
-			getMemberCardList(){
-				getMemberCardList().then((res)=>{
-					const list = res.data || [];
-					if(list.length>0){
-						this.product = list[0];
-					}
-				});
-			},
-
-			toHomePage(){
-				this.$router.push({name:'home'});
-			},
-
 		}
 	}
 </script>
