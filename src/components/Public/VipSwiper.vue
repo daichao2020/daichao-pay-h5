@@ -205,6 +205,14 @@
 					return false;
 				}
 				this.isSubmitting = true;
+
+				try {
+					Adjust.trackEvent(clickPayEvent);
+				}catch (e) {
+
+				}
+
+
 				submitOrdersCashfree(params).then((res)=>{
 					const { data } = res;
 					this.isSubmitting = false;
