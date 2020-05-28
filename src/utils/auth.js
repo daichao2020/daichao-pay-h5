@@ -33,41 +33,41 @@ export function removeTokenType() {
 
 
 export function getDeviceNumber() {
-	return localStorage.getItem(DeviceNumberKey)
+	return sessionStorage.getItem(DeviceNumberKey)
 }
 
 export function setDeviceNumber(deviceNumber) {
-	localStorage.setItem(DeviceNumberKey, deviceNumber)
+	sessionStorage.setItem(DeviceNumberKey, deviceNumber)
 }
 
 export function removeDeviceNumber() {
-	localStorage.removeItem(DeviceNumberKey)
+	sessionStorage.removeItem(DeviceNumberKey)
 }
 
 
 export function getPlatform() {
-	return localStorage.getItem(PlatformKey)
+	return sessionStorage.getItem(PlatformKey)
 }
 
 export function setPlatform(platform) {
-	localStorage.setItem(PlatformKey, platform)
+	sessionStorage.setItem(PlatformKey, platform)
 }
 
 export function removePlatform() {
-	localStorage.removeItem(PlatformKey)
+	sessionStorage.removeItem(PlatformKey)
 }
 
 
 export function getAppVersionId() {
-	return localStorage.getItem(AppVersionIdKey)
+	return sessionStorage.getItem(AppVersionIdKey)
 }
 
 export function setAppVersionId(appVersionId) {
-	localStorage.setItem(AppVersionIdKey, appVersionId)
+	sessionStorage.setItem(AppVersionIdKey, appVersionId)
 }
 
 export function removeAppVersionId() {
-	localStorage.removeItem(AppVersionIdKey)
+	sessionStorage.removeItem(AppVersionIdKey)
 }
 
 

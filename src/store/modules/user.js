@@ -60,6 +60,12 @@ const actions = {
 				setToken(data.access_token)
 
 				try {
+					Adjust.trackEvent(loginEvent);
+				}catch (e) {
+
+				}
+
+				try {
 					const param = {
 						"actType": "getUserInfo",
 						"data": {
@@ -194,6 +200,9 @@ const actions = {
 
 			commit('SET_TOKEN_TYPE', '')
 			removeTokenType()
+
+			commit('SET_PHONE_NUMBER', '')
+			commit('SET_INFO', {})
 			resolve()
 		})
 	},
