@@ -3,7 +3,7 @@
 		<div class="product-list">
 			<div class="product-item flex" @click="apply(item.id)" v-for="item in list" :key="item.id">
 				<div class="item-hd">
-					<img :src="'/imgs/product/'+item.id+'.png'">
+					<img :src="'/imgs/product/'+item.id+'.jpg'">
 				</div>
 				<div class="item-bd flex-1">
 					<p class="title">{{ item.product_name }}</p>
