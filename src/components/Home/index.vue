@@ -15,7 +15,7 @@
 					<div class="heading-item flex">
 						<van-icon class="icon" name="fire" />
 						<div class="heading-item-bd flex-1">
-							<p class="title">Personnal Loan</p>
+							<p class="title">Successful Loan Person</p>
 							<p class="desc">Unsecred Loan for persional purpose</p>
 						</div>
 					</div>

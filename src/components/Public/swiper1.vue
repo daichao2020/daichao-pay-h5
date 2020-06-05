@@ -1,7 +1,7 @@
 <template>
     <swiper class="home-swiper" ref="mySwiper" :options="swiperOptions">
         <swiper-slide>
-            <a class="slide-product" href="/" target="_blank"><img src="@/assets/imgs/sw.jpg"/></a>
+            <a class="slide-product" href="/" target="_blank"><img src="@/assets/imgs/sw1.jpeg"/></a>
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
