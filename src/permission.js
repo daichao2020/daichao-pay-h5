@@ -6,9 +6,9 @@ import { getToken } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
 
 
-const whiteList = ['/login','/home','/loanall'] // no redirect whitelist
+var whiteList = ['/login'] // no redirect whitelist
 
-router.beforeEach((to, from, next) => {
+router.beforeEach(async (to, from, next) => {
 
 	// set page title
 	document.title = getPageTitle(to.meta.title)
@@ -38,7 +38,7 @@ router.beforeEach((to, from, next) => {
 			} else {
 			  try {
 				// get user info
-				store.dispatch('user/getInfo')
+				await store.dispatch('user/getInfo')
 
 				next()
 			  } catch (error) {
@@ -51,6 +51,18 @@ router.beforeEach((to, from, next) => {
 		}
 	} else {
 		/* has no token*/
+		let regPositionStatus = store.getters.regPositionStatus
+
+		if(!regPositionStatus){//为0 表示还未获取是前置登录还是后置登录
+			let data = await store.dispatch('user/getRegPositionStatus');
+			regPositionStatus = data.reg_position_status;
+		}
+
+		if(regPositionStatus==1){//1-前置注册
+			whiteList = ['/login'] // no redirect whitelist
+		}else if(regPositionStatus==2){//2-后置注册
+			whiteList = ['/login','/home','/loanall'] // no redirect whitelist
+		}
 
 		if (whiteList.indexOf(to.path) !== -1) {
 			// in the free login whitelist, go directly

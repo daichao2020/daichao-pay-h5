@@ -89,3 +89,13 @@ export function recordOP(data) {
 		data
 	})
 }
+
+/**
+ * Apps版本状态
+ * */
+export function getAppsVersion() {
+	return request({
+		url: '/appsVersion',
+		method: 'get',
+	})
+}

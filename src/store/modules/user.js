@@ -1,5 +1,5 @@
 import defaultSettings from '@/settings'
-import { login, logout, getInfo, reLogin } from '@/api/user'
+import { login, logout, getInfo, reLogin,getAppsVersion } from '@/api/user'
 import {
 	 getToken, 			setToken, 			removeToken
 	,getTokenType, 		setTokenType, 		removeTokenType
@@ -17,6 +17,7 @@ const getDefaultState = () => {
 		deviceNumber: getDeviceNumber() || defaultSettings.deviceNumber,
 		platform: getPlatform() || defaultSettings.platform,
 		appVersionId: getAppVersionId() || defaultSettings.appVersionId,
+		regPositionStatus: 0,//1-前置注册，2-后置注册
 	}
 }
 
@@ -46,6 +47,9 @@ const mutations = {
 	},
 	SET_APP_VERSION_Id: (state, appVersionId) => {
 		state.appVersionId = appVersionId
+	},
+	SET_REG_POSITION_STATUS: (state, regPositionStatus) => {
+		state.regPositionStatus = regPositionStatus
 	},
 }
 
@@ -157,6 +161,18 @@ const actions = {
 			commit('SET_TOKEN_TYPE', '')
 			removeTokenType()
 			resolve()
+		})
+	},
+	//
+	getRegPositionStatus({ commit, state }) {
+		return new Promise((resolve, reject) => {
+			getAppsVersion().then(response => {
+				const { data } = response
+				commit('SET_REG_POSITION_STATUS', data.reg_position_status)
+				resolve(data)
+			}).catch(error => {
+				reject(error)
+			})
 		})
 	},
 }
