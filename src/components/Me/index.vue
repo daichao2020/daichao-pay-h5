@@ -21,6 +21,12 @@
 				<van-cell title="Modify Head Portrait" is-link to="/setavatar" />
 			</div>
 			<div class="custom-cell-area">
+				<van-cell title="About Us" is-link to="/feedback"/>
+				<van-cell title="Contact Us" label="customer care email/phone number" is-link  to="/feedback"/>
+				<van-cell title="Cancellation & Refund Policy" is-link  to="/feedback"/>
+				<van-cell title="Privacy Policy" is-link  to="/feedback"/>
+			</div>
+			<div class="custom-cell-area">
 				<van-cell title="Logout" is-link @click="logout" />
 			</div>
 

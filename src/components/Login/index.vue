@@ -35,6 +35,13 @@
                         label="Telephone"
                         placeholder="Please enter telephone"
                 />
+				<van-field name="checkbox">
+					<template #input>
+						<van-checkbox v-model="checkbox" checked-color="#07c160" >
+							I have read and agreed to the <span class="red" @click.stop="toTermsPage">Terms & Conditions</span>
+						</van-checkbox>
+					</template>
+				</van-field>
 
                 <div class="vip-btn-wrap">
                     <van-button type="primary" class="vip-btn"
@@ -61,6 +68,7 @@
                 telephone: '',//9829666666
                 code: '',
                 codekey: '',
+				checkbox: true,
                 isGetting: false,
                 gettingText: '',
                 count: 60,
@@ -119,6 +127,9 @@
 					}
 				});
 			},
+			toTermsPage(){
+				this.$router.push({name:'terms'});
+			}
         }
     }
 </script>
