@@ -22,18 +22,18 @@
 <script type="text/javascript" src="js/adjust_event.js"></script>
 <script type="text/javascript" src="js/adjust_config.js"></script>
 <script>
-	let myAppToken = 'e3idfyiku41s';
+	let myAppToken = 'e3idfyiku41s';//应用码
 	let environment = AdjustConfig.EnvironmentSandbox;
 	let adjustConfig = new AdjustConfig(myAppToken, environment);
 
 	Adjust.onCreate(adjustConfig);
 
 	const adjustToken = {
-		login: 'n33hk5',
-		submitInfo: '4b0m38',
-		clickPayBtn: 'b4or7x',
-		paySuccess: 'ffuhza',
-		payFail: 'v8ywc7',
+		login: 'n33hk5',//登录成功
+		submitInfo: '4b0m38',//填写资料
+		clickPayBtn: 'b4or7x',//点击支付按钮
+		paySuccess: 'ffuhza',//支付成功
+		payFail: 'v8ywc7',//支付失败
 	}
 
 	const loginEvent = new AdjustEvent(adjustToken.login);
