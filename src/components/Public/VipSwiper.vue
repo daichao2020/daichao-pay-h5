@@ -38,7 +38,7 @@
 							</div>
 							<div class="tips-bd">
 								<div class="tip-item bottom-line">
-									<p>① The audit fee ₹299</p>
+									<p>① The audit fee ₹{{parseInt(item.price)}}</p>
 								</div>
 								<div class="tip-item">
 									<p>② The limit is only reserved for 10 minutes.
