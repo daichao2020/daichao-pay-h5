@@ -16,18 +16,18 @@
 			</div>
 
 			<div class="custom-cell-area">
-				<van-cell title="Feedback" is-link to="/feedback" />
-				<van-cell title="Set NickName" is-link to="/setnickname" />
-				<van-cell title="Modify Head Portrait" is-link to="/setavatar" />
+				<van-cell :title="$t('str.feedback')" is-link to="/feedback" />
+				<van-cell :title="$t('str.setNickName')" is-link to="/setnickname" />
+				<van-cell :title="$t('str.modifyHeadPortrait')" is-link to="/setavatar" />
 			</div>
 			<div class="custom-cell-area">
-				<van-cell title="About Us" is-link to="/feedback"/>
-				<van-cell title="Contact Us" label="customer care email/phone number" is-link  to="/feedback"/>
-				<van-cell title="Cancellation & Refund Policy" is-link  to="/feedback"/>
-				<van-cell title="Privacy Policy" is-link  to="/feedback"/>
+				<van-cell :title="$t('str.aboutUs')" is-link to="/feedback"/>
+				<van-cell :title="$t('str.contactUs')" :label="$t('str.contactUsLabel')" is-link  to="/feedback"/>
+				<van-cell :title="$t('str.cancellation')" is-link  to="/feedback"/>
+				<van-cell :title="$t('str.privacyPolicy')" is-link  to="/feedback"/>
 			</div>
 			<div class="custom-cell-area">
-				<van-cell title="Logout" is-link @click="logout" />
+				<van-cell :title="$t('str.logout')" is-link @click="logout" />
 			</div>
 
 		</section>

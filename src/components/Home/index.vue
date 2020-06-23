@@ -16,8 +16,8 @@
 						<div class="heading-item flex">
 							<van-icon class="icon" name="fire" />
 							<div class="heading-item-bd flex-1">
-								<p class="title">Personnal Loan</p>
-								<p class="desc">Unsecred Loan for persional purpose</p>
+								<p class="title">{{$t('str.personnalLoan')}}</p>
+								<p class="desc">{{$t('str.unsecredLoanForPersionalPurpose')}}</p>
 							</div>
 						</div>
 					</div>

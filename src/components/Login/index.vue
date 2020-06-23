@@ -2,21 +2,21 @@
     <div class="login-page default-page">
         <header v-if="isShowHeader">
             <van-nav-bar
-                    title="Sign in"
+                    :title="$t('str.signIn')"
                     fixed
                     placeholder
             ></van-nav-bar>
         </header>
         <section class="login-page-body">
-			<h2 class="vip-doc-block__title">Welcome</h2>
+			<h2 class="vip-doc-block__title">{{$t('str.welcome')}}</h2>
             <div ref="login_form">
                 <van-field
                         readonly
                         clickable
                         name="picker"
                         :value="countryCodeText"
-                        label="Country"
-                        placeholder="Please select country code"
+                        :label="$t('str.country')"
+                        :placeholder="$t('str.countryPlaceholder')"
                         right-icon="arrow"
                         @click="showPicker = true"
                 />
@@ -32,13 +32,13 @@
                         v-model="telephone"
                         name="telephone"
 						type="tel"
-                        label="Telephone"
-                        placeholder="Please enter telephone"
+                        :label="$t('str.telephone')"
+                        :placeholder="$t('str.telephonePlaceholder')"
                 />
 				<van-field name="checkbox">
 					<template #input>
 						<van-checkbox v-model="checkbox" checked-color="#07c160" >
-							I have read and agreed to the <span class="red" @click.stop="toTermsPage">Terms & Conditions</span>
+							{{$t('str.loginTips1')}}<span class="red" @click.stop="toTermsPage">{{$t('str.loginTips2')}}</span>
 						</van-checkbox>
 					</template>
 				</van-field>
@@ -46,7 +46,7 @@
                 <div class="vip-btn-wrap">
                     <van-button type="primary" class="vip-btn"
 								@click="onSubmit"
-                                block>Get verification code</van-button>
+                                block>{{$t('str.loginBtn1')}}</van-button>
                 </div>
             </div>
         </section>

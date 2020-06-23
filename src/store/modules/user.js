@@ -6,12 +6,14 @@ import {
 	,getDeviceNumber,	setDeviceNumber,	removeDeviceNumber
 	,getPlatform,		setPlatform,		removePlatform
 	,getAppVersionId,	setAppVersionId,	removeAppVersionId
+	,getLanguage,		setLanguage,		removeLanguage
 } from '@/utils/auth'
 
 const getDefaultState = () => {
 	return {
 		token: getToken(),
 		phoneNumber: '',
+		language: '',
 		tokenType: getTokenType(),
 		info: {},
 		deviceNumber: getDeviceNumber() || defaultSettings.deviceNumber,
@@ -46,6 +48,9 @@ const mutations = {
 	},
 	SET_APP_VERSION_Id: (state, appVersionId) => {
 		state.appVersionId = appVersionId
+	},
+	SET_LANGUAGE: (state, language) => {
+		state.language = language
 	},
 }
 
@@ -172,6 +177,10 @@ const actions = {
 	setAppVersionId({ commit, state },appVersionId) {
 		commit('SET_APP_VERSION_Id', appVersionId)
 		setAppVersionId(appVersionId);
+	},
+	setLanguage({ commit, state },language) {
+		commit('SET_LANGUAGE', language)
+		setLanguage(language);
 	},
 
 	// user logout

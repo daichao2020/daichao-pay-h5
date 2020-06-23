@@ -3,7 +3,7 @@ import store from '@/store'
 import router from '@/router';
 import { Dialog,Toast } from 'vant'
 import { getToken,getTokenType } from '@/utils/auth'
-import { getLanguage } from '@/i18n/index'
+import { getLanguageIn } from '@/i18n/index'
 
 // create an axios instance
 const service = axios.create({
@@ -38,7 +38,7 @@ service.interceptors.request.use(
 			config.params['app_version_id'] = store.getters.appVersionId
 		}
 
-		config.headers['Accept-Language'] = getLanguage();//Accept-Language:en
+		config.headers['Accept-Language'] = getLanguageIn();//Accept-Language:en
 
 		return config
 	},
@@ -86,7 +86,7 @@ service.interceptors.response.use(
 	error => {
 		const { response } = error;
 
-		if(response.config && response.config.url!=="/user/operations"){
+		if(response && response.config && response.config.url!=="/user/operations"){
 			//(error.response && error.response.status !== 200
 			if(response && response.status !== 200){
 

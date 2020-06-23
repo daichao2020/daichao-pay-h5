@@ -1,6 +1,7 @@
 const getters = {
 	token: state => state.user.token,
 	phoneNumber: state => state.user.phoneNumber,
+	language: state => state.user.language,
 	deviceNumber: state => state.user.deviceNumber,
 	platform: state => state.user.platform,
 	appVersionId: state => state.user.appVersionId,

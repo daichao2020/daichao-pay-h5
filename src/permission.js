@@ -26,6 +26,9 @@ router.beforeEach(async(to, from, next) => {
 	if(to.query && to.query.app_version_id){
 		store.dispatch('user/setAppVersionId',to.query.app_version_id)
 	}
+	if(to.query && to.query.language){//language=vi_VN
+		store.dispatch('user/setLanguage',to.query.language)
+	}
 
 	// determine whether the user has logged in
 	const hasToken = getToken()

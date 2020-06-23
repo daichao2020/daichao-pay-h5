@@ -16,23 +16,22 @@
 						</div>
 						<div class="card-bd">
 							<div class="product-info">
-								<h1 class="title">₹{{ parseInt(product.price) }}</h1>
-								<p class="desc">audit expense</p>
+								<h1 class="title">{{$t('str.unit')+' '+ parseInt(product.price) }}</h1>
+								<p class="desc">{{$t('str.auditExpense')}}</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="panel-bd ">
 					<p class="vip-doc-block__title text-center">
-						We will send your information to a professional organization for review.
-						Please bear the expenses incurred
+						{{$t('str.weWillSend')}}
 					</p>
 				</div>
 
 			</div>
 			<div class="vip-btn-wrap">
 				<van-button type="primary" class="vip-btn"
-							block @click="toHomePage">Choose other loan product</van-button>
+							block @click="toHomePage">{{$t('str.chooseOtherLoanProduct')}}</van-button>
 			</div>
 
 		</section>

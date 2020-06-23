@@ -16,14 +16,14 @@
 						</div>
 						<div class="card-bd">
 							<div class="product-info">
-								<h1 class="title">₹{{ parseInt(product.price) }}</h1>
+								<h1 class="title">{{$t('str.unit')+' '+ parseInt(product.price) }}</h1>
 								<p class="desc">{{ product.description }}</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="panel-bd ">
-					<h2 class="vip__title">Select Payment Option</h2>
+					<h2 class="vip__title">{{$t('str.selectPaymentOption')}}</h2>
 					<van-radio-group v-model="paymentOptionId">
 						<van-cell-group v-for="item in list" :key="item.id">
 							<van-cell v-if="!item.disabled"
@@ -45,8 +45,8 @@
 				<van-button type="primary" class="vip-btn"
 							:disabled="isSubmitting"
 							:loading="isSubmitting"
-							loading-text="Submitting..."
-							block @click="submitOrder">Continue</van-button>
+							:loading-text="$t('str.submitting')"
+							block @click="submitOrder">{{$t('str.continue')}}</van-button>
 			</div>
 
 		</section>

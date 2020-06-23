@@ -6,6 +6,7 @@ const UserInfoKey = 'User-Info'
 const DeviceNumberKey = 'Device-Number'
 const PlatformKey = 'Platform-Token'
 const AppVersionIdKey = 'App-Version-Id'
+const LanguageKey = 'Language'
 
 export function getToken() {
 	return sessionStorage.getItem(TokenKey)
@@ -68,6 +69,18 @@ export function setAppVersionId(appVersionId) {
 
 export function removeAppVersionId() {
 	sessionStorage.removeItem(AppVersionIdKey)
+}
+
+export function getLanguage() {
+	return sessionStorage.getItem(LanguageKey)
+}
+
+export function setLanguage(language) {
+	sessionStorage.setItem(LanguageKey, language)
+}
+
+export function removeLanguage() {
+	sessionStorage.removeItem(LanguageKey)
 }
 
 

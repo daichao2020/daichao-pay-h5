@@ -2,7 +2,6 @@
     <div class="default-page detail-page page">
         <header v-if="isShowHeader">
             <van-nav-bar
-                    title="Person loan offers"
                     fixed
                     left-arrow
                     @click-left="onClickLeft"
@@ -31,24 +30,24 @@
 						<div class="card-item flex-1">
 							<van-icon name="balance-o" />
 							<p class="title">{{ detail.amount_low + ' - ' + detail.amount_high }}</p>
-							<p class="desc">Amount</p>
+							<p class="desc">{{$t('str.amount')}}</p>
 						</div>
 						<div class="card-item flex-1">
 							<van-icon name="underway-o" />
 							<p class="title">{{ detail.divide_period_min + '-' + detail.divide_period_max }}</p>
-							<p class="desc">Tenure(Months)</p>
+							<p class="desc">{{$t('str.tenure')}}</p>
 						</div>
 					</div>
 					<div class="flex">
 						<div class="card-item flex-1">
 							<van-icon name="discount" />
 							<p class="title">{{ detail.daily_rate }}</p>
-							<p class="desc">Interest Rate(Per Daily)</p>
+							<p class="desc">{{$t('str.interestRate')}}</p>
 						</div>
 						<div class="card-item flex-1">
 							<van-icon name="bill-o" />
 							<p class="title">{{ detail.pro_fee || 0 }}</p>
-							<p class="desc">Processing Fee</p>
+							<p class="desc">{{$t('str.processingFee')}}</p>
 						</div>
 					</div>
 				</div>
@@ -57,13 +56,13 @@
 			<div class="panel">
 				<div class="panel-hd">
 					<div class="heading-item">
-						<p class="title">Load Terms</p>
+						<p class="title">{{$t('str.loadTerms')}}</p>
 					</div>
 				</div>
 				<div class="panel-bd term-card">
 					<div class="term-item flex">
 						<div>
-							<label class="term-label"><span>Eligibility Criteria:</span></label>
+							<label class="term-label"><span>{{$t('str.eligibilityCriteria')}}:</span></label>
 						</div>
 						<div class="flex-1">
 							<p>{{ detail.apply_condition }}</p>
@@ -71,7 +70,7 @@
 					</div>
 					<div class="term-item flex">
 						<div>
-							<label class="term-label"><span>Apply Requirements:</span></label>
+							<label class="term-label"><span>{{$t('str.applyRequirements')}}:</span></label>
 						</div>
 						<div class="flex-1">
 							<p>{{ detail.apply_doc }}</p>
@@ -84,7 +83,7 @@
 			<div class="panel">
 				<div class="panel-hd">
 					<div class="heading-item">
-						<p class="title">How to Apply</p>
+						<p class="title">{{$t('str.howToApply')}}</p>
 					</div>
 				</div>
 				<div class="panel-bd apply-process-card">
@@ -96,7 +95,7 @@
         </section>
 		<footer class="page-footer">
 			<van-button type="primary" class="vip-btn" @click="toGooglePay"
-						block >Apply Nor</van-button>
+						block >{{$t('str.applyNor')}}</van-button>
 		</footer>
     </div>
 </template>

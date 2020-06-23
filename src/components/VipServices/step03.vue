@@ -25,7 +25,7 @@
 				</div>
 				<div class="pay-msg__tips-area">
 					<p class="pay-msg__tips">
-						Checking payment status...
+						{{$t('str.checkingPaymentStatus')}}
 					</p>
 				</div>
 			</div>
@@ -36,12 +36,12 @@
 					<van-icon class="pay-icon_msg pay-icon-success" name="checked" />
 				</div>
 				<div class="pay-msg__text-area">
-					<h2 class="pay-msg__title">Payment is successful</h2>
+					<h2 class="pay-msg__title">{{$t('str.paymentIsSuccessful')}}</h2>
 					<p class="pay-msg__desc"></p>
 				</div>
 				<div class="pay-msg__opr-area">
 					<div class="vip-btn-wrap">
-						<van-button type="primary" class="vip-btn" block @click="toEndPage">next</van-button>
+						<van-button type="primary" class="vip-btn" block @click="toEndPage">{{$t('str.next')}}</van-button>
 					</div>
 				</div>
 
@@ -53,12 +53,12 @@
 					<van-icon class="pay-icon_msg pay-icon-fail" name="warning" />
 				</div>
 				<div class="pay-msg__text-area">
-					<h2 class="pay-msg__title">Payment is failed</h2>
+					<h2 class="pay-msg__title">{{$t('str.paymentIsFailed')}}</h2>
 				</div>
 
 				<div class="pay-msg__opr-area">
 					<div class="vip-btn-wrap">
-						<van-button type="default" class="vip-btn" block  @click="toLastPage">Back</van-button>
+						<van-button type="default" class="vip-btn" block  @click="toLastPage">{{$t('str.back')}}</van-button>
 					</div>
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 				rate: 100,
 				currentRate: 0,
 				payStatus: 40003,
-				payStatusTxt: 'Checking payment status...',
+				payStatusTxt: this.$t('str.checkingPaymentStatus'),
 				seconds: 30,
 			}
 		},

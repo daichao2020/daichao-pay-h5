@@ -8,8 +8,8 @@
             ></van-nav-bar>
         </header>
         <section class="login-page-body">
-			<h2 class="vip-doc-block__title">Enter verification code</h2>
-			<h2 class="vip-doc-block__desc">Verification code has been send to {{ telephone }}</h2>
+			<h2 class="vip-doc-block__title">{{$t('str.codeTips1')}}</h2>
+			<h2 class="vip-doc-block__desc">{{$t('str.codeTips2')}} {{ telephone }}</h2>
             <div ref="code_form">
 				<van-password-input
 						:length="CODE_LENGTH"
@@ -25,7 +25,7 @@
 					</template>
 					<template v-else>
 						<van-button size="small" type="default" class="vip-btn"
-									@click="getCode">Get Code</van-button>
+									@click="getCode">{{$t('str.loginBtn2')}}</van-button>
 					</template>
 				</div>
 
@@ -78,7 +78,7 @@
         methods: {
             getCode(){
                 if(!this.telephone){
-                    this.$toast('Please enter telephone');
+                    this.$toast(this.$t('str.telephonePlaceholder'));
                     return false;
                 }
                 if(this.isGetting){
@@ -123,13 +123,13 @@
 			},
             onSubmit(){
 				if(!this.code){
-					this.$toast('Please enter code');
+					this.$toast(this.$t('str.codeTips3'));
 					return false;
 				}
 
 				const toast = this.$toast.loading({
 					duration: 10000,
-					message: 'Loading...',
+					message: this.$t('str.loading')+'...',
 					forbidClick: true,
 				});
 				this.isSubmitting = true;

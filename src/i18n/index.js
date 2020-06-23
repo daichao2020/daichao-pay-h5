@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
-import Cookies from 'js-cookie'
+import { getLanguage } from '@/utils/auth'
 import { Locale } from 'vant';
 
 import en from '../i18n/en'
+
 import vantEnUS from 'vant/lib/locale/lang/en-US'
 
-import zh from '../i18n/zh-CN'
-import vantZhCN from 'vant/lib/locale/lang/zh-CN'
+import vi_VN from '../i18n/vi_VN'
+import vantViVN from '../i18n/vant_vi_VN'
 
 Vue.use(VueI18n)
 
@@ -16,14 +17,15 @@ const langConfig = {
         ...en, //引入自定义国际化
         ...vantEnUS
     },
-    "zh-CN": {
-        ...zh, //引入自定义国际化
-        ...vantZhCN
-    }
+	"vi_VN": {//越南
+        ...vi_VN,
+        ...vantViVN
+    },
+
 }
 
-export function getLanguage() {
-    const chooseLanguage = Cookies.get('language')
+export function getLanguageIn() {
+    const chooseLanguage = getLanguage('language')
     if(chooseLanguage) return chooseLanguage
 
     const language = (navigator.language || navigator.browserLanguage).toLowerCase()
@@ -39,16 +41,16 @@ export function getLanguage() {
 }
 
 const i18n = new VueI18n({
-    locale: getLanguage(),
+    locale: getLanguageIn(),
     messages: langConfig
 })
 
 // 更新vant组件库本身的语言变化，支持国际化
 function vantLocales (lang) {
-    if (lang === 'en') {
+    if (lang === 'vi_VN') {
+        Locale.use(lang, vantViVN)
+    } else {
         Locale.use(lang, vantEnUS)
-    } else if (lang === 'zh-CN') {
-        Locale.use(lang, vantZhCN)
     }
 }
 export { i18n, vantLocales }

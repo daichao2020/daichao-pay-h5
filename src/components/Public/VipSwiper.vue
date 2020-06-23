@@ -4,45 +4,42 @@
 			<swiper-slide v-for="(item,index) in cardList" :key="item.id">
 				<div class="card">
 					<div class="card-hd">
-						<p class="tips-title">Congratulations! </p>
-						<p class="tips-desc">You passed the audit! </p>
+						<p class="tips-title">{{$t('str.congratulations')}} </p>
+						<p class="tips-desc">{{$t('str.youPassedTheAudit')}} </p>
 						<div class="heading">
-							<p>Loan Amount</p>
-							<h1 class="title">₹{{ item.description }}</h1>
+							<p>{{$t('str.loanAmount')}}</p>
+							<h1 class="title">{{$t('str.unit') + item.description }}</h1>
 						</div>
 					</div>
 					<div class="card-bd">
 						<div class="product-info">
-							<!--<p>Loan Amount</p>
-							<h1 class="title">₹{{ item.description }}</h1>-->
 							<div class="desc small flex">
-								<div class="flex-1 text-left">Interest</div>
-								<div class="bold">₹45</div>
+								<div class="flex-1 text-left">{{$t('str.interest')}}</div>
+								<div class="bold">{{$t('str.unit')}}45</div>
 							</div>
-							<div class="desc small  flex">
+							<div class="desc small flex">
 								<div class="flex-1 text-left">
-									Repayment Amount(<span class="small red">-{{parseInt(item.price)}}</span>)
+									{{$t('str.repaymentAmount')}}(<span class="small red">-{{parseInt(item.price)}}</span>)
 								</div>
-								<div class="bold">₹{{parseInt(parseInt(item.description)-parseInt(item.price))}}</div>
+								<div class="bold">{{$t('str.unit')}}{{parseInt(parseInt(item.description)-parseInt(item.price))}}</div>
 							</div>
 							<div class="desc small top-line flex">
-								<div class="flex-1 text-left">Loan Term</div>
-								<div class="bold">60days</div>
+								<div class="flex-1 text-left">{{$t('str.loanTerm')}}</div>
+								<div class="bold">60{{$t('str.days')}}</div>
 							</div>
 						</div>
 					</div>
 					<div class="card-ft">
 						<div class="warn-tips">
 							<div class="tips-hd">
-								<span class="title">Warning:  </span><van-icon name="warning-o" />
+								<span class="title">{{$t('str.warning')}}:  </span><van-icon name="warning-o" />
 							</div>
 							<div class="tips-bd">
 								<div class="tip-item bottom-line">
-									<p>① The audit fee ₹{{parseInt(item.price)}}</p>
+									<p>① {{$t('str.theAuditFee')}} {{$t('str.unit')}}{{parseInt(item.price)}}</p>
 								</div>
 								<div class="tip-item">
-									<p>② The limit is only reserved for 10 minutes.
-										Please with draw it as soon as possible.</p>
+									<p>② {{$t('str.theLimitIs')}}</p>
 								</div>
 							</div>
 
@@ -52,14 +49,14 @@
 										color="#ff9933"
 										:disabled="isSubmitting"
 										:loading="isSubmitting"
-										loading-text="Submitting..."
+										:loading-text="$t('str.submitting')"
 										block
-										@click="selectCurrentItem(item)">Immediate withdrawal</van-button>
+										@click="selectCurrentItem(item)">{{$t('str.immediateWithdrawal')}}</van-button>
 						</div>
 						<div class="vip-btn-wrap" style="margin-top: 15px;" v-if="userInfo.is_member">
 							<van-button type="default"
 										block
-										@click="toHomePage()">Choose other loan product</van-button>
+										@click="toHomePage()">{{$t('str.chooseOtherLoanProduct')}}</van-button>
 						</div>
 					</div>
 				</div>
@@ -146,13 +143,12 @@
 			},
 		},
 		mounted() {
-			if(this.userInfo.is_member){//true
+			/*if(this.userInfo.is_member){//true
 				this.toEndPage();
 			}else {
 				this.getMemberCardList();
-				//this.tweenUpdate();
-			}
-
+			}*/
+			this.getMemberCardList();
 		},
 		methods: {
 			getMemberCardList(){
@@ -252,7 +248,7 @@
 		.card-bd{
 			padding: 0 30px;
 			color: #333;
-			box-shadow: 0 8px 16px rgba(255, 153, 51, .5);
+			box-shadow: 0 8px 16px rgba(48, 141, 66, .5);
 		}
 	}
 	.card-hd{

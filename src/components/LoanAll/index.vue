@@ -2,7 +2,6 @@
     <div class="default-page loan-all-page">
         <header v-if="isShowHeader">
             <van-nav-bar
-                    title="Loan All"
                     fixed
                     placeholder
             ></van-nav-bar>
