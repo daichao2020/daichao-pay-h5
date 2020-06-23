@@ -8,60 +8,60 @@
 			></van-nav-bar>
 		</header>
 		<section class="login-page-body">
-			<h2 class="vip-doc-block__title">Contact information</h2>
+			<h2 class="vip-doc-block__title">{{$t('str.contactInformation')}}</h2>
 			<van-form @submit="onSubmit">
 
-				<p class="vip-form_title">Your Name</p>
+				<p class="vip-form_title">{{$t('str.yourName')}}</p>
 				<van-field
 						v-model="yourName"
 						name="yname"
-						placeholder="Please enter your name"
+						:placeholder="$t('str.yourNamePlaceholder')"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
-				<p class="vip-form_title">ID Number</p>
+				<p class="vip-form_title">{{$t('str.IDNumber')}}</p>
 				<van-field
 						v-model="idNumber"
 						name="idNumber"
-						placeholder="Please enter ID number"
+						:placeholder="$t('str.IDNumberPlaceholder')"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
-				<p class="vip-form_title">PAN</p>
+				<p class="vip-form_title">{{$t('str.PAN')}}</p>
 				<van-field
 						v-model="pan"
 						name="rname"
-						placeholder="Please enter pan"
+						:placeholder="$t('str.PANPlaceholder')"
 				/>
-				<p class="vip-form_title">Your Email</p>
+				<p class="vip-form_title">{{$t('str.yourEmail')}}</p>
 				<van-field
 						v-model="yourEmail"
 						name="yemail"
-						placeholder="Please enter your email"
+						:placeholder="$t('str.yourEmailPlaceholder')"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
 
-				<p class="vip-form_title">Bank Name</p>
+				<p class="vip-form_title">{{$t('str.bankName')}}</p>
 				<van-field
 						v-model="bankName"
 						name="bankNo"
-						placeholder="Please enter bank name"
+						:placeholder="$t('str.bankNamePlaceholder')"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
-				<p class="vip-form_title">Bank Account No.</p>
+				<p class="vip-form_title">{{$t('str.bankAccountNo')}}</p>
 				<van-field
 						v-model="bankNo"
 						name="bankNo"
-						placeholder="Please enter bank account No."
+						:placeholder="$t('str.bankAccountNoPlaceholder')"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
-				<p class="vip-form_tips">Please make sure that you have entered the correct information.  The money will be disbursed to this bank account.</p>
+				<p class="vip-form_tips">{{$t('str.infoTips1')}}</p>
 
-				<p class="vip-form_title">Gender</p>
+				<p class="vip-form_title">{{$t('str.gender')}}</p>
 				<van-field
 						readonly
 						clickable
 						name="gender"
 						v-model="gender"
-						placeholder="Please choose"
+						:placeholder="$t('str.pleaseChoose')"
 						right-icon="arrow"
 						@click="showGenderPicker = true"
 						:rules="[{ required: true, message: ' ' }]"
@@ -75,13 +75,13 @@
 					/>
 				</van-popup>
 
-				<p class="vip-form_title">Education</p>
+				<p class="vip-form_title">{{$t('str.education')}}</p>
 				<van-field
 						readonly
 						clickable
 						name="education"
 						v-model="education"
-						placeholder="Please choose"
+						:placeholder="$t('str.pleaseChoose')"
 						right-icon="arrow"
 						@click="showEducationPicker = true"
 						:rules="[{ required: true, message: ' ' }]"
@@ -95,36 +95,15 @@
 					/>
 				</van-popup>
 
-				<!--<p class="vip-form_title">Marital Status</p>
-				<van-field
-						readonly
-						clickable
-						name="maritalStatus"
-						v-model="maritalStatus"
-						placeholder="Please choose"
-						right-icon="arrow"
-						@click="showMaritalStatusPicker = true"
-						:rules="[{ required: true, message: ' ' }]"
-				/>
-				<van-popup v-model="showMaritalStatusPicker" position="bottom">
-					<van-picker
-							show-toolbar
-							:columns="maritalStatusColumns"
-							@confirm="onConfirmMaritalStatus"
-							@cancel="showMaritalStatusPicker = false"
-					/>
-				</van-popup>-->
-
-
 
 
 				<div class="vip-btn-wrap">
 					<van-button type="primary" class="vip-btn"
 								:disabled="isSubmitting"
 								:loading="isSubmitting"
-								loading-text="Submitting..."
+								:loading-text="$t('str.submitting')"
 								native-type="submit"
-								block>Continue</van-button>
+								block>{{$t('str.continue')}}</van-button>
 				</div>
 			</van-form>
 		</section>
@@ -148,22 +127,30 @@
 
 				gender: '',//
 				showGenderPicker: false,
-				genderColumns: ['Male','Female','Third Gender'],
+				genderColumns: [
+					this.$t('str.male'),
+					this.$t('str.female'),
+					this.$t('str.thirdGender'),
+				],
 
 				education: '',//
 				showEducationPicker: false,
 				educationColumns: [
-					'Doctor Degree',
-					'Master Degree',
-					'Bachelor Degree',
-					'Undergraduate And Above',
-					'High School',
-					'Secondary School',
-					'Junior High School And Below'],
+					this.$t('str.doctorDegree'),
+					this.$t('str.masterDegree'),
+					this.$t('str.bachelorDegree'),
+					this.$t('str.undergraduateAndAbove'),
+					this.$t('str.highSchool'),
+					this.$t('str.secondarySchool'),
+					this.$t('str.juniorHighSchoolAndBelow')
+				],
 
 				maritalStatus: '',//
 				showMaritalStatusPicker: false,
-				maritalStatusColumns: ['Married','Unmarried'],
+				maritalStatusColumns: [
+					this.$t('str.married'),
+					this.$t('str.unmarried')
+				],
 
 
 				isSubmitting: false,

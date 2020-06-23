@@ -16,14 +16,14 @@
 						</div>
 						<div class="card-bd">
 							<div class="product-info">
-								<p class="desc">Thank you for your application and we will call you.</p>
+								<p class="desc">{{$t('str.thankYouFor')}}</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="panel-bd ">
 					<p class="vip-doc-block__title text-center">
-						Thank you you.
+						{{$t('str.thankYou')}}
 					</p>
 				</div>
 
