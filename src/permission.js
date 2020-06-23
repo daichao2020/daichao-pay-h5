@@ -1,4 +1,5 @@
 import router from './router'
+import store from './store'
 
 import { getToken } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
