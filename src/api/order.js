@@ -45,7 +45,7 @@ export function payOrders(data) {//会员订单支付
 
 export function queryOrderPayStatus(order_id) {//会员订单查询
 	return request({
-		url: '/payment/cashfree/return',
+		url: '/payment/razorpay/return',
 		method: 'get',
 		params: { order_id }
 	})
