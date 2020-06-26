@@ -69,7 +69,7 @@
 
 </template>
 <script>
-	import { getMemberCardList,submitOrdersCashfree,payOrders } from '@/api/order';
+	import { getMemberCardList,submitOrdersRazorpay,payOrders } from '@/api/order';
 	import { Toast } from 'vant';
 
 	export default {
@@ -209,7 +209,7 @@
 				}
 
 
-				submitOrdersCashfree(params).then((res)=>{
+				submitOrdersRazorpay(params).then((res)=>{
 					const { data } = res;
 					this.isSubmitting = false;
 					if(data){
