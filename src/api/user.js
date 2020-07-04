@@ -89,3 +89,12 @@ export function recordOP(data) {
 		data
 	})
 }
+/**
+ * 保存 adjust 的埋点成功的结果
+ * */
+export function orderAdjustEvent() {
+	return request({
+		url: '/user/orderAdjustEvent',
+		method: 'get',
+	})
+}
