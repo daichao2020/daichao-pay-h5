@@ -40,9 +40,12 @@
 								<div class="tip-item bottom-line">
 									<p>① The audit fee ₹{{parseInt(item.price)}}</p>
 								</div>
-								<div class="tip-item">
+								<div class="tip-item bottom-line">
 									<p>② The limit is only reserved for 10 minutes.
 										Please with draw it as soon as possible.</p>
+								</div>
+								<div class="tip-item">
+									<p>③ you need to pay ₹{{parseInt(item.price)}} to get the loan if you fail it will be returned in 1 month.</p>
 								</div>
 							</div>
 
