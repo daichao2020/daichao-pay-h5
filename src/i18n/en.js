@@ -56,6 +56,9 @@ export default {
 		warning: 'Warning',
 		theAuditFee: 'The audit fee',
 		theLimitIs: 'The limit is only reserved for 10 minutes. Please with draw it as soon as possible.',
+		theYouNeedToPay1: 'you need to pay ',
+		theYouNeedToPay2: ' to get the loan if you fail it will be returned in 1 month.',
+
 		immediateWithdrawal: 'Immediate withdrawal',
 		chooseOtherLoanProduct: 'Choose other loan product',
 		auditExpense: 'audit expense',

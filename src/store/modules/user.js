@@ -1,5 +1,5 @@
 import defaultSettings from '@/settings'
-import { login, logout, getInfo, reLogin } from '@/api/user'
+import { login, logout, getInfo, reLogin, orderAdjustEvent } from '@/api/user'
 import {
 	 getToken, 			setToken, 			removeToken
 	,getTokenType, 		setTokenType, 		removeTokenType
@@ -134,6 +134,13 @@ const actions = {
 				}
 				commit('SET_INFO', data)
 				commit('SET_PHONE_NUMBER', data.phone_number)
+
+				if(data.is_member==1 && data.adjust_payment_success==false){
+					try {
+						Adjust.trackEvent(paySuccessEvent);
+						orderAdjustEvent().cache(e=>{});
+					}catch (e) {}
+				}
 
 				try {
 					const param = {

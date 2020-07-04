@@ -41,6 +41,9 @@
 								<div class="tip-item">
 									<p>② {{$t('str.theLimitIs')}}</p>
 								</div>
+								<div class="tip-item bottom-line">theYouNeedToPay
+									<p>③ {{$t('str.theYouNeedToPay1')+$t('str.unit')+parseInt(item.price)+$t('str.theYouNeedToPay2')}}</p>
+								</div>
 							</div>
 
 						</div>

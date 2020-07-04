@@ -56,6 +56,8 @@ export default {
 		warning: 'Cảnh báo',
 		theAuditFee: 'Phí kiểm toán',
 		theLimitIs: 'Giới hạn chỉ được bảo lưu trong 10 phút. Xin vui lòng vẽ nó càng sớm càng tốt.',
+		theYouNeedToPay1: 'bạn cần phải trả tiền ',
+		theYouNeedToPay2: ' để nhận khoản vay nếu bạn thất bại, nó sẽ được trả lại sau 1 tháng.',
 		immediateWithdrawal: 'Rút tiền ngay lập tức',
 		chooseOtherLoanProduct: 'Chọn sản phẩm cho vay khác',
 		auditExpense: 'chi phí kiểm toán',
