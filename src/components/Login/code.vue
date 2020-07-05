@@ -151,7 +151,9 @@
 
 					})
 					.catch(() => {
-						toast.clear();
+						setTimeout(()=>{
+							toast.clear();
+						},3000)
 						this.isSubmitting = false
 					})
 

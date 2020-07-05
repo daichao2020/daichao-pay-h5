@@ -90,7 +90,7 @@ service.interceptors.response.use(
 			//(error.response && error.response.status !== 200
 			if(response && response.status !== 200){
 
-				if(error.response.status === 401){//token过期，重新登录
+				if(response.status === 401){//token过期，重新登录
 					// to re-login
 					Dialog.confirm({
 						title: 'Confirm logout',
@@ -123,6 +123,7 @@ service.interceptors.response.use(
 				})
 			}
 		}
+
 
 		return Promise.reject(error)
 	}
