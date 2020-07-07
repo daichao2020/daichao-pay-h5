@@ -50,6 +50,7 @@
 		},
 		mounted(){
 			this.getMemberCardList();
+			this.$store.dispatch('user/getInfo');
 		},
 		computed: {
 			isShowHeader() {
