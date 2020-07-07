@@ -151,7 +151,6 @@
 
 					})
 					.catch(() => {
-						toast.clear();
 						this.isSubmitting = false
 					})
 
