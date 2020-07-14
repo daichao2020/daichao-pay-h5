@@ -1,5 +1,6 @@
 <template>
 	<div class="default-page home-page">
+
 		<header v-if="isShowHeader">
 			<van-nav-bar
 					title="Cash Wallet"
@@ -7,6 +8,9 @@
 					placeholder
 			></van-nav-bar>
 		</header>
+		<van-notice-bar mode="link" @click="toPolicyPage">
+			Cashmoney Privacy policy
+		</van-notice-bar>
 		<section class="home-page-body page-body">
 			<productSwiper></productSwiper>
 
@@ -56,6 +60,9 @@
 		methods: {
 			onClickLeft() {
 				this.$router.go(-1);
+			},
+			toPolicyPage(){//
+				this.$router.push({name:'policy'});
 			}
 		}
 	}
