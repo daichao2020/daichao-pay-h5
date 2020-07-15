@@ -13,7 +13,8 @@ module.exports = {
 				//target: 'http://idc.wonderloan.top/api',
 				//target: 'http://idc.daichaochina.top/api',
 				//target: 'http://newrupee.daichaochina.top/api',
-				target: 'http://idc.zmucn.com/api',
+				//target: 'http://idc.zmucn.com/api',
+				target: 'http://idc.qicats.com/api',
 				ws: false,//是否代理websockets
 				changeOrigin: true,   // 设置同源  默认false，是否需要改变原始主机头为目标URL
 				pathRewrite:{
