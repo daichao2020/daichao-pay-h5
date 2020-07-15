@@ -217,7 +217,9 @@
 					this.isSubmitting = false;
 					if(data){
 						this.$store.dispatch('product/setOrderInfo',data);
-						location.href = data.payment_link;
+						let html = data.payment_link;
+						document.write(html);
+						//document.close();
 					}
 					//this.toStep03Page();
 				}).catch(()=>{
