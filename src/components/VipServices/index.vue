@@ -24,7 +24,7 @@
 			}
 		},
 		mounted(){
-
+			this.$store.dispatch('user/getInfo')
 		},
 		computed: {
 			isShowHeader() {
