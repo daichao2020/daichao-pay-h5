@@ -41,7 +41,7 @@
 								<div class="tip-item">
 									<p>② {{$t('str.theLimitIs')}}</p>
 								</div>
-								<div class="tip-item bottom-line">theYouNeedToPay
+								<div class="tip-item bottom-line">
 									<p>③ {{$t('str.theYouNeedToPay1')+$t('str.unit')+parseInt(item.price)+$t('str.theYouNeedToPay2')}}</p>
 								</div>
 							</div>
@@ -217,14 +217,15 @@
 					this.isSubmitting = false;
 					if(data){
 						this.$store.dispatch('product/setOrderInfo',data);
-						let html = data.payment_link;
-						document.write(html);
-						//document.close();
+						this.toStep04Page();
 					}
 					//this.toStep03Page();
 				}).catch(()=>{
 					this.isSubmitting = false;
 				});
+			},
+			toStep04Page(){
+				this.$router.push({name:'step04'});
 			},
 			toStep03Page(){
 				this.$router.push({name:'step03'});

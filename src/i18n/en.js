@@ -66,6 +66,7 @@ export default {
 		selectPaymentOption: 'Select Payment Option',
 		checkingPaymentStatus: 'Checking payment status...',
 		paymentIsSuccessful: 'Payment is successful',
+		waitingForYourPayment: 'Waiting for your payment.',
 		next: 'next',
 		paymentIsFailed: 'Payment is failed',
 		back: 'Back',
@@ -90,6 +91,10 @@ export default {
 		cancellation: 'Cancellation & Refund Policy',
 		privacyPolicy: 'Privacy Policy',
 		logout: 'Logout',
+
+		bankCode: 'Bank Code',
+		accountNo: 'Account No.',
+		accountName: 'Account Name',
 
     },
     menu: {

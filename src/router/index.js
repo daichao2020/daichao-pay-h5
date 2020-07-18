@@ -87,7 +87,7 @@ export const constantRoutes = [
 		name: 'terms',
 		meta: {
 			title: 'Terms & Conditions',
-			showHeader: true,
+			showHeader: false,
 			keepAlive: true
 		},
 		component: () => import('@/components/Login/terms'),
@@ -146,6 +146,16 @@ export const constantRoutes = [
 			keepAlive: false
 		},
 		component: () => import('@/components/VipServices/step03'),
+	},//Vip Services step04
+	{
+		path: '/step04',
+		name: 'step04',
+		meta: {
+			title: 'Pay Status',
+			showHeader: false,
+			keepAlive: false
+		},
+		component: () => import('@/components/VipServices/step04'),
 	},
 	//Vip Services end
 	{

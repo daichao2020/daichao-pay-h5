@@ -65,6 +65,7 @@ export default {
 		selectPaymentOption: 'Chọn tùy chọn thanh toán',
 		checkingPaymentStatus: 'Kiểm tra trạng thái thanh toán...',
 		paymentIsSuccessful: 'Thanh toán thành công',
+		waitingForYourPayment: 'Chờ đợi thanh toán của bạn.',
 		next: 'kế tiếp',
 		paymentIsFailed: 'Thanh toán thất bại',
 		back: 'Trở lại',
@@ -79,6 +80,14 @@ export default {
 		applyRequirements: 'Áp dụng yêu cầu',
 		howToApply: 'Làm sao để đăng kí',
 		applyNor: 'Áp dụng cũng không',
+
+
+		bankCode: 'Mã ngân hàng',
+		accountNo: 'Số tài khoản',
+		accountName: 'Tên tài khoản',
+
+
+
 
 	},
 	menu: {
