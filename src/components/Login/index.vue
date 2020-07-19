@@ -111,7 +111,7 @@
             },
             onSubmit(){
 				if(!this.telephone){
-					this.$toast('Please enter telephone');
+					this.$toast(this.$t('str.telephonePlaceholder'));
 					return false;
 				}
 

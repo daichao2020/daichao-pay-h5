@@ -37,7 +37,7 @@ export function getLanguageIn() {
         }
     }
 
-    return 'en'
+    return 'vi_VN'
 }
 
 const i18n = new VueI18n({

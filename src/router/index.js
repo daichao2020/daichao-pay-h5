@@ -18,7 +18,7 @@ export const constantRoutes = [
 				path: '/home',
 				name: 'home',
 				meta: {
-					title: 'Home',
+					title: 'Trang chủ',
 					showHeader: false,
 					keepAlive: true
 				},
@@ -29,7 +29,7 @@ export const constantRoutes = [
 				path: '/loanall',
 				name: 'loanall',
 				meta: {
-					title: 'Loan All',
+					title: 'Cho vay tất cả',
 					showHeader: false,
 					keepAlive: true
 				},
@@ -40,7 +40,7 @@ export const constantRoutes = [
 				path: '/me',
 				name: 'me',
 				meta: {
-					title: 'Me',
+					title: 'Tôi',
 					showHeader: false,
 					keepAlive: true
 				},
@@ -53,7 +53,7 @@ export const constantRoutes = [
 		path: '/detail',
 		name: 'detail',
 		meta: {
-			title: 'Detail',
+			title: 'Chi tiết',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -64,7 +64,7 @@ export const constantRoutes = [
 		path: '/login',
 		name: 'login',
 		meta: {
-			title: 'Sign in',
+			title: 'Đăng nhập',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -75,7 +75,7 @@ export const constantRoutes = [
 		path: '/code',
 		name: 'code',
 		meta: {
-			title: 'Get verification code',
+			title: 'Nhận mã xác minh',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -86,7 +86,7 @@ export const constantRoutes = [
 		path: '/terms',
 		name: 'terms',
 		meta: {
-			title: 'Terms & Conditions',
+			title: 'Điều khoản và điều kiện',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -97,7 +97,7 @@ export const constantRoutes = [
 		path: '/info',
 		name: 'info',
 		meta: {
-			title: 'Contact information',
+			title: 'Thông tin liên lạc',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -108,7 +108,7 @@ export const constantRoutes = [
 		path: '/vip',
 		name: 'vip',
 		meta: {
-			title: 'VIP services',
+			title: 'dịch vụ thành viên',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -119,7 +119,7 @@ export const constantRoutes = [
 		path: '/step01',
 		name: 'step01',
 		meta: {
-			title: 'Select Payment Option',
+			title: 'Chọn tùy chọn thanh toán',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -130,7 +130,7 @@ export const constantRoutes = [
 		path: '/step02',
 		name: 'step02',
 		meta: {
-			title: 'UPI',
+			title: 'LÊN',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -141,7 +141,7 @@ export const constantRoutes = [
 		path: '/step03',
 		name: 'step03',
 		meta: {
-			title: 'Pay Status',
+			title: 'Tình trạng thanh toán',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -151,7 +151,7 @@ export const constantRoutes = [
 		path: '/step04',
 		name: 'step04',
 		meta: {
-			title: 'Pay Status',
+			title: 'Tình trạng thanh toán',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -162,7 +162,7 @@ export const constantRoutes = [
 		path: '/end',
 		name: 'end',
 		meta: {
-			title: 'Submit audit',
+			title: 'Gửi kiểm toán',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -173,7 +173,7 @@ export const constantRoutes = [
 		path: '/feedback',
 		name: 'feedback',
 		meta: {
-			title: 'Feedback',
+			title: 'Phản hồi',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -184,7 +184,7 @@ export const constantRoutes = [
 		path: '/setnickname',
 		name: 'setnickname',
 		meta: {
-			title: 'Set Nickname',
+			title: 'Đặt tên hiệu',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -195,7 +195,7 @@ export const constantRoutes = [
 		path: '/setavatar',
 		name: 'setavatar',
 		meta: {
-			title: 'Modify Head Portrait',
+			title: 'Sửa đổi chân dung đầu',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -206,7 +206,7 @@ export const constantRoutes = [
 		path: '/refresh',
 		name: 'refresh',
 		meta: {
-			title: 'Refresh',
+			title: 'Làm tươi',
 			showHeader: false,
 			keepAlive: true
 		},
