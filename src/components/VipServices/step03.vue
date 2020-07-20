@@ -11,7 +11,7 @@
 							:rate="rate"
 							:speed="100"
 							:stroke-width="60"
-							color="#ff9933"
+							color="#82ccdd"
 							layer-color="#eee"
 							size="240px"
 					>
@@ -23,9 +23,20 @@
 										format="ss"></van-count-down>
 					</van-circle>
 				</div>
-				<div class="pay-msg__tips-area">
+				<!--<div class="pay-msg__tips-area">
 					<p class="pay-msg__tips">
 						{{$t('str.checkingPaymentStatus')}}
+					</p>
+				</div>-->
+				<div class="pay-msg__text-area" style="padding: 0 0.3rem;">
+					<h2 class="pay-msg__title">{{$t('str.waitingForYourPayment')}}</h2>
+					<p class="pay-msg__desc text-left">
+						<van-cell-group>
+							<van-cell :title="$t('str.amount')" :value="$t('str.unit')+order.amount" />
+							<van-cell :title="$t('str.bankCode')" :value="order.bank_code" />
+							<van-cell :title="$t('str.accountNo')" :value="order.account_no" />
+							<van-cell :title="$t('str.accountName')" :value="order.account_name" />
+						</van-cell-group>
 					</p>
 				</div>
 			</div>
@@ -96,7 +107,7 @@
 			setCircleRate(timeData){
 				this.seconds = timeData.seconds;
 				this.rate = (30-timeData.seconds)/30*100;
-				if(this.payStatus==40003 && (timeData.seconds%5)==0){
+				if((this.payStatus==40003||this.payStatus==40004) && (timeData.seconds%5)==0){
 					this.queryOrderPayStatus();
 				}
 			},
@@ -135,6 +146,7 @@
 							
 
 							break;
+						case 40004://待付款
 						case 40003://处理中
 							if(this.seconds==0){
 								this.$refs.countDown.reset();
@@ -142,11 +154,11 @@
 							this.payStatus = data.status;
 							this.pageShow = 1;
 							break;
-						case 40004://待付款
+						/*case 40004://待付款
 							this.payStatusTxt = res.data.message;
 							this.payStatus = data.status;
 							this.pageShow = 3;
-							break;
+							break;*/
 						default://其他失败场景
 							this.payStatusTxt = res.data.message;
 							this.payStatus = data.status;

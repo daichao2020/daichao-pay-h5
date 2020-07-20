@@ -217,7 +217,7 @@
 					this.isSubmitting = false;
 					if(data){
 						this.$store.dispatch('product/setOrderInfo',data);
-						this.toStep04Page();
+						this.toStep03Page();
 					}
 					//this.toStep03Page();
 				}).catch(()=>{
