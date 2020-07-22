@@ -18,7 +18,7 @@ export const constantRoutes = [
 				path: '/me',
 				name: 'me',
 				meta: {
-					title: 'Me',
+					title: 'Tôi',
 					showHeader: false,
 					keepAlive: true
 				},
@@ -32,7 +32,7 @@ export const constantRoutes = [
 		path: '/login',
 		name: 'login',
 		meta: {
-			title: 'Contact information',
+			title: 'Đăng nhập',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -43,7 +43,7 @@ export const constantRoutes = [
 		path: '/info',
 		name: 'info',
 		meta: {
-			title: 'Contact information',
+			title: 'Thông tin liên lạc',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -55,7 +55,7 @@ export const constantRoutes = [
 		path: '/end',
 		name: 'end',
 		meta: {
-			title: 'Submit audit',
+			title: 'Gửi kiểm toán',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -67,7 +67,7 @@ export const constantRoutes = [
 		path: '/refresh',
 		name: 'refresh',
 		meta: {
-			title: 'Refresh',
+			title: 'Làm tươi',
 			showHeader: false,
 			keepAlive: true
 		},
