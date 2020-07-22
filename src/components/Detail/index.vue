@@ -88,7 +88,14 @@
 				</div>
 				<div class="panel-bd apply-process-card">
 					<div class="apply-process-item">
-						<img src="@/assets/imgs/detail/icon_apply_process_y.png"/>
+						<van-steps :active="active"
+								   active-icon="success"
+								   inactive-icon="arrow"
+								   active-color="#fea500">
+							<van-step>点击申请</van-step>
+							<van-step>安装贷款应用</van-step>
+							<van-step>获取现金</van-step>
+						</van-steps>
 					</div>
 				</div>
 			</div>
