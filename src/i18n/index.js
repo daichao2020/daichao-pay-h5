@@ -4,6 +4,7 @@ import { getLanguage } from '@/utils/auth'
 import { Locale } from 'vant';
 
 import en from '../i18n/en'
+import zhCN from '../i18n/zh-CN'
 
 import vantEnUS from 'vant/lib/locale/lang/en-US'
 
@@ -13,6 +14,9 @@ import vantViVN from '../i18n/vant_vi_VN'
 Vue.use(VueI18n)
 
 const langConfig = {
+    "zh-CN": {
+        ...zhCN, //引入自定义国际化
+    },
     "en": {
         ...en, //引入自定义国际化
         ...vantEnUS
@@ -37,7 +41,7 @@ export function getLanguageIn() {
         }
     }
 
-    return 'en'
+    return 'zh-CN'
 }
 
 const i18n = new VueI18n({
@@ -49,8 +53,10 @@ const i18n = new VueI18n({
 function vantLocales (lang) {
     if (lang === 'vi_VN') {
         Locale.use(lang, vantViVN)
-    } else {
+    } else if (lang === 'en') {
         Locale.use(lang, vantEnUS)
+    } else{
+        //Locale.use(lang, vantEnUS)
     }
 }
 export { i18n, vantLocales }

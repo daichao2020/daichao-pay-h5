@@ -10,7 +10,7 @@
         <section class="login-page-body">
 			<h2 class="vip-doc-block__title">{{$t('str.welcome')}}</h2>
             <div ref="login_form">
-                <van-field
+                <!--<van-field
                         readonly
                         clickable
                         name="picker"
@@ -27,7 +27,7 @@
                             @confirm="onConfirm"
                             @cancel="showPicker = false"
                     />
-                </van-popup>
+                </van-popup>-->
                 <van-field
                         v-model="telephone"
                         name="telephone"
@@ -59,7 +59,7 @@
     export default {
         data(){
             return {
-				countryCodeText: 'India 0091',
+				countryCodeText: '中国 0086',
                 countryCode: '0091',
 
                 columns: [],
@@ -77,7 +77,7 @@
             }
         },
 		created(){
-			getCountryCodes().then((res)=>{
+			/*getCountryCodes().then((res)=>{
 				const list = res.data || [];
 				list.sort((item1,item2)=>{
 					if(item1.is_hot < item2.is_hot){
@@ -92,7 +92,7 @@
 					item.text = item.name +' '+ item.intl_code;
 				});
 				this.columns = list;
-			});
+			});*/
 		},
 		computed: {
 			isShowHeader() {
@@ -111,7 +111,7 @@
             },
             onSubmit(){
 				if(!this.telephone){
-					this.$toast('Please enter telephone');
+					this.$toast(this.$t('str.telephonePlaceholder'));
 					return false;
 				}
 

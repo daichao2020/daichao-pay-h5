@@ -18,7 +18,7 @@ export const constantRoutes = [
 				path: '/home',
 				name: 'home',
 				meta: {
-					title: 'Home',
+					title: '首页',
 					showHeader: false,
 					keepAlive: true
 				},
@@ -29,7 +29,7 @@ export const constantRoutes = [
 				path: '/loanall',
 				name: 'loanall',
 				meta: {
-					title: 'Loan All',
+					title: '列表',
 					showHeader: false,
 					keepAlive: true
 				},
@@ -40,7 +40,7 @@ export const constantRoutes = [
 				path: '/me',
 				name: 'me',
 				meta: {
-					title: 'Me',
+					title: '我',
 					showHeader: false,
 					keepAlive: true
 				},
@@ -53,7 +53,7 @@ export const constantRoutes = [
 		path: '/detail',
 		name: 'detail',
 		meta: {
-			title: 'Detail',
+			title: '详情',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -64,7 +64,7 @@ export const constantRoutes = [
 		path: '/login',
 		name: 'login',
 		meta: {
-			title: 'Sign in',
+			title: '登录',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -75,7 +75,7 @@ export const constantRoutes = [
 		path: '/code',
 		name: 'code',
 		meta: {
-			title: 'Get verification code',
+			title: '获取验证码',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -86,7 +86,7 @@ export const constantRoutes = [
 		path: '/terms',
 		name: 'terms',
 		meta: {
-			title: 'Terms & Conditions',
+			title: '使用条款',
 			showHeader: true,
 			keepAlive: true
 		},
@@ -97,7 +97,7 @@ export const constantRoutes = [
 		path: '/info',
 		name: 'info',
 		meta: {
-			title: 'Contact information',
+			title: '填写个人信息',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -108,7 +108,7 @@ export const constantRoutes = [
 		path: '/vip',
 		name: 'vip',
 		meta: {
-			title: 'VIP services',
+			title: '会员服务',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -119,7 +119,7 @@ export const constantRoutes = [
 		path: '/step01',
 		name: 'step01',
 		meta: {
-			title: 'Select Payment Option',
+			title: '选择一种支付方式',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -141,7 +141,7 @@ export const constantRoutes = [
 		path: '/step03',
 		name: 'step03',
 		meta: {
-			title: 'Pay Status',
+			title: '支付状态',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -152,7 +152,7 @@ export const constantRoutes = [
 		path: '/end',
 		name: 'end',
 		meta: {
-			title: 'Submit audit',
+			title: '提交审核',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -163,7 +163,7 @@ export const constantRoutes = [
 		path: '/feedback',
 		name: 'feedback',
 		meta: {
-			title: 'Feedback',
+			title: '反馈',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -174,7 +174,7 @@ export const constantRoutes = [
 		path: '/setnickname',
 		name: 'setnickname',
 		meta: {
-			title: 'Set Nickname',
+			title: '设置昵称',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -185,7 +185,7 @@ export const constantRoutes = [
 		path: '/setavatar',
 		name: 'setavatar',
 		meta: {
-			title: 'Modify Head Portrait',
+			title: '设置头像',
 			showHeader: false,
 			keepAlive: true
 		},
@@ -196,7 +196,7 @@ export const constantRoutes = [
 		path: '/refresh',
 		name: 'refresh',
 		meta: {
-			title: 'Refresh',
+			title: '刷新',
 			showHeader: false,
 			keepAlive: true
 		},

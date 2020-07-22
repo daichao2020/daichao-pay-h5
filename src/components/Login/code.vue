@@ -161,16 +161,16 @@
 			toNextPage(){
 				this.$store.dispatch('user/getInfo').then(data=>{
 					const { name,is_member } = data;
-					if(name){
+					//if(name){
 						if(is_member){
 							this.toEndPage()
 						}else{
 							this.toVipPage()
 						}
 
-					}else {
+					/*}else {
 						this.toInfoPage()
-					}
+					}*/
 				});
 
 
