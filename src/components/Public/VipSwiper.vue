@@ -41,7 +41,7 @@
 								<div class="tip-item">
 									<p>② {{$t('str.theLimitIs')}}</p>
 								</div>
-								<div class="tip-item bottom-line">theYouNeedToPay
+								<div class="tip-item bottom-line">
 									<p>③ {{$t('str.theYouNeedToPay1')+$t('str.unit')+parseInt(item.price)+$t('str.theYouNeedToPay2')}}</p>
 								</div>
 							</div>
@@ -72,7 +72,7 @@
 
 </template>
 <script>
-	import { getMemberCardList,submitOrdersRazorpay,payOrders } from '@/api/order';
+	import { getMemberCardList,submitOrdersAlipay,payOrders } from '@/api/order';
 	import { Toast } from 'vant';
 
 	export default {
@@ -189,10 +189,10 @@
 			},
 			submitOrder(productInfo){
 
-				if(!this.userInfo.name){
+				/*if(!this.userInfo.name){
 					this.toInfoPage();
 					return false;
-				}
+				}*/
 
 				let return_url = location.href.slice(0,location.href.search('#'))+'#/step03';
 				const params = {
@@ -212,13 +212,12 @@
 				}
 
 
-				submitOrdersRazorpay(params).then((res)=>{
-					const { data } = res;
+				submitOrdersAlipay(params).then((res)=>{
+
 					this.isSubmitting = false;
-					if(data){
-						this.$store.dispatch('product/setOrderInfo',data);
-						location.href = data.payment_link;
-					}
+					let routerData = this.$router.resolve({path:'/payGateWay',query:{ htmlData: res}})
+					// 打开新页面
+					window.open(routerData.href, '_ blank')
 					//this.toStep03Page();
 				}).catch(()=>{
 					this.isSubmitting = false;

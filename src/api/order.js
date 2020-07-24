@@ -35,6 +35,13 @@ export function submitOrdersRazorpay(data) {//会员生成订单
 		data
 	})
 }
+export function submitOrdersAlipay(data) {//会员生成订单
+	return request({
+		url: '/member/orders/alipay',
+		method: 'post',
+		data
+	})
+}
 export function payOrders(data) {//会员订单支付
 	return request({
 		url: `/orders/${data.order_id}/mpurse`,
@@ -45,7 +52,7 @@ export function payOrders(data) {//会员订单支付
 
 export function queryOrderPayStatus(order_id) {//会员订单查询
 	return request({
-		url: '/payment/razorpay/return',
+		url: '/payment/alipay/return',
 		method: 'get',
 		params: { order_id }
 	})

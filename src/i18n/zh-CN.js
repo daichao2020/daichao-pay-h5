@@ -45,8 +45,8 @@ export default {
         married: 'Married',
         unmarried: 'Unmarried',
         submitting: '提交中...',
-        congratulations: '恭喜您！ ',
-        youPassedTheAudit: '您通过了审核 ',
+        congratulations: '恭喜您通过了审核',
+        youPassedTheAudit: '',
         loanAmount: '贷款金额 ',
         unit: '￥',//₫
         interest: '利息',

@@ -60,7 +60,7 @@
         data(){
             return {
 				countryCodeText: '中国 0086',
-                countryCode: '0091',
+                countryCode: '0086',
 
                 columns: [],
                 showPicker: false,

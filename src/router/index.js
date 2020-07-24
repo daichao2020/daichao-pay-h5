@@ -191,6 +191,17 @@ export const constantRoutes = [
 		},
 		component: () => import('@/components/Me/setAvatar'),
 	},
+	//payGateWay
+	{
+		path: '/payGateWay',
+		name: 'payGateWay',
+		meta: {
+			title: '支付',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/Public/payGateWay'),
+	},
 	//refresh
 	{
 		path: '/refresh',
