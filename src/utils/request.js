@@ -68,9 +68,9 @@ service.interceptors.response.use(
 
 		// if the custom code is not 20000, it is judged as an error.
 		const { data, meta } = res;
+		return res
 
-
-		if (meta && meta.status_code !== 200 ) {
+		/*if (meta && meta.status_code !== 200 ) {
 			Toast({
 				message: meta.message || 'Server ist falsch',
 				type: 'fail',
@@ -81,7 +81,7 @@ service.interceptors.response.use(
 			return Promise.reject(new Error(res.message || 'Error'))
 		} else {
 			return res
-		}
+		}*/
 	},
 	error => {
 		const { response } = error;

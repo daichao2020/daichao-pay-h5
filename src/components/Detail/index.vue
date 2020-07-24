@@ -188,6 +188,7 @@
 		right: 0;
 		bottom: 0;
 		padding: 8PX;
+		z-index: 2;
 	}
 
 	.detail-card-box{
