@@ -93,10 +93,10 @@ service.interceptors.response.use(
 				if(response.status === 401){//token过期，重新登录
 					// to re-login
 					Dialog.confirm({
-						title: 'Confirm logout',
-						message: 'You have been logged out, you can cancel to stay on this page, or log in again',
-						confirmButtonText: 'Re-Login',
-						cancelButtonText: 'Cancel',
+						title: '确认退出',
+						message: '您的token已过期，请重新登录',
+						confirmButtonText: '重新登录',
+						cancelButtonText: '取消',
 						type: 'warning'
 					}).then(() => {
 						store.dispatch('user/resetToken').then(() => {

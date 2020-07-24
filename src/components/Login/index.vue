@@ -56,6 +56,7 @@
 <script>
 	import { getCountryCodes,getVerificationCodes } from '@/api/user'
 	import defaultSettings from '@/settings'
+
     export default {
         data(){
             return {

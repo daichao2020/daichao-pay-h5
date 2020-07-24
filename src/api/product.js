@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function getHomeProducts(page) {//获取首页产品列表
 	return request({
-		url: '/home',
+		url: '/home/current',
 		method: 'get',
 		params: {page}
 	})
@@ -10,7 +10,7 @@ export function getHomeProducts(page) {//获取首页产品列表
 
 export function getProducts(page) {//获取产品列表
 	return request({
-		url: '/products',
+		url: '/products/current',
 		method: 'get',
 		params: {page}
 	})

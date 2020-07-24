@@ -1,5 +1,5 @@
 <template>
-	<div v-html = "payGateWay">{{payGateWay}}</div>
+	<div v-html="payGateWay">{{payGateWay}}</div>
 </template>
 <script>
 	export default {
@@ -13,7 +13,7 @@
 			let form = this.$route.query.htmlData
 			this.payGateWay = form
 			this.$nextTick(()=> {
-				document.getElementById('paymentSubmit').submit()
+				document.getElementById('alipay_submit').submit()
 			})
 		}
 	}

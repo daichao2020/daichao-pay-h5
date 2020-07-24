@@ -7,7 +7,7 @@ import {
 	,getPlatform,		setPlatform,		removePlatform
 	,getAppVersionId,	setAppVersionId,	removeAppVersionId
 	,getLanguage,		setLanguage,		removeLanguage
-} from '@/utils/auth'
+} from '@/utils/auth.js'
 
 const getDefaultState = () => {
 	return {
@@ -61,8 +61,15 @@ const actions = {
 		return new Promise((resolve, reject) => {
 			login(userInfo).then(response => {
 				const { data } = response
+
+				let expires = data.expires_in/86400;
+
 				commit('SET_TOKEN', data.access_token)
-				setToken(data.access_token)
+				setToken(data.access_token, expires)
+
+
+				commit('SET_TOKEN_TYPE', data.token_type)
+				setTokenType(data.token_type, expires)
 
 				try {
 					Adjust.trackEvent(loginEvent);
@@ -88,8 +95,7 @@ const actions = {
 
 				}
 
-				commit('SET_TOKEN_TYPE', data.token_type)
-				setTokenType(data.token_type)
+
 				resolve(response)
 			}).catch(error => {
 				reject(error)
@@ -212,13 +218,12 @@ const actions = {
 	resetToken({ commit }) {
 		return new Promise(resolve => {
 			commit('SET_TOKEN', '')
-			removeToken()
-
 			commit('SET_TOKEN_TYPE', '')
-			removeTokenType()
-
 			commit('SET_PHONE_NUMBER', '')
 			commit('SET_INFO', {})
+			removeToken()
+			removeTokenType()
+
 			resolve()
 		})
 	},

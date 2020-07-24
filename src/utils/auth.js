@@ -1,3 +1,6 @@
+import Cookies from 'js-cookie'
+
+
 const TokenKey = 'User-Token'
 const TokenTypeKey = 'User-Token-Type'
 
@@ -9,78 +12,79 @@ const AppVersionIdKey = 'App-Version-Id'
 const LanguageKey = 'Language'
 
 export function getToken() {
-	return sessionStorage.getItem(TokenKey)
+	return  Cookies.get(TokenKey)
 }
 
-export function setToken(token) {
-	sessionStorage.setItem(TokenKey, token)
+export function setToken(token, expires) {
+	debugger
+	Cookies.set(TokenKey, token, {expires: expires})
 }
 
 export function removeToken() {
-	sessionStorage.removeItem(TokenKey)
+	Cookies.remove(TokenKey)
 }
 
 export function getTokenType() {
-	return sessionStorage.getItem(TokenTypeKey)
+	return  Cookies.get(TokenTypeKey)
 }
 
-export function setTokenType(type) {
-	sessionStorage.setItem(TokenTypeKey, type)
+export function setTokenType(type, expires) {
+	Cookies.set(TokenTypeKey, type, {expires: expires})
 }
 
 export function removeTokenType() {
-	sessionStorage.removeItem(TokenTypeKey)
+	Cookies.remove(TokenTypeKey)
 }
 
 
 export function getDeviceNumber() {
-	return sessionStorage.getItem(DeviceNumberKey)
+	return  Cookies.get(DeviceNumberKey)
 }
 
 export function setDeviceNumber(deviceNumber) {
-	sessionStorage.setItem(DeviceNumberKey, deviceNumber)
+	Cookies.set(DeviceNumberKey, deviceNumber)
 }
 
 export function removeDeviceNumber() {
-	sessionStorage.removeItem(DeviceNumberKey)
+	Cookies.remove(DeviceNumberKey)
 }
 
 
 export function getPlatform() {
-	return sessionStorage.getItem(PlatformKey)
+	return  Cookies.get(PlatformKey)
 }
 
 export function setPlatform(platform) {
-	sessionStorage.setItem(PlatformKey, platform)
+	Cookies.set(PlatformKey, platform)
 }
 
 export function removePlatform() {
-	sessionStorage.removeItem(PlatformKey)
+	Cookies.remove(PlatformKey)
 }
 
 
 export function getAppVersionId() {
-	return sessionStorage.getItem(AppVersionIdKey)
+	return  Cookies.get(AppVersionIdKey)
 }
 
 export function setAppVersionId(appVersionId) {
-	sessionStorage.setItem(AppVersionIdKey, appVersionId)
+	Cookies.set(AppVersionIdKey, appVersionId)
 }
 
 export function removeAppVersionId() {
-	sessionStorage.removeItem(AppVersionIdKey)
+	Cookies.remove(AppVersionIdKey)
 }
 
 export function getLanguage() {
-	return sessionStorage.getItem(LanguageKey)
+	return  Cookies.get(LanguageKey)
 }
 
 export function setLanguage(language) {
-	sessionStorage.setItem(LanguageKey, language)
+	Cookies.set(LanguageKey, language)
 }
 
 export function removeLanguage() {
-	sessionStorage.removeItem(LanguageKey)
+	Cookies.remove(LanguageKey)
 }
 
 

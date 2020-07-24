@@ -218,7 +218,7 @@
 					let routerData = this.$router.resolve({path:'/payGateWay',query:{ htmlData: res}})
 					// 打开新页面
 					window.open(routerData.href, '_ blank')
-					//this.toStep03Page();
+					this.toStep03Page();
 				}).catch(()=>{
 					this.isSubmitting = false;
 				});
