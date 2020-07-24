@@ -16,7 +16,6 @@ export function getToken() {
 }
 
 export function setToken(token, expires) {
-	debugger
 	Cookies.set(TokenKey, token, {expires: expires})
 }
 

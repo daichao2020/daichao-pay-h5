@@ -4,6 +4,7 @@
             <van-nav-bar
                     fixed
                     left-arrow
+					title="详情"
                     @click-left="onClickLeft"
                     placeholder
             ></van-nav-bar>
@@ -91,7 +92,7 @@
 						<van-steps :active="active"
 								   active-icon="success"
 								   inactive-icon="arrow"
-								   active-color="#fea500">
+								   active-color="#07c160">
 							<van-step>点击申请</van-step>
 							<van-step>安装贷款应用</van-step>
 							<van-step>获取现金</van-step>
@@ -118,6 +119,7 @@
 				skeletonLoading: true,
 				detail: {},
             	id: this.$route.params.id,
+				active: 2,
             }
         },
 		mounted(){

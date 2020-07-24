@@ -70,7 +70,7 @@ service.interceptors.response.use(
 		const { data, meta } = res;
 
 
-		if (meta && meta.message !== 'success' ) {
+		if (meta && meta.status_code !== 200 ) {
 			Toast({
 				message: meta.message || 'Server ist falsch',
 				type: 'fail',

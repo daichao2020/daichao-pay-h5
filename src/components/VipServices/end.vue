@@ -16,7 +16,7 @@
 						</div>
 						<div class="card-bd">
 							<div class="product-info">
-								<h1 class="title">{{$t('str.unit')+' '+ parseInt(product.price) }}</h1>
+								<h1 class="title">{{$t('str.unit')+ parseInt(product.price) }}</h1>
 								<p class="desc">{{$t('str.auditExpense')}}</p>
 							</div>
 						</div>

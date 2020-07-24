@@ -54,7 +54,7 @@ export const constantRoutes = [
 		name: 'detail',
 		meta: {
 			title: '详情',
-			showHeader: false,
+			showHeader: true,
 			keepAlive: false
 		},
 		component: () => import('@/components/Detail/index'),
