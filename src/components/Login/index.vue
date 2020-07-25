@@ -56,7 +56,7 @@
 <script>
 	import { getCountryCodes,getVerificationCodes } from '@/api/user'
 	import defaultSettings from '@/settings'
-
+	import { getToken } from '@/utils/auth' // get token from cookie
     export default {
         data(){
             return {
@@ -78,22 +78,12 @@
             }
         },
 		created(){
-			/*getCountryCodes().then((res)=>{
-				const list = res.data || [];
-				list.sort((item1,item2)=>{
-					if(item1.is_hot < item2.is_hot){
-						return 1;
-					}else if(item1.is_hot > item2.is_hot){
-						return -1;
-					}else{
-						return 0;
-					}
+			var token = getToken();
+			if (token){
+				this.$router.replace({
+					name:'vip',
 				});
-				list.forEach((item)=>{
-					item.text = item.name +' '+ item.intl_code;
-				});
-				this.columns = list;
-			});*/
+			}
 		},
 		computed: {
 			isShowHeader() {
