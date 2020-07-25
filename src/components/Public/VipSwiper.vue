@@ -232,7 +232,7 @@
 						newTab.document.body.appendChild(div);
 						newTab.document.forms.alipay_submit.submit();
 
-						this.toStep03Page();
+						//this.toStep03Page();
 					}
 
 				}).catch(()=>{
