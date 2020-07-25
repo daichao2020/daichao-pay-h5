@@ -161,16 +161,12 @@
 			toNextPage(){
 				this.$store.dispatch('user/getInfo').then(data=>{
 					const { name,is_member } = data;
-					//if(name){
-						if(is_member){
+					/*if(is_member){
 							this.toEndPage()
 						}else{
 							this.toVipPage()
-						}
-
-					/*}else {
-						this.toInfoPage()
-					}*/
+						}*/
+					this.toHomePage();
 				});
 
 
@@ -184,6 +180,11 @@
 			toVipPage(){
 				this.$router.replace({
 					name:'vip',
+				});
+			},
+			toHomePage(){
+				this.$router.replace({
+					name:'home',
 				});
 			},
         }

@@ -1,6 +1,5 @@
 <template>
 	<div>
-		1111
 		<swiper class="product-swiper" ref="productSwiper" :options="swiperOptions">
 			<swiper-slide v-for="(item,index) in cardList" :key="item.id">
 				<div class="card">

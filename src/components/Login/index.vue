@@ -81,7 +81,7 @@
 			var token = getToken();
 			if (token){
 				this.$router.replace({
-					name:'vip',
+					name:'home',
 				});
 			}
 		},
@@ -119,7 +119,7 @@
 				});
 			},
 			toTermsPage(){
-				this.$router.push({name:'terms'});
+				//this.$router.push({name:'terms'});
 			}
         }
     }
