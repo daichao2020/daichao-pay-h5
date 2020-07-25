@@ -1,5 +1,6 @@
 <template>
 	<div>
+		1111
 		<swiper class="product-swiper" ref="productSwiper" :options="swiperOptions">
 			<swiper-slide v-for="(item,index) in cardList" :key="item.id">
 				<div class="card">
@@ -212,7 +213,7 @@
 				}
 
 				//打开一个不被拦截的新窗口
-				//var newTab  = window.open();
+				var newTab  = window.open();
 
 				submitOrdersAlipay(params).then((res)=>{
 
@@ -220,17 +221,18 @@
 					this.isSubmitting = false;
 					if(data){
 						this.$store.dispatch('product/setOrderInfo',data);
-						let routerData = this.$router.resolve({path:'/payGateWay',query:{ htmlData: data.payment_link}})
+						//let routerData = this.$router.resolve({path:'/payGateWay',query:{ htmlData: data.payment_link}})
 						// 打开新页面
 						//window.open(routerData.href, '_ blank')
-						location.href = routerData.href;
+						//location.href = routerData.href;
 						//this.toStep03Page();
 
-						/*const div = document.createElement('div');
+						const div = document.createElement('div');
 						div.innerHTML = data.payment_link; // html code
 						newTab.document.body.appendChild(div);
-						newTab.document.forms.alipay_submit.submit();*/
+						newTab.document.forms.alipay_submit.submit();
 
+						this.toStep03Page();
 					}
 
 				}).catch(()=>{
