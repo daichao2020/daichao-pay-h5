@@ -2,7 +2,7 @@
     <div class="login-page default-page">
         <header v-if="isShowHeader">
             <van-nav-bar
-                    title=""
+					:title="$t('str.signIn')"
                     fixed
                     placeholder
             ></van-nav-bar>
