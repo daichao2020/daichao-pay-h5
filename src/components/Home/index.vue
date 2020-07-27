@@ -9,7 +9,7 @@
 			></van-nav-bar>
 		</header>
 		<van-notice-bar mode="link" @click="toPolicyPage">
-			Cashmoney Privacy policy
+			Privacy policy
 		</van-notice-bar>
 		<section class="home-page-body page-body">
 			<productSwiper></productSwiper>
