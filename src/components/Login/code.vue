@@ -3,8 +3,10 @@
         <header v-if="isShowHeader">
             <van-nav-bar
 					:title="$t('str.signIn')"
-                    fixed
-                    placeholder
+					fixed
+					left-arrow
+					@click-left="onClickLeft"
+					placeholder
             ></van-nav-bar>
         </header>
         <section class="login-page-body">
@@ -186,6 +188,9 @@
 				this.$router.replace({
 					name:'home',
 				});
+			},
+			onClickLeft() {
+				this.$router.go(-1);
 			},
         }
     }

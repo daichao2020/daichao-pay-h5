@@ -65,7 +65,7 @@ export const constantRoutes = [
 		name: 'login',
 		meta: {
 			title: '登录',
-			showHeader: false,
+			showHeader: true,
 			keepAlive: true
 		},
 		component: () => import('@/components/Login/index'),
