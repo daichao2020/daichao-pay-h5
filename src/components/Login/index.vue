@@ -37,7 +37,7 @@
                 />
 				<van-field name="checkbox">
 					<template #input>
-						<van-checkbox v-model="checkbox" checked-color="#07c160" >
+						<van-checkbox v-model="checkbox" checked-color="#FF8308" >
 							{{$t('str.loginTips1')}}<span class="red" @click.stop="toTermsPage">{{$t('str.loginTips2')}}</span>
 						</van-checkbox>
 					</template>

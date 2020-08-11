@@ -251,7 +251,7 @@
 		.card-bd{
 			padding: 0 30px;
 			color: #333;
-			box-shadow: 0 8px 16px rgba(48, 141, 66, .5);
+			box-shadow: 0 8px 16px rgba(44, 58, 71, .5);
 		}
 	}
 	.card-hd{
