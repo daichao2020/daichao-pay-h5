@@ -1,6 +1,6 @@
 import defaultSettings from '@/settings'
 
-const title = defaultSettings.title || 'Cash Wallet'
+const title = defaultSettings.title || 'Online Loan'
 
 export default function getPageTitle(pageTitle) {
   if (pageTitle) {
