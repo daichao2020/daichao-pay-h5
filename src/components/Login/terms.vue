@@ -12,18 +12,18 @@
 		<section class="page-body">
 			<div class=WordSection1 v-if="language=='en'" style='layout-grid:15.6pt'>
 
-				<p class=MsoNormal><span lang=EN-US>Terms of Service</span></p>
+				<p><span>Terms of Service</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>It is hereby clarified that the term
+				<p><span>It is hereby clarified that the term
 &quot;Users&quot; shall mean any person using the Platform i.e. consumers,
 financial institutions, regulated entities, data partners and other partners.
 Your use of this Platform implies that You have read, understood and agreed to
 abide by following, disclaimer, terms &amp; conditions (&quot;Terms &amp;
 Conditions&quot;).</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>As a user (&quot;User&quot; or
+				<p><span>As a user (&quot;User&quot; or
 &quot;You&quot;) of the Platform, You understand that Platform provides access
 between multiple Users in the form of consumers, financial institutions, data
 partners and other partners lenders, borrowers, service providers etc. with a
@@ -31,44 +31,44 @@ view to facilitate lending and borrowing activities, including providing other
 financial products i.e. insurance products, credit cards etc. between the
 Users.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>It is hereby clarified that the term
+				<p><span>It is hereby clarified that the term
 &quot;Users&quot; shall mean any person using the Platform i.e. consumers,
 financial institutions, regulated entities, data partners and other partners.
 Your use of this Platform implies that You have read, understood and agreed to
 abide by following, disclaimer, terms &amp; conditions (&quot;Terms &amp;
 Conditions&quot;).</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>These Terms &amp; Conditions read together
+				<p><span>These Terms &amp; Conditions read together
 with our privacy policy govern Your usage of the Platform and the terms for the
 purchase of the Products from the Platform (“Product”). If You disagree with
 any part of these Terms &amp; Conditions, please do not use the Platform.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Please read these Terms &amp; Conditions
+				<p><span>Please read these Terms &amp; Conditions
 carefully before accessing or using our Platform. By accessing or using any
 part of the Platform, You agree to be bound by these Terms &amp; Conditions. If
 You do not agree to all the terms and conditions of this agreement, then You
 may not access the Platform or use any services provided by Us.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>1. GENERAL</span></p>
+				<p><span>1. GENERAL</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>The App provides access to an online
+				<p><span>The App provides access to an online
 platform bringing together consumers, financial institutions, data partners and
 other partners willing to abide by the Terms &amp; Conditions herein. Cashpie
 is merely a facilitator providing the Platform for any person in need of
 financial products. Cashpie provides various kind of personal loan products as
 specifically detailed under Clause 2 to its Users.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie is merely facilitates a transaction
+				<p><span>Cashpie is merely facilitates a transaction
 between two such persons (i.e. Users). Cashpie is not an organization
 registered with the Reserve Bank of India and does not hold any license to
 engage in any activities relating to lending or borrowing. Cashpie is not a
@@ -78,9 +78,9 @@ also not a deposit taking company or a chit fund or a company offering any
 investment schemes as per the rules and regulations for the time being in force
 in India.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie is a service provider facilitating
+				<p><span>Cashpie is a service provider facilitating
 the access between financial institutes and non-banking finance companies
 willing to lend and person in need of borrowing. The final decision as regards
 lending and borrowing is also subject to the choice of the respective Users in
@@ -90,59 +90,59 @@ various products provided by its partners or third parties. In addition to the
 foregoing, Cashpie also provides certain other services with respect to data
 analytics subject to these Terms &amp; Conditions.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>In the event You wish to avail any of the
+				<p><span>In the event You wish to avail any of the
 Products displayed on the Platform, You will be required to provide certain
 information and our representatives may contact You through phone or email to
 understand Your requirements.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie provides various services, including
+				<p><span>Cashpie provides various services, including
 but not limited to (“Services”):</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>1.Facilitating purchase and sale of Product
+				<p><span>1.Facilitating purchase and sale of Product
 between the Users on its Platform;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>2.Assisting its customers to obtain a
+				<p><span>2.Assisting its customers to obtain a
 Product from various banks who are partnered with Cashpie;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>3.Assisting its Users to obtain their credit
+				<p><span>3.Assisting its Users to obtain their credit
 report through authorized agents partnered with Cashpie. Cashpie will monitor
 and update the credit report obtained by the customer through the use of the
 Platform as and when Cashpie receives such report from the authorized agents;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>4.Cashpie receives such report from the
+				<p><span>4.Cashpie receives such report from the
 authorized agents;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>5.Provision of support to the Users in
+				<p><span>5.Provision of support to the Users in
 verifying the financial capabilities of Users;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>6.Cashpie will provide you with income and
+				<p><span>6.Cashpie will provide you with income and
 spend analysis through its integration with service provider;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>7.Provision of a social score based on
+				<p><span>7.Provision of a social score based on
 User’s Facebook, Twitter, Linkedin or any other social media accounts that are
 linked with User’s account on the Platform;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>In the event You have registered Your phone
+				<p><span>In the event You have registered Your phone
 number on the ‘Do Not Disturb’ registers with Your network provider, You shall
 ensure to take all steps to enable the Company’s representative’s to contact
 You via phone to provide details about different financial products and You
@@ -150,9 +150,9 @@ shall ensure that such calls received by You are pursuant to You providing Us
 with information and You shall not register a compliant with the relevant
 authorities for the same.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>For the provision of the above mentioned
+				<p><span>For the provision of the above mentioned
 Services, Cashpie will be using and sharing the information of the User with
 multiple financial institutions and other parties, as may be required for the
 purpose mentioned above and Cashpie shall also run multiple credit checks to be
@@ -160,11 +160,11 @@ able to get the best available offers to suit the needs of the Users. The
 collection, storing, use and transfer of information shared by the User shall
 be governed in accordance with the Privacy Policy.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>2. ELIGIBILITY</span></p>
+				<p><span>2. ELIGIBILITY</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>The User of this Platform unequivocally
+				<p><span>The User of this Platform unequivocally
 declares and agrees that the User is a natural / legal person who has attained
 the age of at least 18 years and is legally allowed to enter into a contract in
 India. The User is allowed to utilize the Services in accordance with the terms
@@ -178,20 +178,20 @@ User from using or accessing the Platform at any time in its sole discretion,
 with or without notice, including without limitation if Cashpie believes that
 User is under the age of 18 years.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>3. ACCEPTANCE OF TERMS AND CONDITIONS</span></p>
+				<p><span>3. ACCEPTANCE OF TERMS AND CONDITIONS</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>As a User of this Platform, You have agreed
+				<p><span>As a User of this Platform, You have agreed
 to the Terms &amp; Conditions provided hereunder or anywhere else on this
 Platform including but not limited to disclaimers on this Platform. You are
 advised to read and understand the said Terms &amp; Conditions and in case You
 do not wish to agree to these Terms &amp; Conditions, please refrain from using
 the Platform.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie reserves the right, at its sole
+				<p><span>Cashpie reserves the right, at its sole
 discretion, to change, modify, add or remove portions of these Terms and
 Conditions, at any time. Any changes made to these Terms and Conditions will be
 communicated to the email address of the User maintained in our records, within
@@ -201,11 +201,11 @@ user. The User’s continued use of the Platform following the notification of
 modification of these Terms and Conditions will be construed to mean the
 acceptance by the User of the modified Terms and Conditions.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>4. YOUR ACCOUNT</span></p>
+				<p><span>4. YOUR ACCOUNT</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>If You wish to use the Platform, You are
+				<p><span>If You wish to use the Platform, You are
 required to maintain an account and will be required to furnish certain
 information and details, including Your name, email id, contact number and any
 other information deemed necessary by Cashpie and as further detailed in the
@@ -225,33 +225,33 @@ without any notice to You in this regard. In the event of any changes to the
 information shared by You at the time of registering Yourself on the Platform,
 You shall be responsible for forthwith notifying the said changes to Us.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>You can access and update most of the
+				<p><span>You can access and update most of the
 information You provided us on the ‘dashboard’ area of Your account after You
 log-in or by writing to Us at info@Cashpie.in. The right to use this Platform
 is personal to the User and is not transferable to any other person or entity.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>You shall at all times abide by the Terms
+				<p><span>You shall at all times abide by the Terms
 and Conditions stated herein and any breach of these conditions may also lead
 to Cashpie terminating Your account and appropriate civil and criminal remedies
 will be sought against You as provided under the laws of India.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>5. PRIVACY</span></p>
+				<p><span>5. PRIVACY</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie collects certain information from
+				<p><span>Cashpie collects certain information from
 You in order to provide the Services. Cashpie’s use of Your personal
 information is governed in accordance with the Privacy Policy.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>6. LICENSE AND ACCESS</span></p>
+				<p><span>6. LICENSE AND ACCESS</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie grants You a limited license to
+				<p><span>Cashpie grants You a limited license to
 access and use the Platform for availing the Services, but not to download any
 material from it (other than page caching) or modify it, or any portion of it,
 except with express written consent of Cashpie and / or its affiliates, as may
@@ -271,20 +271,20 @@ for any commercial purpose without express written consent of Cashpie and / or
 its affiliates, as may be applicable. Any unauthorized use of the Platform
 shall terminate the permission or revoke the license granted by Cashpie.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>You are permitted to use content delivered
+				<p><span>You are permitted to use content delivered
 to You through the Service only on the Service. You may not copy, reproduce,
 distribute, or create derivative works from this content. Further, You agree
 not to reverse engineer or reverse compile any of the Service technology,
 including but not limited to, any Java applets associated with the Service.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>7. MONITORING OF THE PLATFORM AND YOUR
+				<p><span>7. MONITORING OF THE PLATFORM AND YOUR
 ACCOUNT</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie has the right and liberty to
+				<p><span>Cashpie has the right and liberty to
 monitor the content of the Platform at all times which shall include
 information provided in Your account. The monitoring of the Platform / Platform
 is important to determine the veracity of the information provided by You and
@@ -295,11 +295,11 @@ contravention of the Terms &amp; Conditions herein or share such information
 with any governmental authority as per procedures laid down by the law for the
 time being in force in India.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>8. SERVICE SUSPENSION</span></p>
+				<p><span>8. SERVICE SUSPENSION</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie may wish to stop providing the
+				<p><span>Cashpie may wish to stop providing the
 Services, and may terminate use of it at any time without giving notice of
 termination to You. Unless Cashpie informs the User otherwise, upon any
 termination, (a) the rights and licenses granted to You in these terms will
@@ -307,11 +307,11 @@ end; and (b) User must stop using the Platform forthwith. Cashpie reserves the
 right to suspend or cease providing any Service and shall have no liability or
 responsibility to the User in any manner whatsoever if it chooses to do so.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>9. PROHIBITED USES</span></p>
+				<p><span>9. PROHIBITED USES</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>In addition to other prohibitions as set
+				<p><span>In addition to other prohibitions as set
 forth in the Terms &amp; Conditions, You are prohibited from using the
 Platform: (a) for any unlawful purpose; (b) to solicit others to perform or
 participate in any unlawful acts; (c) to violate any international, federal,
@@ -330,12 +330,12 @@ security features of the Service or any related website, other websites, or the
 Internet. We reserve the right to terminate Your use of the Service or any
 related website for violating any of the prohibited uses.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>10. LIMITATION OF LIABILITY AND DISCLAIMER
+				<p><span>10. LIMITATION OF LIABILITY AND DISCLAIMER
 OF WARRANTIES</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Notwithstanding anything to the contrary
+				<p><span>Notwithstanding anything to the contrary
 contained herein, neither Cashpie nor its affiliated companies, subsidiaries,
 officers, directors, employees or any related party shall have any liability to
 You or to any third party for any indirect, incidental, special or
@@ -346,9 +346,9 @@ subsidiary companies, and each of their directors, officers, employees, and
 agents, from any and all claims, losses, damages, liabilities, expenses and
 causes of action arising out of Your use of the Platform.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>As a User, You also acknowledge that
+				<p><span>As a User, You also acknowledge that
 Cashpie has maintained and carried out all possible checks and balances to
 assure the credibility of the Users as listed on the Platform. The information
 provided on the Platform is based on the information that is provided to
@@ -365,9 +365,9 @@ behalf of the User. Cashpie is an information platform and the User is entitled
 to conduct its own diligence before taking any steps to initiate the processes
 outlined in the Website.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie does not make any representations
+				<p><span>Cashpie does not make any representations
 or warranties on behalf of the financial service providers, banks or NBFCs
 partnered with Cashpie with respect to the financial products / loans provided
 by such partners. Cashpie shall be responsible only to the extent of providing
@@ -376,9 +376,9 @@ respect to the financial products provided by the partners shall be governed by
 the separate agreement executed between such financial partners and the
 customers and Cashpie shall have no liability in this regard whatsoever.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie makes no representations or
+				<p><span>Cashpie makes no representations or
 warranties about the accuracy, reliability, completeness, current-ness and/or
 timeliness of any content, information, software, text, graphics, links or
 communications provided on or through the use of the Platform or that the
@@ -393,9 +393,9 @@ this Terms &amp; Conditions. It is up to You to take precautions to ensure that
 whatever You select for Your use is free of such items as viruses, worms,
 malware, Trojan horses and other items of a destructive nature.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>YOUR USE OF THE SERVICE AND ALL
+				<p><span>YOUR USE OF THE SERVICE AND ALL
 INFORMATION, PRODUCTS AND OTHER CONTENT (INCLUDING THAT OF THIRD PARTIES)
 INCLUDED IN OR ACCESSIBLE FROM THE SERVICE IS AT YOUR SOLE RISK. THE SERVICE IS
 PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS. COMPANY
@@ -415,9 +415,9 @@ DOWNLOAD OF ANY SUCH MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR
 WRITTEN, OBTAINED BY YOU FROM COMPANY OR SERVICE PROVIDER THROUGH OR FROM THE
 SERVICE WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>YOU FURTHER AGREE THAT NEITHER COMPANY OR
+				<p><span>YOU FURTHER AGREE THAT NEITHER COMPANY OR
 THIRD PARTY SERVICE PROVIDER NOR ANY OF THEIR AFFILIATES, ACCOUNT PROVIDERS OR
 ANY OF THEIR AFFILIATES WILL BE LIABLE FOR ANY HARMS, WHICH LAWYERS AND COURTS
 OFTEN CALL DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY
@@ -434,11 +434,11 @@ OR (vii) ANY OTHER MATTER RELATING TO THE SERVICE. THE MAXIMUM LIABILITY OF
 Cashpie SHALL BE LIMITED TO THE AMOUNT ACTUALLY PAID BY YOU TO THE COMPANY FOR
 THE SERVICE.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>11. INDEMNITY</span></p>
+				<p><span>11. INDEMNITY</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>You agree to indemnify, save, and hold
+				<p><span>You agree to indemnify, save, and hold
 Cashpie, its affiliates, contractors, employees, officers, directors, agents
 and its third party associates, licensors, and partners harmless from any and
 all claims, demands, losses, damages, and liabilities, costs and expenses, including
@@ -457,12 +457,12 @@ action, or proceeding brought by a third party that is subject to the foregoing
 indemnification upon becoming aware of it. This paragraph shall survive
 termination of this Terms &amp; Conditions.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>12. ADVERTISERS/ THIRD PARTY LINKS ON THE
+				<p><span>12. ADVERTISERS/ THIRD PARTY LINKS ON THE
 PLATFORM</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Cashpie accepts no responsibility for
+				<p><span>Cashpie accepts no responsibility for
 advertisements contained within the Platform. Cashpie has no control over and
 accepts no responsibility for the content of any website or mobile application
 to which a link from the Platform exists. Such linked websites and mobile
@@ -473,12 +473,12 @@ application to which the Platform provides a link. Further, the Users consent
 and agree that the content provided in the Website and the App shall be synced
 and shall be available in both mediums.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>13. USER COMMENTS, FEEDBACK AND OTHER
+				<p><span>13. USER COMMENTS, FEEDBACK AND OTHER
 SUBMISSIONS</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>If, at Cashpie’s request, You send certain
+				<p><span>If, at Cashpie’s request, You send certain
 specific submissions (for example contest entries) or without a request from
 Us, You send creative ideas, suggestions, proposals, plans, or other materials,
 whether online, by email, by postal mail, or otherwise (collectively,
@@ -488,9 +488,9 @@ comments that You forward to Us. We are and shall be under no obligation (1) to
 maintain any comments in confidence; (2) to pay compensation for any comments;
 or (3) to respond to any comments.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>You agree that Your comments will not
+				<p><span>You agree that Your comments will not
 violate any right of any third-party, including copyright, trademark, privacy,
 personality or other personal or proprietary right. You further agree that Your
 comments will not contain libelous or otherwise unlawful, abusive or obscene
@@ -502,9 +502,9 @@ responsible for any comments You make and their accuracy. We take no
 responsibility and assume no liability for any comments posted by You or any
 third-party.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>You are licensing to the Company and its
+				<p><span>You are licensing to the Company and its
 service providers, any information, data, passwords, materials or other content
 (collectively, “Content”) You provide through or to the Service. Company and
 service provider of Company may use, modify, display, distribute and create new
@@ -518,11 +518,11 @@ third party service provider may use the Content for the purposes set out
 above. As between Company and third party service provider, Company owns Your
 confidential account information.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>14. ACKNOWLEDGEMENTS</span></p>
+				<p><span>14. ACKNOWLEDGEMENTS</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>You acknowledge that Cashpie is a platform
+				<p><span>You acknowledge that Cashpie is a platform
 bringing Users together and that the Cashpie is not engaged in either grant of
 loan or borrowing any money or assistance for any financial products from any
 member using the Cashpie Platform. You acknowledge that the use of the
@@ -544,185 +544,1000 @@ the event one person fails to either grant loan or a person fails to repay the
 loan or misrepresents his financial status or commits a fraud or cheating or
 any other such illegal act.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>15. APPLICABLE LAWS</span></p>
+				<p><span>15. APPLICABLE LAWS</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Your use of this Platform and any Term
+				<p><span>Your use of this Platform and any Term
 &amp; Conditions stated in this agreement is subject to laws of India. In case
 of any disputes arising out of the use of the Website, Court of Thane will have
 exclusive jurisdiction.</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>16. GRIEVANCES</span></p>
+				<p><span>16. GRIEVANCES</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Users have complete authority to file a
+				<p><span>Users have complete authority to file a
 complaint/ share feedback if they are disappointed by services rendered by
 Cashpie. They can give their complaint/ feedback in writing or by way of an
 email to the following:</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Helpline: 012-44273137</span></p>
+				<p><span>Helpline: 012-44273137</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+				<p><span>&nbsp;</span></p>
 
-				<p class=MsoNormal><span lang=EN-US>Email: support@mbeyond.in</span></p>
-				<p class=MsoNormal>
+				<p><span>Email: support@mbeyond.in</span></p>
+				<p>
 					privacy policy
 				</p>
-				<p class=MsoNormal>
+				<p>
 					The Privacy Policy of this service (hereinafter "we, us, our, us, our, the Site, the Service") is the official document that Identify and explain the information collected on the Service by users ("User", "User", "You", "Your", "Your") , storage, sharing and use. This document is intended to provide formal assurance of the protection and security of the information provided on the Services.
 				</p>
-				<p class=MsoNormal>
+				<p>
 					This Privacy Policy defines the meaning of personal and non-personal information used on the Service. If you have shared information about the Service and wish to be removed from any record associated with the Service at our discretion For more information about the Service, you may contact us directly using the contact information we have provided on the Service.
 				</p>
-				<p class=MsoNormal>
+				<p>
 					The Services provided on the Service may only be used by legal residents over the age of 18. Once you are willing to register for the Service by submitting your information via the online form and accepting this Privacy Policy and the Terms of Use of the Service, you are Acknowledge that you understand that your use of information submitted on this website is governed by these documents. Accordingly, you are encouraged to carefully study these documents before submitting information about the Service.
 				</p>
-				<p class=MsoNormal>
+				<p>
 					If you disagree with or misunderstand the terms of the Service's Terms of Use and Privacy Policy and/or reject the provisions of these documents, you should Discontinue use of the Services and shall not provide your information and proceed to register to submit through an online form or any other means and Sharing information about you on the Services. If you have questions about the Service or its use, you may contact us using the details we provide about the Service. If you wish to refuse to use the Service, you should close this and other pages on this Service.
 				</p>
-				<p class=MsoNormal>
+				<p>
 					I. Personal and Non-Personally Identifiable Information
 				</p>
-				<p class=MsoNormal>
+				<p>
 					In order to register for the Service and use its services, you are required to provide your personally identifiable information (PII) via an online form on the Service. This information is collected, stored, shared, and used in the manner set forth in this Privacy Policy. This information is critical to providing you with the services you have requested through the use of the Services. If you do not need to use the Services or for some reason decide to stop using the Services, you should not submit your PII on the Services Information. PII includes, but is not limited to, the following information: your first and last name, address, email address, phone number, date of birth. Employment information, social security number, other ID information, bank information.
 				</p>
-				<p class=MsoNormal>
+				<p>
 					Note: Bank information is only used to provide you with search and contact services and is never shared with any third party marketers or other third parties! unless the contrary is determined by law or pursuant to a special order of the authorizing party (including, but not limited to) limited national security concerns or (similar issues).
 				</p>
-				<p class=MsoNormal>
+				<p>
 					In addition to PII, we collect Non-Personally Identifiable Information (NPII) that you can use when using the Services without the need for the Submitting any Personal Information on the Service. NPII includes, but is not limited to, user behavior data, such as Internet Protocol (IP) data, browser Details, geographic location, user's operating system, referral and exit pages, date and time details. Internet Service Provider Details, etc. The NPII we charge you may be transmitted to third parties with whom we have contracted, unless you use a means or expression of concealed NPII. You directly stop using NPII requests.
 				</p>
-				<p class=MsoNormal>
+				<p>
 					Your use of PII
 				</p>
-				<p class=MsoNormal>
+				<p>
 					We collect, store, share and use your PII information in accordance with this Privacy Policy. All information you provide is protected by our top security measures and encryption methods. The information you submit through the Registration Service will be used to perform searches and to contact one or more lenders.
 				</p>
-				<p class=MsoNormal>
+				<p>
 					Translated with www.DeepL.com/Translator (free version)
 				</p>
 
 			</div>
-			<div class=WordSection1 v-else style='layout-grid:15.6pt'>
 
-				<p class=MsoNormal>
-					Giao thức riêng tư người dùng
-				</p>
+			<div class=WordSection1 style='layout-grid:15.6pt'>
 
-				<p class=MsoNormal>
-					Lovecraft tôn trọng và bảo vệ quyền riêng của người dùng.Chính sách bảo mật này sẽ chỉ cho bạn cách chúng tôi thu thập và sử dụng thông tin về bạn và cách chúng tôi bảo vệ nó.Trước khi bạn trở thành người dùng tương tư, bạn phải đọc chính sách riêng tư này cẩn thận và đồng ý với mọi điều khoản riêng tư.Chính sách bảo mật này sẽ có tác dụng ngay sau khi bạn đăng ký làm người dùng tương tư và sẽ bị ràng buộc với bạn và tình yêu.
-				</p>
-				<p class=MsoNormal>
-					1 12299; Thông tin người dùng có thể thu thập
-				</p>
-				<p class=MsoNormal>
-					Khi cung cấp dịch vụ, chúng tôi có thể thu thập, lưu trữ và sử dụng thông tin sau đây về các bạn.Nếu anh không cung cấp thông tin liên quan, anh có thể không thể đăng ký làm người dùng của chúng tôi hoặc tận hưởng một số dịch vụ chúng tôi cung cấp, hoặc anh có thể không đạt được hiệu quả mong muốn của dịch vụ liên quan.
-				</p>
-				<p class=MsoNormal>
-					1. Thông tin anh cung cấp
-				</p>
-				<p class=MsoNormal>
-					Những thông tin cá nhân anh cung cấp cho chúng tôi khi anh đăng ký tài khoản hay dùng dịch vụ của chúng tôi, như số điện thoại, số thẻ căn cước, số thẻ ngân hàng, v.v.
-				</p>
-				<p class=MsoNormal>
-					*thông tin chia sẻ bạn cung cấp cho người khác qua dịch vụ của chúng tôi và thông tin bạn lưu trữ khi bạn sử dụng dịch vụ của chúng tôi.
-				</p>
-				<p class=MsoNormal>
-					2. Thông tin của bạn được chia sẻ
-				</p>
-				<p class=MsoNormal>
-					Thông tin chia sẻ về bạn được cung cấp bởi những người khác khi sử dụng dịch vụ.
-				</p>
-				<p class=MsoNormal>
-					Chúng tôi đã lấy được thông tin.Khi dùng dịch vụ, chúng tôi có thể thu thập các thông tin sau:
-				</p>
-				<p class=MsoNormal>
-					Bản ghi lưu thông tin là những thông tin kỹ thuật có thể tự động thu thập bởi hệ thống thông qua các cookie hay các phương tiện khác khi bạn sử dụng dịch vụ của chúng tôi, bao gồm: thông tin về thiết bị hay phần mềm, như thông tin cấu hình được cung cấp bởi thiết bị di động, trình duyệt web hay các chương trình khác sử dụng để truy cập dịch vụ của chúng tôi, địa chỉ IP, mã nhận dạng và thiết bị di động, vàThông tin và nội dung khác cần cung cấp khi dùng dịch vụ của chúng tôi.
-				</p>
-				<p class=MsoNormal>
-					Thông tin giao dịch có nghĩa là chúng tôi phân tích dữ liệu giao dịch được hình thành trên bục phúc âm và tạo một cơ sở dữ liệu tín dụng người dùng.
-				</p>
-				<p class=MsoNormal>
-					4. Thông tin của các đối tác
-				</p>
-				<p class=MsoNormal>
-					Chúng tôi sẽ truy vấn danh tính cá nhân của bạn, thông tin liên lạc, địa chỉ, địa điểm và các thông tin cơ bản khác trong báo cáo tín dụng của bạn thông qua một tổ chức bên ngoài (bao gồm, nhưng không giới hạn, thông tin cá nhân hợp pháp, dữ liệu ngoài)Thông tin, thông tin cá nhân liên quan, vay cá nhân, thẻ tín dụng khác nhau, bảo đảm bên ngoài và các dữ liệu giao dịch được hình thành trong hoạt động kinh doanh, thông tin cá nhân về giao dịch, thông tin về chi phí công cộng, vi phạm luật pháp, thông tin không phải ngân hàng, cũng như chân dung, tình hình công việc, tình trạng thu nhập, tình hình gia đình, quan hệ xã hội, tuyển dụng, v.v.Hồ sơ giao dịch và thông tin sử dụng của tình yêu.
-				</p>
-				<p class=MsoNormal>
-					2 122299; Làm thế nào dùng thông tin người dùng
-				</p>
-				<p class=MsoNormal>
-					1. Khi chúng tôi cung cấp dịch vụ, nó được dùng cho việc xác thực, dịch vụ khách hàng, bảo vệ an ninh, giám sát lừa đảo, lưu trữ và hỗ trợ để đảm bảo an to àn cho các sản phẩm và dịch vụ chúng tôi cung cấp;
-				</p>
-				<p class=MsoNormal>
-					2. Giúp chúng tôi thiết kế dịch vụ mới và cải thiện dịch vụ hiện tại;
-				</p>
-				<p class=MsoNormal>
-					Cho chúng tôi biết thêm về cách ông truy cập và sử dụng dịch vụ của chúng tôi, để đáp ứng nhu cầu cá nhân của ông;
-				</p>
-				<p class=MsoNormal>
-					4. Bản nâng cấp phần mềm phần mềm...
-				</p>
-				<p class=MsoNormal>
-					5.Hãy tham gia cuộc khảo sát sản phẩm và dịch vụ của chúng tôi.
-				</p>
-				<p class=MsoNormal>
-					Để cho bạn có một kinh nghiệm tốt hơn, nâng cao dịch vụ của chúng tôi hay các mục đích khác bạn đồng ý, chúng tôi có thể sử dụng thông tin thu thập qua một dịch vụ nào đó cho các dịch vụ khác bằng cách tổng hợp hoặc làm người dân, miễn là luật pháp và quy định liên tục được tuân thủ.Ví dụ, những thông tin thu được khi bạn sử dụng một dịch vụ của chúng tôi có thể được sử dụng trong một dịch vụ khác để cung cấp cho bạn nội dung cụ thể hoặc để cung cấp thông tin không bị thúc ép.Bạn cũng có thể cho phép chúng tôi sử dụng thông tin cung cấp và lưu trong dịch vụ cho các dịch vụ khác nếu chúng tôi cung cấp các lựa chọn tương ứng trong dịch vụ tương ứng.
-				</p>
-				<p class=MsoNormal>
-					Comment=File tráo đổi vCalendar Comment
-				</p>
-				<p class=MsoNormal>
-					Chúng tôi có thể chia sẻ thông tin cá nhân nếu:
-				</p>
-				<p class=MsoNormal>
-					1. Nếu anh không đáp trả vốn và lãi suất của vay quá hạn, chúng tôi sẽ tiết lộ thông tin người dùng của anh cho công chúng (bao gồm cả việc cho mượn, nhưng không giới hạn cho mỗi người mượn, những mối liên hệ cập nhật liên lạc thường xuyên trong sổ địa chỉ điện thoại di động của anh, những liên lạc được cập nhật trong điện thoại di động của những liên lạc này, và những mối liên hệ hay nhóm của tài khoản xã hội mà anh cung cấp)
-				</p>
-				<p class=MsoNormal>
-					2. Chúng tôi sẽ cung cấp thông tin người dùng của bạn cho người dùng đã đăng ký theo yêu cầu của người dùng có đăng ký khác khi họ khởi kiện kiện chống lại sự xâm phạm hợp đồng trong các hoạt động của người tình.
-				</p>
-				<p class=MsoNormal>
-					Ba. Hãy cung cấp thông tin người dùng cho bộ phận quản lý và pháp lý theo yêu cầu của họ.
-				</p>
-				<p class=MsoNormal>
-					4. Khi chủ nợ giao bộ sưu tập, nó sẽ cung cấp thông tin người dùng của bạn cho người thu thập được giao phó.
-				</p>
-				<p class=MsoNormal>
-					5. Khi bạn đăng ký mua những sản phẩm và dịch vụ liên quan từ một đối tác từ một người thứ ba qua đó, chúng tôi sẽ cung cấp thông tin người dùng của bạn cho người thứ ba theo sự cho phép của bạn.
-				</p>
-				<p class=MsoNormal>
-					6. Chúng tôi, cũng như các công ty có liên kết, có thể chia sẻ thông tin cá nhân của bạn với các đối tác, đối tác và các nhà cung cấp dịch vụ cung cấp, thầu và điệp viên (v.d. các nhà cung cấp thông tin văn bản hay g ửi thông báo cho chúng tôi, các nhà cung cấp đồ sơ đồ cung cấp dữ liệu địa điểm (có thể họ không nằm trong thẩm quyền của bạn) cho tôi.Chúng tôi cung cấp hoặc cải thiện dịch vụ cho các bạn;
-				</p>
-				<p class=MsoNormal>
+				<p class=MsoNormal><span lang=EN-US>Ch</span><span >í</span><span
+						lang=EN-US>nh s</span><span >á</span><span lang=EN-US>ch
+b</span><span >&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t</span></p>
 
-					Độ khẩn cấp cao độ cao độ độ cao độ độ cao độ độ cao độ độ cao độ cao độ cao độ độ cao độ độ cao độ độ độ cao độ độ độ cao độ độ độ cao độ độ cao độ cao độ độ cao độ.
+				<p class=MsoNormal><span >&#7912;</span><span lang=EN-US>ng d</span><span
+						>&#7909;</span><span lang=EN-US>ng lovepay </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c x&acirc;y d</span><span
+						>&#7921;</span><span lang=EN-US>ng d</span><span
+						>&#432;&#7899;</span><span lang=EN-US>i d</span><span
+						>&#7841;</span><span lang=EN-US>ng </span><span
+						>&#7913;</span><span lang=EN-US>ng d</span><span
+						>&#7909;</span><span lang=EN-US>ng mi</span><span
+						>&#7877;</span><span lang=EN-US>n ph</span><span
+						>í</span><span lang=EN-US>. D</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> n</span><span
+						>à</span><span lang=EN-US>y </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c cung c</span><span
+						>&#7845;</span><span lang=EN-US>p mi</span><span
+						>&#7877;</span><span lang=EN-US>n ph</span><span
+						>í</span><span lang=EN-US> v</span><span
+						>à</span> <span >&#273;&#432;&#7907;</span><span
+						lang=EN-US>c s</span><span >&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng nh</span><span
+						>&#432;</span><span lang=EN-US> hi</span><span
+						>&#7879;</span><span lang=EN-US>n nay.</span></p>
 
-				</p>
-				<p class=MsoNormal>
-					Người dùng của bạn phải được cung cấp cho người khác theo quy định pháp luật.
-					làm thế nào để bảo vệ thông tin người dùng
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
-				</p>
-				<p class=MsoNormal>
-					Chúng tôi sử dụng các công nghệ và thủ tục an ninh khác nhau để ngăn chặn thiệt hại, lạm dụng, truy cập trái phép hay tiết lộ thông tin.Tuy nhiên, xin hãy hiểu rằng vì những hạn chế kỹ thuật và khả năng độc hại, trong ngành công nghiệp Internet, ngay cả khi chúng ta cố gắng hết sức để tăng cường biện pháp an ninh, thì không thể đảm bảo an ninh trăm trăm.Bạn cần phải hiểu rằng hệ thống và mạng thông tin bạn dùng để truy cập dịch vụ của chúng tôi có thể có vấn đề do những yếu tố nằm ngoài tầm kiểm soát của chúng tôi.
-				</p>
-				<p class=MsoNormal>
-					Name=Game thẻ Comment
-				</p>
-				<p class=MsoNormal>
-					Khi người dùng cần phải hủy tài khoản, họ có thể liên lạc với nhân viên dịch vụ tình yêu để kiểm tra và đăng xuất.
-				</p>
-				<p class=MsoNormal>
-					Cám ơn. Cám ơn.
-				</p>
-				<p class=MsoNormal>
-					Do thay đổi luật pháp, và để theo kịp chiều hướng phát triển mới và có khả năng phát triển trên Internet, chúng ta có thể thỉnh thoảng thay đổi chính sách này.Vì vậy, chúng tôi sẽ dành quyền thực hiện những thay đổi đó theo cách riêng của chúng tôi. chúng tôi sẽ thông báo cho các bạn, bằng cách nhấn mạnh thông báo cho các bạn hoặc bằng cách khác trước khi thay đổi có hiệu quả.Trong trường hợp này, nếu anh tiếp tục sử dụng dịch vụ của chúng tôi, anh đồng ý bị ràng buộc bởi chính sách tình nghi này
-				</p>
+				<p class=MsoNormal><span lang=EN-US>N</span><span >&#7871;</span><span
+						lang=EN-US>u ai </span><span >&#273;ó</span><span lang=EN-US>
+quy</span><span >&#7871;</span><span lang=EN-US>t </span><span
+						>&#273;&#7883;</span><span lang=EN-US>nh s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a t&ocirc;i, trang n</span><span
+						>à</span><span lang=EN-US>y </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng </span><span
+						>&#273;&#7875;</span><span lang=EN-US> th&ocirc;ng b</span><span
+						>á</span><span lang=EN-US>o cho kh</span><span
+						>á</span><span lang=EN-US>ch truy c</span><span
+						>&#7853;</span><span lang=EN-US>p v</span><span
+						>&#7873;</span><span lang=EN-US> ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch c</span><span
+						>&#7911;</span><span lang=EN-US>a t&ocirc;i th&ocirc;ng qua c</span><span
+						>á</span><span lang=EN-US>ch ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i thu th</span><span
+						>&#7853;</span><span lang=EN-US>p, s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng v</span><span
+						>à</span><span lang=EN-US> ti</span><span
+						>&#7871;</span><span lang=EN-US>t l</span><span
+						>&#7897;</span><span lang=EN-US> th&ocirc;ng tin c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n.</span></p>
 
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>N</span><span >&#7871;</span><span
+						lang=EN-US>u b</span><span >&#7841;</span><span lang=EN-US>n ch</span><span
+						>&#7885;</span><span lang=EN-US>n s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a t&ocirc;i, b</span><span
+						>&#7841;</span><span lang=EN-US>n </span><span
+						>&#273;&#7891;</span><span lang=EN-US>ng &yacute; v</span><span
+						>&#7899;</span><span lang=EN-US>i vi</span><span
+						>&#7879;</span><span lang=EN-US>c thu th</span><span
+						>&#7853;</span><span lang=EN-US>p v</span><span
+						>à</span><span lang=EN-US> s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng th&ocirc;ng tin li</span><span
+						>ê</span><span lang=EN-US>n quan </span><span
+						>&#273;&#7871;</span><span lang=EN-US>n ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch n</span><span
+						>à</span><span lang=EN-US>y. Th&ocirc;ng tin c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n t&ocirc;i thu th</span><span
+						>&#7853;</span><span lang=EN-US>p </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng </span><span
+						>&#273;&#7875;</span><span lang=EN-US> cung c</span><span
+						>&#7845;</span><span lang=EN-US>p v</span><span
+						>à</span><span lang=EN-US> c</span><span
+						>&#7843;</span><span lang=EN-US>i thi</span><span
+						>&#7879;</span><span lang=EN-US>n d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US>. Ngo</span><span
+						>&#7841;</span><span lang=EN-US>i tr</span><span
+						>&#7915;</span> <span >&#273;&#432;&#7907;</span><span
+						lang=EN-US>c m&ocirc; t</span><span >&#7843;</span><span lang=EN-US>
+trong ch</span><span >í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t n</span><span
+						>à</span><span lang=EN-US>y, t&ocirc;i s</span><span
+						>&#7869;</span><span lang=EN-US> kh&ocirc;ng s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng ho</span><span
+						>&#7863;</span><span lang=EN-US>c chia s</span><span
+						>&#7867;</span><span lang=EN-US> th&ocirc;ng tin c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>&#7841;</span><span lang=EN-US>n v</span><span
+						>&#7899;</span><span lang=EN-US>i b</span><span
+						>&#7845;</span><span lang=EN-US>t k</span><span
+						>&#7923;</span><span lang=EN-US> ai.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Tr</span><span >&#7915;</span><span
+						lang=EN-US> khi </span><span >&#273;&#432;&#7907;</span><span lang=EN-US>c
+</span><span >&#273;&#7883;</span><span lang=EN-US>nh ngh</span><span
+						>&#297;</span><span lang=EN-US>a kh</span><span
+						>á</span><span lang=EN-US>c trong ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t n</span><span
+						>à</span><span lang=EN-US>y, c</span><span
+						>á</span><span lang=EN-US>c </span><span
+						>&#273;</span><span lang=EN-US>i</span><span style='font-family:
+宋体'>&#7873;</span><span lang=EN-US>u kho</span><span >&#7843;</span><span
+						lang=EN-US>n </span><span >&#273;&#432;&#7907;</span><span lang=EN-US>c s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng trong ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t n</span><span
+						>à</span><span lang=EN-US>y c</span><span
+						>ó</span><span lang=EN-US> c</span><span
+						>ù</span><span lang=EN-US>ng &yacute; ngh</span><span
+						>&#297;</span><span lang=EN-US>a v</span><span
+						>&#7899;</span><span lang=EN-US>i c</span><span
+						>á</span><span lang=EN-US>c </span><span
+						>&#273;</span><span lang=EN-US>i</span><span style='font-family:
+宋体'>&#7873;</span><span lang=EN-US>u kho</span><span >&#7843;</span><span
+						lang=EN-US>n v</span><span >à</span> <span
+						>&#273;</span><span lang=EN-US>i</span><span style='font-family:
+宋体'>&#7873;</span><span lang=EN-US>u ki</span><span >&#7879;</span><span
+						lang=EN-US>n c</span><span >&#7911;</span><span lang=EN-US>a ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i v</span><span
+						>à</span><span lang=EN-US> c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span> <span >&#273;&#432;&#7907;</span><span
+						lang=EN-US>c truy c</span><span >&#7853;</span><span
+						lang=EN-US>p trong &quot;H</span><span >&#432;&#7899;</span><span
+						lang=EN-US>ng d</span><span >&#7851;</span><span lang=EN-US>n
+Kho</span><span >&#7843;</span><span lang=EN-US>n vay C</span><span
+						>á</span><span lang=EN-US> nh&acirc;n T</span><span
+						>&#7913;</span><span lang=EN-US>c th</span><span
+						>ì</span><span lang=EN-US>&quot;.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Thu th</span><span >&#7853;</span><span
+						lang=EN-US>p v</span><span >à</span><span lang=EN-US> s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng th&ocirc;ng tin</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span >&#272;&#7875;</span><span lang=EN-US> c</span><span
+						>ó</span> <span >&#273;&#432;&#7907;</span><span
+						lang=EN-US>c tr</span><span >&#7843;</span><span lang=EN-US>i
+nghi</span><span >&#7879;</span><span lang=EN-US>m t</span><span
+						>&#7889;</span><span lang=EN-US>t h</span><span
+						>&#417;</span><span lang=EN-US>n, khi s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i, t&ocirc;i c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span><span lang=EN-US> y</span><span
+						>ê</span><span lang=EN-US>u c</span><span
+						>&#7847;</span><span lang=EN-US>u b</span><span
+						>&#7841;</span><span lang=EN-US>n cung c</span><span
+						>&#7845;</span><span lang=EN-US>p cho ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i m</span><span
+						>&#7897;</span><span lang=EN-US>t s</span><span
+						>&#7889;</span><span lang=EN-US> th&ocirc;ng tin nh</span><span
+						>&#7853;</span><span lang=EN-US>n d</span><span
+						>&#7841;</span><span lang=EN-US>ng c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n nh</span><span
+						>&#7845;</span><span lang=EN-US>t </span><span
+						>&#273;&#7883;</span><span lang=EN-US>nh. Th&ocirc;ng tin t&ocirc;i y</span><span
+						>ê</span><span lang=EN-US>u c</span><span
+						>&#7847;</span><span lang=EN-US>u s</span><span
+						>&#7869;</span><span lang=EN-US> v</span><span
+						>&#7851;</span><span lang=EN-US>n c</span><span
+						>ò</span><span lang=EN-US>n tr</span><span
+						>ê</span><span lang=EN-US>n thi</span><span
+						>&#7871;</span><span lang=EN-US>t b</span><span
+						>&#7883;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>&#7841;</span><span lang=EN-US>n v</span><span
+						>à</span><span lang=EN-US> t&ocirc;i s</span><span
+						>&#7869;</span><span lang=EN-US> kh&ocirc;ng thu th</span><span
+						>&#7853;</span><span lang=EN-US>p th&ocirc;ng tin </span><span
+						>&#273;ó</span><span lang=EN-US> d</span><span
+						>&#432;&#7899;</span><span lang=EN-US>i b</span><span
+						>&#7845;</span><span lang=EN-US>t k</span><span
+						>&#7923;</span><span lang=EN-US> h</span><span
+						>ì</span><span lang=EN-US>nh th</span><span
+						>&#7913;</span><span lang=EN-US>c n</span><span
+						>à</span><span lang=EN-US>o.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span >&#7912;</span><span lang=EN-US>ng d</span><span
+						>&#7909;</span><span lang=EN-US>ng s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng c</span><span
+						>á</span><span lang=EN-US>c d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba, c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span><span lang=EN-US> thu th</span><span
+						>&#7853;</span><span lang=EN-US>p th&ocirc;ng tin </span><span
+						>&#273;&#7875;</span><span lang=EN-US> nh</span><span
+						>&#7853;</span><span lang=EN-US>n d</span><span
+						>&#7841;</span><span lang=EN-US>ng b</span><span
+						>&#7841;</span><span lang=EN-US>n.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Li</span><span >ê</span><span
+						lang=EN-US>n k</span><span >&#7871;</span><span lang=EN-US>t </span><span
+						>&#273;&#7871;</span><span lang=EN-US>n ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t c</span><span
+						>&#7911;</span><span lang=EN-US>a nh</span><span
+						>à</span><span lang=EN-US> cung c</span><span
+						>&#7845;</span><span lang=EN-US>p d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c </span><span
+						>&#7913;</span><span lang=EN-US>ng d</span><span
+						>&#7909;</span><span lang=EN-US>ng s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>D</span><span >&#7883;</span><span
+						lang=EN-US>ch v</span><span >&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a Google Play</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Facebook</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Ghi l</span><span >&#7841;</span><span
+						lang=EN-US>i d</span><span >&#7919;</span><span lang=EN-US> li</span><span
+						>&#7879;</span><span lang=EN-US>u</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>T&ocirc;i mu</span><span >&#7889;</span><span
+						lang=EN-US>n th&ocirc;ng b</span><span >á</span><span
+						lang=EN-US>o v</span><span >&#7899;</span><span lang=EN-US>i b</span><span
+						>&#7841;</span><span lang=EN-US>n r</span><span
+						>&#7857;</span><span lang=EN-US>ng b</span><span
+						>&#7845;</span><span lang=EN-US>t c</span><span
+						>&#7913;</span><span lang=EN-US> khi n</span><span
+						>à</span><span lang=EN-US>o b</span><span
+						>&#7841;</span><span lang=EN-US>n s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a t&ocirc;i, n</span><span
+						>&#7871;</span><span lang=EN-US>u c</span><span
+						>ó</span><span lang=EN-US> l</span><span
+						>&#7895;</span><span lang=EN-US>i trong </span><span
+						>&#7913;</span><span lang=EN-US>ng d</span><span
+						>&#7909;</span><span lang=EN-US>ng, t&ocirc;i s</span><span
+						>&#7869;</span><span lang=EN-US> thu th</span><span
+						>&#7853;</span><span lang=EN-US>p d</span><span
+						>&#7919;</span><span lang=EN-US> li</span><span
+						>&#7879;</span><span lang=EN-US>u v</span><span
+						>à</span><span lang=EN-US> th&ocirc;ng tin tr</span><span
+						>ê</span><span lang=EN-US>n </span><span
+						>&#273;</span><span lang=EN-US>i</span><span style='font-family:
+宋体'>&#7879;</span><span lang=EN-US>n tho</span><span >&#7841;</span><span
+						lang=EN-US>i c</span><span >&#7911;</span><span lang=EN-US>a b</span><span
+						>&#7841;</span><span lang=EN-US>n th&ocirc;ng qua s</span><span
+						>&#7843;</span><span lang=EN-US>n ph</span><span
+						>&#7849;</span><span lang=EN-US>m c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba (</span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c g</span><span
+						>&#7885;</span><span lang=EN-US>i l</span><span
+						>à</span><span lang=EN-US> d</span><span
+						>&#7919;</span><span lang=EN-US> li</span><span
+						>&#7879;</span><span lang=EN-US>u c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba). D</span><span
+						>&#7919;</span><span lang=EN-US> li</span><span
+						>&#7879;</span><span lang=EN-US>u nh</span><span
+						>&#7853;</span><span lang=EN-US>t k&yacute; c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span><span lang=EN-US> ch</span><span
+						>&#7913;</span><span lang=EN-US>a th&ocirc;ng tin nh</span><span
+						>&#432;</span> <span >&#273;&#7883;</span><span
+						lang=EN-US>a ch</span><span >&#7881;</span><span lang=EN-US>
+Giao th</span><span >&#7913;</span><span lang=EN-US>c Internet
+(&quot;IP&quot;) c</span><span >&#7911;</span><span lang=EN-US>a
+thi</span><span >&#7871;</span><span lang=EN-US>t b</span><span
+						>&#7883;</span><span lang=EN-US>, t</span><span
+						>ê</span><span lang=EN-US>n thi</span><span
+						>&#7871;</span><span lang=EN-US>t b</span><span
+						>&#7883;</span><span lang=EN-US>, phi</span><span
+						>ê</span><span lang=EN-US>n b</span><span
+						>&#7843;</span><span lang=EN-US>n h</span><span
+						>&#7879;</span> <span >&#273;</span><span
+						lang=EN-US>i</span><span >&#7873;</span><span lang=EN-US>u h</span><span
+						>à</span><span lang=EN-US>nh, c</span><span
+						>&#7845;</span><span lang=EN-US>u h</span><span
+						>ì</span><span lang=EN-US>nh </span><span
+						>&#7913;</span><span lang=EN-US>ng d</span><span
+						>&#7909;</span><span lang=EN-US>ng khi s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng &quot;D</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a t&ocirc;i&quot;, ng</span><span
+						>à</span><span lang=EN-US>y gi</span><span
+						>&#7901;</span><span lang=EN-US> b</span><span
+						>&#7841;</span><span lang=EN-US>n s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> v</span><span
+						>à</span><span lang=EN-US> c</span><span
+						>á</span><span lang=EN-US>c th&ocirc;ng tin th</span><span
+						>&#7889;</span><span lang=EN-US>ng k</span><span
+						>ê</span><span lang=EN-US> kh</span><span
+						>á</span><span lang=EN-US>c. .</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>B</span><span >á</span><span
+						lang=EN-US>nh quy</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Cookie l</span><span style='font-family:
+宋体'>à</span><span lang=EN-US> c</span><span >á</span><span
+						lang=EN-US>c t</span><span >&#7879;</span><span lang=EN-US>p c</span><span
+						>ó</span><span lang=EN-US> m</span><span
+						>&#7897;</span><span lang=EN-US>t l</span><span
+						>&#432;&#7907;</span><span lang=EN-US>ng nh</span><span
+						>&#7887;</span><span lang=EN-US> d</span><span
+						>&#7919;</span><span lang=EN-US> li</span><span
+						>&#7879;</span><span lang=EN-US>u, th</span><span
+						>&#432;&#7901;</span><span lang=EN-US>ng </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng l</span><span
+						>à</span><span lang=EN-US>m m&atilde; </span><span
+						>&#273;&#7883;</span><span lang=EN-US>nh danh duy nh</span><span
+						>&#7845;</span><span lang=EN-US>t </span><span
+						>&#7849;</span><span lang=EN-US>n danh. Th&ocirc;ng tin n</span><span
+						>à</span><span lang=EN-US>y s</span><span
+						>&#7869;</span> <span >&#273;&#432;&#7907;</span><span
+						lang=EN-US>c g</span><span >&#7917;</span><span lang=EN-US>i </span><span
+						>&#273;&#7871;</span><span lang=EN-US>n tr</span><span
+						>ì</span><span lang=EN-US>nh duy</span><span
+						>&#7879;</span><span lang=EN-US>t t</span><span
+						>&#7915;</span><span lang=EN-US> trang web b</span><span
+						>&#7841;</span><span lang=EN-US>n truy c</span><span
+						>&#7853;</span><span lang=EN-US>p v</span><span
+						>à</span> <span >&#273;&#432;&#7907;</span><span
+						lang=EN-US>c l</span><span >&#432;</span><span lang=EN-US>u tr</span><span
+						>&#7919;</span><span lang=EN-US> trong b</span><span
+						>&#7897;</span><span lang=EN-US> nh</span><span
+						>&#7899;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a thi</span><span
+						>&#7871;</span><span lang=EN-US>t b</span><span
+						>&#7883;</span><span lang=EN-US>.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>D</span><span >&#7883;</span><span
+						lang=EN-US>ch v</span><span >&#7909;</span><span lang=EN-US> n</span><span
+						>à</span><span lang=EN-US>y kh&ocirc;ng s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng c</span><span
+						>á</span><span lang=EN-US>c &quot;cookie&quot; n</span><span
+						>à</span><span lang=EN-US>y m</span><span
+						>&#7897;</span><span lang=EN-US>t c</span><span
+						>á</span><span lang=EN-US>ch r&otilde; r</span><span
+						>à</span><span lang=EN-US>ng. Tuy nhi</span><span
+						>ê</span><span lang=EN-US>n, </span><span
+						>&#7913;</span><span lang=EN-US>ng d</span><span
+						>&#7909;</span><span lang=EN-US>ng c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span><span lang=EN-US> s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng m&atilde; c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba v</span><span
+						>à</span><span lang=EN-US> c</span><span
+						>á</span><span lang=EN-US>c th</span><span
+						>&#432;</span><span lang=EN-US> vi</span><span
+						>&#7879;</span><span lang=EN-US>n s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng &quot;cookie&quot; </span><span
+						>&#273;&#7875;</span><span lang=EN-US> thu th</span><span
+						>&#7853;</span><span lang=EN-US>p th&ocirc;ng tin v</span><span
+						>à</span><span lang=EN-US> c</span><span
+						>&#7843;</span><span lang=EN-US>i thi</span><span
+						>&#7879;</span><span lang=EN-US>n d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a m</span><span
+						>ì</span><span lang=EN-US>nh. B</span><span
+						>&#7841;</span><span lang=EN-US>n c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span><span lang=EN-US> ch</span><span
+						>&#7885;</span><span lang=EN-US>n ch</span><span
+						>&#7845;</span><span lang=EN-US>p nh</span><span
+						>&#7853;</span><span lang=EN-US>n ho</span><span
+						>&#7863;</span><span lang=EN-US>c t</span><span
+						>&#7915;</span><span lang=EN-US> ch</span><span
+						>&#7889;</span><span lang=EN-US>i c</span><span
+						>á</span><span lang=EN-US>c cookie n</span><span
+						>à</span><span lang=EN-US>y v</span><span
+						>à</span><span lang=EN-US> bi</span><span
+						>&#7871;</span><span lang=EN-US>t th</span><span
+						>&#7901;</span><span lang=EN-US>i </span><span
+						>&#273;</span><span lang=EN-US>i</span><span style='font-family:
+宋体'>&#7875;</span><span lang=EN-US>m g</span><span >&#7917;</span><span
+						lang=EN-US>i cookie </span><span >&#273;&#7871;</span><span
+						lang=EN-US>n thi</span><span >&#7871;</span><span lang=EN-US>t
+b</span><span >&#7883;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a m</span><span
+						>ì</span><span lang=EN-US>nh. N</span><span
+						>&#7871;</span><span lang=EN-US>u b</span><span
+						>&#7841;</span><span lang=EN-US>n ch</span><span
+						>&#7885;</span><span lang=EN-US>n t</span><span
+						>&#7915;</span><span lang=EN-US> ch</span><span
+						>&#7889;</span><span lang=EN-US>i cookie c</span><span
+						>&#7911;</span><span lang=EN-US>a ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i, b</span><span
+						>&#7841;</span><span lang=EN-US>n c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span><span lang=EN-US> kh&ocirc;ng s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c m</span><span
+						>&#7897;</span><span lang=EN-US>t s</span><span
+						>&#7889;</span><span lang=EN-US> ph</span><span
+						>&#7847;</span><span lang=EN-US>n c</span><span
+						>&#7911;</span><span lang=EN-US>a d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> n</span><span
+						>à</span><span lang=EN-US>y.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>nh</span><span >à</span><span
+						lang=EN-US> cung c</span><span >&#7845;</span><span lang=EN-US>p
+d</span><span >&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>T&ocirc;i c</span><span >ó</span><span
+						lang=EN-US> th</span><span >&#7875;</span><span lang=EN-US> thu</span><span
+						>ê</span><span lang=EN-US> c</span><span
+						>á</span><span lang=EN-US>c c&ocirc;ng ty v</span><span
+						>à</span><span lang=EN-US> c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba v</span><span
+						>ì</span><span lang=EN-US> nh</span><span
+						>&#7919;</span><span lang=EN-US>ng l&yacute; do sau:</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Qu</span><span >&#7843;</span><span
+						lang=EN-US>ng c</span><span >á</span><span lang=EN-US>o c</span><span
+						>á</span><span lang=EN-US>c d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Cung c</span><span >&#7845;</span><span
+						lang=EN-US>p d</span><span >&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> thay m</span><span
+						>&#7863;</span><span lang=EN-US>t ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Th</span><span >&#7921;</span><span
+						lang=EN-US>c hi</span><span >&#7879;</span><span lang=EN-US>n c</span><span
+						>á</span><span lang=EN-US>c d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> li</span><span
+						>ê</span><span lang=EN-US>n quan </span><span
+						>&#273;&#7871;</span><span lang=EN-US>n d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US>; ho</span><span
+						>&#7863;</span><span lang=EN-US>c</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Gi</span><span >ú</span><span
+						lang=EN-US>p ch</span><span >ú</span><span lang=EN-US>ng
+t&ocirc;i ph&acirc;n t</span><span >í</span><span lang=EN-US>ch c</span><span
+						>á</span><span lang=EN-US>ch s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>T&ocirc;i mu</span><span >&#7889;</span><span
+						lang=EN-US>n th&ocirc;ng b</span><span >á</span><span
+						lang=EN-US>o cho ng</span><span >&#432;&#7901;</span><span
+						lang=EN-US>i d</span><span >ù</span><span lang=EN-US>ng d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> n</span><span
+						>à</span><span lang=EN-US>y r</span><span
+						>&#7857;</span><span lang=EN-US>ng c</span><span
+						>á</span><span lang=EN-US>c b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba n</span><span
+						>à</span><span lang=EN-US>y c</span><span
+						>ó</span><span lang=EN-US> quy</span><span
+						>&#7873;</span><span lang=EN-US>n truy c</span><span
+						>&#7853;</span><span lang=EN-US>p th&ocirc;ng tin c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>&#7841;</span><span lang=EN-US>n. L&yacute; do l</span><span
+						>à</span> <span >&#273;&#7875;</span><span
+						lang=EN-US> thay m</span><span >&#7863;</span><span lang=EN-US>t
+ch</span><span >ú</span><span lang=EN-US>ng t&ocirc;i th</span><span
+						>&#7921;</span><span lang=EN-US>c hi</span><span
+						>&#7879;</span><span lang=EN-US>n c</span><span
+						>á</span><span lang=EN-US>c nhi</span><span
+						>&#7879;</span><span lang=EN-US>m v</span><span
+						>&#7909;</span> <span >&#273;&#432;&#7907;</span><span
+						lang=EN-US>c giao cho h</span><span >&#7885;</span><span
+						lang=EN-US>. Tuy nhi</span><span >ê</span><span
+						lang=EN-US>n, h</span><span >&#7885;</span><span lang=EN-US> c</span><span
+						>ó</span><span lang=EN-US> ngh</span><span
+						>&#297;</span><span lang=EN-US>a v</span><span
+						>&#7909;</span><span lang=EN-US> kh&ocirc;ng ti</span><span
+						>&#7871;</span><span lang=EN-US>t l</span><span
+						>&#7897;</span><span lang=EN-US> ho</span><span
+						>&#7863;</span><span lang=EN-US>c s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng th&ocirc;ng tin n</span><span
+						>à</span><span lang=EN-US>y cho b</span><span
+						>&#7845;</span><span lang=EN-US>t k</span><span
+						>&#7923;</span><span lang=EN-US> m</span><span
+						>&#7909;</span><span lang=EN-US>c </span><span
+						>&#273;í</span><span lang=EN-US>ch n</span><span
+						>à</span><span lang=EN-US>o kh</span><span
+						>á</span><span lang=EN-US>c.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>S</span><span >&#7921;</span><span
+						lang=EN-US> an to</span><span >à</span><span lang=EN-US>n</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>T&ocirc;i </span><span >&#273;á</span><span
+						lang=EN-US>nh gi</span><span >á</span><span lang=EN-US>
+cao s</span><span >&#7921;</span><span lang=EN-US> tin t</span><span
+						>&#432;&#7903;</span><span lang=EN-US>ng c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>&#7841;</span><span lang=EN-US>n trong vi</span><span
+						>&#7879;</span><span lang=EN-US>c cung c</span><span
+						>&#7845;</span><span lang=EN-US>p cho ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i th&ocirc;ng tin c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>&#7841;</span><span lang=EN-US>n, v</span><span
+						>ì</span><span lang=EN-US> v</span><span
+						>&#7853;</span><span lang=EN-US>y ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i </span><span
+						>&#273;</span><span lang=EN-US>ang n</span><span
+						>&#7895;</span><span lang=EN-US> l</span><span
+						>&#7921;</span><span lang=EN-US>c s</span><span
+						>&#7917;</span><span lang=EN-US> d</span><span
+						>&#7909;</span><span lang=EN-US>ng c</span><span
+						>á</span><span lang=EN-US>c ph</span><span
+						>&#432;&#417;</span><span lang=EN-US>ng ph</span><span
+						>á</span><span lang=EN-US>p </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c ch</span><span
+						>&#7845;</span><span lang=EN-US>p nh</span><span
+						>&#7853;</span><span lang=EN-US>n v</span><span
+						>&#7873;</span><span lang=EN-US> m</span><span
+						>&#7863;</span><span lang=EN-US>t th</span><span
+						>&#432;&#417;</span><span lang=EN-US>ng m</span><span
+						>&#7841;</span><span lang=EN-US>i </span><span
+						>&#273;&#7875;</span><span lang=EN-US> b</span><span
+						>&#7843;</span><span lang=EN-US>o v</span><span
+						>&#7879;</span><span lang=EN-US> th&ocirc;ng tin </span><span
+						>&#273;ó</span><span lang=EN-US>. Nh</span><span
+						>&#432;</span><span lang=EN-US>ng xin l</span><span
+						>&#432;</span><span lang=EN-US>u &yacute; r</span><span
+						>&#7857;</span><span lang=EN-US>ng c</span><span
+						>&#7843;</span><span lang=EN-US> ph</span><span
+						>&#432;&#417;</span><span lang=EN-US>ng th</span><span
+						>&#7913;</span><span lang=EN-US>c truy</span><span
+						>&#7873;</span><span lang=EN-US>n t</span><span
+						>&#7843;</span><span lang=EN-US>i v</span><span
+						>à</span><span lang=EN-US> ph</span><span
+						>&#432;&#417;</span><span lang=EN-US>ng th</span><span
+						>&#7913;</span><span lang=EN-US>c l</span><span
+						>&#432;</span><span lang=EN-US>u tr</span><span
+						>&#7919;</span> <span >&#273;</span><span
+						lang=EN-US>i</span><span >&#7879;</span><span lang=EN-US>n t</span><span
+						>&#7917;</span><span lang=EN-US> tr</span><span
+						>ê</span><span lang=EN-US>n Internet </span><span
+						>&#273;&#7873;</span><span lang=EN-US>u kh&ocirc;ng an to</span><span
+						>à</span><span lang=EN-US>n v</span><span
+						>à</span> <span >&#273;á</span><span
+						lang=EN-US>ng tin c</span><span >&#7853;</span><span
+						lang=EN-US>y 100% v</span><span >à</span><span
+						lang=EN-US> t&ocirc;i kh&ocirc;ng th</span><span >&#7875;</span> <span
+						>&#273;&#7843;</span><span lang=EN-US>m b</span><span
+						>&#7843;</span><span lang=EN-US>o t</span><span
+						>í</span><span lang=EN-US>nh b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t tuy</span><span
+						>&#7879;</span><span lang=EN-US>t </span><span
+						>&#273;&#7889;</span><span lang=EN-US>i c</span><span
+						>&#7911;</span><span lang=EN-US>a n</span><span
+						>ó</span><span lang=EN-US>.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Li</span><span >ê</span><span
+						lang=EN-US>n k</span><span >&#7871;</span><span lang=EN-US>t </span><span
+						>&#273;&#7871;</span><span lang=EN-US>n c</span><span
+						>á</span><span lang=EN-US>c trang web kh</span><span
+						>á</span><span lang=EN-US>c</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>D</span><span >&#7883;</span><span
+						lang=EN-US>ch v</span><span >&#7909;</span><span lang=EN-US> c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span><span lang=EN-US> ch</span><span
+						>&#7913;</span><span lang=EN-US>a c</span><span
+						>á</span><span lang=EN-US>c li</span><span
+						>ê</span><span lang=EN-US>n k</span><span
+						>&#7871;</span><span lang=EN-US>t </span><span
+						>&#273;&#7871;</span><span lang=EN-US>n c</span><span
+						>á</span><span lang=EN-US>c trang web kh</span><span
+						>á</span><span lang=EN-US>c. N</span><span
+						>&#7871;</span><span lang=EN-US>u b</span><span
+						>&#7841;</span><span lang=EN-US>n nh</span><span
+						>&#7845;</span><span lang=EN-US>p v</span><span
+						>à</span><span lang=EN-US>o li</span><span
+						>ê</span><span lang=EN-US>n k</span><span
+						>&#7871;</span><span lang=EN-US>t c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba, b</span><span
+						>&#7841;</span><span lang=EN-US>n s</span><span
+						>&#7869;</span> <span >&#273;&#432;&#7907;</span><span
+						lang=EN-US>c d</span><span >&#7851;</span><span lang=EN-US>n </span><span
+						>&#273;&#7871;</span><span lang=EN-US>n trang web </span><span
+						>&#273;ó</span><span lang=EN-US>. Xin l</span><span
+						>&#432;</span><span lang=EN-US>u &yacute; r</span><span
+						>&#7857;</span><span lang=EN-US>ng c</span><span
+						>á</span><span lang=EN-US>c trang web b</span><span
+						>ê</span><span lang=EN-US>n ngo</span><span
+						>à</span><span lang=EN-US>i n</span><span
+						>à</span><span lang=EN-US>y kh&ocirc;ng do t&ocirc;i </span><span
+						>&#273;</span><span lang=EN-US>i</span><span style='font-family:
+宋体'>&#7873;</span><span lang=EN-US>u h</span><span >à</span><span
+						lang=EN-US>nh. Do </span><span >&#273;ó</span><span
+						lang=EN-US>, t&ocirc;i th</span><span >&#7921;</span><span
+						lang=EN-US>c s</span><span >&#7921;</span><span lang=EN-US>
+khuy</span><span >ê</span><span lang=EN-US>n b</span><span
+						>&#7841;</span><span lang=EN-US>n n</span><span
+						>ê</span><span lang=EN-US>n </span><span
+						>&#273;&#7885;</span><span lang=EN-US>c ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t c</span><span
+						>&#7911;</span><span lang=EN-US>a c</span><span
+						>á</span><span lang=EN-US>c trang web n</span><span
+						>à</span><span lang=EN-US>y. T&ocirc;i kh&ocirc;ng c</span><span
+						>ó</span><span lang=EN-US> quy</span><span
+						>&#7873;</span><span lang=EN-US>n ki</span><span
+						>&#7875;</span><span lang=EN-US>m so</span><span
+						>á</span><span lang=EN-US>t n</span><span
+						>&#7897;</span><span lang=EN-US>i dung, ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t ho</span><span
+						>&#7863;</span><span lang=EN-US>c h</span><span
+						>à</span><span lang=EN-US>nh vi c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>&#7845;</span><span lang=EN-US>t k</span><span
+						>&#7923;</span><span lang=EN-US> trang web ho</span><span
+						>&#7863;</span><span lang=EN-US>c d</span><span
+						>&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a b</span><span
+						>ê</span><span lang=EN-US>n th</span><span
+						>&#7913;</span><span lang=EN-US> ba n</span><span
+						>à</span><span lang=EN-US>o v</span><span
+						>à</span><span lang=EN-US> t&ocirc;i kh&ocirc;ng ch</span><span
+						>&#7883;</span><span lang=EN-US>u tr</span><span
+						>á</span><span lang=EN-US>ch nhi</span><span
+						>&#7879;</span><span lang=EN-US>m v</span><span
+						>&#7873;</span> <span >&#273;</span><span
+						lang=EN-US>i</span><span >&#7873;</span><span lang=EN-US>u </span><span
+						>&#273;ó</span><span lang=EN-US>.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Quy</span><span >&#7873;</span><span
+						lang=EN-US>n ri</span><span >ê</span><span lang=EN-US>ng
+t</span><span >&#432;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a tr</span><span
+						>&#7867;</span><span lang=EN-US> em</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>C</span><span >á</span><span
+						lang=EN-US>c d</span><span >&#7883;</span><span lang=EN-US>ch v</span><span
+						>&#7909;</span><span lang=EN-US> n</span><span
+						>à</span><span lang=EN-US>y kh&ocirc;ng d</span><span
+						>à</span><span lang=EN-US>nh cho b</span><span
+						>&#7845;</span><span lang=EN-US>t k</span><span
+						>&#7923;</span><span lang=EN-US> ai d</span><span
+						>&#432;&#7899;</span><span lang=EN-US>i 13 tu</span><span
+						>&#7893;</span><span lang=EN-US>i. T&ocirc;i s</span><span
+						>&#7869;</span><span lang=EN-US> kh&ocirc;ng c</span><span
+						>&#7889;</span><span lang=EN-US> &yacute; thu th</span><span
+						>&#7853;</span><span lang=EN-US>p th&ocirc;ng tin nh</span><span
+						>&#7853;</span><span lang=EN-US>n d</span><span
+						>&#7841;</span><span lang=EN-US>ng c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n t</span><span
+						>&#7915;</span><span lang=EN-US> tr</span><span
+						>&#7867;</span><span lang=EN-US> em d</span><span
+						>&#432;&#7899;</span><span lang=EN-US>i 13 tu</span><span
+						>&#7893;</span><span lang=EN-US>i. N</span><span
+						>&#7871;</span><span lang=EN-US>u t&ocirc;i ph</span><span
+						>á</span><span lang=EN-US>t hi</span><span
+						>&#7879;</span><span lang=EN-US>n th</span><span
+						>&#7845;</span><span lang=EN-US>y m</span><span
+						>&#7897;</span><span lang=EN-US>t </span><span
+						>&#273;&#7913;</span><span lang=EN-US>a tr</span><span
+						>&#7867;</span><span lang=EN-US> d</span><span
+						>&#432;&#7899;</span><span lang=EN-US>i 13 tu</span><span
+						>&#7893;</span><span lang=EN-US>i </span><span
+						>&#273;</span><span lang=EN-US>&atilde; cung c</span><span
+						>&#7845;</span><span lang=EN-US>p th&ocirc;ng tin c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n cho t&ocirc;i, t&ocirc;i s</span><span
+						>&#7869;</span><span lang=EN-US> x</span><span
+						>ó</span><span lang=EN-US>a ngay th&ocirc;ng tin n</span><span
+						>à</span><span lang=EN-US>y kh</span><span
+						>&#7887;</span><span lang=EN-US>i m</span><span
+						>á</span><span lang=EN-US>y ch</span><span
+						>&#7911;</span><span lang=EN-US> c</span><span
+						>&#7911;</span><span lang=EN-US>a ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i. N</span><span
+						>&#7871;</span><span lang=EN-US>u b</span><span
+						>&#7841;</span><span lang=EN-US>n l</span><span
+						>à</span><span lang=EN-US> cha m</span><span
+						>&#7865;</span><span lang=EN-US> ho</span><span
+						>&#7863;</span><span lang=EN-US>c ng</span><span
+						>&#432;&#7901;</span><span lang=EN-US>i gi</span><span
+						>á</span><span lang=EN-US>m h</span><span
+						>&#7897;</span><span lang=EN-US> v</span><span
+						>à</span><span lang=EN-US> b</span><span
+						>&#7841;</span><span lang=EN-US>n bi</span><span
+						>&#7871;</span><span lang=EN-US>t r</span><span
+						>&#7857;</span><span lang=EN-US>ng con b</span><span
+						>&#7841;</span><span lang=EN-US>n </span><span
+						>&#273;</span><span lang=EN-US>&atilde; cung c</span><span
+						>&#7845;</span><span lang=EN-US>p th&ocirc;ng tin c</span><span
+						>á</span><span lang=EN-US> nh&acirc;n cho ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i, vui l</span><span
+						>ò</span><span lang=EN-US>ng li</span><span
+						>ê</span><span lang=EN-US>n h</span><span
+						>&#7879;</span><span lang=EN-US> v</span><span
+						>&#7899;</span><span lang=EN-US>i t&ocirc;i </span><span
+						>&#273;&#7875;</span><span lang=EN-US> t&ocirc;i c</span><span
+						>ó</span><span lang=EN-US> th</span><span
+						>&#7875;</span><span lang=EN-US> th</span><span
+						>&#7921;</span><span lang=EN-US>c hi</span><span
+						>&#7879;</span><span lang=EN-US>n c</span><span
+						>á</span><span lang=EN-US>c bi</span><span
+						>&#7879;</span><span lang=EN-US>n ph</span><span
+						>á</span><span lang=EN-US>p c</span><span
+						>&#7847;</span><span lang=EN-US>n thi</span><span
+						>&#7871;</span><span lang=EN-US>t.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>C</span><span >á</span><span
+						lang=EN-US>c thay </span><span >&#273;&#7893;</span><span
+						lang=EN-US>i </span><span >&#273;&#7889;</span><span lang=EN-US>i v</span><span
+						>&#7899;</span><span lang=EN-US>i ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t n</span><span
+						>à</span><span lang=EN-US>y</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>T&ocirc;i c</span><span >ó</span><span
+						lang=EN-US> th</span><span >&#7875;</span><span lang=EN-US> c</span><span
+						>&#7853;</span><span lang=EN-US>p nh</span><span
+						>&#7853;</span><span lang=EN-US>t ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t c</span><span
+						>&#7911;</span><span lang=EN-US>a ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i theo th</span><span
+						>&#7901;</span><span lang=EN-US>i gian. Do </span><span
+						>&#273;ó</span><span lang=EN-US>, b</span><span
+						>&#7841;</span><span lang=EN-US>n n</span><span
+						>ê</span><span lang=EN-US>n ki</span><span
+						>&#7875;</span><span lang=EN-US>m tra trang n</span><span
+						>à</span><span lang=EN-US>y th</span><span
+						>&#432;&#7901;</span><span lang=EN-US>ng xuy</span><span
+						>ê</span><span lang=EN-US>n </span><span
+						>&#273;&#7875;</span><span lang=EN-US> th</span><span
+						>&#7921;</span><span lang=EN-US>c hi</span><span
+						>&#7879;</span><span lang=EN-US>n b</span><span
+						>&#7845;</span><span lang=EN-US>t k</span><span
+						>&#7923;</span><span lang=EN-US> thay </span><span
+						>&#273;&#7893;</span><span lang=EN-US>i n</span><span
+						>à</span><span lang=EN-US>o. T&ocirc;i s</span><span
+						>&#7869;</span><span lang=EN-US> th&ocirc;ng b</span><span
+						>á</span><span lang=EN-US>o cho b</span><span
+						>&#7841;</span><span lang=EN-US>n v</span><span
+						>&#7873;</span><span lang=EN-US> b</span><span
+						>&#7845;</span><span lang=EN-US>t k</span><span
+						>&#7923;</span><span lang=EN-US> thay </span><span
+						>&#273;&#7893;</span><span lang=EN-US>i n</span><span
+						>à</span><span lang=EN-US>o b</span><span
+						>&#7857;</span><span lang=EN-US>ng c</span><span
+						>á</span><span lang=EN-US>ch </span><span
+						>&#273;&#259;</span><span lang=EN-US>ng ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t m</span><span
+						>&#7899;</span><span lang=EN-US>i tr</span><span
+						>ê</span><span lang=EN-US>n trang n</span><span
+						>à</span><span lang=EN-US>y. Nh</span><span
+						>&#7919;</span><span lang=EN-US>ng thay </span><span
+						>&#273;&#7893;</span><span lang=EN-US>i n</span><span
+						>à</span><span lang=EN-US>y c</span><span
+						>ó</span><span lang=EN-US> hi</span><span
+						>&#7879;</span><span lang=EN-US>u l</span><span
+						>&#7921;</span><span lang=EN-US>c ngay sau khi </span><span
+						>&#273;&#432;&#7907;</span><span lang=EN-US>c </span><span
+						>&#273;&#259;</span><span lang=EN-US>ng tr</span><span
+						>ê</span><span lang=EN-US>n trang n</span><span
+						>à</span><span lang=EN-US>y.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>li</span><span >ê</span><span
+						lang=EN-US>n h</span><span >&#7879;</span><span lang=EN-US> ch</span><span
+						>ú</span><span lang=EN-US>ng t&ocirc;i</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>N</span><span >&#7871;</span><span
+						lang=EN-US>u b</span><span >&#7841;</span><span lang=EN-US>n c</span><span
+						>ó</span><span lang=EN-US> b</span><span
+						>&#7845;</span><span lang=EN-US>t k</span><span
+						>&#7923;</span><span lang=EN-US> c&acirc;u h</span><span
+						>&#7887;</span><span lang=EN-US>i ho</span><span
+						>&#7863;</span><span lang=EN-US>c g</span><span
+						>&#7907;</span><span lang=EN-US>i &yacute; n</span><span
+						>à</span><span lang=EN-US>o v</span><span
+						>&#7873;</span><span lang=EN-US> ch</span><span
+						>í</span><span lang=EN-US>nh s</span><span
+						>á</span><span lang=EN-US>ch b</span><span
+						>&#7843;</span><span lang=EN-US>o m</span><span
+						>&#7853;</span><span lang=EN-US>t c</span><span
+						>&#7911;</span><span lang=EN-US>a t&ocirc;i, vui l</span><span
+						>ò</span><span lang=EN-US>ng li</span><span
+						>ê</span><span lang=EN-US>n h</span><span
+						>&#7879;</span><span lang=EN-US> v</span><span
+						>&#7899;</span><span lang=EN-US>i t&ocirc;i qua.</span></p>
 
 			</div>
 
@@ -760,6 +1575,9 @@ email to the following:</span></p>
 </script>
 <style lang="scss">
 	.terms-page{
+		.page-body{
+			padding: 30px;
+		}
 		p.MsoNormal, li.MsoNormal, div.MsoNormal
 		{margin:0cm;
 			margin-bottom:.0001pt;

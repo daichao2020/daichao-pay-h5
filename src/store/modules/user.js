@@ -13,7 +13,7 @@ const getDefaultState = () => {
 	return {
 		token: getToken(),
 		phoneNumber: '',
-		language: 'en',
+		language: 'vi_VN',
 		tokenType: getTokenType(),
 		info: {},
 		deviceNumber: getDeviceNumber() || defaultSettings.deviceNumber,
