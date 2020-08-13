@@ -73,7 +73,17 @@ export const constantRoutes = [
 		},
 		component: refresh,
 	},
-
+//
+	{
+		path: '/terms',
+		name: 'terms',
+		meta: {
+			title: 'Terms & Conditions',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/Login/terms'),
+	},
 
 
 	// {
