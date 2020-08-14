@@ -49,6 +49,16 @@ export const constantRoutes = [
 		},
 		component: () => import('@/components/Info/index'),
 	},
+	{
+		path: '/home',
+		name: 'home',
+		meta: {
+			title: 'Thông tin liên lạc',
+			showHeader: false,
+			keepAlive: true
+		},
+		component: () => import('@/components/Info/index'),
+	},
 
 	//Vip Services end
 	{
