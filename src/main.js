@@ -6,14 +6,6 @@ import 'amfe-flexible'
 import 'vant/lib/icon/local.css';
 import '@/assets/styles/index.scss';
 
-/**缓动 */
-import tween from "./plugins/tween";
-Vue.use(tween);
-
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-// import style
-import 'swiper/css/swiper.css'
-Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 import '@/permission' // permission control
 
 import {
