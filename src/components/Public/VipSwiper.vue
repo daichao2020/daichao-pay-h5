@@ -141,7 +141,6 @@
 				let auditFee = 0;
 				if(this.card){
 					auditFee = +this.card.price;
-					let amount = +this.card.description;
 				}
 				return auditFee;
 			},
