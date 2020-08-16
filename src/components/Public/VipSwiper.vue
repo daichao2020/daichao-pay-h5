@@ -157,12 +157,11 @@
 
 		},
 		mounted() {
-			/*if(this.userInfo.is_member){//true
+			if(this.userInfo.is_member){//true
 				this.toEndPage();
 			}else {
 				this.getMemberCardList();
-			}*/
-			this.getMemberCardList();
+			}
 		},
 		methods: {
 			getMemberCardList(){
@@ -239,6 +238,11 @@
 			},
 			onSubmitOrder(){
 				let productInfo = this.card;
+
+				if(!productInfo){
+					return false
+				}
+
 				this.$store.dispatch('product/setProductInfo',productInfo);
 				this.submitOrder(productInfo);
 			},
