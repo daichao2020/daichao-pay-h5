@@ -6,26 +6,20 @@ import 'amfe-flexible'
 import 'vant/lib/icon/local.css';
 import '@/assets/styles/index.scss';
 
-/**缓动 */
-import tween from "./plugins/tween";
-Vue.use(tween);
-
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-// import style
-import 'swiper/css/swiper.css'
-Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 import '@/permission' // permission control
 
 import {
     Button, Cell, CellGroup,Dialog,Toast,NavBar,
     Divider,RadioGroup,Radio,Field,Icon,Loading,CountDown,Circle,Skeleton,Form,Picker,Popup,
-    Tabbar,TabbarItem,Empty,List,Uploader,PullRefresh,Image as VanImage,Lazyload,PasswordInput,
-	NumberKeyboard,Checkbox, CheckboxGroup,
+    Tabbar,TabbarItem,Empty,List,Uploader,PullRefresh,Image as VanImage,Lazyload,PasswordInput, NumberKeyboard,
+	Checkbox, CheckboxGroup,
+
 } from 'vant'
 Vue.use(Button).use(Cell).use(CellGroup).use(Dialog).use(Toast).use(NavBar)
     .use(Divider).use(RadioGroup).use(Radio).use(Field).use(Icon).use(Loading).use(CountDown).use(Circle)
     .use(Skeleton).use(Form).use(Picker).use(Popup).use(Tabbar).use(TabbarItem).use(Empty).use(List).use(Uploader)
-	.use(PullRefresh).use(VanImage).use(Lazyload).use(PasswordInput).use(NumberKeyboard).use(Checkbox).use(CheckboxGroup)
+	.use(PullRefresh).use(VanImage).use(Lazyload).use(PasswordInput).use(NumberKeyboard)
+	.use(Checkbox).use(CheckboxGroup)
 
 Vue.config.productionTip = false
 
