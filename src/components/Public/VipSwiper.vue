@@ -167,8 +167,8 @@
 		methods: {
 			getMemberCardList(){
 				getMemberCardList().then((res)=>{
-					//this.cardList = res.data || [];
-					this.cardList = [
+					this.cardList = res.data || [];
+					/*this.cardList = [
 						{
 							app_version_id: 15,
 							description: "2000",
@@ -219,7 +219,7 @@
 							time: 12,
 							title: "299rs",
 						},
-					];
+					];*/
 
 					this.card = this.cardList[0];
 				});
