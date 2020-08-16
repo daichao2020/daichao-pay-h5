@@ -66,7 +66,7 @@ export const constantRoutes = [
 		meta: {
 			title: 'Sign in',
 			showHeader: false,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/Login/index'),
 	},
@@ -77,7 +77,7 @@ export const constantRoutes = [
 		meta: {
 			title: 'Get verification code',
 			showHeader: false,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/Login/code'),
 	},
