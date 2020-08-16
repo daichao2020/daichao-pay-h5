@@ -157,12 +157,11 @@
 
 		},
 		mounted() {
-			/*if(this.userInfo.is_member){//true
+			if(this.userInfo.is_member){//true
 				this.toEndPage();
 			}else {
 				this.getMemberCardList();
-			}*/
-			this.getMemberCardList();
+			}
 		},
 		methods: {
 			getMemberCardList(){
