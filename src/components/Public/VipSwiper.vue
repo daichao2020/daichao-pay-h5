@@ -44,7 +44,6 @@
 
 				<div class="vip-btn-wrap">
 					<van-button type="primary" class="vip-btn"
-								color="#ff9933"
 								:disabled="isSubmitting"
 								:loading="isSubmitting"
 								loading-text="Submitting..."
@@ -158,18 +157,17 @@
 
 		},
 		mounted() {
-			/*if(this.userInfo.is_member){//true
+			if(this.userInfo.is_member){//true
 				this.toEndPage();
 			}else {
 				this.getMemberCardList();
-			}*/
-			this.getMemberCardList();
+			}
 		},
 		methods: {
 			getMemberCardList(){
 				getMemberCardList().then((res)=>{
-					//this.cardList = res.data || [];
-					this.cardList = [
+					this.cardList = res.data || [];
+					/*this.cardList = [
 						{
 							app_version_id: 15,
 							description: "2000",
@@ -220,11 +218,9 @@
 							time: 12,
 							title: "299rs",
 						},
-					];
+					];*/
 
 					this.card = this.cardList[0];
-
-
 				});
 			},
 			setLoanItem(item){
