@@ -1,5 +1,5 @@
 export default {
-    str: {
+	str: {
 		signIn: 'Sign in',
 		welcome: 'Welcome',
 		country: 'Country',
@@ -47,17 +47,19 @@ export default {
 		submitting: 'Submitting...',
 		congratulations: 'Congratulations! ',
 		youPassedTheAudit: 'You passed the audit! ',
-		loanAmount: 'Loan Amount ',
+		loanAmount: 'Loan Amount',
 		unit: '₹',//₫
 		interest: 'Interest',
 		repaymentAmount: 'Repayment Amount',
 		loanTerm: 'Loan Term',
 		days: 'days',
 		warning: 'Warning',
-		theAuditFee: 'The audit fee',
-		theLimitIs: 'The limit is only reserved for 10 minutes. Please with draw it as soon as possible.',
-		theYouNeedToPay1: 'you need to pay ',
-		theYouNeedToPay2: ' to get the loan if you fail it will be returned in 1 month.',
+		warningTips1: 'The audit fee',
+		warningTips2: 'If the loan is unsuccessful,the full amount of your payment will be refunded to you unconditionally in one month.',
+		warningTips3: 'Credit Evaluation Fee',
+		warningTips4: 'The fee is used to assess your credit  status and  query your credit history.',
+		warningTips5: 'Your credit report will be generated for you.',
+		warningTips6: 'Bank-level confidentially to protect your information security.',
 
 		immediateWithdrawal: 'Immediate withdrawal',
 		chooseOtherLoanProduct: 'Choose other loan product',
@@ -90,18 +92,21 @@ export default {
 		cancellation: 'Cancellation & Refund Policy',
 		privacyPolicy: 'Privacy Policy',
 		logout: 'Logout',
+		term: 'Term',
+		day: 'day',
+		success: 'Success',
 
-    },
-    menu: {
-        "home": "Home",
-        "language": "Language",
-        "logout": "Logout",
-    },
-    btn: {
-       smsCountDown: '{0}s Resent',
-    },
-    errorCode: {
+	},
+	menu: {
+		"home": "Home",
+		"language": "Language",
+		"logout": "Logout",
+	},
+	btn: {
+		smsCountDown: '{0}s Resent',
+	},
+	errorCode: {
 
-    }
+	}
 }
 
