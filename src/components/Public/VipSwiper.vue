@@ -36,7 +36,7 @@
 					</div>
 					<div class="desc-row small flex">
 						<div class="flex-1 text-left">Loan Term</div>
-						<div class="bold">60days</div>
+						<div class="bold">{{period}}days</div>
 					</div>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 					</div>
 					<div class="tips-bd">
 						<div class="tip-item bottom-line">
-							<p>① The audit fee ₹299</p>
+							<p>① The audit fee ₹{{auditFee}}</p>
 						</div>
 						<div class="tip-item bottom-line">
 							<p>② if the loan is unsuccessful,the full amount of your payment will be refunded to you unconditionally in one month.</p>
@@ -157,17 +157,18 @@
 
 		},
 		mounted() {
-			if(this.userInfo.is_member){//true
+			/*if(this.userInfo.is_member){//true
 				this.toEndPage();
 			}else {
 				this.getMemberCardList();
-			}
+			}*/
+			this.getMemberCardList();
 		},
 		methods: {
 			getMemberCardList(){
 				getMemberCardList().then((res)=>{
-					this.cardList = res.data || [];
-					/*this.cardList = [
+					//this.cardList = res.data || [];
+					this.cardList = [
 						{
 							app_version_id: 15,
 							description: "2000",
@@ -218,7 +219,7 @@
 							time: 12,
 							title: "299rs",
 						},
-					];*/
+					];
 
 					this.card = this.cardList[0];
 				});
