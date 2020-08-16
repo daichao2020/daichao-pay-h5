@@ -12,11 +12,11 @@
 				<div class="panel-hd">
 					<div class="card">
 						<div class="card-hd">
-							<p>{{ product.title }}</p>
+							<p>{{$t('str.success')}}</p>
 						</div>
 						<div class="card-bd">
 							<div class="product-info">
-								<h1 class="title">{{$t('str.unit')+ parseInt(product.price) }}</h1>
+								<h1 class="title">{{$t('str.unit')}}{{ parseInt(product.price) }}</h1>
 								<p class="desc">{{$t('str.auditExpense')}}</p>
 							</div>
 						</div>
@@ -57,6 +57,9 @@
 				const { meta } = route
 				return meta.showHeader
 			},
+			defaultProduct () {
+				return this.$store.getters.product
+			}
 		},
 		methods: {
 			onClickLeft() {
@@ -67,7 +70,8 @@
 				getMemberCardList().then((res)=>{
 					const list = res.data || [];
 					if(list.length>0){
-						this.product = list[0];
+						let defaultProduct = this.defaultProduct;
+						this.product = defaultProduct || list[0];
 					}
 				});
 			},

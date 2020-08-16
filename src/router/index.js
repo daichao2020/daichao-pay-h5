@@ -66,7 +66,7 @@ export const constantRoutes = [
 		meta: {
 			title: '登录',
 			showHeader: true,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/Login/index'),
 	},
@@ -77,7 +77,7 @@ export const constantRoutes = [
 		meta: {
 			title: '获取验证码',
 			showHeader: true,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/Login/code'),
 	},

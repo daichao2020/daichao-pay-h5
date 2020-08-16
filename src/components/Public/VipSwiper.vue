@@ -1,149 +1,159 @@
 <template>
 	<div>
-		<swiper class="product-swiper" ref="productSwiper" :options="swiperOptions">
-			<swiper-slide v-for="(item,index) in cardList" :key="item.id">
-				<div class="card">
-					<div class="card-hd">
-						<p class="tips-title">{{$t('str.congratulations')}} </p>
-						<p class="tips-desc">{{$t('str.youPassedTheAudit')}} </p>
-						<div class="heading">
-							<p>{{$t('str.loanAmount')}}</p>
-							<h1 class="title">{{$t('str.unit') + item.description }}</h1>
-						</div>
-					</div>
-					<div class="card-bd">
-						<div class="product-info">
-							<div class="desc small flex">
-								<div class="flex-1 text-left">{{$t('str.interest')}}</div>
-								<div class="bold">{{$t('str.unit')}}45</div>
-							</div>
-							<div class="desc small flex">
-								<div class="flex-1 text-left">
-									{{$t('str.repaymentAmount')}}(<span class="small red">-{{parseInt(item.price)}}</span>)
-								</div>
-								<div class="bold">{{$t('str.unit')}}{{parseInt(parseInt(item.description)-parseInt(item.price))}}</div>
-							</div>
-							<div class="desc small top-line flex">
-								<div class="flex-1 text-left">{{$t('str.loanTerm')}}</div>
-								<div class="bold">60{{$t('str.days')}}</div>
-							</div>
-						</div>
-					</div>
-					<div class="card-ft">
-						<div class="warn-tips">
-							<div class="tips-hd">
-								<span class="title">{{$t('str.warning')}}:  </span><van-icon name="warning-o" />
-							</div>
-							<div class="tips-bd">
-								<div class="tip-item bottom-line">
-									<p>① {{$t('str.theAuditFee')}} {{$t('str.unit')}}{{parseInt(item.price)}}</p>
-								</div>
-								<div class="tip-item">
-									<p>② {{$t('str.theLimitIs')}}</p>
-								</div>
-								<div class="tip-item bottom-line">
-									<p>③ {{$t('str.theYouNeedToPay1')+$t('str.unit')+parseInt(item.price)+$t('str.theYouNeedToPay2')}}</p>
-								</div>
-							</div>
+		<div class="card">
+			<div class="card-bd">
 
+				<div class="product-info">
+					<div class="info-row bottom-line">
+						<p class="info-title">{{$t('str.loanAmount')}}({{$t('str.unit')}})</p>
+						<div class="info-list">
+							<div class="info-item" :class="card.id==item.id?'active':''"
+								 v-for="item in cardList" :key="item.id" @click="setLoanItem(item)">
+								<span>{{ item.description }}</span>
+							</div>
 						</div>
-						<div class="vip-btn-wrap">
-							<van-button type="primary" class="vip-btn"
-										color="#ff9933"
-										:disabled="isSubmitting"
-										:loading="isSubmitting"
-										:loading-text="$t('str.submitting')"
-										block
-										@click="selectCurrentItem(item)">{{$t('str.immediateWithdrawal')}}</van-button>
+					</div>
+
+					<div class="info-row bottom-line">
+						<p class="info-title">{{$t('str.term')}} ({{$t('str.day')}})</p>
+						<div class="info-list">
+							<div class="info-item" :class="period==item.value?'active':''"
+								 v-for="item in periodList" :key="item.value" @click="setPeriod(item)">
+								<span>{{ item.value }}</span>
+							</div>
 						</div>
-						<div class="vip-btn-wrap" style="margin-top: 15px;" v-if="userInfo.is_member">
-							<van-button type="default"
-										block
-										@click="toHomePage()">{{$t('str.chooseOtherLoanProduct')}}</van-button>
+					</div>
+
+					<div class="desc-row small flex bottom-line">
+						<div class="flex-1 text-left">{{$t('str.interest')}}</div>
+						<div class="bold">{{$t('str.unit')}}{{interest}}</div>
+					</div>
+					<div class="desc-row small flex bottom-line">
+						<div class="flex-1 text-left">
+							{{$t('str.repaymentAmount')}}(<span class="small red">-{{$t('str.unit')}}{{auditFee}}</span>)
 						</div>
+						<div class="bold">{{$t('str.unit')}}{{repayment}}</div>
+					</div>
+					<div class="desc-row small flex">
+						<div class="flex-1 text-left">{{$t('str.loanTerm')}}</div>
+						<div class="bold">{{period}} {{$t('str.days')}}</div>
 					</div>
 				</div>
+			</div>
+			<div class="card-ft">
 
-			</swiper-slide>
+				<div class="vip-btn-wrap">
+					<van-button type="primary" class="vip-btn"
+								:disabled="isSubmitting"
+								:loading="isSubmitting"
+								loading-text="Submitting..."
+								@click="onSubmitOrder"
+								block
+					>
+						<div class="flex count-down">
+							<van-icon name="underway-o" />
+							<van-count-down millisecond ref="countDown" :time="countDownTime" :auto-start="false" format="HH:mm:ss:SS" />
+						</div>
+						<p>{{$t('str.immediateWithdrawal')}}</p>
+					</van-button>
+				</div>
+				<div class="vip-btn-wrap" style="margin-top: 15px;" v-if="userInfo.is_member">
+					<van-button type="default"
+								block
+								@click="toHomePage()">
+						{{$t('str.chooseOtherLoanProduct')}}
+					</van-button>
+				</div>
 
-		</swiper>
-		<!--<div class="swiper-pagination flex" slot="pagination" id="pagination"></div>-->
+				<div class="warn-tips">
+					<div class="tips-hd">
+						<span class="title">{{$t('str.warning')}}:  </span><van-icon name="warning-o" />
+					</div>
+					<div class="tips-bd">
+						<div class="tip-item bottom-line">
+							<p>① {{$t('str.warningTips1')}} {{$t('str.unit')}}{{auditFee}}</p>
+						</div>
+						<div class="tip-item bottom-line">
+							<p>② {{$t('str.warningTips2')}}</p>
+						</div>
+						<div class="tip-item bottom-line">
+							<p>③ {{$t('str.warningTips3')}}</p>
+							<p class="tip-desc">• {{$t('str.warningTips4')}}</p>
+							<p class="tip-desc">• {{$t('str.warningTips5')}}</p>
+							<p class="tip-desc">• {{$t('str.warningTips6')}}</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 
 </template>
 <script>
 	import { getMemberCardList,submitOrdersAlipay,payOrders } from '@/api/order';
-	import { Toast } from 'vant';
 
 	export default {
-		name: 'carrousel',
 		data() {
-			const _self = this;
 			return {
 				cardList: [],
+				card: null,
+				periodList: [
+					{ value: 7 },
+					{ value: 14 },
+					{ value: 30 },
+					{ value: 60 },
+					{ value: 90 },
+					{ value: 180 },
+				],
+				period: 7,//周期
+				//interest: 0,
+				//repayment: 0,//还款金额
+				//auditFee: 0,//定金
 				sold_count: 0,
-				activeItemIndex: 1,
+				countDownTime: 90 * 60 * 1000,//倒计时
 				isSubmitting: false,
-				swiperOptions: {
-					// 设置slider容器能够同时显示的slides数量，默认为1， 'auto'则自动根据slides的宽度来设定数量
-					slidesPerView: 'auto',
-					/*
-					* 开启这个参数来计算每个slide的progress(进度、进程)
-					* 对于slide的progress属性，活动的那个为0，其他的依次减1
-					*/
-					watchSlidesProgress: true,
-					// 默认active slide居左，设置为true后居中
-					centeredSlides: true,
-					// 当你创建一个Swiper实例时是否立即初始化，这里我们手动初始化
-					init: false,
-					pagination: {
-						el: '.swiper-pagination',
-						clickable: true,
-						renderBullet: function (index, className) {
-
-							let text = _self.cardList[index].title;
-							return '<span class="' + className + '">' + text + '</span>';
-						}
-					},
-					// Some Swiper option/callback...
-					on:{
-						progress: function(progress) {
-							for (let i = 0; i < this.slides.length; i++){
-								const slide = this.slides[i];
-								const slideProgress = slide.progress;
-								const scale = 1 - Math.min(Math.abs(.2 * slideProgress), 1);
-								const style = slide.style;
-								style.opacity = 1 - Math.min(Math.abs(slideProgress / 2), 1);
-								style.webkitTransform = style.MsTransform = style.msTransform = style.MozTransform = style.OTransform = style.transform =
-									"translate3d(0px,0," + -Math.abs(150 * slideProgress) + "px)"
-								;
-							}
-
-						},
-						slideChange: function() {
-							for (let i = 0; i < this.slides.length; i++){
-								const style = this.slides[i].style;
-								style.webkitTransitionDuration = style.MsTransitionDuration = style.msTransitionDuration = style.MozTransitionDuration = style.OTransitionDuration = style.transitionDuration = 0 + "ms"
-							}
-							let activeIndex = this.activeIndex;
-							let sold_count = _self.cardList[activeIndex].sold_count;
-							_self.startNumAnimation(sold_count);
-						},
-					},
-
-				}
 			}
 		},
 		computed: {
-			swiper() {
-				return this.$refs.productSwiper.$swiper
-			},
 			appVersionId () {
 				return this.$store.getters.appVersionId
 			},
 			userInfo(){
 				return this.$store.getters.info
 			},
+			//利息
+			interest(){
+
+				let interest = 0;
+				//利息的计算方式 额度*周期/1000
+
+				if(this.card){
+					let amount = +this.card.description;
+					let period = this.period;
+					interest = amount * period / 1000;
+				}
+
+				return interest;
+			},
+			//定金
+			auditFee(){
+				let auditFee = 0;
+				if(this.card){
+					auditFee = +this.card.price;
+				}
+				return auditFee;
+			},
+			//还款金额
+			repayment(){
+				let repayment = 0;
+				if(this.card){
+					let amount = +this.card.description;
+					repayment = amount - (+this.card.price);
+				}
+				return repayment;
+			},
+
 		},
 		mounted() {
 			if(this.userInfo.is_member){//true
@@ -151,39 +161,32 @@
 			}else {
 				this.getMemberCardList();
 			}
-			//this.getMemberCardList();
 		},
 		methods: {
 			getMemberCardList(){
 				getMemberCardList().then((res)=>{
 					this.cardList = res.data || [];
-					this.initSwiper();
+					this.card = this.cardList[0];
 				});
 			},
-			initSwiper() {
-				this.$nextTick(async() => {
-					await this.swiper.init() // 现在才初始化
-					await this.swiper.slideTo(this.activeItemIndex)
-				})
+			setLoanItem(item){
+				this.card = item;
+				this.setCountdown();
 			},
-			tweenUpdate(){
-				requestAnimationFrame(this.tweenUpdate);
-				this.$tweener.update();
+			setPeriod(item){
+				this.period = item.value;
 			},
-			startNumAnimation(sold_count) {
-				//target,to,during,delay,easing,onUpdate,onComplete
-				this.$tween.fade(
-					this,//target
-					{sold_count:sold_count},//to
-					600,//during
-					0,//delay
-					'',//easing
-					()=>{//onUpdate
-						this.sold_count = (this.sold_count||0).toFixed();
-					}
-				);
+			setCountdown(){
+				this.$refs.countDown.reset();
+				setTimeout(()=>{
+					this.$refs.countDown.start();
+				},100);
 			},
-			selectCurrentItem(productInfo){
+			onSubmitOrder(){
+				let productInfo = this.card;
+				if(!productInfo){
+					return false
+				}
 				this.$store.dispatch('product/setProductInfo',productInfo);
 				this.submitOrder(productInfo);
 			},
@@ -205,12 +208,6 @@
 				}
 				this.isSubmitting = true;
 
-				try {
-					Adjust.trackEvent(clickPayEvent);
-				}catch (e) {
-
-				}
-
 				//打开一个不被拦截的新窗口
 				var newTab  = window.open();
 
@@ -225,13 +222,19 @@
 						//window.open(routerData.href, '_ blank')
 						//location.href = routerData.href;
 						//this.toStep03Page();
-
-						const div = document.createElement('div');
-						div.innerHTML = data.payment_link; // html code
-						newTab.document.body.appendChild(div);
-						newTab.document.forms.alipay_submit.submit();
-
-						//this.toStep03Page();
+						let client = this.judgeClient();
+						if(client == 'iOS'){
+							const div = document.createElement('div');
+							div.id = 'alipay';
+							div.innerHTML = data.payment_link;
+							document.body.appendChild(div);
+							document.querySelector('#alipay').children[0].submit();
+						}else{
+							const div = document.createElement('div');
+							div.innerHTML = data.payment_link; // html code
+							newTab.document.body.appendChild(div);
+							newTab.document.forms.alipay_submit.submit();
+						}
 					}
 
 				}).catch(()=>{
@@ -249,7 +252,20 @@
 			},
 			toEndPage(){
 				this.$router.replace({name:'end'});
-			}
+			},
+			/*判断客户端*/
+			judgeClient() {
+				let client = '';
+				if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {  //判断iPhone|iPad|iPod|iOS
+					client = 'iOS';
+				} else if (/(Android)/i.test(navigator.userAgent)) {  //判断Android
+					client = 'Android';
+				} else {
+					client = 'PC';
+				}
+				return client;
+			},
+
 		}
 	}
 </script>
@@ -260,12 +276,12 @@
 	.card{
 		border-radius: 0;
 		width: 100%;
-		padding: 20px 40px;
-		background: linear-gradient(180deg, $primary 0%, $primary 32%, rgba(255, 255, 255, 1) 32% );
+		padding: 20px 30px;
+		background: linear-gradient(180deg, $primary 0%, $primary 30%, rgba(255, 255, 255, 1) 30% );
 		.card-bd{
 			padding: 0 30px;
 			color: #333;
-			box-shadow: 0 8px 16px rgba(48, 141, 66, .5);
+			text-align: left;
 		}
 	}
 	.card-hd{
@@ -292,15 +308,55 @@
 			}
 		}
 	}
+	.card-ft{
+		margin-top: 60px;
+	}
 
 	.product-info{
-		margin-bottom: 0;
-		.desc{
-			padding: 30px 0 10px 0;
-			&:last-child{
-				margin-top: 50px;
-				margin-bottom: 30px;
+		margin: 20px 0 0 0;
+
+		.info-row{
+			padding-bottom: 10px;
+		}
+		.info-title{
+			text-align: left;
+			font-size: 15PX;
+			padding: 14px 0;
+		}
+		.info-list{
+
+		}
+		.info-item{
+
+			background: #eee;
+			padding: 12px 32px;
+			border-radius: 50px;
+
+			display: -webkit-inline-box;
+			display: -webkit-inline-flex;
+			display: inline-flex;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			min-width: 100px;
+			margin: 0 24px 24px 0;
+			font-size: 13PX;
+			line-height: 1.2;
+			vertical-align: middle;
+
+			&.active{
+				background: $primary;
+				color: #fff;
 			}
+		}
+
+		.desc-row{
+			font-size: 15PX;
+			padding: 10px 0 10px 0;
+
 		}
 	}
 	.warn-tips{
@@ -334,8 +390,21 @@
 			font-weight: 700;
 		}
 		.tip-item{
-			padding: 16px 0 16px 40px;
+			padding: 16px 0 16px 30px;
+			line-height: 1.4;
+			font-size: 13PX;
+			.tip-desc{
+				padding-left: 40px;
+			}
+		}
+
+	}
+	.count-down{
+		justify-content: center;
+		color: #fff;
+		.van-count-down{
+			margin-left: 20px;
+			color: #fff;
 		}
 	}
-
 </style>

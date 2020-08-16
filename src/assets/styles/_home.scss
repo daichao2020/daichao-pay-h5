@@ -404,3 +404,8 @@
   font-size: 12PX;
   line-height: 14PX;
 }
+.vip-btn {
+  color: #fff;
+  @include btn-background-primary;
+  border: none;
+}
