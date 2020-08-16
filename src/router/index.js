@@ -66,7 +66,7 @@ export const constantRoutes = [
 		meta: {
 			title: 'Đăng nhập',
 			showHeader: false,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/Login/index'),
 	},
@@ -77,7 +77,7 @@ export const constantRoutes = [
 		meta: {
 			title: 'Nhận mã xác minh',
 			showHeader: false,
-			keepAlive: true
+			keepAlive: false
 		},
 		component: () => import('@/components/Login/code'),
 	},
