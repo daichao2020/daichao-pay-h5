@@ -237,6 +237,9 @@
 			},
 			onSubmitOrder(){
 				let productInfo = this.card;
+				if(!productInfo){
+					return false;
+				}
 				this.$store.dispatch('product/setProductInfo',productInfo);
 				this.submitOrder(productInfo);
 			},
