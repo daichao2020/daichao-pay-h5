@@ -1,5 +1,5 @@
 <template>
-	<div class="status-page page">
+	<div class="default-page status-page page">
 		<section class="msg-waiting" v-if="pageShow==1">
 			<div class="pay-msg">
 				<div class="pay-msg__icon-area">
@@ -11,13 +11,14 @@
 							:rate="rate"
 							:speed="100"
 							:stroke-width="60"
-							color="#ffb936"
+							color="#ff9933"
 							layer-color="#eee"
 							size="240px"
 					>
 						<van-count-down class="flex-1"
 										ref="countDown"
 										:time="time"
+										auto-start
 										@change="setCircleRate"
 										format="ss"></van-count-down>
 					</van-circle>
@@ -40,7 +41,7 @@
 				</div>
 				<div class="pay-msg__opr-area">
 					<div class="vip-btn-wrap">
-						<van-button type="primary" class="vip-btn" block @click="toHomePage">Close</van-button>
+						<van-button type="primary" class="vip-btn" block @click="toHomePage">next</van-button>
 					</div>
 				</div>
 
@@ -66,7 +67,6 @@
 </template>
 <script>
 	import { queryOrderPayStatus } from '@/api/order'
-	import { Toast } from 'vant';//
 	export default {
 		data(){
 			return {
@@ -116,6 +116,7 @@
 							this.payStatusTxt = res.data.message;
 							this.payStatus = data.status;
 							this.pageShow = 3;
+
 							break;
 						case 40003://处理中
 							if(this.seconds==0){
@@ -136,22 +137,24 @@
 							break;
 					}
 
+				}).catch(()=>{
+					this.pageShow = 3;
 				});
 			},
 
 			toHomePage(){
-				this.$router.go(-3);
+				this.$router.push({name:'home'});
 			},
 			toLastPage(){
 				switch (this.payStatus) {
 					case 40002://支付失败
-						this.$router.go(-3);
+						this.toHomePage();
 						break;
 					case 40004://待付款
-						this.$router.go(-1);
+						this.toHomePage();
 						break;
 					default://其他失败场景
-						this.$router.go(-3);
+						this.toHomePage();
 						break;
 
 				}

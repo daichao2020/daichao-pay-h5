@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0abdee"],{"16b5":function(t,e,l){"use strict";l.r(e);var n=function(){var t=this,e=t.$createElement,l=t._self._c||e;return l("div",[l("van-cell-group",[l("van-cell",{attrs:{title:"单元格",value:"内容"}}),l("van-cell",{attrs:{title:"单元格",value:"内容",label:"描述信息"}})],1),l("van-cell-group",[l("van-cell",{attrs:{title:"单元格",icon:"location-o"}})],1)],1)},a=[],c={data:function(){return{}},mounted:function(){}},u=c,o=l("2877"),r=Object(o["a"])(u,n,a,!1,null,null,null);e["default"]=r.exports}}]);
-//# sourceMappingURL=chunk-2d0abdee.6b6c18a9.js.map
+//# sourceMappingURL=chunk-2d0abdee.5c180fff.js.map

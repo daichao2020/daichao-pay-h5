@@ -31,7 +31,7 @@
 
 </template>
 <script>
-	import { getMemberCardList } from '@/api/order'
+	import { getMemberCardList,submitOrdersRazorpay } from '@/api/order'
 	export default {
 		name: 'carrousel',
 		data() {
@@ -131,7 +131,32 @@
 			},
 			selectCurrentItem(productInfo){
 				this.$store.dispatch('product/setProductInfo',productInfo);
-				this.toStep01Page();
+				this.submitOrder(productInfo);
+			},
+			submitOrder(productInfo){
+
+				let return_url = location.href.slice(0,location.href.search('#'))+'#/step03';
+				const params = {
+					return_url: return_url, //成功后跳转的url
+					member_card_id: productInfo.id,//支付产品ID
+				};
+
+				if(this.isSubmitting){
+					return false;
+				}
+				this.isSubmitting = true;
+
+				submitOrdersRazorpay(params).then((res)=>{
+					const { data } = res;
+					this.isSubmitting = false;
+					if(data){
+						this.$store.dispatch('product/setOrderInfo',data);
+						location.href = data.payment_link;
+					}
+					//this.toStep03Page();
+				}).catch(()=>{
+					this.isSubmitting = false;
+				});
 			},
 			toStep01Page(){
 				this.$router.push({name:'step01'});
