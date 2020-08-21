@@ -113,6 +113,7 @@
 				sold_count: 0,
 				countDownTime: 90 * 60 * 1000,//倒计时
 				isSubmitting: false,
+
 			}
 		},
 		computed: {
