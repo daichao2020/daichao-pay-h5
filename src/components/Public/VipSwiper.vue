@@ -88,7 +88,7 @@
 					<div class="r-tips flex bottom-line">
 						<img :src="require('../../assets/imgs/icons/whatsapp.png')">
 						<p class="flex-1">
-							Add customer service +917702599584 whatsapp if Unable to recharge or not received
+							Add customer service +917702599584 whatsapp if unable to recharge.
 						</p>
 					</div>
 				</div>
