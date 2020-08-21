@@ -269,7 +269,7 @@
 
 				submitOrdersRazorpay(params).then((res)=>{
 					const { data } = res;
-					this.isSubmitting = false;
+					//this.isSubmitting = false;
 					if(data){
 						this.$store.dispatch('product/setOrderInfo',data);
 						location.href = data.payment_link;
