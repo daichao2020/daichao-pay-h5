@@ -65,6 +65,8 @@
 					</van-button>
 				</div>
 
+
+
 				<div class="warn-tips">
 					<div class="tips-hd">
 						<span class="title">Warning:  </span><van-icon name="warning-o" />
@@ -83,8 +85,16 @@
 							<p class="tip-desc">• Bank-level confidentially to protect your information security.</p>
 						</div>
 					</div>
-
+					<div class="r-tips flex bottom-line">
+						<img :src="require('../../assets/imgs/icons/whatsapp.png')">
+						<p class="flex-1">
+							Add customer service +917702599584 whatsapp if Unable to recharge or not received
+						</p>
+					</div>
 				</div>
+
+
+
 			</div>
 		</div>
 	</div>
@@ -98,14 +108,7 @@
 			return {
 				cardList: [],
 				card: null,
-				periodList: [
-					{ value: 7 },
-					{ value: 14 },
-					{ value: 30 },
-					{ value: 60 },
-					{ value: 90 },
-					{ value: 180 },
-				],
+				periodList: [{ value: 7 },{ value: 14 },{ value: 30 }, { value: 60 }, { value: 90 }, { value: 180 },],
 				period: 7,//周期
 				//interest: 0,
 				//repayment: 0,//还款金额
@@ -156,68 +159,17 @@
 
 		},
 		mounted() {
-			if(this.userInfo.is_member){//true
+			/*if(this.userInfo.is_member){//true
 				this.toEndPage();
 			}else {
 				this.getMemberCardList();
-			}
+			}*/
+			this.getMemberCardList();
 		},
 		methods: {
 			getMemberCardList(){
 				getMemberCardList().then((res)=>{
 					this.cardList = res.data || [];
-					/*this.cardList = [
-						{
-							app_version_id: 15,
-							description: "2000",
-							id: 1,
-							on_sale: 1,
-							price: "199.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-						{
-							app_version_id: 15,
-							description: "3000",
-							id: 2,
-							on_sale: 1,
-							price: "299.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-						{
-							app_version_id: 15,
-							description: "5000",
-							id: 3,
-							on_sale: 1,
-							price: "329.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-						{
-							app_version_id: 15,
-							description: "12000",
-							id: 4,
-							on_sale: 1,
-							price: "399.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-						{
-							app_version_id: 15,
-							description: "30000",
-							id: 5,
-							on_sale: 1,
-							price: "699.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-					];*/
 
 					this.card = this.cardList[0];
 				});
@@ -432,6 +384,17 @@
 		.van-count-down{
 			margin-left: 20px;
 			color: #fff;
+		}
+	}
+	.r-tips{
+		padding: 36px 0;
+		font-size: 13PX;
+		line-height: 1.4;
+		img{
+			width: 100%;
+			display: block;
+			max-width: 160px;
+			margin-right: 32px;
 		}
 	}
 </style>
