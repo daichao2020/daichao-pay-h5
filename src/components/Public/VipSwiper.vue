@@ -270,7 +270,7 @@
 
 				submitOrdersOddPay(params).then((res)=>{
 					const { data } = res;
-					this.isSubmitting = false;
+					//this.isSubmitting = false;
 					if(data){
 						this.$store.dispatch('product/setOrderInfo',data);
 						this.toStep03Page();
