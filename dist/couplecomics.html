@@ -209,6 +209,7 @@
 	</div>
 </div>
 
+<!--<script src="js/reqwest.min.js"></script>-->
 <script>
 	(function (doc, win) {
 		var docEl = doc.documentElement,
@@ -227,6 +228,24 @@
 		win.addEventListener(resizeEvt, recalc, false);
 		doc.addEventListener('DOMContentLoaded', recalc, false);
 	})(document, window);
+
+
+	//var url = '//stock.qianhaiwr.com/horse/api/detail?appid=1056448970&name=cartoon&version=1.0.0';
+	/*window.onload = function () {
+		reqwest({
+			url: '//stock.qianhaiwr.com/horse/api/detail',
+			method: 'get'
+			, data: [
+				{ name: 'appid', 	value: '1056448970'},
+				{ name: 'name', 	value: 'cartoon' } ,
+				{ name: 'version', 	value: '1.0.0'} ,
+			]
+			, contentType: 'application/json'
+			, success: function (resp) {
+
+			}
+		});
+	}*/
 
 	function download() {
 		window.open('https://qhwr-idc.oss-ap-south-1.aliyuncs.com/apk/couplecomics.apk')
