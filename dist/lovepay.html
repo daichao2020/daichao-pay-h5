@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>Love Pay</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+			outline: none;
+			text-decoration: none;
+			box-sizing: border-box;
+		}
+		.body,html {
+			width: 100%;
+			line-height: 1.6;
+		}
+		.page {
+			padding: 0 .5rem;
+			background-color: #fff;
+			padding-top: 0.7rem;
+		}
+		.container_top {
+			width: 100%;
+		}
+		.logo_title {
+			position: relative;
+			padding-left: 1.8rem;
+			min-height: 1.35rem;
+			line-height: 1;
+		}
+		.logo {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1.35rem;
+		}
+		.logo > img {
+			vertical-align: middle;
+			width: 100%;
+		}
+
+		.title_name p:first-child {
+			font-size: 0.48rem;
+			margin-bottom: 0.2rem;
+			font-weight: blod;
+		}
+		.title_name p:nth-child(2) {
+			margin-bottom: 0.1rem;
+			font-size: 0.28rem;
+			color: #01865f;
+		}
+		.info {
+			overflow: hidden;
+			margin: 0.7rem 0;
+			width: 100%;
+			list-style: none;
+			text-align: center;
+		}
+		.info li:not(:first-child)::before {
+			position: absolute;
+			left: 0;
+			top: 0.2rem;
+			bottom: 0.2rem;
+			width: 1px;
+			content: '';
+			background-color: #ddd;
+		}
+		.info li {
+			position: relative;
+			box-sizing: border-box;
+			float: left;
+			width: 25%;
+			font-size: 0.24rem;
+			color: #666;
+		}
+		.info li img {
+			vertical-align: middle;
+			width: 0.4rem;
+		}
+		.info strong {
+			height: 0.4rem;
+			line-height: 0.4rem;
+			font-size: 0.28rem;
+			color: #333;
+		}
+		.install {
+			width: 100%;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			font-size: 0.32rem;
+			color: #fff;
+			text-align: center;
+			background-color: #01865f;
+			border-radius: 0.1rem;
+			outline: none;
+		}
+		.swiper {
+			overflow-x: scroll;
+			padding-top: .5rem;
+			margin-bottom: 0.35rem;
+		}
+		.swiper::-webkit-scrollbar {display:none}
+		.swiper > div {
+			width: 13rem;
+			overflow: hidden;
+		}
+		.swiper > div > div {
+			float: left;
+			margin-right: .2rem;
+		}
+		.swiper img {
+			vertical-align: middle;
+			width: 4rem;
+		}
+		.desc h2 {
+			font-size: 0.38rem;
+			margin-bottom: 0.35rem;
+		}
+		.desc p {
+			font-size: 0.26rem;
+			color: #666666;
+			margin-bottom: 0.35rem;
+		}
+		.box {
+			border-top: 1px solid #666;
+			border-bottom: 1px solid #666;
+			padding: .5rem 0.5rem;
+		}
+		.box h2 {
+			font-size: 0.38rem;
+			margin-bottom: 0.1rem;
+		}
+		.box p {
+			font-size: 0.26rem;
+			color: #666666;
+		}
+		.other {
+			padding: .5rem 0.5rem;
+			font-size: 0.26rem;
+		}
+		.other h2 {
+			font-size: 0.38rem;
+			margin-bottom: 0.1rem;
+		}
+		.margin-bottom {
+			margin-bottom: .35rem;
+		}
+	</style></head>
+
+<body>
+<div class="page">
+	<div class="container_top">
+		<div class="logo_title">
+			<div class="logo"><img src="imgs/install/lovepay/logo.png" alt=""></div>
+			<div class="title_name">
+				<p>Love pay - nền tảng cho vay tiền mặt ngay lập tức</p>
+				<p>nền tảng cho vay tiền mặt</p>
+			</div>
+		</div>
+		<ul class="info">
+			<li>
+				<strong>1.0.0</strong>
+				<p>5000+review</p>
+			</li>
+			<li>
+				<img src="imgs/install/down-icon.png" alt="">
+				<p>5.4MB</p>
+			</li>
+			<li>
+				<img src="imgs/install/icon1.png" alt="">
+				<p>12years+</p>
+			</li>
+			<!--<li>
+				<strong>100000+</strong>
+				<p>downloads</p>
+			</li>-->
+		</ul>
+		<div class="install" onclick="download()">install</div>
+	</div>
+	<div class="swiper">
+		<div>
+			<div><img src="imgs/install/lovepay/1.png?t=1" alt=""></div>
+			<div><img src="imgs/install/lovepay/2.png?t=1" alt=""></div>
+			<div><img src="imgs/install/lovepay/3.png?t=1" alt=""></div>
+			<!--<div><img src="../imgs/install/greatcash/3.png" alt=""></div>
+			<div><img src="../imgs/install/greatcash/4.png" alt=""></div>
+			<div><img src="../imgs/install/greatcash/5.png" alt=""></div>-->
+		</div>
+	</div>
+	<div class="desc">
+
+		<p>Đủ tiêu chuẩn:</p>
+		<p>• Quốc tịch: Việt Nam</p>
+		<p>• Tuổi: 20 - 60 tuổi</p>
+		<p>• Thu nhập từ 3.000.000 đồng / tháng</p>
+		<p>• Số tiền cho vay: từ 5.000.000 đồng đến 50.000.000 đồng</p>
+		<p>• Thời hạn cho vay: 06 - 36 tháng</p>
+		<p>• Lãi suất: 2,92% lãi suất hiệu quả mỗi tháng dựa trên hồ sơ khách hàng. Tối đa lên tới 36% mỗi năm.</p>
+		<p>Thí dụ:</p>
+		<p>• Số tiền vay: 5.000.000 đồng</p>
+		<p>• Lãi suất hàng năm: 35%</p>
+		<p>• Nhiệm kỳ: 6 tháng</p>
+		<p>• Trả góp hàng tháng: 921.000 đồng</p>
+		<p>• Tổng chi phí cho khoản vay: 921.000 * 6 = 5.526.000 đồng</p>
+		<p>• Tổng tiền lãi phải trả: 526.000 đồng</p>
+		<p>ĐIỂM BÁN HÀNG CHÍNH</p>
+		<p>Bây giờ bạn có thể đăng ký một khoản vay thông qua ứng dụng trả tiền tình yêu và nhận được sự chấp thuận chỉ trong 15 phút. Khoản vay sẽ được giải ngân trong vòng 24 giờ tại một địa điểm kênh bạn chọn. Quy trình đăng ký vay đã được thực hiện cực kỳ dễ dàng cho khách hàng của chúng tôi. Bây giờ, không cần phải gọi một giám đốc chăm sóc khách hàng hoặc bất kỳ nhân viên bán hàng. Bạn có thể đăng ký khoản vay theo các bước đơn giản sau:</p>
+		<p>1. Tải về tình yêu và đăng ký</p>
+		<p>2. Nhập thông tin cá nhân của bạn và yêu cầu cho vay của bạn</p>
+		<p>3. Nhấp vào chụp ảnh tự sướng và tải lên</p>
+		<p>4. Xác minh thông tin cá nhân để đánh giá tín dụng</p>
+		<p>5. Nhận trạng thái phê duyệt cho vay và chấp nhận đề nghị</p>
+		<p>6. Hợp đồng vay điện tử</p>
+		<p>7. Khoản vay được giải ngân qua kênh ưa thích của bạn</p>
+		<p>NHỮNG ĐẶC ĐIỂM CHÍNH</p>
+		<p>• Quy trình nộp đơn nhanh chóng và dễ dàng</p>
+		<p>• Tự động cho vay trong 15 phút</p>
+		<p>• Giải ngân tiền mặt trong vòng 24 giờ</p>
+		<p>• Không cần chứng minh thu nhập</p>
+		<p>• Không cần bản sao tài liệu cá nhân</p>
+		<p>• Truy cập tóm tắt bản sao kê tài khoản của bạn về tình yêu</p>
+		<p>• Nhận thông tin cập nhật về chương trình khuyến mãi mới nhất</p>
+		<p>love pay là một ứng dụng an toàn và miễn phí với chất lượng dịch vụ tốt nhất và thời gian giải ngân nhanh nhất.</p>
+		<p>Liên hệ chúng tôi:</p>
+		<p>Email dịch vụ khách hàng:lqwui08@gmail.com</p>
+		<p>Địa chỉ: Tầng F, 1 & 3 Tòa nhà Phu Nữ, 5 Nguyễn Đăng Giai, Phường Thảo Điền, Quận 1, TP. 2, thành phố hồ chí minh</p>
+
+	</div>
+</div>
+
+<!--<script src="js/reqwest.min.js"></script>-->
+<script>
+	(function (doc, win) {
+		var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;
+				if(clientWidth>=750){
+					docEl.style.fontSize = '100px';
+				}else{
+					docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+				}
+			};
+
+		if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+
+
+	//var url = '//stock.qianhaiwr.com/horse/api/detail?appid=1056448970&name=cartoon&version=1.0.0';
+	/*window.onload = function () {
+		reqwest({
+			url: '//stock.qianhaiwr.com/horse/api/detail',
+			method: 'get'
+			, data: [
+				{ name: 'appid', 	value: '1056448970'},
+				{ name: 'name', 	value: 'cartoon' } ,
+				{ name: 'version', 	value: '1.0.0'} ,
+			]
+			, contentType: 'application/json'
+			, success: function (resp) {
+
+			}
+		});
+	}*/
+
+	function download() {
+		window.open('https://qhwr-idc.oss-ap-south-1.aliyuncs.com/apk/lovepay.apk')
+	}
+</script>
+</body>
+</html>
