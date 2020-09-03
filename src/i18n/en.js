@@ -96,6 +96,11 @@ export default {
 		day: 'day',
 		success: 'Success',
 
+		waitingForYourPayment: 'Waiting for your payment',
+		bankCode: 'Bank Code',
+		accountNo: 'Account No.',
+		accountName: 'Account Name',
+
 	},
 	menu: {
 		"home": "Home",

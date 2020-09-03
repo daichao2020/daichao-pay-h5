@@ -162,7 +162,7 @@ export const constantRoutes = [
 		path: '/end',
 		name: 'end',
 		meta: {
-			title: 'Gửi kiểm toán',
+			title: 'Gửi đi phê duyệt',
 			showHeader: false,
 			keepAlive: false
 		},

@@ -46,7 +46,7 @@
 					<van-button type="primary" class="vip-btn"
 								:disabled="isSubmitting"
 								:loading="isSubmitting"
-								loading-text="Submitting..."
+								loading-text="Đệ trình..."
 								@click="onSubmitOrder"
 								block
 					>

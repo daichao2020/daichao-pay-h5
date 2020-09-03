@@ -25,12 +25,6 @@
 						:placeholder="$t('str.IDNumberPlaceholder')"
 						:rules="[{ required: true, message: ' ' }]"
 				/>
-				<p class="vip-form_title">{{$t('str.PAN')}}</p>
-				<van-field
-						v-model="pan"
-						name="rname"
-						:placeholder="$t('str.PANPlaceholder')"
-				/>
 				<p class="vip-form_title">{{$t('str.yourEmail')}}</p>
 				<van-field
 						v-model="yourEmail"

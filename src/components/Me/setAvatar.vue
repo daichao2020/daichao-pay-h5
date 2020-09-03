@@ -2,7 +2,7 @@
 	<div class="default-page set-avatar-page">
 		<header v-if="isShowHeader">
 			<van-nav-bar
-					title="Modify Head Portrait"
+					title="Sửa đổi chân dung đầu"
 					fixed
 					left-arrow
 					@click-left="onClickLeft"
@@ -11,7 +11,7 @@
 		</header>
 		<section class="page-body">
 			<van-form @submit="onSubmit">
-				<van-field name="uploader" label="Image">
+				<van-field name="uploader" label="Hình ảnh">
 					<template #input>
 						<van-uploader v-model="fileList" :after-read="afterRead" :max-count="1"/>
 					</template>
@@ -21,10 +21,10 @@
 					<van-button type="primary" class="vip-btn"
 								:disabled="isSubmitting"
 								:loading="isSubmitting"
-								loading-text="Submitting..."
+								loading-text="Đệ trình..."
 								native-type="submit"
 								block>
-						Save
+						Tiết kiệm
 					</van-button>
 				</div>
 			</van-form>
@@ -68,7 +68,7 @@
 			},
 			afterRead(file){
 				file.status = 'uploading';
-				file.message = 'uploading...';
+				file.message = 'tải lên...';
 
 				let param = new FormData();
 				param.append('type','avatar');
@@ -81,14 +81,14 @@
 					this.avatarId = data.id;
 				}).catch(()=>{
 					file.status = 'failed';
-					file.message = 'failed';
+					file.message = 'thất bại';
 				});
 
 			},
 			onSubmit(){
 
 				if(!this.avatarId){
-					this.$toast('Please select image');
+					this.$toast('Vui lòng chọn hình ảnh');
 					return false;
 				}
 
@@ -100,7 +100,7 @@
 					this.$store.dispatch('user/setInfo',data)
 
 					this.isSubmitting = false;
-					this.$toast('Submit successfully');
+					this.$toast('Gửi thành công');
 				}).catch((e) => {
 					this.isSubmitting = false
 				});

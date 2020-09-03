@@ -17,17 +17,17 @@
 						autosize
 						type="textarea"
 						maxlength="1000"
-						placeholder="Please enter your feedback"
+						placeholder="Vui lòng nhập phản hồi của bạn"
 						show-word-limit
 				/>
 				<div class="vip-btn-wrap">
 					<van-button type="primary" class="vip-btn"
 								:disabled="isSubmitting"
 								:loading="isSubmitting"
-								loading-text="Submitting..."
+								loading-text="Đệ trình..."
 								native-type="submit"
 								block>
-						Save
+						Tiết kiệm
 					</van-button>
 				</div>
 			</van-form>
@@ -63,7 +63,7 @@
 
 				setTimeout(()=>{
 					this.isSubmitting = false;
-					this.$toast('Submit successfully');
+					this.$toast('Gửi thành công');
 				},300)
 			}
 		}

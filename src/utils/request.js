@@ -72,13 +72,13 @@ service.interceptors.response.use(
 
 		if (meta && meta.message !== 'success' ) {
 			Toast({
-				message: meta.message || 'Server ist falsch',
+				message: meta.message || 'Máy chủ sai',
 				type: 'fail',
 				position: 'bottom',
 				duration: 3 * 1000
 			})
 
-			return Promise.reject(new Error(res.message || 'Error'))
+			return Promise.reject(new Error(res.message || 'lỗi'))
 		} else {
 			return res
 		}
@@ -93,10 +93,10 @@ service.interceptors.response.use(
 				if(response.status === 401){//token过期，重新登录
 					// to re-login
 					Dialog.confirm({
-						title: 'Confirm logout',
-						message: 'You have been logged out, you can cancel to stay on this page, or log in again',
-						confirmButtonText: 'Re-Login',
-						cancelButtonText: 'Cancel',
+						title: 'Xác nhận đăng xuất',
+						message: 'Bạn đã đăng xuất, bạn có thể hủy để ở lại trang này hoặc đăng nhập lại',
+						confirmButtonText: 'Đăng nhập lại',
+						cancelButtonText: 'Huỷ bỏ',
 						type: 'warning'
 					}).then(() => {
 						store.dispatch('user/resetToken').then(() => {

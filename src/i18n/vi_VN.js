@@ -33,7 +33,7 @@ export default {
 		pleaseChoose: 'Xin vui lòng chọn',
 		continue: 'Tiếp tục',
 		male: 'Nam giới',
-		female: 'Giống cái',
+		female: 'Nữ giới',
 		thirdGender: 'Giới tính thứ ba',
 		doctorDegree: 'Bằng bác sỹ',
 		masterDegree: 'Bằng thạc sĩ',
@@ -49,7 +49,7 @@ export default {
 		youPassedTheAudit: 'Bạn đã vượt qua cuộc kiểm toán! ',
 		loanAmount: 'Số tiền vay',
 		unit: '₫',//
-		interest: 'Quan tâm',
+		interest: 'Nữ giới',
 		repaymentAmount: 'Số tiền hoàn trả',
 		loanTerm: 'Thời hạn cho vay',
 		days: 'ngày',
@@ -63,7 +63,7 @@ export default {
 
 		immediateWithdrawal: 'Rút tiền ngay lập tức',
 		chooseOtherLoanProduct: 'Chọn sản phẩm cho vay khác',
-		auditExpense: 'chi phí kiểm toán',
+		auditExpense: 'Phí phê duyệt',
 		weWillSend: 'Chúng tôi sẽ gửi thông tin của bạn đến một tổ chức chuyên nghiệp để xem xét. Xin vui lòng chịu các chi phí phát sinh',
 		selectPaymentOption: 'Chọn tùy chọn thanh toán',
 		checkingPaymentStatus: 'Kiểm tra trạng thái thanh toán...',
@@ -82,9 +82,25 @@ export default {
 		applyRequirements: 'Áp dụng yêu cầu',
 		howToApply: 'Làm sao để đăng kí',
 		applyNor: 'Áp dụng cũng không',
+
+		feedback: 'Phản hồi',
+		setNickName: 'Đặt tên biệt hiệu',
+		modifyHeadPortrait: 'Sửa đổi chân dung đầu',
+		aboutUs: 'Về chúng tôi',
+		contactUs: 'Liên hệ chúng tôi',
+		contactUsLabel: 'email / số điện thoại chăm sóc khách hàng',
+		cancellation: 'Chính sách hủy & hoàn tiền',
+		privacyPolicy: 'Chính sách bảo mật',
+		logout: 'Đăng xuất',
+
 		term: 'Kỳ hạn',
 		day: 'ngày',
-		success: 'Sự thành công',
+		success: 'Thành công',
+
+		waitingForYourPayment: 'Đang đợi thanh toán của bạn',
+		bankCode: 'Mã ngân hàng',
+		accountNo: 'Số tài khoản',
+		accountName: 'Tên tài khoản',
 
 	},
 	menu: {

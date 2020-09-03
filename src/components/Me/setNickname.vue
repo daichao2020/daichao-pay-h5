@@ -2,7 +2,7 @@
 	<div class="default-page set-nickname-page">
 		<header v-if="isShowHeader">
 			<van-nav-bar
-					title="Set Nickname"
+					title="Đặt tên biệt hiệu"
 					fixed
 					left-arrow
 					@click-left="onClickLeft"
@@ -13,18 +13,18 @@
 			<van-form @submit="onSubmit">
 				<van-field
 						v-model="newNickname"
-						label="Nickname"
-						placeholder="Please enter the modified nickname"
-						:rules="[{ required: true, message: 'Please enter the modified nickname' }]"
+						label="Tên nick"
+						placeholder="Vui lòng nhập tên nick đã sửa đổi"
+						:rules="[{ required: true, message: 'Vui lòng nhập tên nick đã sửa đổi' }]"
 				/>
 				<div class="vip-btn-wrap">
 					<van-button type="primary" class="vip-btn"
 								:disabled="isSubmitting"
 								:loading="isSubmitting"
-								loading-text="Submitting..."
+								loading-text="Đệ trình..."
 								native-type="submit"
 								block>
-						Save
+						Tiết kiệm
 					</van-button>
 				</div>
 			</van-form>
@@ -76,7 +76,7 @@
 					this.$store.dispatch('user/setInfo',data)
 
 					this.isSubmitting = false;
-					this.$toast('Submit successfully');
+					this.$toast('Gửi thành công');
 				}).catch((e) => {
 					this.isSubmitting = false
 				});
