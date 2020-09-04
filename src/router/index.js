@@ -141,7 +141,7 @@ export const constantRoutes = [
 		path: '/step03',
 		name: 'step03',
 		meta: {
-			title: 'Tình trạng thanh toán',
+			title: 'Trạng thái',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -151,7 +151,7 @@ export const constantRoutes = [
 		path: '/step04',
 		name: 'step04',
 		meta: {
-			title: 'Tình trạng thanh toán',
+			title: 'Trạng thái',
 			showHeader: false,
 			keepAlive: false
 		},
@@ -195,7 +195,7 @@ export const constantRoutes = [
 		path: '/setavatar',
 		name: 'setavatar',
 		meta: {
-			title: 'Sửa đổi chân dung đầu',
+			title: 'Thay đổi Avatar',
 			showHeader: false,
 			keepAlive: true
 		},

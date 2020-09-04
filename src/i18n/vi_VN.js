@@ -85,7 +85,7 @@ export default {
 
 		feedback: 'Phản hồi',
 		setNickName: 'Đặt tên biệt hiệu',
-		modifyHeadPortrait: 'Sửa đổi chân dung đầu',
+		modifyHeadPortrait: 'Thay đổi Avatar',
 		aboutUs: 'Về chúng tôi',
 		contactUs: 'Liên hệ chúng tôi',
 		contactUsLabel: 'email / số điện thoại chăm sóc khách hàng',

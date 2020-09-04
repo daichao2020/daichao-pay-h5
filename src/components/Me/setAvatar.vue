@@ -2,7 +2,7 @@
 	<div class="default-page set-avatar-page">
 		<header v-if="isShowHeader">
 			<van-nav-bar
-					title="Sửa đổi chân dung đầu"
+					title="Thay đổi Avatar"
 					fixed
 					left-arrow
 					@click-left="onClickLeft"
