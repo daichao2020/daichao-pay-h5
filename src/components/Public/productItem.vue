@@ -11,13 +11,13 @@
 		</div>
 		<div class="item-bd flex-1">
 			<p class="title">{{ item.product_name }}</p>
-			<p class="desc">Max Amount: {{ item.amount_high }}</p>
-			<p class="desc">Tenure: {{ item.divide_period_min + '-' + item.divide_period_max }} Months</p>
-			<p class="desc">Interest: {{ item.daily_rate }} / Daily</p>
-			<p class="desc">Pro.Fee: {{ item.pro_fee || 0 }}</p>
+			<p class="desc">Max Amount(अधिकतम राशि): {{ item.amount_high }}</p>
+			<p class="desc">Tenure(कार्यकाल): {{ item.divide_period_min + '-' + item.divide_period_max }} Months(महीने)</p>
+			<p class="desc">Interest(ब्याज): {{ item.daily_rate }} / Daily(दिन)</p>
+			<p class="desc">Fee(शुल्क): {{ item.pro_fee || 0 }}</p>
 		</div>
 		<div class="item-ft">
-			<van-button size="small" type="primary" class="vip-btn">Apply</van-button>
+			<van-button size="small" type="primary" class="vip-btn">Apply(आवेदन)</van-button>
 		</div>
 	</div>
 </template>

@@ -14,7 +14,7 @@
                         clickable
                         name="picker"
                         :value="countryCodeText"
-                        label="Country"
+                        label="Country(देश)"
                         placeholder="Please select country code"
                         right-icon="arrow"
                         @click="showPicker = true"
@@ -31,7 +31,7 @@
                         v-model="telephone"
                         name="telephone"
 						type="tel"
-                        label="Telephone"
+                        label="Telephone(टेलीफोन)"
                         placeholder="Please enter telephone"
                 />
                 <van-field
@@ -39,7 +39,7 @@
                         center
                         clearable
 						type="digit"
-                        label="Code"
+                        label="Code(कोड)"
                         placeholder="Please enter code"
                 >
                     <template #button>
@@ -54,7 +54,7 @@
                                 :loading="isSubmitting"
                                 loading-text="Submitting..."
 								@click="onSubmit"
-                                block>Sign in</van-button>
+                                block>Sign in(साइन इन करें)</van-button>
                 </div>
             </div>
         </section>
