@@ -16,12 +16,12 @@
 			</div>
 
 			<div class="custom-cell-area">
-				<van-cell title="Feedback" is-link to="/feedback" />
-				<van-cell title="Set NickName" is-link to="/setnickname" />
-				<van-cell title="Modify Head Portrait" is-link to="/setavatar" />
+				<van-cell title="Feedback(प्रतिपुष्टि)" is-link to="/feedback" />
+				<van-cell title="Set NickName(निक नाम सेट करें)" is-link to="/setnickname" />
+				<van-cell title="Modify Head Portrait(अवतार सेट करें)" is-link to="/setavatar" />
 			</div>
 			<div class="custom-cell-area">
-				<van-cell title="Logout" is-link @click="logout" />
+				<van-cell title="Logout(लॉग आउट)" is-link @click="logout" />
 			</div>
 
 		</section>
