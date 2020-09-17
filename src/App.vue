@@ -17,7 +17,23 @@
 			networkSuccess(){
 				return this.$store.getters.networkSuccess
 			}
-		}
+		},
+		watch: {
+			'$route' () {
+				if (window._czc) {
+					let location = window.location
+					let contentUrl = location.pathname + location.hash
+					let refererUrl = '/'
+					window._czc.push(['_trackPageview', contentUrl, refererUrl])
+				}
+			}
+		},
+		mounted () {
+			const script = document.createElement('script')
+			script.src = '//s4.cnzz.com/z_stat.php?id=1279281483&web_id=1279281483'
+			script.language = 'JavaScript'
+			document.body.appendChild(script)
+		},
 	}
 </script>
 <style>
