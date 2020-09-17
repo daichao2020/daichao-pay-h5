@@ -22,6 +22,7 @@ import 'swiper/css/swiper.css'
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 import '@/permission' // permission control
 
+
 import {
     Button, Cell, CellGroup,Dialog,Toast,NavBar,
     Divider,RadioGroup,Radio,Field,Icon,Loading,CountDown,Circle,Skeleton,Form,Picker,Popup,
