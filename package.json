@@ -7,9 +7,12 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.11.5",
     "@tweenjs/tween.js": "^18.5.0",
     "amfe-flexible": "^2.2.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "core-js": "^3.6.5",
+    "es6-promise": "^4.2.8",
     "http-server": "^0.12.3",
     "js-cookie": "^2.2.1",
     "nprogress": "^0.2.0",
@@ -36,6 +39,7 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions"
+    "last 2 versions",
+    "not ie <= 8"
   ]
 }
