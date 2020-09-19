@@ -84,16 +84,16 @@
 			return {
 				pageShow: 1,//[1,2,3]
 
-				time: 30 * 1000,
+				time: 300 * 1000,
 				rate: 100,
 				currentRate: 0,
 				payStatus: 40003,
 				payStatusTxt: this.$t('str.checkingPaymentStatus'),
-				seconds: 30,
+				seconds: 300,
 			}
 		},
 		mounted(){
-			this.queryOrderPayStatus();
+			//this.queryOrderPayStatus();
 		},
 		computed: {
 			order () {
@@ -106,7 +106,7 @@
 			},
 			setCircleRate(timeData){
 				this.seconds = timeData.seconds;
-				this.rate = (30-timeData.seconds)/30*100;
+				this.rate = (300-timeData.seconds)/300*100;
 				if((this.payStatus==40003||this.payStatus==40004) && (timeData.seconds%5)==0){
 					this.queryOrderPayStatus();
 				}
