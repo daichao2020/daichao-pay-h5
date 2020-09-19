@@ -160,12 +160,16 @@
             },
 			toNextPage(){
 				this.$store.dispatch('user/getInfo').then(data=>{
-					const { name,is_member } = data;
+					const { name,is_member,is_order } = data;
 					if(name){
 						if(is_member){
 							this.toEndPage()
 						}else{
-							this.toVipPage()
+							if(is_order){//  1是下过单去虚拟账号页    ——   0是没下单 去首页
+								this.toStep03Page()
+							}else{
+								this.toVipPage()
+							}
 						}
 
 					}else {
@@ -180,6 +184,9 @@
             },
             toInfoPage(){
                 this.$router.push({name:'info'});
+            },
+            toStep03Page(){
+                this.$router.push({name:'step03'});
             },
 			toVipPage(){
 				this.$router.replace({

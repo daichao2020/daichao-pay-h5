@@ -57,3 +57,9 @@ export function queryOrderPayStatus(order_id) {//会员订单查询
 		params: { order_id }
 	})
 }
+export function queryOrderPayAccount() {//
+	return request({
+		url: '/member/oddPay/account',
+		method: 'get',
+	})
+}

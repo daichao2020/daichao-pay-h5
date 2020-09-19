@@ -77,8 +77,7 @@
 	</div>
 </template>
 <script>
-	import { queryOrderPayStatus } from '@/api/order'
-	import { Toast } from 'vant';//
+	import { queryOrderPayStatus,queryOrderPayAccount } from '@/api/order'
 	export default {
 		data(){
 			return {
@@ -90,23 +89,35 @@
 				payStatus: 40003,
 				payStatusTxt: this.$t('str.checkingPaymentStatus'),
 				seconds: 300,
+				orderAccount: null,//支付账户信息
 			}
 		},
 		mounted(){
-			//this.queryOrderPayStatus();
+			this.getOrderPayAccount();
 		},
 		computed: {
 			order () {
-				return this.$store.getters.order
+				if(this.orderAccount){
+					return this.orderAccount;
+				}else {
+					return this.$store.getters.order
+				}
 			}
 		},
 		methods: {
 			onClickLeft() {
 				this.$router.go(-1);
 			},
+			getOrderPayAccount(){
+				queryOrderPayAccount().then(res=>{
+					let data = res.data;
+					this.orderAccount = data;
+				})
+			},
 			setCircleRate(timeData){
-				this.seconds = timeData.seconds;
-				this.rate = (300-timeData.seconds)/300*100;
+
+				this.seconds = timeData.minutes*60 + timeData.seconds;
+				this.rate = (300-this.seconds)/300*100;
 				if((this.payStatus==40003||this.payStatus==40004) && (timeData.seconds%5)==0){
 					this.queryOrderPayStatus();
 				}
