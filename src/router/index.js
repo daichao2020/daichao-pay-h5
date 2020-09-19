@@ -22,7 +22,7 @@ export const constantRoutes = [
 					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import('@/components/Home/index'),
+				component: () => import(/* webpackChunkName: "home" */ '@/components/Home/index'),
 			},
 			//列表
 			{
@@ -33,7 +33,7 @@ export const constantRoutes = [
 					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import('@/components/LoanAll/index'),
+				component: () => import(/* webpackChunkName: "home" */ '@/components/LoanAll/index'),
 			},
 			//我
 			{
@@ -44,7 +44,7 @@ export const constantRoutes = [
 					showHeader: false,
 					keepAlive: true
 				},
-				component: () => import('@/components/Me/index'),
+				component: () => import(/* webpackChunkName: "home" */ '@/components/Me/index'),
 			},
 		]
 	},
@@ -57,7 +57,7 @@ export const constantRoutes = [
 			showHeader: false,
 			keepAlive: false
 		},
-		component: () => import('@/components/Detail/index'),
+		component: () => import(/* webpackChunkName: "home" */ '@/components/Detail/index'),
 	},
 	//登陆
 	{
@@ -68,7 +68,7 @@ export const constantRoutes = [
 			showHeader: false,
 			keepAlive: true
 		},
-		component: () => import('@/components/Login/index'),
+		component: () => import(/* webpackChunkName: "home" */ '@/components/Login/index'),
 	},
 	//feedback
 	{
