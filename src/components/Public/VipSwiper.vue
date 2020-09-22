@@ -30,7 +30,7 @@
 					</div>
 					<div class="desc-row small flex bottom-line">
 						<div class="flex-1 text-left">
-							{{$t('str.repaymentAmount')}}(<span class="small red">-{{$t('str.unit')}}{{auditFee}}</span>)
+							{{$t('str.repaymentAmount')}}<!--(<span class="small red">-{{$t('str.unit')}}{{auditFee}}</span>)-->
 						</div>
 						<div class="bold">{{$t('str.unit')}}{{repayment}}</div>
 					</div>
@@ -99,14 +99,14 @@
 				cardList: [],
 				card: null,
 				periodList: [
-					{ value: 7 },
+					//{ value: 7 },
 					{ value: 14 },
 					{ value: 30 },
 					{ value: 60 },
 					{ value: 90 },
-					{ value: 180 },
+					//{ value: 180 },
 				],
-				period: 7,//周期
+				period: 14,//周期
 				//interest: 0,
 				//repayment: 0,//还款金额
 				//auditFee: 0,//定金
@@ -131,7 +131,7 @@
 				if(this.card){
 					let amount = +this.card.description;
 					let period = this.period;
-					interest = amount * period / 1000;
+					interest = amount * period / 500;
 				}
 
 				return interest;
@@ -149,16 +149,16 @@
 				let repayment = 0;
 				if(this.card){
 					let amount = +this.card.description;
-					repayment = amount - (+this.card.price);
+					repayment = amount - (+this.interest);
 				}
 				return repayment;
 			},
 
 		},
 		mounted() {
-			if(this.userInfo.is_member){//true
-				this.toEndPage();
-			}else {
+			 if(this.userInfo.is_member){//true
+			 	this.toEndPage();
+			 }else {
 				this.getMemberCardList();
 			}
 		},
@@ -166,59 +166,6 @@
 			getMemberCardList(){
 				getMemberCardList().then((res)=>{
 					this.cardList = res.data || [];
-					/*this.cardList = [
-						{
-							app_version_id: 15,
-							description: "2000",
-							id: 1,
-							on_sale: 1,
-							price: "199.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-						{
-							app_version_id: 15,
-							description: "3000",
-							id: 2,
-							on_sale: 1,
-							price: "299.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-						{
-							app_version_id: 15,
-							description: "5000",
-							id: 3,
-							on_sale: 1,
-							price: "329.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-						{
-							app_version_id: 15,
-							description: "12000",
-							id: 4,
-							on_sale: 1,
-							price: "399.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-						{
-							app_version_id: 15,
-							description: "30000",
-							id: 5,
-							on_sale: 1,
-							price: "699.00",
-							sold_count: 38,
-							time: 12,
-							title: "299rs",
-						},
-					];*/
-
 					this.card = this.cardList[0];
 				});
 			},

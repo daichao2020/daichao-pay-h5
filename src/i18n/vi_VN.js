@@ -49,8 +49,8 @@ export default {
 		youPassedTheAudit: 'Bạn đã vượt qua cuộc kiểm toán! ',
 		loanAmount: 'Số tiền vay',
 		unit: '₫',//
-		interest: 'Nữ giới',
-		repaymentAmount: 'Số tiền hoàn trả',
+		interest: 'Lãi suất',
+		repaymentAmount: 'Số tiền giải ngân',
 		loanTerm: 'Thời hạn cho vay',
 		days: 'ngày',
 		warning: 'Cảnh báo',
