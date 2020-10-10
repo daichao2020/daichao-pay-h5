@@ -13,7 +13,7 @@
 			<div class="detail-card-box">
 				<div class="product-preview-item flex">
 					<div class="item-hd">
-						<img :src="'/imgs/product/'+detail.id+'.png'">
+						<img :src="'/imgs/product/'+detail.id+'.webp'">
 					</div>
 					<div class="item-bd flex-1">
 						<p class="title">{{ detail.product_name }}</p>
