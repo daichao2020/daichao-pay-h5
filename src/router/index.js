@@ -114,6 +114,16 @@ export const constantRoutes = [
 		},
 		component: refresh,
 	},
+	{
+		path: '/policy',
+		name: 'policy',
+		meta: {
+			title: 'Privacy policy',
+			showHeader: true,
+			keepAlive: true
+		},
+		component: () => import('@/components/Policy/index'),
+	},
 
 
 
