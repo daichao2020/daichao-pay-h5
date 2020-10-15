@@ -20,14 +20,51 @@ export function getVerificationCodes(data) {
 	})
 }
 
-export function login(data) {
+/*export function login(data) {
 	return request({
 		url: '/verificationCodes/authorizations',
 		method: 'post',
 		data
 	})
+}*/
+export function login(data) {
+	return request({
+		url: '/authorizations/login',
+		method: 'post',
+		data
+	})
+}
+/**
+ * 修改密码发送验证码
+ * */
+export function sendCode(data) {
+	return request({
+		url: '/send/code',
+		method: 'post',
+		data
+	})
+}
+/**
+ * 验证码修改修改密码
+ * */
+export function updatePwd(data) {
+	return request({
+		url: '/modify/pwd',
+		method: 'post',
+		data
+	})
 }
 
+/**
+ * 根据手机号查询是否有密码
+ * */
+export function queryPwd(data) {
+	return request({
+		url: '/query/pwd',
+		method: 'post',
+		data
+	})
+}
 /**
  * 获取个人信息
  * */
