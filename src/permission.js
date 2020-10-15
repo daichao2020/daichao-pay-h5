@@ -6,7 +6,7 @@ import { getToken } from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
 
 
-var whiteList = ['/login'] // no redirect whitelist
+var whiteList = ['/login','/resetpassword'] // no redirect whitelist
 
 router.beforeEach(async (to, from, next) => {
 
@@ -59,9 +59,9 @@ router.beforeEach(async (to, from, next) => {
 		}
 
 		if(regPositionStatus==1){//1-前置注册
-			whiteList = ['/login'] // no redirect whitelist
+			whiteList = ['/login','/resetpassword'] // no redirect whitelist
 		}else if(regPositionStatus==2){//2-后置注册
-			whiteList = ['/login','/home','/loanall'] // no redirect whitelist
+			whiteList = ['/login','/resetpassword','/home','/loanall'] // no redirect whitelist
 		}
 
 		if (whiteList.indexOf(to.path) !== -1) {
