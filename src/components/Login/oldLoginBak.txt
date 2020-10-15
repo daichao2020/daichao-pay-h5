@@ -12,12 +12,14 @@
             <div ref="login_form">
                 <van-field
                         readonly
+                        clickable
                         name="picker"
                         :value="countryCodeText"
                         label="Country"
                         placeholder="Please select country code"
+                        right-icon="arrow"
+                        @click="showPicker = true"
                 />
-				<!--
                 <van-popup v-model="showPicker" position="bottom">
                     <van-picker
                             show-toolbar
@@ -25,31 +27,14 @@
                             @confirm="onConfirm"
                             @cancel="showPicker = false"
                     />
-                </van-popup>-->
+                </van-popup>
                 <van-field
                         v-model="telephone"
                         name="telephone"
 						type="tel"
                         label="Telephone"
                         placeholder="Please enter telephone"
-						@blur="checkIsNeedConfirmPassword"
-						:rules="[{ validator, message: 'Only numbers allowed' }]"
                 />
-				<van-field
-						v-model="password"
-						name="password"
-						type="password"
-						label="Password"
-						placeholder="Please enter password"
-				/>
-				<van-field
-						v-if="isNeedConfirmPassword"
-						v-model="confirm_password"
-						name="confirm_password"
-						type="password"
-						label="Confirm Password"
-						placeholder="Please confirm password"
-				/>
 				<van-field name="checkbox">
 					<template #input>
 						<van-checkbox v-model="checkbox" checked-color="#07c160" >
@@ -60,17 +45,8 @@
 
                 <div class="vip-btn-wrap">
                     <van-button type="primary" class="vip-btn"
-								:disabled="isSubmitting"
-								:loading="isSubmitting"
-								loading-text="Submitting..."
 								@click="onSubmit"
-                                block>Login / Registration</van-button>
-					<div class="login-tips text-right">
-						<p>Unregistered users will automatically create accounts</p>
-					</div>
-					<div class="login-forgot-password text-right">
-						<a href="javascript:;" @click.prevent="toResetPasswordPage">Forgot your password?</a>
-					</div>
+                                block>Get verification code</van-button>
                 </div>
             </div>
         </section>
@@ -78,7 +54,8 @@
     </div>
 </template>
 <script>
-	import { getCountryCodes,getVerificationCodes,queryPwd } from '@/api/user'
+	import { getCountryCodes,getVerificationCodes } from '@/api/user'
+	import defaultSettings from '@/settings'
     export default {
         data(){
             return {
@@ -89,9 +66,6 @@
                 showPicker: false,
 
                 telephone: '',//9829666666
-				password: '',
-				confirm_password: '',
-				isNeedConfirmPassword: true,
                 code: '',
                 codekey: '',
 				checkbox: true,
@@ -103,7 +77,7 @@
             }
         },
 		created(){
-			/*getCountryCodes().then((res)=>{
+			getCountryCodes().then((res)=>{
 				const list = res.data || [];
 				list.sort((item1,item2)=>{
 					if(item1.is_hot < item2.is_hot){
@@ -118,7 +92,7 @@
 					item.text = item.name +' '+ item.intl_code;
 				});
 				this.columns = list;
-			});*/
+			});
 		},
 		computed: {
 			isShowHeader() {
@@ -140,75 +114,10 @@
 					this.$toast('Please enter telephone');
 					return false;
 				}
-				if(!this.password){
-					this.$toast('Please enter password');
-					return false;
-				}
-				if(this.isNeedConfirmPassword){
 
-					if(!this.confirm_password){
-						this.$toast('Please confirm password');
-						return false;
-					}
-
-					if(this.password != this.confirm_password){
-						this.$toast("The password doesn't match.");
-						return false;
-					}
-				}
-
-				this.isSubmitting = true;
-				let params = {
-					device_number: this.$store.getters.deviceNumber,
-					platform: this.$store.getters.platform,
-					app_version_id: this.$store.getters.appVersionId,
-
-					phone_number: this.telephone,
-					password: this.password,
-				}
-				if(this.isNeedConfirmPassword){
-					params.confirm_password = this.confirm_password
-				}
-
-				this.$store.dispatch('user/login', params)
-					.then((res) => {
-						const { data } = res;
-						this.isSubmitting = false;
-						if(data){
-							this.toNextPage();
-						}
-					})
-					.catch(() => {
-						this.isSubmitting = false
-					})
+				this.toCodePage();
 
             },
-			toNextPage(){
-				this.$store.dispatch('user/getInfo').then(data=>{
-					const { name,is_member } = data;
-					if(name){
-						if(is_member){
-							this.toEndPage()
-						}else{
-							this.toVipPage()
-						}
-
-					}else {
-						this.toInfoPage()
-					}
-				});
-			},
-			toEndPage(){
-				this.$router.push({name:'end'});
-			},
-			toInfoPage(){
-				this.$router.push({name:'info'});
-			},
-			toVipPage(){
-				this.$router.replace({
-					name:'vip',
-				});
-			},
 			toCodePage(){
 				this.$router.push({
 					name:'code',
@@ -220,33 +129,7 @@
 			},
 			toTermsPage(){
 				this.$router.push({name:'terms'});
-			},
-			// 校验函数返回 true 表示校验通过，false 表示不通过
-			validator(val) {
-				return /^[0-9]*$/.test(val);
-			},
-			checkIsNeedConfirmPassword(){
-				if(this.telephone){
-					this.queryPassword();
-				}
-			},
-			queryPassword(){
-				return new Promise((resolve, reject) => {
-					let params = {
-						phone_number: this.telephone
-					}
-					queryPwd(params).then(res=>{
-						let data = res.data;
-						this.isNeedConfirmPassword = data.has_pwd == 'Y' ? false : true;
-					});
-				})
-
-			},
-			toResetPasswordPage(){
-				this.$router.push({
-					name:'resetPassword',
-				});
-			},
+			}
         }
     }
 </script>

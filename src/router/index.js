@@ -70,6 +70,17 @@ export const constantRoutes = [
 		},
 		component: () => import('@/components/Login/index'),
 	},
+	//重设密码
+	{
+		path: '/resetpassword',
+		name: 'resetPassword',
+		meta: {
+			title: 'Reset Password',
+			showHeader: true,
+			keepAlive: false
+		},
+		component: () => import('@/components/Login/resetPassword'),
+	},
 	//获取验证码
 	{
 		path: '/code',
