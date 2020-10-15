@@ -364,3 +364,35 @@
     @include bottom-line;
   }
 }
+.vip-doc-block__title {
+  margin: 0;
+  padding: 64px 32px 32px;
+  color: $primary;
+  font-weight: normal;
+  font-size: 16PX;
+  line-height: 18PX;
+}
+.vip-doc-block__desc {
+  margin: 0;
+  padding: 0 32px 32px;
+  color: rgba(69, 90, 100, 0.6);
+  font-weight: normal;
+  font-size: 12PX;
+  line-height: 14PX;
+}
+.vip-form_title{
+  margin: 0;
+  padding: 32px 32px 16px 32px;
+  color: rgba(69, 90, 100, 0.6);
+  font-weight: normal;
+  font-size: 12PX;
+  line-height: 14PX;
+}
+.vip-form_tips{
+  margin: 0;
+  padding: 8px 32px 16px 32px;
+  color: rgba(69, 90, 100, 0.6);
+  font-weight: normal;
+  font-size: 12PX;
+  line-height: 14PX;
+}
