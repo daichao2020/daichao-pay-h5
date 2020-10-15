@@ -244,10 +244,10 @@
 				});
 			},
 			toEndPage(){
-				this.$router.push({name:'end'});
+				this.$router.replace({name:'end'});
 			},
 			toInfoPage(){
-				this.$router.push({name:'info'});
+				this.$router.replace({name:'info'});
 			},
 			toVipPage(){
 				this.$router.replace({
