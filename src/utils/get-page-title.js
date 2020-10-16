@@ -1,6 +1,6 @@
 import defaultSettings from '@/settings'
 
-const title = defaultSettings.title || 'Cash View'
+const title = defaultSettings.title || 'Mi Rupee'
 
 export default function getPageTitle(pageTitle) {
   if (pageTitle) {
