@@ -30,7 +30,7 @@
 		},
 		mounted () {
 			const script = document.createElement('script')
-			script.src = '//s9.cnzz.com/z_stat.php?id=1279354674&web_id=1279354674'
+			script.src = '//s4.cnzz.com/z_stat.php?id=1279354777&web_id=1279354777'
 			script.language = 'JavaScript'
 			document.body.appendChild(script)
 		},
