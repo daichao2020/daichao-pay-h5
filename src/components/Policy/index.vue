@@ -10,7 +10,270 @@
 		</header>
 
 		<section class="page-body">
-			<div class="WordSection1"><p class="MsoNormal"><span>Data Privacy Policy</span></p><p class="MsoNormal"><span>Please read this Privacy Policy carefully before accessing or using the Service. This Privacy Policy contains important terms that affect your legal rights. It is understood that upon submission of the application form, you agree to be bound by the terms and conditions set forth below and automatically consent to the collection, use, storage, analysis and manipulation of your data information in accordance with this Privacy Policy to provide you with a great customer experience. If you do not wish to be bound by these terms and conditions, you may not access or use money loan Service.</span></p><p class="MsoNormal"><span>Please note that this privacy policy may be amended from time to time to comply with Data Privacy requirements, coverage and technology security advancements and such modifications shall be effective immediately upon posting of the modified Agreement.</span></p><p class="MsoNormal"><span>Terms and Definitions</span></p><p class="MsoNormal"><span>Consent </span><span>–</span><span> Any freely given, specific, informed indication of will for the collection and processing of his or her personal, sensitive and privileged information.</span></p><p class="MsoNormal"><span>Company </span><span>–</span><span> refers to </span><span>“</span><span lang="EN-US">money loan</span><span>”</span><span lang="EN-US">.</span></p><p class="MsoNormal"><span>Data Outsourcing </span><span>–</span><span> disclosure or transfer of personal data by a personal information controller to a personal information processor.</span></p><p class="MsoNormal"><span>Data Sharing </span><span>–</span><span> Disclosure or transfer to a third party of personal data under the custody of a personal information controller or personal information processor. Disclosure or transfer of the personal information processor must be upon the instructions of the personal information controller.</span></p><p class="MsoNormal"><span>Data Subject - Refers to an individual whose personal, sensitive, and/or privileged information is processed.</span></p><p class="MsoNormal"><span>Personal Information </span><span>–</span><span> refers to all types of personal information which are apparent or can be reasonably and directly ascertained by the entity holding the information such as:</span></p><p class="MsoNormal"><span></span><span>Full Name;</span></p><p class="MsoNormal"><span></span><span>Photo;</span></p><p class="MsoNormal"><span></span><span>Signature;</span></p><p class="MsoNormal"><span></span><span>IP Address;</span></p><p class="MsoNormal"><span></span><span>SMS</span></p><p class="MsoNormal"><span></span><span>Contact</span></p><p class="MsoNormal"><span></span><span>Postpaid Number; </span></p><p class="MsoNormal"><span></span><span>Biometrics;</span></p><p class="MsoNormal"><span>Personal Information Controller (PIC) </span><span>–</span><span> refers to a natural or juridical person, or any other body who controls the processing of personal data, or instructs another to process personal data on its behalf</span></p><p class="MsoNormal"><span>Personal Information Processor (PIP) </span><span>–</span><span> refers to any natural or juridical person, or any other body who controls the processing of personal data, or instructs another to process personal data on its behalf</span></p><p class="MsoNormal"><span>Processing </span><span>–</span><span> refers to any operation or any set of operations performed upon personal data including, but not limited to collection, recording, organization, storage, updating or modification, retrieval, consultation, use, consolidation, blocking, erasure or destruction of data. Processing may be performed through automated means, or manual processing, if the personal data are contained or are intended to be contained in a filing system.</span></p><p class="MsoNormal"><span>Sensitive Personal Information </span><span>–</span><span> refers to personal information about the data subjects:</span></p><p class="MsoNormal"><span></span><span>Race;</span></p><p class="MsoNormal"><span></span><span>Ethnic Origin;</span></p><p class="MsoNormal"><span></span><span>Marital status;</span></p><p class="MsoNormal"><span></span><span>Age;</span></p><p class="MsoNormal"><span></span><span>Religious or Philosophical belief;</span></p><p class="MsoNormal"><span></span><span>Political Affiliation;</span></p><p class="MsoNormal"><span></span><span>Education;</span></p><p class="MsoNormal"><span></span><span>Genetic or sexual life;</span></p><p class="MsoNormal"><span></span><span>Any offense involving such person;</span></p><p class="MsoNormal"><span></span><span>Social Security Numbers;</span></p><p class="MsoNormal"><span></span><span>Licenses;</span></p><p class="MsoNormal"><span></span><span>Specifically Established by law to be kept classified</span></p><p class="MsoNormal"><span>Your Consent</span></p><p class="MsoNormal"><span>You hereby give your acknowledgement and consent to money loan to use your personal data for the aforesaid Purposes and Services. You agree that your consent will remain in place until your withdrawal by officially notifying the Company in writing.</span></p><p class="MsoNormal"><span>Personal Information and Sensitive Personal Information</span></p><p class="MsoNormal"><span>Personal and Sensitive Personal information are information that can be used to uniquely identify a user such as name, password, date of birth, civil status, gender, email address, telephone number, and other personal details. Below is a list of information that may be collected:</span></p><p class="MsoNormal"><span>•</span><span> Your SSS and/or TIN number;</span></p><p class="MsoNormal"><span>•</span><span> Your employment and income information;</span></p><p class="MsoNormal"><span>•</span><span> Your bank account information;</span></p><p class="MsoNormal"><span>•</span><span> Any personal information you provide us in connection with any customer service communication (email, phone or other means), dispute or complaint.</span></p><p class="MsoNormal"><span>You may be asked to provide Personal Information and/or Sensitive Personal Information to meet our legal obligations, verify your identity, determine eligibility for credit, protect against fraud, and complete your transaction.</span></p><p class="MsoNormal"><span>We may also use the provided Personal Information and Sensitive Personal Information to inform you of special loan offers, to process your loans, to provide you with our services or to conduct surveys. While the Company collects these information on a voluntary basis for certain products and services, The Company</span><span>’</span><span lang="EN-US">s collection of personally identifiable information may be a requirement for access to our services or to process a user's loan.</span></p><p class="MsoNormal"><span>How To Contact Us</span></p><p class="MsoNormal"><span>For any queries, clarifications or requests on any aspect of this Statement, the exercise of your rights pertaining to your personal information or to provide any feedback that you may have about our processing of personal information, you may get in touch with our Data Privacy Officer at:</span></p><p class="MsoNormal"><span>The Data Protection Officer</span></p><p class="MsoNormal"><span><a href="mailto:couplecartoon009@gmail.com">couplecartoon009@gmail.com</a></span></p><p class="MsoNormal"><span>Changes to Our Privacy Statement</span></p><p class="MsoNormal"><span>We may modify or amend this Privacy Statement from time to time to keep up with any changes in relevant laws and regulations applicable to us or how we collect, use, protect, store, share or dispose of your personal information. Any relevant updates will be posted on money loan website and mobile application.</span></p></div>
+
+			<div class=WordSection1 style='layout-grid:15.6pt'>
+
+				<p class=MsoNormal><span>Cashloan Customer Privacy Agreement</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> In
+order to effectively protect the privacy of cashloan customers, cashloan has
+formulated this &quot;cashloancashloan mobile banking customer privacy
+protection agreement&quot; (hereinafter referred to as the
+&quot;Agreement&quot;) in accordance with current regulations and policies.
+This agreement applies to all services provided to you by cashloan mobile
+banking, whether you obtain cashloan mobile banking services through a mobile
+terminal or other devices.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> Your
+use of cashloan mobile banking means that you know, understand and agree to
+accept all the contents of this agreement, and confirm that you bear all legal
+consequences arising therefrom. During the reading process, if you have any
+questions, you can contact our customer service for consultation. If you do not
+agree to any terms in the agreement, you should immediately stop using cashloan
+mobile banking.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> You
+can download the cashloan mobile banking client through a third party legally
+authorized by cashloan. Do not download and use client software of unknown
+origin. If you obtain an installation program titled &quot;cashloan mobile
+banking&quot; or a similar name to cashloan mobile banking from a third party
+that is not legally authorized by cashloan, cashloan cannot guarantee that the
+software can be used normally, and you shall bear the consequences arising
+therefrom.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　</span><span>Information
+acquisition</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>When you register or use this service, you
+need to provide cashloan with some necessary information, including but not
+limited to providing you with account registration services or user
+identification, you need to fill in your mobile phone number; branch exclusive
+financial management requires your location Location information; mobile phone
+number transfer requires your authorization to access the mobile phone address
+book; reservation transfer requires your authorization to access the calendar;
+dialing an outlet or customer service call requires your authorization to use
+the mobile phone; face verification requires your authorization to access
+camera permissions and recording permissions; payment Functions require you to
+authorize the use of mobile phone NFC; some function guides need to identify
+the contents of your mobile phone clipboard, etc.; and businesses that require
+you to provide true identity information that require you to provide real
+identity information as required by national laws, regulations or policies. If
+the information you provide is incomplete or fails to provide relevant
+information as required by cashloan, you will not be able to use the relevant
+services or be restricted during use.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>In order to protect the security of your
+transactions and prevent your account from being illegally infringed by others,
+during the use of cashloan mobile banking services, you authorize cashloan to
+collect, transmit, analyze, save and use your name, credentials, bank card
+number, mobile phone number and other individuals Information, as well as the
+device model, cashloan text messages, number of call records, number of
+application lists, operating system, unique device identification number,
+access network method and type, IP address and other information on the device,
+and report to legally established telecom operators Inquire, use or provide,
+including but not limited to your mobile phone number, geographic location,
+behavior, equipment and other related information.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　</span><span>Information
+use and management</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> In
+order to provide you with better services or products, Cashloan will use your
+user information in the following situations:</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> 1.
+According to the requirements of relevant laws and regulations;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>2,
+according to your authorization;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>3.
+According to cashloan related terms of service and application license
+agreement.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>In addition, you know and agree that within
+the scope permitted by current laws and regulations, cashloan may use your
+non-private user information for marketing, including but not limited to:
+displaying or providing advertisements to you on the cashloan platform and
+Promotional materials, inform or recommend cashloan services or product
+information to you, and other such information that may be of interest to you
+based on your use of cashloan services or products. It also includes
+information that you choose to share when you take an action such as
+authorization.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> Without
+your permission, Cashloan will not disclose your user information to any third
+party, except in the following circumstances:</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>1,
+cashloan has obtained authorization from you or your guardian;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>2.
+Judicial or administrative agencies require cashloan to disclose according to
+legal procedures;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>3,
+when cashloan files a lawsuit or arbitration against the user in order to
+protect its legal rights;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>4.
+According to the terms of service and application license agreement between you
+and Cashloan;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> 5.
+Other circumstances stipulated by laws and regulations.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　</span><span>Information
+protection</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>Cashloan
+will make all reasonable efforts to protect the user information it obtains. In
+order to prevent user information from being illegally accessed, copied,
+modified, transmitted, lost, destroyed, processed or used in unexpected and
+unauthorized situations, Cashloan has and will continue to take the following
+measures to protect your user information:</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>1.
+Encrypt the user information of the user in an appropriate manner;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>2.
+Use passwords to protect user information in appropriate locations;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>3.
+Restrict access to user information;</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> 4.
+Other reasonable measures.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>Although
+the above reasonable and effective measures have been taken and the standards
+required by relevant laws and regulations have been complied with, Cashloan
+still cannot guarantee the security of your user information when communicating
+through unsafe channels. Therefore, individual users should take active
+measures to ensure the security of user information, such as: regularly
+changing mobile banking passwords, and not revealing user information such as
+their mobile phone numbers and login passwords to others.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>The user information protection measures
+provided by cashloan are only applicable to the cashloan platform. Once you
+leave cashloan and browse or use other websites, services and content
+resources, cashloan has no ability and obligation to protect any user
+information you submit on websites other than cashloan, regardless of you
+Whether to log in or browse the above-mentioned websites is based on links or
+guidance from cashloan.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　</span><span>Information
+review and revision</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>
+After you complete the cashloan mobile banking registration, you can view or
+modify the user information you submitted to cashloancashloan. In general, you
+can browse and modify the information you submit at any time, but for security
+and identification (such as number appeal service) considerations, you may not
+be able to modify some of the initial registration information and verification
+information provided during registration.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　</span><span>Change
+of privacy policy</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>Cashloan
+has the right to modify any clause of this agreement at any time. Once the
+content of this agreement changes, cashloan will make a public announcement,
+and the publicity period is 30 natural days. After the end of the publicity
+period, the revised agreement will be published directly in the mobile banking,
+and the publication shall be deemed as cashloan has notified you of the revised
+content. Cashloan may also prompt users to modify content through other
+appropriate methods. If you do not agree to cashloan's amendments to the
+relevant terms of this agreement, you have the right to stop using the
+cashloancashloan mobile banking service. If you continue to use the cashloan
+mobile banking service, you shall be deemed to have accepted the changes made
+by cashloan to the relevant terms of this agreement.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　</span><span>Other</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span> If
+there is a dispute between you and cashloan, it shall be settled by both
+parties through negotiation. If the negotiation fails to file a lawsuit, it
+shall be under the jurisdiction of the court where the cashloan head office is
+located.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>The
+terms of this agreement are partially invalid or unenforceable for any reason,
+and will not affect the validity of other terms of this agreement.</span></p>
+
+				<p class=MsoNormal><span>&nbsp;</span></p>
+
+				<p class=MsoNormal><span>　　</span><span>
+Matters not covered in this agreement shall be handled in accordance with laws
+and regulations, cashloan related business rules and domestic prevailing
+financial practices.</span></p>
+
+			</div>
+
 		</section>
 	</div>
 </template>
