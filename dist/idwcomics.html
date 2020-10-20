@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>IDW Comics</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+			outline: none;
+			text-decoration: none;
+			box-sizing: border-box;
+		}
+		.body,html {
+			width: 100%;
+			line-height: 1.6;
+		}
+		.page {
+			padding: 0 .5rem;
+			background-color: #fff;
+			padding-top: 0.7rem;
+		}
+		.container_top {
+			width: 100%;
+		}
+		.logo_title {
+			position: relative;
+			padding-left: 1.8rem;
+			min-height: 1.35rem;
+			line-height: 1;
+		}
+		.logo {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1.35rem;
+		}
+		.logo > img {
+			vertical-align: middle;
+			width: 100%;
+		}
+
+		.title_name p:first-child {
+			font-size: 0.48rem;
+			margin-bottom: 0.2rem;
+			font-weight: blod;
+		}
+		.title_name p:nth-child(2) {
+			margin-bottom: 0.1rem;
+			font-size: 0.28rem;
+			color: #01865f;
+		}
+		.info {
+			overflow: hidden;
+			margin: 0.7rem 0;
+			width: 100%;
+			list-style: none;
+			text-align: center;
+		}
+		.info li:not(:first-child)::before {
+			position: absolute;
+			left: 0;
+			top: 0.2rem;
+			bottom: 0.2rem;
+			width: 1px;
+			content: '';
+			background-color: #ddd;
+		}
+		.info li {
+			position: relative;
+			box-sizing: border-box;
+			float: left;
+			width: 25%;
+			font-size: 0.24rem;
+			color: #666;
+		}
+		.info li img {
+			vertical-align: middle;
+			width: 0.4rem;
+		}
+		.info strong {
+			height: 0.4rem;
+			line-height: 0.4rem;
+			font-size: 0.28rem;
+			color: #333;
+		}
+		.install {
+			width: 100%;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			font-size: 0.32rem;
+			color: #fff;
+			text-align: center;
+			background-color: #01865f;
+			border-radius: 0.1rem;
+			outline: none;
+		}
+		.swiper {
+			overflow-x: scroll;
+			padding-top: .5rem;
+			margin-bottom: 0.35rem;
+		}
+		.swiper::-webkit-scrollbar {display:none}
+		.swiper > div {
+			width: 13rem;
+			overflow: hidden;
+		}
+		.swiper > div > div {
+			float: left;
+			margin-right: .2rem;
+		}
+		.swiper img {
+			vertical-align: middle;
+			width: 4rem;
+		}
+		.desc h2 {
+			font-size: 0.38rem;
+			margin-bottom: 0.35rem;
+		}
+		.desc p {
+			font-size: 0.26rem;
+			color: #666666;
+			margin-bottom: 0.35rem;
+		}
+		.box {
+			border-top: 1px solid #666;
+			border-bottom: 1px solid #666;
+			padding: .5rem 0.5rem;
+		}
+		.box h2 {
+			font-size: 0.38rem;
+			margin-bottom: 0.1rem;
+		}
+		.box p {
+			font-size: 0.26rem;
+			color: #666666;
+		}
+		.other {
+			padding: .5rem 0.5rem;
+			font-size: 0.26rem;
+		}
+		.other h2 {
+			font-size: 0.38rem;
+			margin-bottom: 0.1rem;
+		}
+		.margin-bottom {
+			margin-bottom: .35rem;
+		}
+		.link {
+			font-size: 0.38rem;
+		}
+		.ulprivay{
+			 width: 2000px; 
+             overflow: hidden;
+             white-space:nowrap; 
+		}
+		.liprivay{
+			 list-style: none;
+             float: left; 
+             margin-left: 15px;
+             width: 330px;
+             font-size: 0.35rem: 
+
+		}
+		
+	</style></head>
+
+
+<body>
+<div class="page">
+	<div class="container_top">
+		<div class="logo_title">
+			<div class="logo"><img src="imgs/install/couplecomics/idw/idwlogo.webp" alt=""></div>
+			<div class="title_name">
+				<p>IDW Comics</p>
+				<p></p>
+			</div>
+		</div>
+		<ul class="info">
+			<li>
+				<strong>1.0.0</strong>
+				<p>5000+review</p>
+			</li>
+			<li>
+				<img src="imgs/install/down-icon.png" alt="">
+				<p>5.4MB</p>
+			</li>
+			<li>
+				<img src="imgs/install/icon1.png" alt="">
+				<p>12years+</p>
+			</li>
+			<!--<li>
+				<strong>100000+</strong>
+				<p>downloads</p>
+			</li>-->
+		</ul>
+		<div class="install" onclick="download()">install</div>
+	</div>
+	<div class="swiper">
+		<div>
+			<div><img src="imgs/install/couplecomics/idw/idw1.webp?t=1" alt=""></div>
+			<div><img src="imgs/install/couplecomics/idw/idw2.webp?t=1" alt=""></div>
+			<div><img src="imgs/install/couplecomics/idw/idw3.webp?t=1" alt=""></div>
+			<!--<div><img src="../imgs/install/greatcash/3.png" alt=""></div>
+			<div><img src="../imgs/install/greatcash/4.png" alt=""></div>
+			<div><img src="../imgs/install/greatcash/5.png" alt=""></div>-->
+		</div>
+	</div>
+	<div class="desc">
+<p>The complete IDW digital comic library! IDW Comics for Android devices.</p>
+
+<p>Now featuring more than 3,500 comics with many free books included!</p>
+
+<p>One of the most diverse collections in comics, all in one app. Horror, movies, sci-fi, heroes, villains, action, adventure, classic comics and more. Only from IDW Publishing, a leader in digital comics.</p>
+
+<p>Now includes motion books by Madefire, with animation and sound!</p>
+
+
+		<p>【Detail and sell way】</p>
+		<p><b>All comics books are English as language.reading book will be charged for fee，when you pay the fee in the app, you can read book propitious without charging any other fee.We sell them by per book not for membership.we will not charge register fee</b></p>
+		<p>【Book Price】
+		<p><b> All book are sold in rupee. The price of each book is between 64.57₹ and 8220₹.It depends on the price of a book when you enter the app you see. example for The Crow:Lethe Page 107 charge 820₹ and Star Wars Adventures Page 90 charge 520₹,My Little Pony page 34 charge 265₹,Snake Eyes:Deadgame page 35 Charge 320₹ etc..But not more than 8220₹</b>  </p>
+		<p>If you need a refund, please add customer service in contact us</p>
+		<p>About us</p>
+		<p>MICRO READING INDIA PRIVATE LIMITED is an technology company for providing comics，We are committed to let more people get the happiness brought by the Internet .we are an young team hope our app can give the fun to you </p>
+		<p>Contact Us:</p>
+		<p>Customer Service Email:mircoreading@163.com</p>
+		<p>Customer Service phone:8435006490</p>
+		<p>Company name:MICRO READING INDIA PRIVATE LIMITED</p>
+		<p>Company address: 69-70,lndra Park,Chander Nagar,Delhi,East Delhi,Delhi,lndia,110051</p>
+		<ul class="ulprivay">
+			<li class="liprivay"><a href="file/idw/privacyidw.html" class="link">Privacy Policy</a></li>
+			<li class="liprivay"><a href="file/refund.html" class="link">Refund Policy</a></li>
+			<li class="liprivay"><a href="file/idw/Termsidw.html" class="link">Terms and Conditions Policy</a></li>
+		</ul>
+
+
+	</div>
+</div>
+
+<!--<script src="js/reqwest.min.js"></script>-->
+<script>
+	(function (doc, win) {
+		var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;
+				if(clientWidth>=750){
+					docEl.style.fontSize = '100px';
+				}else{
+					docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+				}
+			};
+
+		if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+
+
+	//var url = '//stock.qianhaiwr.com/horse/api/detail?appid=1056448970&name=cartoon&version=1.0.0';
+	/*window.onload = function () {
+		reqwest({
+			url: '//stock.qianhaiwr.com/horse/api/detail',
+			method: 'get'
+			, data: [
+				{ name: 'appid', 	value: '1056448970'},
+				{ name: 'name', 	value: 'cartoon' } ,
+				{ name: 'version', 	value: '1.0.0'} ,
+			]
+			, contentType: 'application/json'
+			, success: function (resp) {
+
+			}
+		});
+	}*/
+
+	function download() {
+		window.open('https://qhwr-idc.oss-ap-south-1.aliyuncs.com/apk/com.idw.reader.apk');
+
+        
+	}
+</script>
+
+</body>
+</html>
