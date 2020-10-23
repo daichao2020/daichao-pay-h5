@@ -7,6 +7,9 @@
 					placeholder
 			></van-nav-bar>
 		</header>
+		<van-notice-bar mode="link" @click="toPolicyPage">
+			Privacy policy
+		</van-notice-bar>
 		<van-pull-refresh v-model="isPullRefresh" @refresh="onRefresh">
 			<section class="home-page-body page-body">
 				<productSwiper :list="carouselList" v-if="carouselList.length>0"></productSwiper>
@@ -79,6 +82,9 @@
 
 				})
 			},
+			toPolicyPage(){//
+				this.$router.push({name:'policy'});
+			}
 		}
 	}
 </script>
