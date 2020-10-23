@@ -51,8 +51,8 @@ $warn-m:                  #FF8308 !default;//提醒色（中）
 $warn-h:                  #ee0a24 !default;//提醒色（高）
 $background-color:        #F3F4F5 !default;//主背景色
 $border-color:            #CCC  !default;//通用线条色
-$linear-from:             #f92e18  !default;//变色起点
-$linear-to:               #ff9b59  !default;//变色终点
+$linear-from:             #fea500  !default;//变色起点
+$linear-to:               #f85034 !default;//变色终点
 
 @mixin background-primary {
   background: $primary; /* Old browsers *//*
@@ -61,10 +61,10 @@ $linear-to:               #ff9b59  !default;//变色终点
   background: linear-gradient(90deg, $linear-from 0%, $linear-to 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
 }
 @mixin btn-background-primary {
-  background: $warn-m; /* Old browsers *//*
-  background: -moz-linear-gradient(0, $linear-from 0%, $linear-to 100%); !* FF3.6-15 *!
-  background: -webkit-linear-gradient(0, $linear-from 0%, $linear-to 100%); !* Chrome10-25,Safari5.1-6 *!
-  background: linear-gradient(0, $linear-from 0%, $linear-to 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+  background: $warn-m; /* Old browsers */
+  background: -moz-linear-gradient(90deg, $linear-from 0%, $linear-to 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(90deg, $linear-from 0%, $linear-to 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(90deg, $linear-from 0%, $linear-to 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 @mixin top-line {
   content: " ";

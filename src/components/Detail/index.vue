@@ -31,24 +31,24 @@
 						<div class="card-item flex-1">
 							<van-icon name="balance-o" />
 							<p class="title">{{ detail.amount_low + ' - ' + detail.amount_high }}</p>
-							<p class="desc">Amount</p>
+							<p class="desc">Amount<br/>रकम</p>
 						</div>
 						<div class="card-item flex-1">
 							<van-icon name="underway-o" />
 							<p class="title">{{ detail.divide_period_min + '-' + detail.divide_period_max }}</p>
-							<p class="desc">Tenure(Months)</p>
+							<p class="desc">Tenure(Months)<br/>अवधि (महीने)</p>
 						</div>
 					</div>
 					<div class="flex">
 						<div class="card-item flex-1">
 							<van-icon name="discount" />
-							<p class="title">{{ detail.daily_rate }}</p>
-							<p class="desc">Interest Rate(Per Daily)</p>
+							<p class="title">{{ [detail.daily_min_rate,detail.daily_max_rate].join('~') }}</p>
+							<p class="desc">Interest Rate(Per Daily)<br/>ब्याज दर (प्रतिदिन)</p>
 						</div>
 						<div class="card-item flex-1">
-							<van-icon name="bill-o" />
-							<p class="title">{{ detail.pro_fee || 0 }}</p>
-							<p class="desc">Processing Fee</p>
+							<van-icon name="balance-pay" />
+							<p class="title">{{ detail.issue_loan_at || 0 }}</p>
+							<p class="desc">Loan processing time<br/>ऋण प्रसंस्करण समय</p>
 						</div>
 					</div>
 				</div>
@@ -57,24 +57,51 @@
 			<div class="panel">
 				<div class="panel-hd">
 					<div class="heading-item">
-						<p class="title">Load Terms</p>
+						<p class="title">Load Terms(लोड की शर्तें)</p>
 					</div>
 				</div>
 				<div class="panel-bd term-card">
+					<!--额外收费说明-->
 					<div class="term-item flex">
 						<div>
-							<label class="term-label"><span>Eligibility Criteria:</span></label>
+							<label class="term-label"><span>Loan processing charges:<br/>ऋण प्रसंस्करण शुल्क:</span></label>
+						</div>
+						<div class="flex-1">
+							<p>{{detail.charge_desc || detail.pro_fee || 0}}</p>
+						</div>
+					</div>
+					<div class="van-hairline--bottom"></div>
+					<!--逾期政策说明-->
+					<div class="term-item flex">
+						<div>
+							<label class="term-label"><span>Additional annual interest on late payment:<br/>देर से भुगतान पर अतिरिक्त वार्षिक ब्याज:</span></label>
+						</div>
+						<div class="flex-1">
+							<p>{{ detail.overdue_policy }}</p>
+						</div>
+					</div>
+					<div class="van-hairline--bottom"></div>
+					<div class="term-item flex">
+						<div>
+							<label class="term-label"><span>Eligibility Criteria:<br/>पात्रता मापदंड:</span></label>
 						</div>
 						<div class="flex-1">
 							<p>{{ detail.apply_condition }}</p>
 						</div>
 					</div>
+					<div class="van-hairline--bottom"></div>
 					<div class="term-item flex">
 						<div>
-							<label class="term-label"><span>Apply Requirements:</span></label>
+							<label class="term-label"><span>Apply Requirements:<br/>आवश्यकताएँ लागू करें:</span></label>
 						</div>
 						<div class="flex-1">
 							<p>{{ detail.apply_doc }}</p>
+						</div>
+					</div>
+					<div class="van-hairline--bottom"></div>
+					<div class="term-item flex">
+						<div class="flex-1">
+							<p>All apps have passed our security check, please feel free to download.</p>
 						</div>
 					</div>
 				</div>
@@ -84,7 +111,7 @@
 			<div class="panel">
 				<div class="panel-hd">
 					<div class="heading-item">
-						<p class="title">How to Apply</p>
+						<p class="title">How to Apply (आवेदन कैसे करें)</p>
 					</div>
 				</div>
 				<div class="panel-bd apply-process-card">
@@ -96,7 +123,7 @@
         </section>
 		<footer class="page-footer">
 			<van-button type="primary" class="vip-btn" @click="toGooglePay"
-						block >Apply Nor</van-button>
+						block >Get money now (अब पैसे लाओ)</van-button>
 		</footer>
     </div>
 </template>
@@ -111,7 +138,7 @@
             return {
 				skeletonLoading: true,
 				detail: {},
-            	id: this.$route.params.id,
+            	id: this.$route.query.id,
             }
         },
 		mounted(){
