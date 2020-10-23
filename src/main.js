@@ -25,12 +25,13 @@ import '@/permission' // permission control
 import {
     Button, Cell, CellGroup,Dialog,Toast,NavBar,
     Divider,RadioGroup,Radio,Field,Icon,Loading,CountDown,Circle,Skeleton,Form,Picker,Popup,
-    Tabbar,TabbarItem,Empty,List,Uploader,PullRefresh,Image as VanImage,Lazyload
+    Tabbar,TabbarItem,Empty,List,Uploader,PullRefresh,Image as VanImage,Lazyload,Collapse, CollapseItem,
+    Tag,NoticeBar,
 } from 'vant'
 Vue.use(Button).use(Cell).use(CellGroup).use(Dialog).use(Toast).use(NavBar)
     .use(Divider).use(RadioGroup).use(Radio).use(Field).use(Icon).use(Loading).use(CountDown).use(Circle)
     .use(Skeleton).use(Form).use(Picker).use(Popup).use(Tabbar).use(TabbarItem).use(Empty).use(List).use(Uploader)
-	.use(PullRefresh).use(VanImage).use(Lazyload)
+	.use(PullRefresh).use(VanImage).use(Lazyload).use(Collapse).use(CollapseItem).use(Tag).use(NoticeBar)
 
 Vue.config.productionTip = false
 
@@ -39,7 +40,9 @@ console.log('当前的语言是：', i18n.locale)
 // vant-ui组件国际化
 vantLocales(i18n.locale)
 
+import VueClipboard from 'vue-clipboard2'
 
+Vue.use(VueClipboard)
 
 
 

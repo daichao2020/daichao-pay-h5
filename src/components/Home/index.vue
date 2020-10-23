@@ -7,9 +7,12 @@
 					placeholder
 			></van-nav-bar>
 		</header>
+		<van-notice-bar mode="link" @click="toPolicyPage">
+			Privacy policy
+		</van-notice-bar>
 		<van-pull-refresh v-model="isPullRefresh" @refresh="onRefresh">
 			<section class="home-page-body page-body">
-				<productSwiper></productSwiper>
+				<productSwiper :list="carouselList" v-if="carouselList.length>0"></productSwiper>
 
 				<div class="panel">
 					<div class="panel-hd">
@@ -48,6 +51,7 @@
 		data(){
 			return {
 				list: [],
+				carouselList: [],
 				isPullRefresh: false,
 				skeletonLoading: true,
 			}
@@ -73,9 +77,14 @@
 				return getHomeProducts().then(res=>{
 					this.skeletonLoading = false;
 					const { data } = res;
-					this.list = data.special || []
+					this.list = data.special || [];
+					this.carouselList = data.carousel || [];
+
 				})
 			},
+			toPolicyPage(){//
+				this.$router.push({name:'policy'});
+			}
 		}
 	}
 </script>

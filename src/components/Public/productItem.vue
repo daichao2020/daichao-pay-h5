@@ -2,7 +2,7 @@
 	<div class="product-item flex" @click="apply(item.id)">
 		<div class="item-hd">
 			<!--<img :src="item.product_picture_url_qiniu">-->
-			<van-image :src="item.product_picture_url_qiniu" width="2.2rem" height="2.2rem" lazy-load>
+			<van-image :src="item.product_picture_url_qiniu" width="1.5rem" height="1.5rem" lazy-load>
 				<template v-slot:loading>
 					<van-loading type="spinner" size="20" />
 				</template>
@@ -13,11 +13,13 @@
 			<p class="title">{{ item.product_name }}</p>
 			<p class="desc">Max Amount(अधिकतम राशि): {{ item.amount_high }}</p>
 			<p class="desc">Tenure(कार्यकाल): {{ item.divide_period_min + '-' + item.divide_period_max }} Months(महीने)</p>
-			<p class="desc">Interest(ब्याज): {{ item.daily_rate }} / Daily(दिन)</p>
-			<p class="desc">Fee(शुल्क): {{ item.pro_fee || 0 }}</p>
+			<p class="desc">Interest(ब्याज): {{ [item.daily_min_rate,item.daily_max_rate].join('~') }}/Daily(दिन)</p>
+			<p class="desc">Loan processing time(ऋण प्रसंस्करण समय): {{ item.issue_loan_at || 0 }}</p>
+			<div v-if="item.tag_des"><van-tag type="dc" plain>{{item.tag_des}}</van-tag></div>
 		</div>
 		<div class="item-ft">
-			<van-button size="small" type="primary" class="vip-btn">Apply(आवेदन)</van-button>
+			<!--<van-icon name="arrow" color="#969799" />-->
+			<van-button size="small" type="primary" class="vip-btn">Apply<br/>आवेदन</van-button>
 		</div>
 	</div>
 </template>
@@ -57,7 +59,7 @@
 				this.toDetailPage(id);
 			},
 			toDetailPage(id){
-				this.$router.push({name:'detail', params: { id: id }});
+				this.$router.push({name:'detail', query: { id: id }});
 			}
 		}
 	}

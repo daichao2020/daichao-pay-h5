@@ -114,6 +114,39 @@ export const constantRoutes = [
 		},
 		component: () => import('@/components/Me/setAvatar'),
 	},
+	//fags
+	{
+		path: '/faqs',
+		name: 'faqs',
+		meta: {
+			title: 'FAQs',
+			showHeader: true,
+			keepAlive: true
+		},
+		component: () => import('@/components/Me/faqs'),
+	},
+	//aboutus
+	{
+		path: '/aboutus',
+		name: 'aboutus',
+		meta: {
+			title: 'About Us',
+			showHeader: true,
+			keepAlive: true
+		},
+		component: () => import('@/components/Me/aboutUs'),
+	},
+	//urlIframe
+	{
+		path: '/urliframe',
+		name: 'urlIframe',
+		meta: {
+			title: 'Reading',
+			showHeader: true,
+			keepAlive: false
+		},
+		component: () => import('@/components/Public/urlIframe'),
+	},
 	//refresh
 	{
 		path: '/refresh',
