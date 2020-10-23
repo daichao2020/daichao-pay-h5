@@ -8,6 +8,9 @@
             ></van-nav-bar>
         </header>
         <section class="page-body">
+            <van-notice-bar scrollable left-icon="info-o">
+                Download more loan app can help you get money more easily.
+            </van-notice-bar>
             <productList></productList>
         </section>
     </div>
