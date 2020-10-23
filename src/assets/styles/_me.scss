@@ -30,3 +30,26 @@
     color: #fff;
   }
 }
+
+.about-us-page{
+  font-size: 14PX;
+  .company{
+    background: #fff;
+    margin: 8PX;
+    border-radius: 8PX;
+    overflow: hidden;
+    box-shadow: 0 8PX 12PX #ebedf0;
+    padding: 30px 36px;
+    .title{
+      font-size: 18PX;
+    }
+  }
+  .contact-us{
+    background: #fff;
+    margin: 8PX;
+    border-radius: 8PX;
+    overflow: hidden;
+    box-shadow: 0 8PX 12PX #ebedf0;
+    padding: 30px 36px;
+  }
+}
