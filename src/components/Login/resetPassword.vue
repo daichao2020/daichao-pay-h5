@@ -12,14 +12,14 @@
 		<section class="login-page-body">
 			<h2 class="vip-doc-block__title">Reset Password</h2>
 			<div ref="login_form">
-				<van-field
+				<!--<van-field
 						readonly
 						name="picker"
 						:value="countryCodeText"
 						label="Country देश"
 						placeholder="Please select country code"
 						@click="showPicker = true"
-				/>
+				/>-->
 				<!--<van-popup v-model="showPicker" position="bottom">
 					<van-picker
 							show-toolbar
