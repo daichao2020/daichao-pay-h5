@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.body,html {
+	width: 100%;
+	line-height: 1.6;
+	font-family: 'Roboto', Arial,"PingFang SC",sans-serif;
+}
+.page {
+	padding: 0 .4rem;
+	background-color: #fff;
+	padding-top: 0.7rem;
+	overflow-x: hidden;
+}
+.container_top {
+	width: 100%;
+}
+.logo_title {
+	width: 100%;
+	margin-top: .11111rem;
+	margin-bottom: .33333rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	min-height: 1.666rem;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.logo{
+	margin-right: .3rem;
+	line-height: 1;
+}
+.logo > img {
+	min-width: 1.666rem;
+	height: 1.666rem;
+	border-radius: .3125rem;
+}
+.title_name{
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	min-height: 1.666rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	line-height: 1.4;
+}
+.title_name .title {
+	font-size: 0.4rem;
+	color: #000;
+}
+.title_name .desc {
+	font-size: 0.24rem;
+	color: #1a1a1a;
+	opacity: .7;
+}
+.part_bottom{
+	width: 100%;
+	opacity: .7;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	padding: .33333rem 0 0;
+}
+.part_bottom .left .row1 {
+	height: .56rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.part_bottom .big_font {
+	font-size: .36rem;
+	color: #000;
+	text-align: left;
+}
+.part_bottom .big_font .unit_class {
+	font-size: .24rem;
+	color: #000;
+	text-align: center;
+	line-height: .56rem;
+}
+.part_bottom .left .row1 .key {
+	height: .56rem;
+	line-height: .56rem;
+}
+.newStarBox {
+	width: auto;
+	height: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.part_bottom .starBox_parent {
+	margin-top: -.01rem!important;
+}
+.part_bottom .left .row1 .starBox_parent {
+	margin: 0 .13889rem;
+	height: .54rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.part_bottom .small_font {
+	font-size: .24rem;
+	color: #1a1a1a;
+	line-height: .26rem;
+}
+
+.install {
+	width: auto;
+	min-width: 2rem;
+	height: .58rem;
+	background: #007dff;
+	border-radius: .38889rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-size: .28889rem;
+	color: #fff;
+	text-align: center;
+	margin-top: .16rem;
+	padding: 0 .1rem;
+}
+.swiper {
+	overflow-x: scroll;
+	padding-top: .5rem;
+	margin-bottom: 0.35rem;
+}
+.swiper::-webkit-scrollbar {display:none}
+.swiper > div {
+	width: 13rem;
+	overflow: hidden;
+}
+.swiper > div > div {
+	float: left;
+	margin-right: .2rem;
+}
+.swiper img {
+	vertical-align: middle;
+	width: 4rem;
+	border-radius: .15208rem;
+}
+.desc h2 {
+	font-weight: normal;
+	font-size: .32rem;
+	color: #000;
+	text-align: left;
+	margin-top: .1rem;
+}
+.desc p {
+	width: 100%;
+	font-size: .28rem;
+	color: rgba(0,0,0,.5);
+	line-height: .4rem;
+	white-space: pre-wrap;
+}
+.box {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	padding: .5rem 0.5rem;
+}
+.box h2 {
+	font-size: 0.38rem;
+	margin-bottom: 0.1rem;
+}
+.box p {
+	font-size: 0.26rem;
+	color: #666666;
+}
+.other {
+	padding: .5rem 0.5rem;
+	font-size: 0.26rem;
+}
+.other h2 {
+	font-size: 0.38rem;
+	margin-bottom: 0.1rem;
+}
+.margin-bottom {
+	margin-bottom: .35rem;
+}
+.link {
+	font-size: 0.38rem;
+}
+.ulprivay{
+	width: 2000px;
+	overflow: hidden;
+	white-space:nowrap;
+}
+.liprivay{
+	list-style: none;
+	float: left;
+	margin-left: 15px;
+	width: 330px;
+	font-size: 0.35rem;
+
+}
