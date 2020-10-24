@@ -6,6 +6,8 @@
 					title="Privacy policy"
 					fixed
 					placeholder
+					left-arrow
+					@click-left="onClickLeft"
 			></van-nav-bar>
 		</header>
 
