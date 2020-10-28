@@ -120,7 +120,7 @@
                 this.debouncedQueryIsNeedConfirmPassword();
 			},
 			password() {
-				this.confirm_password = this.password;
+				//this.confirm_password = this.password;
 			},
 		},
 		methods: {
