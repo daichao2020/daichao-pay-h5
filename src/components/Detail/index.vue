@@ -90,7 +90,7 @@
         </section>
 		<footer class="page-footer">
 			<van-button type="primary" class="vip-btn" @click="toGooglePay"
-						block >Apply Nor</van-button>
+						block >Apply Now</van-button>
 		</footer>
     </div>
 </template>
