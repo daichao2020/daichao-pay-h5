@@ -119,7 +119,7 @@
 
 					resList.push({
 						name: key,
-						isShowViewMoreBtn: tempList.length > 0 ? true : false,
+						isShowViewMoreBtn: tempList.length > 2 ? true : false,
 						list: tempList,
 					})
 				}
