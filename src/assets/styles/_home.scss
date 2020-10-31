@@ -208,6 +208,11 @@
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   flex-direction: column;
+
+  .panel{
+    margin-bottom: 30px;
+  }
+
 }
 .status-page{
 
@@ -395,4 +400,13 @@
   font-weight: normal;
   font-size: 12PX;
   line-height: 14PX;
+}
+.view-more-btn-wrap{
+  padding: 0 8PX;
+}
+.view-more-btn{
+  color: #3762ff;
+  border-color: #3762ff;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
