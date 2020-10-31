@@ -156,6 +156,9 @@ to contact me at Appengineer101@gmail.com.</span></p>
 </script>
 <style lang="scss">
 	.policy-page{
+		.page-body {
+			padding: .4rem;
+		}
 		p.MsoNormal, li.MsoNormal, div.MsoNormal
 		{margin:0cm;
 			margin-bottom:.0001pt;
