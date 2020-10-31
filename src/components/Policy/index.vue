@@ -347,6 +347,9 @@ according to the requirements of our supervision department.</span></p>
 </script>
 <style lang="scss">
 	.policy-page{
+		.page-body {
+			padding: .4rem;
+		}
 		p.MsoNormal, li.MsoNormal, div.MsoNormal
 		{margin:0cm;
 			margin-bottom:.0001pt;
