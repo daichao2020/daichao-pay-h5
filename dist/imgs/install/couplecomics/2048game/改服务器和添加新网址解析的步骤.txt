@@ -1,0 +1,11 @@
+链接服务器以后
+ cd /usr/local/nginx/conf/vhost
+然后 cp install.startrekdownload.com.conf xxx.conf 这里的 xxx 是目标域名
+在 vim xxx.conf 
+按 i
+修改文件行 ：server_name install.xxxx.com; 将 server_name 改为指定域名。
+按 esc 只是 vim 编辑回到命令模式，按 :wq
+
+文件修改之后，又到原来的目录，执行命令 nginx -t ，此命令用来检查刚刚加入文件是否有语法问题，没有问题会出现 successful
+
+最后一步执行 /etc/init.d/nginx reload 没有报错就是成功了
