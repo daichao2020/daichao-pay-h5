@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	background: #fff;
+}
+.page{
+	text-align: center;
+}
+.page img{
+	max-width: 140px;
+	margin: 32px 0;
+}
+
+.page .title{
+	margin-bottom: 16px;
+	font-weight: 700;
+	font-size: 22px;
+	color: rgba(0,0,0,0.9);
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.page .desc {
+	font-size: 17px;
+	color: rgba(0,0,0,0.9);
+	word-wrap: break-word;
+	word-break: break-all;
+	margin: 16px;
+}
